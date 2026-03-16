@@ -1,0 +1,46 @@
+syntax = "proto3";
+
+package docassist;
+
+service PDFService {
+  rpc RenderPage(RenderPageRequest) returns (RenderPageResponse);
+  rpc GetPageCount(GetPageCountRequest) returns (GetPageCountResponse);
+  rpc ExtractText(ExtractTextRequest) returns (ExtractTextResponse);
+}
+
+message RenderPageRequest {
+  bytes pdf_data = 1;
+  uint32 page_index = 2;
+  uint32 width = 3;
+  uint32 height = 4;
+  ImageFormat format = 5;
+}
+
+message RenderPageResponse {
+  bytes image_data = 1;
+  uint32 actual_width = 2;
+  uint32 actual_height = 3;
+}
+
+message GetPageCountRequest {
+  bytes pdf_data = 1;
+}
+
+message GetPageCountResponse {
+  uint32 page_count = 1;
+}
+
+message ExtractTextRequest {
+  bytes pdf_data = 1;
+  uint32 page_index = 2;
+}
+
+message ExtractTextResponse {
+  string text = 1;
+}
+
+enum ImageFormat {
+  IMAGE_FORMAT_UNSPECIFIED = 0;
+  IMAGE_FORMAT_PNG = 1;
+  IMAGE_FORMAT_JPEG = 2;
+}

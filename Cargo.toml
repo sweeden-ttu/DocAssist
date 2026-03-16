@@ -1,0 +1,23 @@
+[package]
+name = "docassist-server"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.61"
+
+[dependencies]
+pdfium-render = { path = "../pdfium-render", features = ["thread_safe", "image_latest", "pdfium_7543"] }
+image = { version = "0.25", default-features = false, features = ["jpeg", "png"] }
+tonic = "0.12"
+tonic-build = "0.12"
+prost = "0.13"
+tokio = { version = "1", features = ["full"] }
+log = "0.4"
+env_logger = "0.11"
+async-trait = "0.1"
+
+[build-dependencies]
+tonic-build = "0.12"
+
+[[bin]]
+name = "docassist-server"
+path = "src/main.rs"
