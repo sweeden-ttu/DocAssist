@@ -228,6 +228,31 @@ def get_page6_inferred_cells(
     return out
 
 
+def get_page7_value_cells(
+    path: Path,
+    page_height_pt: float = 792.0,
+) -> List[Tuple[Tuple[float, float, float, float], str]]:
+    """
+    Load page7_tables.json and return only cells where cell_type is "value".
+    Returns [(box_pdf, answer_text), ...] for overlay (no magenta boxes).
+    """
+    data = load_json(path)
+    if not isinstance(data, dict) or "cells" not in data or "page" not in data:
+        return []
+    cells = data.get("cells", [])
+    out: List[Tuple[Tuple[float, float, float, float], str]] = []
+    for cell in cells:
+        if cell.get("cell_type") != "value":
+            continue
+        coords = cell.get("coords") or {}
+        box = _cell_coords_to_pdf_box(coords, page_height_pt)
+        if not box:
+            continue
+        answer = (cell.get("answer") or "").strip() or (cell.get("text") or "").strip()
+        out.append((box, answer))
+    return out
+
+
 def extract_boxes_generic(path: Path) -> Dict[int, List[Tuple[float, float, float, float]]]:
     """Dispatch extraction based on the known file pattern."""
     data = load_json(path)
@@ -536,6 +561,8 @@ def generate_multi_analysis_overlays(
     # Page 6 only: use page_6.png as base, overlay only inferred cells (no magenta boxes).
     annotations_dir = overlays_dir.parent
     page_6_base = annotations_dir / "page_6.png"
+    page_7_base = annotations_dir / "page_7.png"
+    page7_tables_path = annotations_dir / "page7_tables.json"
     if page6_tables_path and page6_tables_path.exists() and page_6_base.exists():
         inferred_cells = get_page6_inferred_cells(page6_tables_path, page_height)
         if inferred_cells:
@@ -562,9 +589,38 @@ def generate_multi_analysis_overlays(
             print(f"  Overlay   -> {overlay_path}")
             print(f"  Annotated -> {annotated_path}")
 
+    # Page 7 only: use page_7.png as base, overlay only cell_type "value" cells (no magenta boxes).
+    if page7_tables_path.exists() and page_7_base.exists():
+        value_cells = get_page7_value_cells(page7_tables_path, page_height)
+        if value_cells:
+            base_img = Image.open(page_7_base).convert("RGBA")
+            w, h = base_img.size
+            page_width_pt = 612.0
+            scale_x = w / page_width_pt
+            scale_y = h / page_height
+            overlay = Image.new("RGBA", (w, h), (255, 255, 255, 0))
+            draw = ImageDraw.Draw(overlay)
+            font = _get_bold_dark_blue_font(size=20)
+            for (x0, y0, x1, y1), answer in value_cells:
+                left = x0 * scale_x
+                right = x1 * scale_x
+                top = (page_height - y1) * scale_y
+                bottom = (page_height - y0) * scale_y
+                _draw_answer_in_box(draw, left, top, right, bottom, answer, font)
+            overlay_path = overlays_dir / "page_7_multi_overlay.png"
+            overlay.save(overlay_path, "PNG")
+            combined = Image.alpha_composite(base_img, overlay)
+            annotated_path = annotated_dir / "page_7_multi_annotated.png"
+            combined.save(annotated_path, "PNG")
+            print("Page 7 (from page_7.png + value cells only):")
+            print(f"  Overlay   -> {overlay_path}")
+            print(f"  Annotated -> {annotated_path}")
+
     for page_index in range(num_pages):
         page_num = page_index + 1
         if page_num == 6 and page6_tables_path and page_6_base.exists():
+            continue
+        if page_num == 7 and page7_tables_path.exists() and page_7_base.exists():
             continue
         page = pdf.get_page(page_index)
 

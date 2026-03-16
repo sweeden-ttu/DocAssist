@@ -1,0 +1,3518 @@
+{
+  "page": 7,
+  "section": "Farm Assets Schedules 4A-4M + Personal Assets Schedules 4N-4Q",
+  "version": 5,
+  "changes": [
+    "4D: Sweet Corn removed; 0.91ac redistributed across 5 remaining crops; USDA $/Acre filled",
+    "4H: Make/Model/Year removed; Type (short) + $ Market Value only",
+    "4L: Added Greenhouse 10x12 ($1,301.66) and 2BR Manufactured Home ($68,000 installed)",
+    "4H: Compact Tractor moved to 4I; remaining 7 items renumbered rows 1-7",
+    "4I: Row 1 = Compact Tractor (used ~25HP) $4,500",
+    "4L: Farm House renamed to \"Manufactured Home\"",
+    "4C: Crop inventory filled \u2014 Eggplant 4 flats, Peppers 3, Tomatoes 4, Asparagus/Artichoke 3",
+    "4C: Asparagus/Artichoke split into separate rows (2 flats Asparagus, 1 flat Artichoke)",
+    "All $0.00 market value cells removed from output"
+  ],
+  "mobile_home_estimate": {
+    "description": "2-bedroom HUD-code manufactured home, Campbell County TN",
+    "unit_purchase": "$54,000",
+    "delivery": "$4,000",
+    "foundation_piers": "$5,500",
+    "utility_hookups": "$4,500",
+    "total_installed": "$68,000",
+    "sources": [
+      "HUD Manufactured Housing Survey 2024",
+      "Clayton Homes Knoxville/Tri-Cities area pricing",
+      "Tennessee Housing Development Agency regional data",
+      "Vanderbilt Mortgage TN manufactured home cost estimates"
+    ]
+  },
+  "usda_prices": {
+    "Eggplant": "$6,000/ac \u2014 USDA NASS TN fresh-market vegetable",
+    "Peppers": "$8,000/ac \u2014 USDA NASS bell/hot peppers, Southeast",
+    "Tomatoes": "$12,000/ac \u2014 USDA NASS fresh-market tomatoes, Southeast",
+    "Asparagus": "$5,000/ac \u2014 USDA NASS asparagus, national",
+    "Artichoke": "$7,500/ac \u2014 USDA ERS specialty vegetable, Southeast"
+  },
+  "section_totals": {
+    "4D_growing_crops": "$7,350.00",
+    "4H_equipment": "$7,500.00",
+    "4L_buildings": "$69,301.66",
+    "4M_farmland": "$45,000.00",
+    "4N_personal_cash": "$1,466.76",
+    "4O_personal_vehicles": "$3,500.00"
+  },
+  "cells": [
+    {
+      "schedule": "header",
+      "label": "FARM ASSETS SCHEDULES ( Attach additional pages if necessary )",
+      "answer": "",
+      "cell_type": "label",
+      "col": 0,
+      "coords": {
+        "x": 162.472,
+        "y": 46.18100000000004,
+        "width": 287.0550000000005,
+        "height": 8.82077799607066
+      }
+    },
+    {
+      "schedule": "header",
+      "label": "4A. SCHEDULE A - CASH & EQUIVALENTS $",
+      "answer": "",
+      "cell_type": "label",
+      "col": 0,
+      "coords": {
+        "x": 19.417,
+        "y": 60.96199999999999,
+        "width": 231.369,
+        "height": 8.738454545454488
+      }
+    },
+    {
+      "schedule": "header",
+      "label": "4H. SCHEDULE H - MACHINERY & EQUIPMENT",
+      "answer": "",
+      "cell_type": "label",
+      "col": 5,
+      "coords": {
+        "x": 311.017,
+        "y": 60.96199999999999,
+        "width": 202.50899999999996,
+        "height": 8.738454545454488
+      }
+    },
+    {
+      "schedule": "header",
+      "label": "Market Value",
+      "answer": "",
+      "cell_type": "label",
+      "col": 4,
+      "coords": {
+        "x": 253.01,
+        "y": 61.388000000000034,
+        "width": 47.12799999999987,
+        "height": 7.517999999999915
+      }
+    },
+    {
+      "schedule": "header",
+      "label": "Cash on Hand",
+      "answer": "",
+      "cell_type": "label",
+      "col": 0,
+      "coords": {
+        "x": 19.417,
+        "y": 75.78800000000001,
+        "width": 51.135999999999996,
+        "height": 7.517999999999915
+      }
+    },
+    {
+      "schedule": "header",
+      "label": "Type",
+      "answer": "",
+      "cell_type": "label",
+      "col": 5,
+      "coords": {
+        "x": 329.507,
+        "y": 75.78800000000001,
+        "width": 17.783999999999935,
+        "height": 7.517999999999915
+      }
+    },
+    {
+      "schedule": "header",
+      "label": "Make",
+      "answer": "",
+      "cell_type": "label",
+      "col": 6,
+      "coords": {
+        "x": 386.219,
+        "y": 75.78800000000001,
+        "width": 19.559999999999945,
+        "height": 7.517999999999915
+      }
+    },
+    {
+      "schedule": "header",
+      "label": "Model",
+      "answer": "",
+      "cell_type": "label",
+      "col": 7,
+      "coords": {
+        "x": 442.62,
+        "y": 75.78800000000001,
+        "width": 21.783999999999935,
+        "height": 7.517999999999915
+      }
+    },
+    {
+      "schedule": "header",
+      "label": "Year",
+      "answer": "",
+      "cell_type": "label",
+      "col": 8,
+      "coords": {
+        "x": 500.781,
+        "y": 75.78800000000001,
+        "width": 16.896000000000015,
+        "height": 7.517999999999915
+      }
+    },
+    {
+      "schedule": "header",
+      "label": "$ Market Value",
+      "answer": "",
+      "cell_type": "label",
+      "col": 9,
+      "coords": {
+        "x": 537.768,
+        "y": 75.78800000000001,
+        "width": 53.799999999999955,
+        "height": 7.517999999999915
+      }
+    },
+    {
+      "schedule": "header",
+      "label": "Checking",
+      "answer": "",
+      "cell_type": "label",
+      "col": 0,
+      "coords": {
+        "x": 19.417,
+        "y": 90.1880000000001,
+        "width": 33.344,
+        "height": 7.517999999999915
+      }
+    },
+    {
+      "schedule": "4H",
+      "label": "Sch H row 1: Type",
+      "answer": "",
+      "cell_type": "value",
+      "coords": {
+        "x": 311.0,
+        "y": 90.2,
+        "width": 220.0,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4H",
+      "label": "Sch H row 1: $ Market Value",
+      "answer": "$650.00",
+      "cell_type": "value",
+      "coords": {
+        "x": 537.8,
+        "y": 90.2,
+        "width": 53.8,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "header",
+      "label": "Savings",
+      "answer": "",
+      "cell_type": "label",
+      "col": 0,
+      "coords": {
+        "x": 19.417,
+        "y": 104.58800000000008,
+        "width": 28.456000000000003,
+        "height": 7.517999999999915
+      }
+    },
+    {
+      "schedule": "4H",
+      "label": "Sch H row 1: Type",
+      "answer": "Rear-tine Tiller",
+      "cell_type": "value",
+      "coords": {
+        "x": 311.0,
+        "y": 104.6,
+        "width": 220.0,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4H",
+      "label": "Sch H row 1: $ Market Value",
+      "answer": "$650.00",
+      "cell_type": "value",
+      "coords": {
+        "x": 537.8,
+        "y": 104.6,
+        "width": 53.8,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "header",
+      "label": "4B. SCHEDULE B - ACCOUNTS RECEIVABLE",
+      "answer": "",
+      "cell_type": "label",
+      "col": 0,
+      "coords": {
+        "x": 19.417,
+        "y": 118.56200000000001,
+        "width": 194.50799999999995,
+        "height": 8.738454545454488
+      }
+    },
+    {
+      "schedule": "header",
+      "label": "$ Market Value",
+      "answer": "",
+      "cell_type": "label",
+      "col": 4,
+      "coords": {
+        "x": 246.338,
+        "y": 118.98800000000006,
+        "width": 53.79999999999987,
+        "height": 7.517999999999915
+      }
+    },
+    {
+      "schedule": "4H",
+      "label": "Sch H row 2: Type",
+      "answer": "Drip Irrigation Kit",
+      "cell_type": "value",
+      "coords": {
+        "x": 311.0,
+        "y": 119.0,
+        "width": 220.0,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4H",
+      "label": "Sch H row 2: $ Market Value",
+      "answer": "$850.00",
+      "cell_type": "value",
+      "coords": {
+        "x": 537.8,
+        "y": 119.0,
+        "width": 53.8,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4B",
+      "label": "Sch B row 1: Description",
+      "answer": "",
+      "cell_type": "value",
+      "coords": {
+        "x": 19.4,
+        "y": 133.0,
+        "width": 220.0,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4H",
+      "label": "Sch H row 3: Type",
+      "answer": "Hand Tools",
+      "cell_type": "value",
+      "coords": {
+        "x": 311.0,
+        "y": 133.4,
+        "width": 220.0,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4H",
+      "label": "Sch H row 3: $ Market Value",
+      "answer": "$250.00",
+      "cell_type": "value",
+      "coords": {
+        "x": 537.8,
+        "y": 133.4,
+        "width": 53.8,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4B",
+      "label": "Sch B row 2: Description",
+      "answer": "",
+      "cell_type": "value",
+      "coords": {
+        "x": 19.4,
+        "y": 147.4,
+        "width": 220.0,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4H",
+      "label": "Sch H row 4: Type",
+      "answer": "Raised Bed Lumber",
+      "cell_type": "value",
+      "coords": {
+        "x": 311.0,
+        "y": 147.8,
+        "width": 220.0,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4H",
+      "label": "Sch H row 4: $ Market Value",
+      "answer": "$400.00",
+      "cell_type": "value",
+      "coords": {
+        "x": 537.8,
+        "y": 147.8,
+        "width": 53.8,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4B",
+      "label": "Sch B row 3: Description",
+      "answer": "",
+      "cell_type": "value",
+      "coords": {
+        "x": 19.4,
+        "y": 161.8,
+        "width": 220.0,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4H",
+      "label": "Sch H row 5: Type",
+      "answer": "Deer/Pest Fencing (100 ln ft)",
+      "cell_type": "value",
+      "coords": {
+        "x": 311.0,
+        "y": 162.2,
+        "width": 220.0,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4H",
+      "label": "Sch H row 5: $ Market Value",
+      "answer": "$350.00",
+      "cell_type": "value",
+      "coords": {
+        "x": 537.8,
+        "y": 162.2,
+        "width": 53.8,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "header",
+      "label": "4C. SCHEDULE C - CROP INVENTORY",
+      "answer": "",
+      "cell_type": "label",
+      "col": 0,
+      "coords": {
+        "x": 19.417,
+        "y": 176.16200000000003,
+        "width": 164.016,
+        "height": 8.738454545454488
+      }
+    },
+    {
+      "schedule": "4H",
+      "label": "Sch H row 6: Type",
+      "answer": "Harvest Crates / Storage Bins",
+      "cell_type": "value",
+      "coords": {
+        "x": 311.0,
+        "y": 176.6,
+        "width": 220.0,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4H",
+      "label": "Sch H row 6: $ Market Value",
+      "answer": "$150.00",
+      "cell_type": "value",
+      "coords": {
+        "x": 537.8,
+        "y": 176.6,
+        "width": 53.8,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "header",
+      "label": "Type",
+      "answer": "",
+      "cell_type": "label",
+      "col": 0,
+      "coords": {
+        "x": 37.907,
+        "y": 190.98800000000006,
+        "width": 17.784,
+        "height": 7.517999999999915
+      }
+    },
+    {
+      "schedule": "header",
+      "label": "Measure",
+      "answer": "",
+      "cell_type": "label",
+      "col": 1,
+      "coords": {
+        "x": 88.837,
+        "y": 190.98800000000006,
+        "width": 31.12000000000002,
+        "height": 7.517999999999915
+      }
+    },
+    {
+      "schedule": "header",
+      "label": "# Units",
+      "answer": "",
+      "cell_type": "label",
+      "col": 2,
+      "coords": {
+        "x": 149.551,
+        "y": 190.98800000000006,
+        "width": 24.896000000000015,
+        "height": 7.517999999999915
+      }
+    },
+    {
+      "schedule": "header",
+      "label": "$/Unit",
+      "answer": "",
+      "cell_type": "label",
+      "col": 3,
+      "coords": {
+        "x": 207.351,
+        "y": 190.98800000000006,
+        "width": 20.896000000000015,
+        "height": 7.517999999999915
+      }
+    },
+    {
+      "schedule": "header",
+      "label": "$ Market Value",
+      "answer": "",
+      "cell_type": "label",
+      "col": 4,
+      "coords": {
+        "x": 246.338,
+        "y": 190.98800000000006,
+        "width": 53.79999999999987,
+        "height": 7.517999999999915
+      }
+    },
+    {
+      "schedule": "4H",
+      "label": "Sch H row 7: Type",
+      "answer": "Soil Amendments (Lime/Compost)",
+      "cell_type": "value",
+      "coords": {
+        "x": 311.0,
+        "y": 191.0,
+        "width": 220.0,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4H",
+      "label": "Sch H row 7: $ Market Value",
+      "answer": "$350.00",
+      "cell_type": "value",
+      "coords": {
+        "x": 537.8,
+        "y": 191.0,
+        "width": 53.8,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4C",
+      "label": "Sch C row 1: Type",
+      "answer": "Eggplant",
+      "cell_type": "value",
+      "coords": {
+        "x": 37.9,
+        "y": 205.4,
+        "width": 50.9,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4C",
+      "label": "Sch C row 1: Measure",
+      "answer": "flat",
+      "cell_type": "value",
+      "coords": {
+        "x": 88.8,
+        "y": 205.4,
+        "width": 60.8,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4C",
+      "label": "Sch C row 1: # Units",
+      "answer": "4",
+      "cell_type": "value",
+      "coords": {
+        "x": 149.6,
+        "y": 205.4,
+        "width": 57.8,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4C",
+      "label": "Sch C row 1: $/Unit",
+      "answer": "$18.00",
+      "cell_type": "value",
+      "coords": {
+        "x": 207.4,
+        "y": 205.4,
+        "width": 38.9,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4C",
+      "label": "Sch C row 1: $ Market Value",
+      "answer": "$72.00",
+      "cell_type": "value",
+      "coords": {
+        "x": 246.3,
+        "y": 205.4,
+        "width": 53.8,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4H",
+      "label": "Sch H row 8: Type",
+      "answer": "",
+      "cell_type": "value",
+      "coords": {
+        "x": 311.0,
+        "y": 205.4,
+        "width": 220.0,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4C",
+      "label": "Sch C row 2: Type",
+      "answer": "Peppers",
+      "cell_type": "value",
+      "coords": {
+        "x": 37.9,
+        "y": 219.8,
+        "width": 50.9,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4C",
+      "label": "Sch C row 2: Measure",
+      "answer": "flat",
+      "cell_type": "value",
+      "coords": {
+        "x": 88.8,
+        "y": 219.8,
+        "width": 60.8,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4C",
+      "label": "Sch C row 2: # Units",
+      "answer": "3",
+      "cell_type": "value",
+      "coords": {
+        "x": 149.6,
+        "y": 219.8,
+        "width": 57.8,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4C",
+      "label": "Sch C row 2: $/Unit",
+      "answer": "$18.00",
+      "cell_type": "value",
+      "coords": {
+        "x": 207.4,
+        "y": 219.8,
+        "width": 38.9,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4C",
+      "label": "Sch C row 2: $ Market Value",
+      "answer": "$54.00",
+      "cell_type": "value",
+      "coords": {
+        "x": 246.3,
+        "y": 219.8,
+        "width": 53.8,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4H",
+      "label": "Sch H row 9: Type",
+      "answer": "",
+      "cell_type": "value",
+      "coords": {
+        "x": 311.0,
+        "y": 219.8,
+        "width": 220.0,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4C",
+      "label": "Sch C row 3: Type",
+      "answer": "Tomatoes",
+      "cell_type": "value",
+      "coords": {
+        "x": 37.9,
+        "y": 234.2,
+        "width": 50.9,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4C",
+      "label": "Sch C row 3: Measure",
+      "answer": "flat",
+      "cell_type": "value",
+      "coords": {
+        "x": 88.8,
+        "y": 234.2,
+        "width": 60.8,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4C",
+      "label": "Sch C row 3: # Units",
+      "answer": "4",
+      "cell_type": "value",
+      "coords": {
+        "x": 149.6,
+        "y": 234.2,
+        "width": 57.8,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4C",
+      "label": "Sch C row 3: $/Unit",
+      "answer": "$20.00",
+      "cell_type": "value",
+      "coords": {
+        "x": 207.4,
+        "y": 234.2,
+        "width": 38.9,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4C",
+      "label": "Sch C row 3: $ Market Value",
+      "answer": "$80.00",
+      "cell_type": "value",
+      "coords": {
+        "x": 246.3,
+        "y": 234.2,
+        "width": 53.8,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4H",
+      "label": "Sch H row 10: Type",
+      "answer": "",
+      "cell_type": "value",
+      "coords": {
+        "x": 311.0,
+        "y": 234.2,
+        "width": 220.0,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "header",
+      "label": "4I. SCHEDULE I - FARM VEHICLES",
+      "answer": "",
+      "cell_type": "label",
+      "col": 5,
+      "coords": {
+        "x": 311.017,
+        "y": 247.72000000000003,
+        "width": 148.51800000000003,
+        "height": 8.738454545454488
+      }
+    },
+    {
+      "schedule": "4C",
+      "label": "Sch C row 4: Type",
+      "answer": "Asparagus",
+      "cell_type": "value",
+      "coords": {
+        "x": 37.9,
+        "y": 248.6,
+        "width": 50.9,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4C",
+      "label": "Sch C row 4: Measure",
+      "answer": "flat",
+      "cell_type": "value",
+      "coords": {
+        "x": 88.8,
+        "y": 248.6,
+        "width": 60.8,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4C",
+      "label": "Sch C row 4: # Units",
+      "answer": "2",
+      "cell_type": "value",
+      "coords": {
+        "x": 149.6,
+        "y": 248.6,
+        "width": 57.8,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4C",
+      "label": "Sch C row 4: $/Unit",
+      "answer": "$22.00",
+      "cell_type": "value",
+      "coords": {
+        "x": 207.4,
+        "y": 248.6,
+        "width": 38.9,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4C",
+      "label": "Sch C row 4: $ Market Value",
+      "answer": "$44.00",
+      "cell_type": "value",
+      "coords": {
+        "x": 246.3,
+        "y": 248.6,
+        "width": 53.8,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "header",
+      "label": "Type",
+      "answer": "",
+      "cell_type": "label",
+      "col": 5,
+      "coords": {
+        "x": 329.507,
+        "y": 262.54600000000005,
+        "width": 17.783999999999935,
+        "height": 7.517999999999915
+      }
+    },
+    {
+      "schedule": "header",
+      "label": "Make",
+      "answer": "",
+      "cell_type": "label",
+      "col": 6,
+      "coords": {
+        "x": 386.219,
+        "y": 262.54600000000005,
+        "width": 19.559999999999945,
+        "height": 7.517999999999915
+      }
+    },
+    {
+      "schedule": "header",
+      "label": "Model",
+      "answer": "",
+      "cell_type": "label",
+      "col": 7,
+      "coords": {
+        "x": 442.62,
+        "y": 262.54600000000005,
+        "width": 21.783999999999935,
+        "height": 7.517999999999915
+      }
+    },
+    {
+      "schedule": "header",
+      "label": "Year",
+      "answer": "",
+      "cell_type": "label",
+      "col": 8,
+      "coords": {
+        "x": 500.781,
+        "y": 262.54600000000005,
+        "width": 16.896000000000015,
+        "height": 7.517999999999915
+      }
+    },
+    {
+      "schedule": "header",
+      "label": "$ Market Value",
+      "answer": "",
+      "cell_type": "label",
+      "col": 9,
+      "coords": {
+        "x": 537.768,
+        "y": 262.54600000000005,
+        "width": 53.799999999999955,
+        "height": 7.517999999999915
+      }
+    },
+    {
+      "schedule": "4C",
+      "label": "Sch C row 5: Type",
+      "answer": "Artichoke",
+      "cell_type": "value",
+      "coords": {
+        "x": 37.9,
+        "y": 263.0,
+        "width": 50.9,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4C",
+      "label": "Sch C row 5: Measure",
+      "answer": "flat",
+      "cell_type": "value",
+      "coords": {
+        "x": 88.8,
+        "y": 263.0,
+        "width": 60.8,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4C",
+      "label": "Sch C row 5: # Units",
+      "answer": "1",
+      "cell_type": "value",
+      "coords": {
+        "x": 149.6,
+        "y": 263.0,
+        "width": 57.8,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4C",
+      "label": "Sch C row 5: $/Unit",
+      "answer": "$22.00",
+      "cell_type": "value",
+      "coords": {
+        "x": 207.4,
+        "y": 263.0,
+        "width": 38.9,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4C",
+      "label": "Sch C row 5: $ Market Value",
+      "answer": "$22.00",
+      "cell_type": "value",
+      "coords": {
+        "x": 246.3,
+        "y": 263.0,
+        "width": 53.8,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "header",
+      "label": "4D. SCHEDULE D - GROWING CROPS",
+      "answer": "",
+      "cell_type": "label",
+      "col": 0,
+      "coords": {
+        "x": 19.417,
+        "y": 276.962,
+        "width": 162.513,
+        "height": 8.738454545454545
+      }
+    },
+    {
+      "schedule": "4I",
+      "label": "Sch I row 1: Type",
+      "answer": "Compact Tractor (used ~25HP)",
+      "cell_type": "value",
+      "coords": {
+        "x": 329.5,
+        "y": 277.0,
+        "width": 56.7,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4I",
+      "label": "Sch I row 1: Make",
+      "answer": "",
+      "cell_type": "value",
+      "coords": {
+        "x": 386.2,
+        "y": 277.0,
+        "width": 56.4,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4I",
+      "label": "Sch I row 1: Model",
+      "answer": "",
+      "cell_type": "value",
+      "coords": {
+        "x": 442.6,
+        "y": 277.0,
+        "width": 58.2,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4I",
+      "label": "Sch I row 1: Year",
+      "answer": "",
+      "cell_type": "value",
+      "coords": {
+        "x": 500.8,
+        "y": 277.0,
+        "width": 37.0,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4I",
+      "label": "Sch I row 1: $ Market Value",
+      "answer": "$4,500.00",
+      "cell_type": "value",
+      "coords": {
+        "x": 537.8,
+        "y": 277.0,
+        "width": 53.8,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4I",
+      "label": "Sch I row 2: Type",
+      "answer": "",
+      "cell_type": "value",
+      "coords": {
+        "x": 329.5,
+        "y": 291.4,
+        "width": 56.7,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4I",
+      "label": "Sch I row 2: Make",
+      "answer": "",
+      "cell_type": "value",
+      "coords": {
+        "x": 386.2,
+        "y": 291.4,
+        "width": 56.4,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4I",
+      "label": "Sch I row 2: Model",
+      "answer": "",
+      "cell_type": "value",
+      "coords": {
+        "x": 442.6,
+        "y": 291.4,
+        "width": 58.2,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4I",
+      "label": "Sch I row 2: Year",
+      "answer": "",
+      "cell_type": "value",
+      "coords": {
+        "x": 500.8,
+        "y": 291.4,
+        "width": 37.0,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "header",
+      "label": "Type",
+      "answer": "",
+      "cell_type": "label",
+      "col": 0,
+      "coords": {
+        "x": 66.707,
+        "y": 291.788,
+        "width": 17.78400000000002,
+        "height": 7.518000000000029
+      }
+    },
+    {
+      "schedule": "header",
+      "label": "# Acres",
+      "answer": "",
+      "cell_type": "label",
+      "col": 2,
+      "coords": {
+        "x": 148.439,
+        "y": 291.788,
+        "width": 27.120000000000005,
+        "height": 7.518000000000029
+      }
+    },
+    {
+      "schedule": "header",
+      "label": "$/Acre",
+      "answer": "",
+      "cell_type": "label",
+      "col": 3,
+      "coords": {
+        "x": 206.239,
+        "y": 291.788,
+        "width": 23.120000000000005,
+        "height": 7.518000000000029
+      }
+    },
+    {
+      "schedule": "header",
+      "label": "$ Market Value",
+      "answer": "",
+      "cell_type": "label",
+      "col": 4,
+      "coords": {
+        "x": 246.338,
+        "y": 291.788,
+        "width": 53.79999999999987,
+        "height": 7.518000000000029
+      }
+    },
+    {
+      "schedule": "4I",
+      "label": "Sch I row 3: Type",
+      "answer": "",
+      "cell_type": "value",
+      "coords": {
+        "x": 329.5,
+        "y": 305.8,
+        "width": 56.7,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4I",
+      "label": "Sch I row 3: Make",
+      "answer": "",
+      "cell_type": "value",
+      "coords": {
+        "x": 386.2,
+        "y": 305.8,
+        "width": 56.4,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4I",
+      "label": "Sch I row 3: Model",
+      "answer": "",
+      "cell_type": "value",
+      "coords": {
+        "x": 442.6,
+        "y": 305.8,
+        "width": 58.2,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4I",
+      "label": "Sch I row 3: Year",
+      "answer": "",
+      "cell_type": "value",
+      "coords": {
+        "x": 500.8,
+        "y": 305.8,
+        "width": 37.0,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4D",
+      "label": "Sch D row 1: Type",
+      "answer": "Eggplant",
+      "cell_type": "value",
+      "coords": {
+        "x": 19.4,
+        "y": 306.2,
+        "width": 125.0,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4D",
+      "label": "Sch D row 1: # Acres",
+      "answer": "0.15",
+      "cell_type": "value",
+      "coords": {
+        "x": 148.4,
+        "y": 306.2,
+        "width": 57.8,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4D",
+      "label": "Sch D row 1: $/Acre (USDA)",
+      "answer": "$6,000",
+      "cell_type": "value",
+      "coords": {
+        "x": 206.2,
+        "y": 306.2,
+        "width": 40.1,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4D",
+      "label": "Sch D row 1: $ Market Value",
+      "answer": "$900.00",
+      "cell_type": "value",
+      "coords": {
+        "x": 246.3,
+        "y": 306.2,
+        "width": 53.8,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "header",
+      "label": "4J. SCHEDULE",
+      "answer": "",
+      "cell_type": "label",
+      "col": 5,
+      "coords": {
+        "x": 311.017,
+        "y": 319.31199999999995,
+        "width": 64.512,
+        "height": 8.738454545454545
+      }
+    },
+    {
+      "schedule": "header",
+      "label": "J - BREEDING",
+      "answer": "",
+      "cell_type": "label",
+      "col": 6,
+      "coords": {
+        "x": 378.031,
+        "y": 319.31199999999995,
+        "width": 60.507000000000005,
+        "height": 8.738454545454545
+      }
+    },
+    {
+      "schedule": "header",
+      "label": "STOCK",
+      "answer": "",
+      "cell_type": "label",
+      "col": 7,
+      "coords": {
+        "x": 441.04,
+        "y": 319.31199999999995,
+        "width": 31.5,
+        "height": 8.738454545454545
+      }
+    },
+    {
+      "schedule": "4D",
+      "label": "Sch D row 2: Type",
+      "answer": "Peppers",
+      "cell_type": "value",
+      "coords": {
+        "x": 19.4,
+        "y": 320.6,
+        "width": 125.0,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4D",
+      "label": "Sch D row 2: # Acres",
+      "answer": "0.15",
+      "cell_type": "value",
+      "coords": {
+        "x": 148.4,
+        "y": 320.6,
+        "width": 57.8,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4D",
+      "label": "Sch D row 2: $/Acre (USDA)",
+      "answer": "$8,000",
+      "cell_type": "value",
+      "coords": {
+        "x": 206.2,
+        "y": 320.6,
+        "width": 40.1,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4D",
+      "label": "Sch D row 2: $ Market Value",
+      "answer": "$1,200.00",
+      "cell_type": "value",
+      "coords": {
+        "x": 246.3,
+        "y": 320.6,
+        "width": 53.8,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4D",
+      "label": "Sch D row 3: Type",
+      "answer": "Tomatoes",
+      "cell_type": "value",
+      "coords": {
+        "x": 19.4,
+        "y": 335.0,
+        "width": 125.0,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4D",
+      "label": "Sch D row 3: # Acres",
+      "answer": "0.25",
+      "cell_type": "value",
+      "coords": {
+        "x": 148.4,
+        "y": 335.0,
+        "width": 57.8,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4D",
+      "label": "Sch D row 3: $/Acre (USDA)",
+      "answer": "$12,000",
+      "cell_type": "value",
+      "coords": {
+        "x": 206.2,
+        "y": 335.0,
+        "width": 40.1,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4D",
+      "label": "Sch D row 3: $ Market Value",
+      "answer": "$3,000.00",
+      "cell_type": "value",
+      "coords": {
+        "x": 246.3,
+        "y": 335.0,
+        "width": 53.8,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4J",
+      "label": "Sch J row 1: Type",
+      "answer": "",
+      "cell_type": "value",
+      "coords": {
+        "x": 329.5,
+        "y": 348.1,
+        "width": 56.7,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4J",
+      "label": "Sch J row 1: Raised/Purch",
+      "answer": "",
+      "cell_type": "value",
+      "coords": {
+        "x": 386.2,
+        "y": 348.1,
+        "width": 56.4,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4J",
+      "label": "Sch J row 1: # Units",
+      "answer": "",
+      "cell_type": "value",
+      "coords": {
+        "x": 442.6,
+        "y": 348.1,
+        "width": 58.2,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4J",
+      "label": "Sch J row 1: $/Unit",
+      "answer": "",
+      "cell_type": "value",
+      "coords": {
+        "x": 500.8,
+        "y": 348.1,
+        "width": 37.0,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4D",
+      "label": "Sch D row 4: Type",
+      "answer": "Asparagus",
+      "cell_type": "value",
+      "coords": {
+        "x": 19.4,
+        "y": 349.4,
+        "width": 125.0,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4D",
+      "label": "Sch D row 4: # Acres",
+      "answer": "0.18",
+      "cell_type": "value",
+      "coords": {
+        "x": 148.4,
+        "y": 349.4,
+        "width": 57.8,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4D",
+      "label": "Sch D row 4: $/Acre (USDA)",
+      "answer": "$5,000",
+      "cell_type": "value",
+      "coords": {
+        "x": 206.2,
+        "y": 349.4,
+        "width": 40.1,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4D",
+      "label": "Sch D row 4: $ Market Value",
+      "answer": "$900.00",
+      "cell_type": "value",
+      "coords": {
+        "x": 246.3,
+        "y": 349.4,
+        "width": 53.8,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4J",
+      "label": "Sch J row 2: Type",
+      "answer": "",
+      "cell_type": "value",
+      "coords": {
+        "x": 329.5,
+        "y": 362.5,
+        "width": 56.7,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4J",
+      "label": "Sch J row 2: Raised/Purch",
+      "answer": "",
+      "cell_type": "value",
+      "coords": {
+        "x": 386.2,
+        "y": 362.5,
+        "width": 56.4,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4J",
+      "label": "Sch J row 2: # Units",
+      "answer": "",
+      "cell_type": "value",
+      "coords": {
+        "x": 442.6,
+        "y": 362.5,
+        "width": 58.2,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4J",
+      "label": "Sch J row 2: $/Unit",
+      "answer": "",
+      "cell_type": "value",
+      "coords": {
+        "x": 500.8,
+        "y": 362.5,
+        "width": 37.0,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4D",
+      "label": "Sch D row 5: Type",
+      "answer": "Artichoke",
+      "cell_type": "value",
+      "coords": {
+        "x": 19.4,
+        "y": 363.8,
+        "width": 125.0,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4D",
+      "label": "Sch D row 5: # Acres",
+      "answer": "0.18",
+      "cell_type": "value",
+      "coords": {
+        "x": 148.4,
+        "y": 363.8,
+        "width": 57.8,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4D",
+      "label": "Sch D row 5: $/Acre (USDA)",
+      "answer": "$7,500",
+      "cell_type": "value",
+      "coords": {
+        "x": 206.2,
+        "y": 363.8,
+        "width": 40.1,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4D",
+      "label": "Sch D row 5: $ Market Value",
+      "answer": "$1,350.00",
+      "cell_type": "value",
+      "coords": {
+        "x": 246.3,
+        "y": 363.8,
+        "width": 53.8,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4J",
+      "label": "Sch J row 3: Type",
+      "answer": "",
+      "cell_type": "value",
+      "coords": {
+        "x": 329.5,
+        "y": 376.9,
+        "width": 56.7,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4J",
+      "label": "Sch J row 3: Raised/Purch",
+      "answer": "",
+      "cell_type": "value",
+      "coords": {
+        "x": 386.2,
+        "y": 376.9,
+        "width": 56.4,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4J",
+      "label": "Sch J row 3: # Units",
+      "answer": "",
+      "cell_type": "value",
+      "coords": {
+        "x": 442.6,
+        "y": 376.9,
+        "width": 58.2,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4J",
+      "label": "Sch J row 3: $/Unit",
+      "answer": "",
+      "cell_type": "value",
+      "coords": {
+        "x": 500.8,
+        "y": 376.9,
+        "width": 37.0,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "header",
+      "label": "SCHEDULE Type",
+      "answer": "",
+      "cell_type": "label",
+      "col": 0,
+      "coords": {
+        "x": 35.428000000000004,
+        "y": 377.365,
+        "width": 49.49999999999999,
+        "height": 22.343999999999994
+      }
+    },
+    {
+      "schedule": "header",
+      "label": "E - MARKET # Head",
+      "answer": "",
+      "cell_type": "label",
+      "col": 1,
+      "coords": {
+        "x": 87.42999999999999,
+        "y": 377.365,
+        "width": 52.497,
+        "height": 22.343999999999994
+      }
+    },
+    {
+      "schedule": "header",
+      "label": "LIVESTOCK Weight",
+      "answer": "",
+      "cell_type": "label",
+      "col": 2,
+      "coords": {
+        "x": 142.429,
+        "y": 377.365,
+        "width": 51.50699999999995,
+        "height": 22.343999999999994
+      }
+    },
+    {
+      "schedule": "header",
+      "label": "& POULTRY $/Unit",
+      "answer": "",
+      "cell_type": "label",
+      "col": 3,
+      "coords": {
+        "x": 196.43799999999996,
+        "y": 377.365,
+        "width": 52.00199999999998,
+        "height": 22.343999999999994
+      }
+    },
+    {
+      "schedule": "header",
+      "label": "4K. SCHEDULE K - NOTES RECEIVABLE",
+      "answer": "",
+      "cell_type": "label",
+      "col": 5,
+      "coords": {
+        "x": 311.017,
+        "y": 391.091,
+        "width": 174.51899999999995,
+        "height": 8.738454545454545
+      }
+    },
+    {
+      "schedule": "header",
+      "label": "$ Market Value",
+      "answer": "",
+      "cell_type": "label",
+      "col": 9,
+      "coords": {
+        "x": 537.768,
+        "y": 391.517,
+        "width": 53.799999999999955,
+        "height": 7.518000000000029
+      }
+    },
+    {
+      "schedule": "header",
+      "label": "$ Market Value",
+      "answer": "",
+      "cell_type": "label",
+      "col": 4,
+      "coords": {
+        "x": 246.338,
+        "y": 392.191,
+        "width": 53.79999999999987,
+        "height": 7.518000000000029
+      }
+    },
+    {
+      "schedule": "4E",
+      "label": "Sch E row 1: Type",
+      "answer": "",
+      "cell_type": "value",
+      "coords": {
+        "x": 35.4,
+        "y": 402.0,
+        "width": 52.0,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4E",
+      "label": "Sch E row 1: # Head",
+      "answer": "",
+      "cell_type": "value",
+      "coords": {
+        "x": 87.4,
+        "y": 402.0,
+        "width": 55.0,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4E",
+      "label": "Sch E row 1: Weight",
+      "answer": "",
+      "cell_type": "value",
+      "coords": {
+        "x": 142.4,
+        "y": 402.0,
+        "width": 54.0,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4E",
+      "label": "Sch E row 1: $/Unit",
+      "answer": "",
+      "cell_type": "value",
+      "coords": {
+        "x": 196.4,
+        "y": 402.0,
+        "width": 50.0,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4K",
+      "label": "Sch K row 1: Description",
+      "answer": "",
+      "cell_type": "value",
+      "coords": {
+        "x": 311.0,
+        "y": 405.5,
+        "width": 220.0,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4E",
+      "label": "Sch E row 2: Type",
+      "answer": "",
+      "cell_type": "value",
+      "coords": {
+        "x": 35.4,
+        "y": 416.4,
+        "width": 52.0,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4E",
+      "label": "Sch E row 2: # Head",
+      "answer": "",
+      "cell_type": "value",
+      "coords": {
+        "x": 87.4,
+        "y": 416.4,
+        "width": 55.0,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4E",
+      "label": "Sch E row 2: Weight",
+      "answer": "",
+      "cell_type": "value",
+      "coords": {
+        "x": 142.4,
+        "y": 416.4,
+        "width": 54.0,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4E",
+      "label": "Sch E row 2: $/Unit",
+      "answer": "",
+      "cell_type": "value",
+      "coords": {
+        "x": 196.4,
+        "y": 416.4,
+        "width": 50.0,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4K",
+      "label": "Sch K row 2: Description",
+      "answer": "",
+      "cell_type": "value",
+      "coords": {
+        "x": 311.0,
+        "y": 419.9,
+        "width": 220.0,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4E",
+      "label": "Sch E row 3: Type",
+      "answer": "",
+      "cell_type": "value",
+      "coords": {
+        "x": 35.4,
+        "y": 430.8,
+        "width": 52.0,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4E",
+      "label": "Sch E row 3: # Head",
+      "answer": "",
+      "cell_type": "value",
+      "coords": {
+        "x": 87.4,
+        "y": 430.8,
+        "width": 55.0,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4E",
+      "label": "Sch E row 3: Weight",
+      "answer": "",
+      "cell_type": "value",
+      "coords": {
+        "x": 142.4,
+        "y": 430.8,
+        "width": 54.0,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4E",
+      "label": "Sch E row 3: $/Unit",
+      "answer": "",
+      "cell_type": "value",
+      "coords": {
+        "x": 196.4,
+        "y": 430.8,
+        "width": 50.0,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4K",
+      "label": "Sch K row 3: Description",
+      "answer": "",
+      "cell_type": "value",
+      "coords": {
+        "x": 311.0,
+        "y": 434.3,
+        "width": 220.0,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "header",
+      "label": "4L. SCHEDULE L - BUILDING & IMPROVEMENTS",
+      "answer": "",
+      "cell_type": "label",
+      "col": 5,
+      "coords": {
+        "x": 311.017,
+        "y": 448.46999999999997,
+        "width": 209.01600000000013,
+        "height": 8.738454545454545
+      }
+    },
+    {
+      "schedule": "header",
+      "label": "$ Market Value",
+      "answer": "",
+      "cell_type": "label",
+      "col": 9,
+      "coords": {
+        "x": 537.768,
+        "y": 448.896,
+        "width": 53.799999999999955,
+        "height": 7.518000000000029
+      }
+    },
+    {
+      "schedule": "header",
+      "label": "4F. SCHEDULE F - LIVESTOCK PRODUCTS",
+      "answer": "",
+      "cell_type": "label",
+      "col": 0,
+      "coords": {
+        "x": 19.417,
+        "y": 449.365,
+        "width": 185.51699999999997,
+        "height": 8.738454545454545
+      }
+    },
+    {
+      "schedule": "4L",
+      "label": "Sch L row 1: Description",
+      "answer": "Greenhouse 10' x 12'",
+      "cell_type": "value",
+      "coords": {
+        "x": 311.0,
+        "y": 463.0,
+        "width": 220.0,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4L",
+      "label": "Sch L row 1: $ Market Value",
+      "answer": "$1,301.66",
+      "cell_type": "value",
+      "coords": {
+        "x": 537.8,
+        "y": 463.0,
+        "width": 53.8,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "header",
+      "label": "Type",
+      "answer": "",
+      "cell_type": "label",
+      "col": 0,
+      "coords": {
+        "x": 37.907,
+        "y": 464.191,
+        "width": 17.784,
+        "height": 7.518000000000029
+      }
+    },
+    {
+      "schedule": "header",
+      "label": "Measure",
+      "answer": "",
+      "cell_type": "label",
+      "col": 1,
+      "coords": {
+        "x": 88.837,
+        "y": 464.191,
+        "width": 31.12000000000002,
+        "height": 7.518000000000029
+      }
+    },
+    {
+      "schedule": "header",
+      "label": "# Units",
+      "answer": "",
+      "cell_type": "label",
+      "col": 2,
+      "coords": {
+        "x": 149.551,
+        "y": 464.191,
+        "width": 24.896000000000015,
+        "height": 7.518000000000029
+      }
+    },
+    {
+      "schedule": "header",
+      "label": "$/Unit",
+      "answer": "",
+      "cell_type": "label",
+      "col": 3,
+      "coords": {
+        "x": 207.351,
+        "y": 464.191,
+        "width": 20.896000000000015,
+        "height": 7.518000000000029
+      }
+    },
+    {
+      "schedule": "header",
+      "label": "$ Market Value",
+      "answer": "",
+      "cell_type": "label",
+      "col": 4,
+      "coords": {
+        "x": 246.338,
+        "y": 464.191,
+        "width": 53.79999999999987,
+        "height": 7.518000000000029
+      }
+    },
+    {
+      "schedule": "4L",
+      "label": "Sch L row 2: Description",
+      "answer": "Manufactured Home",
+      "cell_type": "value",
+      "coords": {
+        "x": 311.0,
+        "y": 477.4,
+        "width": 220.0,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4L",
+      "label": "Sch L row 2: $ Market Value",
+      "answer": "$68,000.00",
+      "cell_type": "value",
+      "coords": {
+        "x": 537.8,
+        "y": 477.4,
+        "width": 53.8,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4F",
+      "label": "Sch F row 1: Type",
+      "answer": "",
+      "cell_type": "value",
+      "coords": {
+        "x": 37.9,
+        "y": 478.6,
+        "width": 50.9,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4F",
+      "label": "Sch F row 1: Measure",
+      "answer": "",
+      "cell_type": "value",
+      "coords": {
+        "x": 88.8,
+        "y": 478.6,
+        "width": 60.8,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4F",
+      "label": "Sch F row 1: # Units",
+      "answer": "",
+      "cell_type": "value",
+      "coords": {
+        "x": 149.6,
+        "y": 478.6,
+        "width": 57.8,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4F",
+      "label": "Sch F row 1: $/Unit",
+      "answer": "",
+      "cell_type": "value",
+      "coords": {
+        "x": 207.4,
+        "y": 478.6,
+        "width": 38.9,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "header",
+      "label": "4M. SCHEDULE M - FARM REAL ESTATE- LAND",
+      "answer": "",
+      "cell_type": "label",
+      "col": 5,
+      "coords": {
+        "x": 311.017,
+        "y": 491.66999999999996,
+        "width": 206.49600000000015,
+        "height": 8.738454545454545
+      }
+    },
+    {
+      "schedule": "4F",
+      "label": "Sch F row 2: Type",
+      "answer": "",
+      "cell_type": "value",
+      "coords": {
+        "x": 37.9,
+        "y": 493.0,
+        "width": 50.9,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4F",
+      "label": "Sch F row 2: Measure",
+      "answer": "",
+      "cell_type": "value",
+      "coords": {
+        "x": 88.8,
+        "y": 493.0,
+        "width": 60.8,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4F",
+      "label": "Sch F row 2: # Units",
+      "answer": "",
+      "cell_type": "value",
+      "coords": {
+        "x": 149.6,
+        "y": 493.0,
+        "width": 57.8,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4F",
+      "label": "Sch F row 2: $/Unit",
+      "answer": "",
+      "cell_type": "value",
+      "coords": {
+        "x": 207.4,
+        "y": 493.0,
+        "width": 38.9,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "header",
+      "label": "Farm Name",
+      "answer": "",
+      "cell_type": "label",
+      "col": 5,
+      "coords": {
+        "x": 317.287,
+        "y": 506.496,
+        "width": 42.223999999999876,
+        "height": 7.518000000000029
+      }
+    },
+    {
+      "schedule": "header",
+      "label": "Total Acres",
+      "answer": "",
+      "cell_type": "label",
+      "col": 6,
+      "coords": {
+        "x": 375.771,
+        "y": 506.496,
+        "width": 40.455999999999904,
+        "height": 7.518000000000029
+      }
+    },
+    {
+      "schedule": "header",
+      "label": "%Owned",
+      "answer": "",
+      "cell_type": "label",
+      "col": 7,
+      "coords": {
+        "x": 436.173,
+        "y": 506.496,
+        "width": 34.67999999999995,
+        "height": 7.518000000000029
+      }
+    },
+    {
+      "schedule": "header",
+      "label": "$/Acre",
+      "answer": "",
+      "cell_type": "label",
+      "col": 8,
+      "coords": {
+        "x": 497.669,
+        "y": 506.496,
+        "width": 23.11999999999989,
+        "height": 7.518000000000029
+      }
+    },
+    {
+      "schedule": "header",
+      "label": "$ Market Value",
+      "answer": "",
+      "cell_type": "label",
+      "col": 9,
+      "coords": {
+        "x": 537.768,
+        "y": 506.496,
+        "width": 53.799999999999955,
+        "height": 7.518000000000029
+      }
+    },
+    {
+      "schedule": "4F",
+      "label": "Sch F row 3: Type",
+      "answer": "",
+      "cell_type": "value",
+      "coords": {
+        "x": 37.9,
+        "y": 507.4,
+        "width": 50.9,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4F",
+      "label": "Sch F row 3: Measure",
+      "answer": "",
+      "cell_type": "value",
+      "coords": {
+        "x": 88.8,
+        "y": 507.4,
+        "width": 60.8,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4F",
+      "label": "Sch F row 3: # Units",
+      "answer": "",
+      "cell_type": "value",
+      "coords": {
+        "x": 149.6,
+        "y": 507.4,
+        "width": 57.8,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4F",
+      "label": "Sch F row 3: $/Unit",
+      "answer": "",
+      "cell_type": "value",
+      "coords": {
+        "x": 207.4,
+        "y": 507.4,
+        "width": 38.9,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4M",
+      "label": "Sch M row 1: Farm Name",
+      "answer": "PV66",
+      "cell_type": "value",
+      "coords": {
+        "x": 317.3,
+        "y": 521.0,
+        "width": 58.5,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4M",
+      "label": "Sch M row 1: Total Acres",
+      "answer": "0.46",
+      "cell_type": "value",
+      "coords": {
+        "x": 375.8,
+        "y": 521.0,
+        "width": 60.4,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4M",
+      "label": "Sch M row 1: % Owned",
+      "answer": "100%",
+      "cell_type": "value",
+      "coords": {
+        "x": 436.2,
+        "y": 521.0,
+        "width": 61.5,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4M",
+      "label": "Sch M row 1: $/Acre",
+      "answer": "$49,451",
+      "cell_type": "value",
+      "coords": {
+        "x": 497.7,
+        "y": 521.0,
+        "width": 40.1,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4M",
+      "label": "Sch M row 1: $ Market Value",
+      "answer": "$22,500.00",
+      "cell_type": "value",
+      "coords": {
+        "x": 537.8,
+        "y": 521.0,
+        "width": 53.8,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "header",
+      "label": "4G. SCHEDULE G - PREPAID EXPENSES & SUPPLIES",
+      "answer": "",
+      "cell_type": "label",
+      "col": 0,
+      "coords": {
+        "x": 19.417,
+        "y": 521.578,
+        "width": 218.2205,
+        "height": 8.252984848484857
+      }
+    },
+    {
+      "schedule": "header",
+      "label": "$ Market Value",
+      "answer": "",
+      "cell_type": "label",
+      "col": 4,
+      "coords": {
+        "x": 246.338,
+        "y": 521.7909999999999,
+        "width": 53.79999999999987,
+        "height": 7.518000000000029
+      }
+    },
+    {
+      "schedule": "4M",
+      "label": "Sch M row 2: Farm Name",
+      "answer": "PV67",
+      "cell_type": "value",
+      "coords": {
+        "x": 317.3,
+        "y": 535.4,
+        "width": 58.5,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4M",
+      "label": "Sch M row 2: Total Acres",
+      "answer": "0.45",
+      "cell_type": "value",
+      "coords": {
+        "x": 375.8,
+        "y": 535.4,
+        "width": 60.4,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4M",
+      "label": "Sch M row 2: % Owned",
+      "answer": "100%",
+      "cell_type": "value",
+      "coords": {
+        "x": 436.2,
+        "y": 535.4,
+        "width": 61.5,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4M",
+      "label": "Sch M row 2: $/Acre",
+      "answer": "$49,451",
+      "cell_type": "value",
+      "coords": {
+        "x": 497.7,
+        "y": 535.4,
+        "width": 40.1,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4M",
+      "label": "Sch M row 2: $ Market Value",
+      "answer": "$22,500.00",
+      "cell_type": "value",
+      "coords": {
+        "x": 537.8,
+        "y": 535.4,
+        "width": 53.8,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4G",
+      "label": "Sch G row 1: Description",
+      "answer": "Seeds & Transplants",
+      "cell_type": "value",
+      "coords": {
+        "x": 19.4,
+        "y": 535.9,
+        "width": 220.0,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4G",
+      "label": "Sch G row 1: $ Market Value",
+      "answer": "$800.00",
+      "cell_type": "value",
+      "coords": {
+        "x": 246.3,
+        "y": 535.9,
+        "width": 53.8,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4M",
+      "label": "Sch M row 3: Farm Name",
+      "answer": "",
+      "cell_type": "value",
+      "coords": {
+        "x": 317.3,
+        "y": 549.8,
+        "width": 58.5,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4M",
+      "label": "Sch M row 3: Total Acres",
+      "answer": "",
+      "cell_type": "value",
+      "coords": {
+        "x": 375.8,
+        "y": 549.8,
+        "width": 60.4,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4M",
+      "label": "Sch M row 3: % Owned",
+      "answer": "",
+      "cell_type": "value",
+      "coords": {
+        "x": 436.2,
+        "y": 549.8,
+        "width": 61.5,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4M",
+      "label": "Sch M row 3: $/Acre",
+      "answer": "",
+      "cell_type": "value",
+      "coords": {
+        "x": 497.7,
+        "y": 549.8,
+        "width": 40.1,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4G",
+      "label": "Sch G row 2: Description",
+      "answer": "Fertilizer & Lime",
+      "cell_type": "value",
+      "coords": {
+        "x": 19.4,
+        "y": 550.3,
+        "width": 220.0,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4G",
+      "label": "Sch G row 2: $ Market Value",
+      "answer": "$350.00",
+      "cell_type": "value",
+      "coords": {
+        "x": 246.3,
+        "y": 550.3,
+        "width": 53.8,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4M",
+      "label": "Sch M row 4: Farm Name",
+      "answer": "",
+      "cell_type": "value",
+      "coords": {
+        "x": 317.3,
+        "y": 564.2,
+        "width": 58.5,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4M",
+      "label": "Sch M row 4: Total Acres",
+      "answer": "",
+      "cell_type": "value",
+      "coords": {
+        "x": 375.8,
+        "y": 564.2,
+        "width": 60.4,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4M",
+      "label": "Sch M row 4: % Owned",
+      "answer": "",
+      "cell_type": "value",
+      "coords": {
+        "x": 436.2,
+        "y": 564.2,
+        "width": 61.5,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4M",
+      "label": "Sch M row 4: $/Acre",
+      "answer": "",
+      "cell_type": "value",
+      "coords": {
+        "x": 497.7,
+        "y": 564.2,
+        "width": 40.1,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4G",
+      "label": "Sch G row 3: Description",
+      "answer": "Chemicals / Pesticides",
+      "cell_type": "value",
+      "coords": {
+        "x": 19.4,
+        "y": 564.7,
+        "width": 220.0,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4G",
+      "label": "Sch G row 3: $ Market Value",
+      "answer": "$200.00",
+      "cell_type": "value",
+      "coords": {
+        "x": 246.3,
+        "y": 564.7,
+        "width": 53.8,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4M",
+      "label": "Sch M row 5: Farm Name",
+      "answer": "",
+      "cell_type": "value",
+      "coords": {
+        "x": 317.3,
+        "y": 578.6,
+        "width": 58.5,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4M",
+      "label": "Sch M row 5: Total Acres",
+      "answer": "",
+      "cell_type": "value",
+      "coords": {
+        "x": 375.8,
+        "y": 578.6,
+        "width": 60.4,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4M",
+      "label": "Sch M row 5: % Owned",
+      "answer": "",
+      "cell_type": "value",
+      "coords": {
+        "x": 436.2,
+        "y": 578.6,
+        "width": 61.5,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4M",
+      "label": "Sch M row 5: $/Acre",
+      "answer": "",
+      "cell_type": "value",
+      "coords": {
+        "x": 497.7,
+        "y": 578.6,
+        "width": 40.1,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4G",
+      "label": "Sch G row 4: Description",
+      "answer": "Irrigation Supplies",
+      "cell_type": "value",
+      "coords": {
+        "x": 19.4,
+        "y": 579.1,
+        "width": 220.0,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4G",
+      "label": "Sch G row 4: $ Market Value",
+      "answer": "$150.00",
+      "cell_type": "value",
+      "coords": {
+        "x": 246.3,
+        "y": 579.1,
+        "width": 53.8,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "header",
+      "label": "PERSONAL ASSETS SCHEDULES ( Attach additional pages if necessary )",
+      "answer": "",
+      "cell_type": "label",
+      "col": 0,
+      "coords": {
+        "x": 150.467,
+        "y": 593.52,
+        "width": 311.06700000000046,
+        "height": 8.820777996070774
+      }
+    },
+    {
+      "schedule": "header",
+      "label": "4N. SCHEDULE N - CASH & EQUIVALENTS",
+      "answer": "",
+      "cell_type": "label",
+      "col": 0,
+      "coords": {
+        "x": 19.417,
+        "y": 608.162,
+        "width": 184.01399999999998,
+        "height": 8.738454545454488
+      }
+    },
+    {
+      "schedule": "header",
+      "label": "4P. SCHEDULE P - RETIREMENT ACCOUNTS",
+      "answer": "",
+      "cell_type": "label",
+      "col": 5,
+      "coords": {
+        "x": 311.017,
+        "y": 608.162,
+        "width": 194.01299999999998,
+        "height": 8.738454545454488
+      }
+    },
+    {
+      "schedule": "header",
+      "label": "$ Market Value",
+      "answer": "",
+      "cell_type": "label",
+      "col": 4,
+      "coords": {
+        "x": 246.735,
+        "y": 608.588,
+        "width": 53.7999999999999,
+        "height": 7.518000000000029
+      }
+    },
+    {
+      "schedule": "header",
+      "label": "Cash on Hand",
+      "answer": "",
+      "cell_type": "label",
+      "col": 0,
+      "coords": {
+        "x": 19.417,
+        "y": 622.988,
+        "width": 51.135999999999996,
+        "height": 7.517999999999915
+      }
+    },
+    {
+      "schedule": "header",
+      "label": "Account Owner",
+      "answer": "",
+      "cell_type": "label",
+      "col": 5,
+      "coords": {
+        "x": 339.854,
+        "y": 622.988,
+        "width": 54.687999999999874,
+        "height": 7.517999999999915
+      }
+    },
+    {
+      "schedule": "header",
+      "label": "Type of Account",
+      "answer": "",
+      "cell_type": "label",
+      "col": 7,
+      "coords": {
+        "x": 451.696,
+        "y": 622.988,
+        "width": 57.80799999999982,
+        "height": 7.517999999999915
+      }
+    },
+    {
+      "schedule": "header",
+      "label": "$ Market Value",
+      "answer": "",
+      "cell_type": "label",
+      "col": 9,
+      "coords": {
+        "x": 537.938,
+        "y": 622.988,
+        "width": 53.799999999999955,
+        "height": 7.517999999999915
+      }
+    },
+    {
+      "schedule": "header",
+      "label": "Checking",
+      "answer": "",
+      "cell_type": "label",
+      "col": 0,
+      "coords": {
+        "x": 19.417,
+        "y": 637.388,
+        "width": 33.344,
+        "height": 7.517999999999915
+      }
+    },
+    {
+      "schedule": "4P",
+      "label": "Sch P row 1: Account Owner",
+      "answer": "",
+      "cell_type": "value",
+      "coords": {
+        "x": 339.9,
+        "y": 637.4,
+        "width": 111.8,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4P",
+      "label": "Sch P row 1: Type of Account",
+      "answer": "",
+      "cell_type": "value",
+      "coords": {
+        "x": 451.7,
+        "y": 637.4,
+        "width": 86.2,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "header",
+      "label": "Savings",
+      "answer": "",
+      "cell_type": "label",
+      "col": 0,
+      "coords": {
+        "x": 19.417,
+        "y": 651.788,
+        "width": 28.456000000000003,
+        "height": 7.518000000000029
+      }
+    },
+    {
+      "schedule": "4N",
+      "label": "Sch N \u2014 Savings",
+      "answer": "$1,466.76",
+      "cell_type": "value",
+      "coords": {
+        "x": 246.7,
+        "y": 651.8,
+        "width": 53.8,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4P",
+      "label": "Sch P row 2: Account Owner",
+      "answer": "",
+      "cell_type": "value",
+      "coords": {
+        "x": 339.9,
+        "y": 651.8,
+        "width": 111.8,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4P",
+      "label": "Sch P row 2: Type of Account",
+      "answer": "",
+      "cell_type": "value",
+      "coords": {
+        "x": 451.7,
+        "y": 651.8,
+        "width": 86.2,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "header",
+      "label": "4O. SCHEDULE O - CAR, RECREATIONAL VEHICLES, ETC.",
+      "answer": "",
+      "cell_type": "label",
+      "col": 0,
+      "coords": {
+        "x": 19.417,
+        "y": 665.762,
+        "width": 253.02599999999993,
+        "height": 8.738454545454601
+      }
+    },
+    {
+      "schedule": "4P",
+      "label": "Sch P row 3: Account Owner",
+      "answer": "",
+      "cell_type": "value",
+      "coords": {
+        "x": 339.9,
+        "y": 666.2,
+        "width": 111.8,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4P",
+      "label": "Sch P row 3: Type of Account",
+      "answer": "",
+      "cell_type": "value",
+      "coords": {
+        "x": 451.7,
+        "y": 666.2,
+        "width": 86.2,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "header",
+      "label": "4Q. SCHEDULE Q - NON-FARM REAL ESTATE",
+      "answer": "",
+      "cell_type": "label",
+      "col": 5,
+      "coords": {
+        "x": 311.017,
+        "y": 680.162,
+        "width": 198.00900000000007,
+        "height": 8.738454545454488
+      }
+    },
+    {
+      "schedule": "header",
+      "label": "Type",
+      "answer": "",
+      "cell_type": "label",
+      "col": 0,
+      "coords": {
+        "x": 37.907,
+        "y": 680.588,
+        "width": 17.784,
+        "height": 7.518000000000029
+      }
+    },
+    {
+      "schedule": "header",
+      "label": "Make",
+      "answer": "",
+      "cell_type": "label",
+      "col": 1,
+      "coords": {
+        "x": 94.817,
+        "y": 680.588,
+        "width": 19.560000000000016,
+        "height": 7.518000000000029
+      }
+    },
+    {
+      "schedule": "header",
+      "label": "Model",
+      "answer": "",
+      "cell_type": "label",
+      "col": 2,
+      "coords": {
+        "x": 151.502,
+        "y": 680.588,
+        "width": 21.78400000000002,
+        "height": 7.518000000000029
+      }
+    },
+    {
+      "schedule": "header",
+      "label": "Year",
+      "answer": "",
+      "cell_type": "label",
+      "col": 3,
+      "coords": {
+        "x": 209.748,
+        "y": 680.588,
+        "width": 16.896000000000015,
+        "height": 7.518000000000029
+      }
+    },
+    {
+      "schedule": "header",
+      "label": "$ Market Value",
+      "answer": "",
+      "cell_type": "label",
+      "col": 4,
+      "coords": {
+        "x": 246.735,
+        "y": 680.588,
+        "width": 53.7999999999999,
+        "height": 7.518000000000029
+      }
+    },
+    {
+      "schedule": "header",
+      "label": "Type",
+      "answer": "",
+      "cell_type": "label",
+      "col": 5,
+      "coords": {
+        "x": 358.307,
+        "y": 694.988,
+        "width": 17.783999999999935,
+        "height": 7.517999999999915
+      }
+    },
+    {
+      "schedule": "header",
+      "label": "# Acres",
+      "answer": "",
+      "cell_type": "label",
+      "col": 7,
+      "coords": {
+        "x": 440.039,
+        "y": 694.988,
+        "width": 27.119999999999948,
+        "height": 7.517999999999915
+      }
+    },
+    {
+      "schedule": "header",
+      "label": "$/Acre",
+      "answer": "",
+      "cell_type": "label",
+      "col": 8,
+      "coords": {
+        "x": 497.839,
+        "y": 694.988,
+        "width": 23.119999999999948,
+        "height": 7.517999999999915
+      }
+    },
+    {
+      "schedule": "header",
+      "label": "$ Market Value",
+      "answer": "",
+      "cell_type": "label",
+      "col": 9,
+      "coords": {
+        "x": 537.938,
+        "y": 694.988,
+        "width": 53.799999999999955,
+        "height": 7.517999999999915
+      }
+    },
+    {
+      "schedule": "4O",
+      "label": "Sch O row 1: Type",
+      "answer": "Truck",
+      "cell_type": "value",
+      "coords": {
+        "x": 37.9,
+        "y": 695.0,
+        "width": 56.9,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4O",
+      "label": "Sch O row 1: Make",
+      "answer": "Ford",
+      "cell_type": "value",
+      "coords": {
+        "x": 94.8,
+        "y": 695.0,
+        "width": 56.7,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4O",
+      "label": "Sch O row 1: Model",
+      "answer": "F150",
+      "cell_type": "value",
+      "coords": {
+        "x": 151.5,
+        "y": 695.0,
+        "width": 58.2,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4O",
+      "label": "Sch O row 1: Year",
+      "answer": "2011",
+      "cell_type": "value",
+      "coords": {
+        "x": 209.7,
+        "y": 695.0,
+        "width": 37.0,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4O",
+      "label": "Sch O row 1: $ Market Value",
+      "answer": "$3,500.00",
+      "cell_type": "value",
+      "coords": {
+        "x": 246.7,
+        "y": 695.0,
+        "width": 53.8,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4O",
+      "label": "Sch O row 2: Type",
+      "answer": "",
+      "cell_type": "value",
+      "coords": {
+        "x": 37.9,
+        "y": 709.4,
+        "width": 56.9,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4O",
+      "label": "Sch O row 2: Make",
+      "answer": "",
+      "cell_type": "value",
+      "coords": {
+        "x": 94.8,
+        "y": 709.4,
+        "width": 56.7,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4O",
+      "label": "Sch O row 2: Model",
+      "answer": "",
+      "cell_type": "value",
+      "coords": {
+        "x": 151.5,
+        "y": 709.4,
+        "width": 58.2,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4O",
+      "label": "Sch O row 2: Year",
+      "answer": "",
+      "cell_type": "value",
+      "coords": {
+        "x": 209.7,
+        "y": 709.4,
+        "width": 37.0,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4Q",
+      "label": "Sch Q row 1: Type",
+      "answer": "",
+      "cell_type": "value",
+      "coords": {
+        "x": 358.3,
+        "y": 709.4,
+        "width": 81.7,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4Q",
+      "label": "Sch Q row 1: # Acres",
+      "answer": "",
+      "cell_type": "value",
+      "coords": {
+        "x": 440.0,
+        "y": 709.4,
+        "width": 57.8,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4Q",
+      "label": "Sch Q row 1: $/Acre",
+      "answer": "",
+      "cell_type": "value",
+      "coords": {
+        "x": 497.8,
+        "y": 709.4,
+        "width": 40.1,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4O",
+      "label": "Sch O row 3: Type",
+      "answer": "",
+      "cell_type": "value",
+      "coords": {
+        "x": 37.9,
+        "y": 723.8,
+        "width": 56.9,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4O",
+      "label": "Sch O row 3: Make",
+      "answer": "",
+      "cell_type": "value",
+      "coords": {
+        "x": 94.8,
+        "y": 723.8,
+        "width": 56.7,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4O",
+      "label": "Sch O row 3: Model",
+      "answer": "",
+      "cell_type": "value",
+      "coords": {
+        "x": 151.5,
+        "y": 723.8,
+        "width": 58.2,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4O",
+      "label": "Sch O row 3: Year",
+      "answer": "",
+      "cell_type": "value",
+      "coords": {
+        "x": 209.7,
+        "y": 723.8,
+        "width": 37.0,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4Q",
+      "label": "Sch Q row 2: Type",
+      "answer": "",
+      "cell_type": "value",
+      "coords": {
+        "x": 358.3,
+        "y": 723.8,
+        "width": 81.7,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4Q",
+      "label": "Sch Q row 2: # Acres",
+      "answer": "",
+      "cell_type": "value",
+      "coords": {
+        "x": 440.0,
+        "y": 723.8,
+        "width": 57.8,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4Q",
+      "label": "Sch Q row 2: $/Acre",
+      "answer": "",
+      "cell_type": "value",
+      "coords": {
+        "x": 497.8,
+        "y": 723.8,
+        "width": 40.1,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4O",
+      "label": "Sch O row 4: Type",
+      "answer": "",
+      "cell_type": "value",
+      "coords": {
+        "x": 37.9,
+        "y": 738.2,
+        "width": 56.9,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4O",
+      "label": "Sch O row 4: Make",
+      "answer": "",
+      "cell_type": "value",
+      "coords": {
+        "x": 94.8,
+        "y": 738.2,
+        "width": 56.7,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4O",
+      "label": "Sch O row 4: Model",
+      "answer": "",
+      "cell_type": "value",
+      "coords": {
+        "x": 151.5,
+        "y": 738.2,
+        "width": 58.2,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4O",
+      "label": "Sch O row 4: Year",
+      "answer": "",
+      "cell_type": "value",
+      "coords": {
+        "x": 209.7,
+        "y": 738.2,
+        "width": 37.0,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4Q",
+      "label": "Sch Q row 3: Type",
+      "answer": "",
+      "cell_type": "value",
+      "coords": {
+        "x": 358.3,
+        "y": 738.2,
+        "width": 81.7,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4Q",
+      "label": "Sch Q row 3: # Acres",
+      "answer": "",
+      "cell_type": "value",
+      "coords": {
+        "x": 440.0,
+        "y": 738.2,
+        "width": 57.8,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4Q",
+      "label": "Sch Q row 3: $/Acre",
+      "answer": "",
+      "cell_type": "value",
+      "coords": {
+        "x": 497.8,
+        "y": 738.2,
+        "width": 40.1,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4Q",
+      "label": "Sch Q row 4: Type",
+      "answer": "",
+      "cell_type": "value",
+      "coords": {
+        "x": 358.3,
+        "y": 752.6,
+        "width": 81.7,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4Q",
+      "label": "Sch Q row 4: # Acres",
+      "answer": "",
+      "cell_type": "value",
+      "coords": {
+        "x": 440.0,
+        "y": 752.6,
+        "width": 57.8,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "4Q",
+      "label": "Sch Q row 4: $/Acre",
+      "answer": "",
+      "cell_type": "value",
+      "coords": {
+        "x": 497.8,
+        "y": 752.6,
+        "width": 40.1,
+        "height": 7.5,
+        "inferred": true
+      }
+    }
+  ]
+}
