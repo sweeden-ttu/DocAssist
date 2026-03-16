@@ -1,3 +1,0 @@
-# DocAssist
-
-DocAssist Xcode project.
