@@ -10,9 +10,9 @@ build/
 # Added by cargo
 
 /target
-__pycache__/pdfplumber_field_analysis.cpython-311.pyc
 Cargo.lock
 annotations/usda/FSA2001_250321V05LC (14)_ocr_analysis.json
 annotations/usda/page_*.png
 annotations/usda/annotated/page_*_multi_annotated.png
 annotations/usda/overlays/page_*_multi_overlay.png
+__pycache__

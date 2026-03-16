@@ -1,0 +1,2523 @@
+[
+  {
+    "page": 3,
+    "section": "Part A \u2014 Primary Applicant / Part B \u2014 Primary Applicant Info / Part C \u2014 Entity Info",
+    "field_id": "ExactFullLegalName1[0]",
+    "label": "Part A, 1. Exact Full Legal Name",
+    "field_type": "text",
+    "value": "Scott Weeden",
+    "status": "filled",
+    "coords": {
+      "x": 20.835,
+      "y": 638.249,
+      "w": 570.259,
+      "h": 13.719
+    },
+    "note": ""
+  },
+  {
+    "page": 3,
+    "section": "Part A \u2014 Primary Applicant / Part B \u2014 Primary Applicant Info / Part C \u2014 Entity Info",
+    "field_id": "StreetAddress2A[0]",
+    "label": "Part A, 2A. Address Line 1",
+    "field_type": "text",
+    "value": "600 W Hallmark Ave, Apt 442",
+    "status": "filled",
+    "coords": {
+      "x": 20.835,
+      "y": 609.265,
+      "w": 328.129,
+      "h": 12.274
+    },
+    "note": ""
+  },
+  {
+    "page": 3,
+    "section": "Part A \u2014 Primary Applicant / Part B \u2014 Primary Applicant Info / Part C \u2014 Entity Info",
+    "field_id": "StreetAddress2A[1]",
+    "label": "Part A, 2B. Address Line 2",
+    "field_type": "text",
+    "value": "",
+    "status": "skip",
+    "coords": {
+      "x": 20.835,
+      "y": 580.125,
+      "w": 328.129,
+      "h": 11.952
+    },
+    "note": ""
+  },
+  {
+    "page": 3,
+    "section": "Part A \u2014 Primary Applicant / Part B \u2014 Primary Applicant Info / Part C \u2014 Entity Info",
+    "field_id": "City2B[0]",
+    "label": "Part A, 2C. City",
+    "field_type": "text",
+    "value": "Killeen",
+    "status": "filled",
+    "coords": {
+      "x": 20.835,
+      "y": 551.166,
+      "w": 185.394,
+      "h": 11.325
+    },
+    "note": ""
+  },
+  {
+    "page": 3,
+    "section": "Part A \u2014 Primary Applicant / Part B \u2014 Primary Applicant Info / Part C \u2014 Entity Info",
+    "field_id": "State2C[0]",
+    "label": "Part A, 2D. State",
+    "field_type": "text",
+    "value": "TX",
+    "status": "filled",
+    "coords": {
+      "x": 211.899,
+      "y": 551.166,
+      "w": 58.073,
+      "h": 11.66
+    },
+    "note": ""
+  },
+  {
+    "page": 3,
+    "section": "Part A \u2014 Primary Applicant / Part B \u2014 Primary Applicant Info / Part C \u2014 Entity Info",
+    "field_id": "Zio2D[0]",
+    "label": "Part A, 2E. Zip",
+    "field_type": "text",
+    "value": "76541",
+    "status": "filled",
+    "coords": {
+      "x": 275.962,
+      "y": 551.166,
+      "w": 73.0,
+      "h": 12.039
+    },
+    "note": ""
+  },
+  {
+    "page": 3,
+    "section": "Part A \u2014 Primary Applicant / Part B \u2014 Primary Applicant Info / Part C \u2014 Entity Info",
+    "field_id": "PhoneNumber3[0]",
+    "label": "Part A, 3A. Primary Phone Number",
+    "field_type": "text",
+    "value": "971-444-2625",
+    "status": "filled",
+    "coords": {
+      "x": 354.938,
+      "y": 609.265,
+      "w": 236.227,
+      "h": 10.98
+    },
+    "note": ""
+  },
+  {
+    "page": 3,
+    "section": "Part A \u2014 Primary Applicant / Part B \u2014 Primary Applicant Info / Part C \u2014 Entity Info",
+    "field_id": "Home[0]",
+    "label": "Part A, 3A. Primary Phone \u2014 Home checkbox",
+    "field_type": "checkbox",
+    "value": false,
+    "status": "filled",
+    "coords": {
+      "x": 483.957,
+      "y": 622.58,
+      "w": 10.0,
+      "h": 10.0
+    },
+    "note": "Primary phone is a cell, not home"
+  },
+  {
+    "page": 3,
+    "section": "Part A \u2014 Primary Applicant / Part B \u2014 Primary Applicant Info / Part C \u2014 Entity Info",
+    "field_id": "Cell[0]",
+    "label": "Part A, 3A. Primary Phone \u2014 Cell checkbox",
+    "field_type": "checkbox",
+    "value": true,
+    "status": "filled",
+    "coords": {
+      "x": 528.786,
+      "y": 622.582,
+      "w": 10.0,
+      "h": 10.0
+    },
+    "note": ""
+  },
+  {
+    "page": 3,
+    "section": "Part A \u2014 Primary Applicant / Part B \u2014 Primary Applicant Info / Part C \u2014 Entity Info",
+    "field_id": "PhoneNumber3[1]",
+    "label": "Part A, 3B. Alternative Phone Number",
+    "field_type": "text",
+    "value": "",
+    "status": "skip",
+    "coords": {
+      "x": 354.938,
+      "y": 579.938,
+      "w": 236.227,
+      "h": 10.98
+    },
+    "note": "KDDRFI \u2014 not provided"
+  },
+  {
+    "page": 3,
+    "section": "Part A \u2014 Primary Applicant / Part B \u2014 Primary Applicant Info / Part C \u2014 Entity Info",
+    "field_id": "Home[1]",
+    "label": "Part A, 3B. Alt Phone \u2014 Home checkbox",
+    "field_type": "checkbox",
+    "value": false,
+    "status": "filled",
+    "coords": {
+      "x": 483.954,
+      "y": 593.439,
+      "w": 10.0,
+      "h": 10.0
+    },
+    "note": ""
+  },
+  {
+    "page": 3,
+    "section": "Part A \u2014 Primary Applicant / Part B \u2014 Primary Applicant Info / Part C \u2014 Entity Info",
+    "field_id": "Cell[1]",
+    "label": "Part A, 3B. Alt Phone \u2014 Cell checkbox",
+    "field_type": "checkbox",
+    "value": false,
+    "status": "filled",
+    "coords": {
+      "x": 528.789,
+      "y": 593.442,
+      "w": 10.0,
+      "h": 10.0
+    },
+    "note": ""
+  },
+  {
+    "page": 3,
+    "section": "Part A \u2014 Primary Applicant / Part B \u2014 Primary Applicant Info / Part C \u2014 Entity Info",
+    "field_id": "Email4[0]",
+    "label": "Part A, 4. Email Address",
+    "field_type": "text",
+    "value": "scott.weeden@gmail.com",
+    "status": "filled",
+    "coords": {
+      "x": 354.938,
+      "y": 551.169,
+      "w": 236.227,
+      "h": 12.578
+    },
+    "note": ""
+  },
+  {
+    "page": 3,
+    "section": "Part A \u2014 Primary Applicant / Part B \u2014 Primary Applicant Info / Part C \u2014 Entity Info",
+    "field_id": "Individual5[0]",
+    "label": "Part A, 5. Applicant Type \u2014 Individual",
+    "field_type": "checkbox",
+    "value": true,
+    "status": "filled",
+    "coords": {
+      "x": 20.812,
+      "y": 506.535,
+      "w": 10.0,
+      "h": 10.0
+    },
+    "note": "applicant_type == Individual"
+  },
+  {
+    "page": 3,
+    "section": "Part A \u2014 Primary Applicant / Part B \u2014 Primary Applicant Info / Part C \u2014 Entity Info",
+    "field_id": "InformalEntity5[0]",
+    "label": "Part A, 5. Applicant Type \u2014 Informal Entity",
+    "field_type": "checkbox",
+    "value": false,
+    "status": "filled",
+    "coords": {
+      "x": 20.93,
+      "y": 489.975,
+      "w": 10.0,
+      "h": 10.0
+    },
+    "note": ""
+  },
+  {
+    "page": 3,
+    "section": "Part A \u2014 Primary Applicant / Part B \u2014 Primary Applicant Info / Part C \u2014 Entity Info",
+    "field_id": "LegalEntity5[0]",
+    "label": "Part A, 5. Applicant Type \u2014 Legal Entity",
+    "field_type": "checkbox",
+    "value": false,
+    "status": "filled",
+    "coords": {
+      "x": 21.333,
+      "y": 473.415,
+      "w": 10.0,
+      "h": 10.0
+    },
+    "note": ""
+  },
+  {
+    "page": 3,
+    "section": "Part A \u2014 Primary Applicant / Part B \u2014 Primary Applicant Info / Part C \u2014 Entity Info",
+    "field_id": "Page1PartAItem6Checkbox[0]",
+    "label": "Part A, 6. Existing Customer (no change)",
+    "field_type": "checkbox",
+    "value": false,
+    "status": "filled",
+    "coords": {
+      "x": 506.83,
+      "y": 456.412,
+      "w": 10.0,
+      "h": 10.0
+    },
+    "note": "existing_customer == No"
+  },
+  {
+    "page": 3,
+    "section": "Part A \u2014 Primary Applicant / Part B \u2014 Primary Applicant Info / Part C \u2014 Entity Info",
+    "field_id": "SSN1[0]",
+    "label": "Part B, 1. Social Security Number (9 Digits)",
+    "field_type": "text",
+    "value": "***-**-3197",
+    "status": "filled",
+    "coords": {
+      "x": 20.835,
+      "y": 410.769,
+      "w": 214.987,
+      "h": 15.732
+    },
+    "note": "Show masked value; actual SSN entered on paper or via secure channel"
+  },
+  {
+    "page": 3,
+    "section": "Part A \u2014 Primary Applicant / Part B \u2014 Primary Applicant Info / Part C \u2014 Entity Info",
+    "field_id": "Birthday2[0]",
+    "label": "Part B, 2. Birth Date (MM/DD/YYYY)",
+    "field_type": "date",
+    "value": "10/17/1981",
+    "status": "filled",
+    "coords": {
+      "x": 241.172,
+      "y": 410.769,
+      "w": 132.131,
+      "h": 16.087
+    },
+    "note": ""
+  },
+  {
+    "page": 3,
+    "section": "Part A \u2014 Primary Applicant / Part B \u2014 Primary Applicant Info / Part C \u2014 Entity Info",
+    "field_id": "County3[0]",
+    "label": "Part B, 3. County of Operation Headquarters",
+    "field_type": "text",
+    "value": "Campbell",
+    "status": "filled",
+    "coords": {
+      "x": 378.842,
+      "y": 410.769,
+      "w": 212.323,
+      "h": 16.393
+    },
+    "note": ""
+  },
+  {
+    "page": 3,
+    "section": "Part A \u2014 Primary Applicant / Part B \u2014 Primary Applicant Info / Part C \u2014 Entity Info",
+    "field_id": "MilitaryYes[0]",
+    "label": "Part B, 4. Military Veteran \u2014 Yes",
+    "field_type": "checkbox",
+    "value": false,
+    "status": "filled",
+    "coords": {
+      "x": 29.668,
+      "y": 504.715,
+      "w": 10.0,
+      "h": 10.0
+    },
+    "note": ""
+  },
+  {
+    "page": 3,
+    "section": "Part A \u2014 Primary Applicant / Part B \u2014 Primary Applicant Info / Part C \u2014 Entity Info",
+    "field_id": "MilitaryNo[0]",
+    "label": "Part B, 4. Military Veteran \u2014 No",
+    "field_type": "checkbox",
+    "value": true,
+    "status": "filled",
+    "coords": {
+      "x": 29.668,
+      "y": 483.994,
+      "w": 10.0,
+      "h": 10.0
+    },
+    "note": "military_veteran == No"
+  },
+  {
+    "page": 3,
+    "section": "Part A \u2014 Primary Applicant / Part B \u2014 Primary Applicant Info / Part C \u2014 Entity Info",
+    "field_id": "DateField1[0]",
+    "label": "Page 3 \u2014 Initials Date (bottom of page)",
+    "field_type": "date",
+    "value": "2026-03-05",
+    "status": "filled",
+    "coords": {
+      "x": 141.6,
+      "y": 20.416,
+      "w": 71.503,
+      "h": 15.139
+    },
+    "note": ""
+  },
+  {
+    "page": 3,
+    "section": "Part A \u2014 Primary Applicant / Part B \u2014 Primary Applicant Info / Part C \u2014 Entity Info",
+    "field_id": "Cooperative[0]",
+    "label": "Part C \u2014 SKIP (Individual applicant)",
+    "field_type": "checkbox",
+    "value": false,
+    "status": "filled",
+    "coords": {
+      "x": 29.671,
+      "y": 205.323
+    },
+    "note": ""
+  },
+  {
+    "page": 3,
+    "section": "Part A \u2014 Primary Applicant / Part B \u2014 Primary Applicant Info / Part C \u2014 Entity Info",
+    "field_id": "RevocableTrust[0]",
+    "label": "",
+    "field_type": "text",
+    "value": false,
+    "status": "filled",
+    "coords": {
+      "x": 156.391,
+      "y": 205.325
+    },
+    "note": ""
+  },
+  {
+    "page": 3,
+    "section": "Part A \u2014 Primary Applicant / Part B \u2014 Primary Applicant Info / Part C \u2014 Entity Info",
+    "field_id": "LLC[0]",
+    "label": "",
+    "field_type": "text",
+    "value": false,
+    "status": "filled",
+    "coords": {
+      "x": 29.668,
+      "y": 188.649
+    },
+    "note": ""
+  },
+  {
+    "page": 3,
+    "section": "Part A \u2014 Primary Applicant / Part B \u2014 Primary Applicant Info / Part C \u2014 Entity Info",
+    "field_id": "FormalPartnership[0]",
+    "label": "",
+    "field_type": "text",
+    "value": false,
+    "status": "filled",
+    "coords": {
+      "x": 156.388,
+      "y": 188.346
+    },
+    "note": ""
+  },
+  {
+    "page": 3,
+    "section": "Part A \u2014 Primary Applicant / Part B \u2014 Primary Applicant Info / Part C \u2014 Entity Info",
+    "field_id": "SCorp[0]",
+    "label": "",
+    "field_type": "text",
+    "value": false,
+    "status": "filled",
+    "coords": {
+      "x": 29.668,
+      "y": 172.018
+    },
+    "note": ""
+  },
+  {
+    "page": 3,
+    "section": "Part A \u2014 Primary Applicant / Part B \u2014 Primary Applicant Info / Part C \u2014 Entity Info",
+    "field_id": "CCorp[0]",
+    "label": "",
+    "field_type": "text",
+    "value": false,
+    "status": "filled",
+    "coords": {
+      "x": 156.388,
+      "y": 172.016
+    },
+    "note": ""
+  },
+  {
+    "page": 3,
+    "section": "Part A \u2014 Primary Applicant / Part B \u2014 Primary Applicant Info / Part C \u2014 Entity Info",
+    "field_id": "LifeEstate[0]",
+    "label": "",
+    "field_type": "text",
+    "value": false,
+    "status": "filled",
+    "coords": {
+      "x": 29.668,
+      "y": 154.537
+    },
+    "note": ""
+  },
+  {
+    "page": 3,
+    "section": "Part A \u2014 Primary Applicant / Part B \u2014 Primary Applicant Info / Part C \u2014 Entity Info",
+    "field_id": "IrrevocableTrust[0]",
+    "label": "",
+    "field_type": "text",
+    "value": false,
+    "status": "filled",
+    "coords": {
+      "x": 156.388,
+      "y": 154.537
+    },
+    "note": ""
+  },
+  {
+    "page": 3,
+    "section": "Part A \u2014 Primary Applicant / Part B \u2014 Primary Applicant Info / Part C \u2014 Entity Info",
+    "field_id": "Other[0]",
+    "label": "",
+    "field_type": "text",
+    "value": false,
+    "status": "filled",
+    "coords": {
+      "x": 29.668,
+      "y": 138.113
+    },
+    "note": ""
+  },
+  {
+    "page": 3,
+    "section": "Part A \u2014 Primary Applicant / Part B \u2014 Primary Applicant Info / Part C \u2014 Entity Info",
+    "field_id": "Yes6[0]",
+    "label": "Part C, 6. Embedded Entity \u2014 Yes",
+    "field_type": "text",
+    "value": false,
+    "status": "filled",
+    "coords": {
+      "x": 29.668,
+      "y": 106.263
+    },
+    "note": ""
+  },
+  {
+    "page": 3,
+    "section": "Part A \u2014 Primary Applicant / Part B \u2014 Primary Applicant Info / Part C \u2014 Entity Info",
+    "field_id": "No6[0]",
+    "label": "Part C, 6. Embedded Entity \u2014 No",
+    "field_type": "text",
+    "value": true,
+    "status": "filled",
+    "coords": {
+      "x": 373.57,
+      "y": 106.266
+    },
+    "note": ""
+  },
+  {
+    "page": 4,
+    "section": "Part B continued (marital, race/sex) + Part D (entity members \u2014 N/A for individual)",
+    "field_id": "MaritalMarried[0]",
+    "label": "Part B, 5. Marital Status \u2014 Married",
+    "field_type": "checkbox",
+    "value": null,
+    "status": "pending",
+    "coords": {},
+    "note": "marital_status is KDDRFI \u2014 must confirm with applicant"
+  },
+  {
+    "page": 4,
+    "section": "Part B continued (marital, race/sex) + Part D (entity members \u2014 N/A for individual)",
+    "field_id": "MaritalSeparated[0]",
+    "label": "",
+    "field_type": "text",
+    "value": null,
+    "status": "pending",
+    "coords": {
+      "x": 235.863,
+      "y": 505.458
+    },
+    "note": ""
+  },
+  {
+    "page": 4,
+    "section": "Part B continued (marital, race/sex) + Part D (entity members \u2014 N/A for individual)",
+    "field_id": "MaritalDivorced[0]",
+    "label": "",
+    "field_type": "text",
+    "value": null,
+    "status": "pending",
+    "coords": {
+      "x": 170.099,
+      "y": 485.803
+    },
+    "note": ""
+  },
+  {
+    "page": 4,
+    "section": "Part B continued (marital, race/sex) + Part D (entity members \u2014 N/A for individual)",
+    "field_id": "MaritalUnmarried[0]",
+    "label": "",
+    "field_type": "text",
+    "value": null,
+    "status": "pending",
+    "coords": {
+      "x": 235.863,
+      "y": 485.803
+    },
+    "note": ""
+  },
+  {
+    "page": 4,
+    "section": "Part B continued (marital, race/sex) + Part D (entity members \u2014 N/A for individual)",
+    "field_id": "MaritalIndividual[0]",
+    "label": "",
+    "field_type": "text",
+    "value": null,
+    "status": "pending",
+    "coords": {
+      "x": 170.099,
+      "y": 466.437
+    },
+    "note": ""
+  },
+  {
+    "page": 4,
+    "section": "Part B continued (marital, race/sex) + Part D (entity members \u2014 N/A for individual)",
+    "field_id": "Citizen[0]",
+    "label": "Part B, 6. U.S. Citizen",
+    "field_type": "checkbox",
+    "value": true,
+    "status": "filled",
+    "coords": {
+      "x": 318.671,
+      "y": 505.458
+    },
+    "note": "citizen_status == U.S. Citizen"
+  },
+  {
+    "page": 4,
+    "section": "Part B continued (marital, race/sex) + Part D (entity members \u2014 N/A for individual)",
+    "field_id": "NonCitizenNational[0]",
+    "label": "",
+    "field_type": "text",
+    "value": false,
+    "status": "filled",
+    "coords": {
+      "x": 427.842,
+      "y": 505.458
+    },
+    "note": ""
+  },
+  {
+    "page": 4,
+    "section": "Part B continued (marital, race/sex) + Part D (entity members \u2014 N/A for individual)",
+    "field_id": "ResidentAlien[0]",
+    "label": "",
+    "field_type": "text",
+    "value": false,
+    "status": "filled",
+    "coords": {
+      "x": 318.155,
+      "y": 485.838
+    },
+    "note": ""
+  },
+  {
+    "page": 4,
+    "section": "Part B continued (marital, race/sex) + Part D (entity members \u2014 N/A for individual)",
+    "field_id": "Refugee[0]",
+    "label": "",
+    "field_type": "text",
+    "value": false,
+    "status": "filled",
+    "coords": {
+      "x": 427.335,
+      "y": 485.806
+    },
+    "note": ""
+  },
+  {
+    "page": 4,
+    "section": "Part B continued (marital, race/sex) + Part D (entity members \u2014 N/A for individual)",
+    "field_id": "AmericanIndianAlaska[0]",
+    "label": "Part B, 7. Race \u2014 American Indian/Alaskan Native",
+    "field_type": "checkbox",
+    "value": null,
+    "status": "pending",
+    "coords": {
+      "x": 29.937,
+      "y": 434.003
+    },
+    "note": "race_ethnicity is KDDRFI"
+  },
+  {
+    "page": 4,
+    "section": "Part B continued (marital, race/sex) + Part D (entity members \u2014 N/A for individual)",
+    "field_id": "Asian[0]",
+    "label": "",
+    "field_type": "text",
+    "value": null,
+    "status": "pending",
+    "coords": {
+      "x": 29.693,
+      "y": 417.247
+    },
+    "note": ""
+  },
+  {
+    "page": 4,
+    "section": "Part B continued (marital, race/sex) + Part D (entity members \u2014 N/A for individual)",
+    "field_id": "BlackAfricanAmerican[0]",
+    "label": "",
+    "field_type": "text",
+    "value": null,
+    "status": "pending",
+    "coords": {
+      "x": 29.934,
+      "y": 400.664
+    },
+    "note": ""
+  },
+  {
+    "page": 4,
+    "section": "Part B continued (marital, race/sex) + Part D (entity members \u2014 N/A for individual)",
+    "field_id": "White[0]",
+    "label": "",
+    "field_type": "text",
+    "value": null,
+    "status": "pending",
+    "coords": {
+      "x": 322.875,
+      "y": 434.272
+    },
+    "note": ""
+  },
+  {
+    "page": 4,
+    "section": "Part B continued (marital, race/sex) + Part D (entity members \u2014 N/A for individual)",
+    "field_id": "PreferNotShare[0]",
+    "label": "",
+    "field_type": "text",
+    "value": null,
+    "status": "pending",
+    "coords": {
+      "x": 183.912,
+      "y": 416.932
+    },
+    "note": ""
+  },
+  {
+    "page": 4,
+    "section": "Part B continued (marital, race/sex) + Part D (entity members \u2014 N/A for individual)",
+    "field_id": "HispanicLatino[0]",
+    "label": "",
+    "field_type": "text",
+    "value": null,
+    "status": "pending",
+    "coords": {
+      "x": 183.912,
+      "y": 434.272
+    },
+    "note": ""
+  },
+  {
+    "page": 4,
+    "section": "Part B continued (marital, race/sex) + Part D (entity members \u2014 N/A for individual)",
+    "field_id": "HawaiianPacificIsland[0]",
+    "label": "",
+    "field_type": "text",
+    "value": null,
+    "status": "pending",
+    "coords": {
+      "x": 183.626,
+      "y": 398.688
+    },
+    "note": ""
+  },
+  {
+    "page": 4,
+    "section": "Part B continued (marital, race/sex) + Part D (entity members \u2014 N/A for individual)",
+    "field_id": "Male[0]",
+    "label": "Part B, 8. Sex \u2014 Male",
+    "field_type": "checkbox",
+    "value": null,
+    "status": "pending",
+    "coords": {
+      "x": 427.845,
+      "y": 437.09
+    },
+    "note": "sex is KDDRFI"
+  },
+  {
+    "page": 4,
+    "section": "Part B continued (marital, race/sex) + Part D (entity members \u2014 N/A for individual)",
+    "field_id": "Female[0]",
+    "label": "",
+    "field_type": "text",
+    "value": null,
+    "status": "pending",
+    "coords": {
+      "x": 501.512,
+      "y": 437.09
+    },
+    "note": ""
+  },
+  {
+    "page": 4,
+    "section": "Part B continued (marital, race/sex) + Part D (entity members \u2014 N/A for individual)",
+    "field_id": "ExactFullLegalName1D[0]",
+    "label": "Part D, Member 1 \u2014 Full Legal Name",
+    "field_type": "text",
+    "value": "N/A \u2014 Individual Applicant",
+    "status": "filled",
+    "coords": {
+      "x": 20.835,
+      "y": 628.717
+    },
+    "note": "Individual applicant; Part D not applicable"
+  },
+  {
+    "page": 5,
+    "section": "Part E \u2014 Loan Request + Part F \u2014 Training + Part G \u2014 Eligibility",
+    "field_id": "PartEItem1NewLoanRequest[0]",
+    "label": "Part E, 1. New Loan Request",
+    "field_type": "checkbox",
+    "value": true,
+    "status": "filled",
+    "coords": {
+      "x": 20.835,
+      "y": 724.313
+    },
+    "note": "request_type == New Loan Request"
+  },
+  {
+    "page": 5,
+    "section": "Part E \u2014 Loan Request + Part F \u2014 Training + Part G \u2014 Eligibility",
+    "field_id": "PartEItem1LoanServicingRequest[0]",
+    "label": "",
+    "field_type": "text",
+    "value": false,
+    "status": "filled",
+    "coords": {},
+    "note": ""
+  },
+  {
+    "page": 5,
+    "section": "Part E \u2014 Loan Request + Part F \u2014 Training + Part G \u2014 Eligibility",
+    "field_id": "PartEItem1TransferandAssumptions[0]",
+    "label": "",
+    "field_type": "text",
+    "value": false,
+    "status": "filled",
+    "coords": {},
+    "note": ""
+  },
+  {
+    "page": 5,
+    "section": "Part E \u2014 Loan Request + Part F \u2014 Training + Part G \u2014 Eligibility",
+    "field_id": "Number1AE[0]",
+    "label": "Part E, 1A. Request 1 of (count)",
+    "field_type": "text",
+    "value": "3",
+    "status": "filled",
+    "coords": {
+      "x": 20.835,
+      "y": 696.155
+    },
+    "note": ""
+  },
+  {
+    "page": 5,
+    "section": "Part E \u2014 Loan Request + Part F \u2014 Training + Part G \u2014 Eligibility",
+    "field_id": "TextField19[0]",
+    "label": "Part E, 1B. Use of Loan Proceeds \u2014 Request 1",
+    "field_type": "text",
+    "value": "Purchase farm land adjacent to 1301 Powell Valley Shores Circle, Speedwell, TN 37870",
+    "status": "filled",
+    "coords": {
+      "x": 20.835,
+      "y": 694.737
+    },
+    "note": ""
+  },
+  {
+    "page": 5,
+    "section": "Part E \u2014 Loan Request + Part F \u2014 Training + Part G \u2014 Eligibility",
+    "field_id": "AmountRequestedE1BE[0]",
+    "label": "Part E, 1C. $ Amount Requested \u2014 Request 1",
+    "field_type": "currency",
+    "value": 45000.0,
+    "status": "filled",
+    "coords": {
+      "x": 20.835,
+      "y": 696.155
+    },
+    "note": ""
+  },
+  {
+    "page": 5,
+    "section": "Part E \u2014 Loan Request + Part F \u2014 Training + Part G \u2014 Eligibility",
+    "field_id": "Number1AE[1]",
+    "label": "Part E, 2A. Request 2 of",
+    "field_type": "text",
+    "value": "3",
+    "status": "filled",
+    "coords": {
+      "x": 20.835,
+      "y": 667.012
+    },
+    "note": ""
+  },
+  {
+    "page": 5,
+    "section": "Part E \u2014 Loan Request + Part F \u2014 Training + Part G \u2014 Eligibility",
+    "field_id": "TextField19[1]",
+    "label": "Part E, 2B. Use of Loan Proceeds \u2014 Request 2",
+    "field_type": "text",
+    "value": "Initial equipment: small tractor/tiller, irrigation equipment, hand tools, raised-bed lumber, fencing",
+    "status": "filled",
+    "coords": {
+      "x": 20.835,
+      "y": 665.537
+    },
+    "note": ""
+  },
+  {
+    "page": 5,
+    "section": "Part E \u2014 Loan Request + Part F \u2014 Training + Part G \u2014 Eligibility",
+    "field_id": "AmountRequested2BE[0]",
+    "label": "Part E, 2C. $ Amount Requested \u2014 Request 2",
+    "field_type": "currency",
+    "value": 8500.0,
+    "status": "filled",
+    "coords": {
+      "x": 20.835,
+      "y": 667.012
+    },
+    "note": ""
+  },
+  {
+    "page": 5,
+    "section": "Part E \u2014 Loan Request + Part F \u2014 Training + Part G \u2014 Eligibility",
+    "field_id": "Number1AE[2]",
+    "label": "Part E, 3A. Request 3 of",
+    "field_type": "text",
+    "value": "3",
+    "status": "filled",
+    "coords": {
+      "x": 20.835,
+      "y": 638.303
+    },
+    "note": ""
+  },
+  {
+    "page": 5,
+    "section": "Part E \u2014 Loan Request + Part F \u2014 Training + Part G \u2014 Eligibility",
+    "field_id": "TextField19[2]",
+    "label": "Part E, 3B. Use of Loan Proceeds \u2014 Request 3",
+    "field_type": "text",
+    "value": "Soil preparation, seeds/transplants, fertilizer, and first-year operating inputs for vegetable crops",
+    "status": "filled",
+    "coords": {
+      "x": 20.835,
+      "y": 636.888
+    },
+    "note": ""
+  },
+  {
+    "page": 5,
+    "section": "Part E \u2014 Loan Request + Part F \u2014 Training + Part G \u2014 Eligibility",
+    "field_id": "AmountRequested2BE[1]",
+    "label": "Part E, 3C. $ Amount Requested \u2014 Request 3",
+    "field_type": "currency",
+    "value": 3500.0,
+    "status": "filled",
+    "coords": {
+      "x": 20.835,
+      "y": 638.303
+    },
+    "note": ""
+  },
+  {
+    "page": 5,
+    "section": "Part E \u2014 Loan Request + Part F \u2014 Training + Part G \u2014 Eligibility",
+    "field_id": "CheckBox2[0]",
+    "label": "Part F, 1. Operator of farm/ranch + year started",
+    "field_type": "checkbox",
+    "value": false,
+    "status": "filled",
+    "coords": {
+      "x": 20.835,
+      "y": 594.62
+    },
+    "note": "Not in experience_items list"
+  },
+  {
+    "page": 5,
+    "section": "Part E \u2014 Loan Request + Part F \u2014 Training + Part G \u2014 Eligibility",
+    "field_id": "CheckBox2[1]",
+    "label": "Part F \u2014 FSA Youth Loan participant",
+    "field_type": "text",
+    "value": false,
+    "status": "filled",
+    "coords": {
+      "x": 20.835,
+      "y": 577.77
+    },
+    "note": ""
+  },
+  {
+    "page": 5,
+    "section": "Part E \u2014 Loan Request + Part F \u2014 Training + Part G \u2014 Eligibility",
+    "field_id": "CheckBox2[2]",
+    "label": "Part F \u2014 4-H or FFA",
+    "field_type": "text",
+    "value": false,
+    "status": "filled",
+    "coords": {
+      "x": 20.835,
+      "y": 560.819
+    },
+    "note": ""
+  },
+  {
+    "page": 5,
+    "section": "Part E \u2014 Loan Request + Part F \u2014 Training + Part G \u2014 Eligibility",
+    "field_id": "CheckBox2[3]",
+    "label": "Part F \u2014 Grew up on farm/ranch",
+    "field_type": "text",
+    "value": false,
+    "status": "filled",
+    "coords": {
+      "x": 20.835,
+      "y": 543.993
+    },
+    "note": ""
+  },
+  {
+    "page": 5,
+    "section": "Part E \u2014 Loan Request + Part F \u2014 Training + Part G \u2014 Eligibility",
+    "field_id": "CheckBox2[4]",
+    "label": "Part F \u2014 4-year ag degree",
+    "field_type": "text",
+    "value": false,
+    "status": "filled",
+    "coords": {
+      "x": 20.835,
+      "y": 526.94
+    },
+    "note": ""
+  },
+  {
+    "page": 5,
+    "section": "Part E \u2014 Loan Request + Part F \u2014 Training + Part G \u2014 Eligibility",
+    "field_id": "CheckBox2[5]",
+    "label": "Part F \u2014 2-year ag degree",
+    "field_type": "text",
+    "value": false,
+    "status": "filled",
+    "coords": {
+      "x": 20.835,
+      "y": 509.966
+    },
+    "note": ""
+  },
+  {
+    "page": 5,
+    "section": "Part E \u2014 Loan Request + Part F \u2014 Training + Part G \u2014 Eligibility",
+    "field_id": "CheckBox2[6]",
+    "label": "Part F \u2014 Beginning Farmers & Ranchers Dev Program",
+    "field_type": "text",
+    "value": false,
+    "status": "filled",
+    "coords": {
+      "x": 20.835,
+      "y": 494.035
+    },
+    "note": ""
+  },
+  {
+    "page": 5,
+    "section": "Part E \u2014 Loan Request + Part F \u2014 Training + Part G \u2014 Eligibility",
+    "field_id": "CheckBox2[7]",
+    "label": "Part F \u2014 Ag-related Community Based Org",
+    "field_type": "text",
+    "value": false,
+    "status": "filled",
+    "coords": {
+      "x": 20.835,
+      "y": 476.415
+    },
+    "note": ""
+  },
+  {
+    "page": 5,
+    "section": "Part E \u2014 Loan Request + Part F \u2014 Training + Part G \u2014 Eligibility",
+    "field_id": "CheckBox2[8]",
+    "label": "Part F \u2014 Ag-related Tribal Youth Org",
+    "field_type": "text",
+    "value": false,
+    "status": "filled",
+    "coords": {
+      "x": 20.835,
+      "y": 459.543
+    },
+    "note": ""
+  },
+  {
+    "page": 5,
+    "section": "Part E \u2014 Loan Request + Part F \u2014 Training + Part G \u2014 Eligibility",
+    "field_id": "CheckBox2[9]",
+    "label": "Part F \u2014 Farm manager",
+    "field_type": "text",
+    "value": false,
+    "status": "filled",
+    "coords": {
+      "x": 20.835,
+      "y": 442.875
+    },
+    "note": ""
+  },
+  {
+    "page": 5,
+    "section": "Part E \u2014 Loan Request + Part F \u2014 Training + Part G \u2014 Eligibility",
+    "field_id": "CheckBox2[10]",
+    "label": "Part F \u2014 Farm mgmt consultant",
+    "field_type": "text",
+    "value": false,
+    "status": "filled",
+    "coords": {
+      "x": 20.835,
+      "y": 426.276
+    },
+    "note": ""
+  },
+  {
+    "page": 5,
+    "section": "Part E \u2014 Loan Request + Part F \u2014 Training + Part G \u2014 Eligibility",
+    "field_id": "CheckBox2[11]",
+    "label": "Part F \u2014 Other ag-related field",
+    "field_type": "text",
+    "value": false,
+    "status": "filled",
+    "coords": {
+      "x": 20.835,
+      "y": 409.472
+    },
+    "note": ""
+  },
+  {
+    "page": 5,
+    "section": "Part E \u2014 Loan Request + Part F \u2014 Training + Part G \u2014 Eligibility",
+    "field_id": "CheckBox2[12]",
+    "label": "Part F \u2014 Cooperative Extension / land-grant completion",
+    "field_type": "text",
+    "value": false,
+    "status": "filled",
+    "coords": {
+      "x": 20.835,
+      "y": 383.807
+    },
+    "note": ""
+  },
+  {
+    "page": 5,
+    "section": "Part E \u2014 Loan Request + Part F \u2014 Training + Part G \u2014 Eligibility",
+    "field_id": "CheckBox2[13]",
+    "label": "Part F \u2014 Non-farm business or management experience",
+    "field_type": "checkbox",
+    "value": true,
+    "status": "filled",
+    "coords": {
+      "x": 20.835,
+      "y": 595.232
+    },
+    "note": "In experience_items"
+  },
+  {
+    "page": 5,
+    "section": "Part E \u2014 Loan Request + Part F \u2014 Training + Part G \u2014 Eligibility",
+    "field_id": "CheckBox2[14]",
+    "label": "Part F \u2014 Community/nationally based farm workshop",
+    "field_type": "text",
+    "value": false,
+    "status": "filled",
+    "coords": {
+      "x": 20.835,
+      "y": 568.915
+    },
+    "note": ""
+  },
+  {
+    "page": 5,
+    "section": "Part E \u2014 Loan Request + Part F \u2014 Training + Part G \u2014 Eligibility",
+    "field_id": "CheckBox2[15]",
+    "label": "Part F \u2014 Raised on farm w/ significant day-to-day responsibility",
+    "field_type": "checkbox",
+    "value": true,
+    "status": "filled",
+    "coords": {
+      "x": 20.835,
+      "y": 534.174
+    },
+    "note": "In experience_items"
+  },
+  {
+    "page": 5,
+    "section": "Part E \u2014 Loan Request + Part F \u2014 Training + Part G \u2014 Eligibility",
+    "field_id": "CheckBox2[16]",
+    "label": "Part F \u2014 Ag apprenticeship",
+    "field_type": "text",
+    "value": false,
+    "status": "filled",
+    "coords": {
+      "x": 20.835,
+      "y": 517.2
+    },
+    "note": ""
+  },
+  {
+    "page": 5,
+    "section": "Part E \u2014 Loan Request + Part F \u2014 Training + Part G \u2014 Eligibility",
+    "field_id": "CheckBox2[17]",
+    "label": "Part F \u2014 Ag mentorship",
+    "field_type": "text",
+    "value": false,
+    "status": "filled",
+    "coords": {
+      "x": 20.835,
+      "y": 500.532
+    },
+    "note": ""
+  },
+  {
+    "page": 5,
+    "section": "Part E \u2014 Loan Request + Part F \u2014 Training + Part G \u2014 Eligibility",
+    "field_id": "CheckBox2[18]",
+    "label": "Part F \u2014 Honorably discharged veteran",
+    "field_type": "text",
+    "value": false,
+    "status": "filled",
+    "coords": {
+      "x": 20.835,
+      "y": 482.294
+    },
+    "note": ""
+  },
+  {
+    "page": 5,
+    "section": "Part E \u2014 Loan Request + Part F \u2014 Training + Part G \u2014 Eligibility",
+    "field_id": "CheckBox2[19]",
+    "label": "Part F \u2014 SCORE program",
+    "field_type": "text",
+    "value": false,
+    "status": "filled",
+    "coords": {
+      "x": 20.835,
+      "y": 455.344
+    },
+    "note": ""
+  },
+  {
+    "page": 5,
+    "section": "Part E \u2014 Loan Request + Part F \u2014 Training + Part G \u2014 Eligibility",
+    "field_id": "CheckBox2[20]",
+    "label": "Part F \u2014 Other (describe)",
+    "field_type": "text",
+    "value": false,
+    "status": "filled",
+    "coords": {
+      "x": 20.835,
+      "y": 430.72
+    },
+    "note": ""
+  },
+  {
+    "page": 5,
+    "section": "Part E \u2014 Loan Request + Part F \u2014 Training + Part G \u2014 Eligibility",
+    "field_id": "Explanation2F[0]",
+    "label": "Part F, 2. Explanation",
+    "field_type": "text",
+    "value": "Applicant Scott Weeden brings non-farm business and management experience from prior professional roles. Applicant is relocating from Killeen, TX to establish a first-time vegetable farming operation in Campbell County, TN. Applicant is committed to producing eggplant, sweet corn, peppers, tomatoes, asparagus, and artichoke on the proposed property. Current mailing address (600 W Hallmark Ave, Apt 442, Killeen, TX 76541) is an apartment unit and is wholly unsuitable for the space, soil, and infrastructure requirements of the proposed farming operation. Property acquisition and relocation are contingent on loan approval.",
+    "status": "filled",
+    "coords": {
+      "x": 20.835,
+      "y": 299.736
+    },
+    "note": ""
+  },
+  {
+    "page": 5,
+    "section": "Part E \u2014 Loan Request + Part F \u2014 Training + Part G \u2014 Eligibility",
+    "field_id": "CheckYes1G[0]",
+    "label": "Part G, 1. Other business names \u2014 Yes",
+    "field_type": "text",
+    "value": false,
+    "status": "filled",
+    "coords": {
+      "x": 20.835,
+      "y": 254.334
+    },
+    "note": ""
+  },
+  {
+    "page": 5,
+    "section": "Part E \u2014 Loan Request + Part F \u2014 Training + Part G \u2014 Eligibility",
+    "field_id": "CheckNo1G[0]",
+    "label": "Part G, 1. Other business names \u2014 No",
+    "field_type": "text",
+    "value": true,
+    "status": "filled",
+    "coords": {
+      "x": 20.835,
+      "y": 254.334
+    },
+    "note": ""
+  },
+  {
+    "page": 5,
+    "section": "Part E \u2014 Loan Request + Part F \u2014 Training + Part G \u2014 Eligibility",
+    "field_id": "CheckYes2G[0]",
+    "label": "Part G, 2. Prior FSA loan \u2014 Yes",
+    "field_type": "text",
+    "value": false,
+    "status": "filled",
+    "coords": {
+      "x": 20.835,
+      "y": 231.546
+    },
+    "note": ""
+  },
+  {
+    "page": 5,
+    "section": "Part E \u2014 Loan Request + Part F \u2014 Training + Part G \u2014 Eligibility",
+    "field_id": "CheckNo2G[0]",
+    "label": "Part G, 2. Prior FSA loan \u2014 No",
+    "field_type": "text",
+    "value": true,
+    "status": "filled",
+    "coords": {
+      "x": 20.835,
+      "y": 231.549
+    },
+    "note": ""
+  },
+  {
+    "page": 5,
+    "section": "Part E \u2014 Loan Request + Part F \u2014 Training + Part G \u2014 Eligibility",
+    "field_id": "CheckYes3G[0]",
+    "label": "Part G, 3. Debt forgiveness \u2014 Yes",
+    "field_type": "text",
+    "value": false,
+    "status": "filled",
+    "coords": {
+      "x": 20.835,
+      "y": 208.412
+    },
+    "note": ""
+  },
+  {
+    "page": 5,
+    "section": "Part E \u2014 Loan Request + Part F \u2014 Training + Part G \u2014 Eligibility",
+    "field_id": "CheckNo3G[0]",
+    "label": "Part G, 3. Debt forgiveness \u2014 No",
+    "field_type": "text",
+    "value": true,
+    "status": "filled",
+    "coords": {
+      "x": 20.835,
+      "y": 208.412
+    },
+    "note": ""
+  },
+  {
+    "page": 5,
+    "section": "Part E \u2014 Loan Request + Part F \u2014 Training + Part G \u2014 Eligibility",
+    "field_id": "CheckYes4G[0]",
+    "label": "Part G, 4. Delinquent federal debt \u2014 Yes",
+    "field_type": "text",
+    "value": false,
+    "status": "filled",
+    "coords": {
+      "x": 20.835,
+      "y": 184.729
+    },
+    "note": ""
+  },
+  {
+    "page": 5,
+    "section": "Part E \u2014 Loan Request + Part F \u2014 Training + Part G \u2014 Eligibility",
+    "field_id": "CheckNo4G[0]",
+    "label": "Part G, 4. Delinquent federal debt \u2014 No",
+    "field_type": "text",
+    "value": true,
+    "status": "filled",
+    "coords": {
+      "x": 20.835,
+      "y": 184.726
+    },
+    "note": ""
+  },
+  {
+    "page": 5,
+    "section": "Part E \u2014 Loan Request + Part F \u2014 Training + Part G \u2014 Eligibility",
+    "field_id": "CheckYes5G[0]",
+    "label": "Part G, 5. Pending litigation \u2014 Yes",
+    "field_type": "text",
+    "value": false,
+    "status": "filled",
+    "coords": {
+      "x": 20.835,
+      "y": 160.479
+    },
+    "note": ""
+  },
+  {
+    "page": 5,
+    "section": "Part E \u2014 Loan Request + Part F \u2014 Training + Part G \u2014 Eligibility",
+    "field_id": "CheckNo5G[0]",
+    "label": "Part G, 5. Pending litigation \u2014 No",
+    "field_type": "text",
+    "value": true,
+    "status": "filled",
+    "coords": {
+      "x": 20.835,
+      "y": 160.479
+    },
+    "note": ""
+  },
+  {
+    "page": 5,
+    "section": "Part E \u2014 Loan Request + Part F \u2014 Training + Part G \u2014 Eligibility",
+    "field_id": "CheckYes6G[0]",
+    "label": "Part G, 6. Bankruptcy \u2014 Yes",
+    "field_type": "text",
+    "value": false,
+    "status": "filled",
+    "coords": {
+      "x": 20.835,
+      "y": 136.602
+    },
+    "note": ""
+  },
+  {
+    "page": 5,
+    "section": "Part E \u2014 Loan Request + Part F \u2014 Training + Part G \u2014 Eligibility",
+    "field_id": "CheckNo6G[0]",
+    "label": "Part G, 6. Bankruptcy \u2014 No",
+    "field_type": "text",
+    "value": true,
+    "status": "filled",
+    "coords": {
+      "x": 20.835,
+      "y": 136.602
+    },
+    "note": ""
+  },
+  {
+    "page": 5,
+    "section": "Part E \u2014 Loan Request + Part F \u2014 Training + Part G \u2014 Eligibility",
+    "field_id": "CheckYes7G[0]",
+    "label": "Part G, 7. FSA employee relation \u2014 Yes",
+    "field_type": "text",
+    "value": false,
+    "status": "filled",
+    "coords": {
+      "x": 20.835,
+      "y": 113.27
+    },
+    "note": ""
+  },
+  {
+    "page": 5,
+    "section": "Part E \u2014 Loan Request + Part F \u2014 Training + Part G \u2014 Eligibility",
+    "field_id": "CheckNo7G[0]",
+    "label": "Part G, 7. FSA employee relation \u2014 No",
+    "field_type": "text",
+    "value": true,
+    "status": "filled",
+    "coords": {
+      "x": 20.835,
+      "y": 113.268
+    },
+    "note": ""
+  },
+  {
+    "page": 5,
+    "section": "Part E \u2014 Loan Request + Part F \u2014 Training + Part G \u2014 Eligibility",
+    "field_id": "AddtlInfo8G[0]",
+    "label": "Part G, 8. Additional Information",
+    "field_type": "text",
+    "value": "",
+    "status": "skip",
+    "coords": {
+      "x": 20.835,
+      "y": 41.996
+    },
+    "note": "All G answers are No; no additional info required"
+  },
+  {
+    "page": 5,
+    "section": "Part E \u2014 Loan Request + Part F \u2014 Training + Part G \u2014 Eligibility",
+    "field_id": "DateField3[0]",
+    "label": "Part G \u2014 Initials Date",
+    "field_type": "date",
+    "value": "2026-03-05",
+    "status": "filled",
+    "coords": {
+      "x": 20.835,
+      "y": 19.332
+    },
+    "note": ""
+  },
+  {
+    "page": 6,
+    "section": "Part H \u2014 Balance Sheet Header",
+    "field_id": "PartHCheckBox[0]",
+    "label": "Part H \u2014 Check if submitting alternative documents",
+    "field_type": "checkbox",
+    "value": false,
+    "status": "filled",
+    "coords": {
+      "x": 20.835,
+      "y": 713.231
+    },
+    "note": "Applicant is completing the form directly"
+  },
+  {
+    "page": 6,
+    "section": "Part H \u2014 Balance Sheet Header",
+    "field_id": "TextField18[0]",
+    "label": "Part H \u2014 Balance Sheet of (Applicant Name)",
+    "field_type": "text",
+    "value": "Scott Weeden",
+    "status": "filled",
+    "coords": {
+      "x": 20.835,
+      "y": 700.664
+    },
+    "note": ""
+  },
+  {
+    "page": 6,
+    "section": "Part H \u2014 Balance Sheet Header",
+    "field_id": "DateTimeField1[0]",
+    "label": "Part H \u2014 As of Date",
+    "field_type": "date",
+    "value": "03/05/2026",
+    "status": "filled",
+    "coords": {
+      "x": 20.835,
+      "y": 700.585
+    },
+    "note": ""
+  },
+  {
+    "page": 7,
+    "section": "Part H \u2014 Farm Asset Schedules (Schedules A\u2013M) + Personal Assets (N\u2013Q)",
+    "field_id": "5_MarketValue[0]",
+    "label": "Schedule A \u2014 Cash & Equivalents (checking/savings)",
+    "field_type": "currency",
+    "value": null,
+    "status": "pending",
+    "coords": {
+      "x": 20.835,
+      "y": 30.217
+    },
+    "note": ""
+  },
+  {
+    "page": 7,
+    "section": "Part H \u2014 Farm Asset Schedules (Schedules A\u2013M) + Personal Assets (N\u2013Q)",
+    "field_id": "4_MarketValue[0]",
+    "label": "Schedule M \u2014 Farm Real Estate Land: $/Acre",
+    "field_type": "currency",
+    "value": "",
+    "status": "skip",
+    "coords": {
+      "x": 20.835,
+      "y": 30.217
+    },
+    "note": "45000 total / ~1 acre est. \u2014 enter on paper"
+  },
+  {
+    "page": 7,
+    "section": "Part H \u2014 Farm Asset Schedules (Schedules A\u2013M) + Personal Assets (N\u2013Q)",
+    "field_id": "2_Owned[0]",
+    "label": "Schedule M \u2014 Farm Real Estate: % Owned",
+    "field_type": "text",
+    "value": "100",
+    "status": "filled",
+    "coords": {
+      "x": 20.835,
+      "y": 261.909
+    },
+    "note": ""
+  },
+  {
+    "page": 7,
+    "section": "Part H \u2014 Farm Asset Schedules (Schedules A\u2013M) + Personal Assets (N\u2013Q)",
+    "field_id": "3_MarketValue[0]",
+    "label": "Schedule L \u2014 Buildings & Improvements: Market Value",
+    "field_type": "currency",
+    "value": 0.0,
+    "status": "filled",
+    "coords": {
+      "x": 20.835,
+      "y": 116.617
+    },
+    "note": ""
+  },
+  {
+    "page": 7,
+    "section": "Part H \u2014 Farm Asset Schedules (Schedules A\u2013M) + Personal Assets (N\u2013Q)",
+    "field_id": "2_MarketValue[0]",
+    "label": "Schedule P \u2014 Retirement Accounts: Market Value",
+    "field_type": "currency",
+    "value": null,
+    "status": "pending",
+    "coords": {
+      "x": 20.835,
+      "y": 131.017
+    },
+    "note": ""
+  },
+  {
+    "page": 8,
+    "section": "Part H \u2014 Farm Liability Schedules (BB\u2013DD) + Personal Liabilities (EE\u2013GG)",
+    "field_id": "2_Owed[0]",
+    "label": "Schedule BB \u2014 Notes Payable (12 mo or less): Amount Owed",
+    "field_type": "currency",
+    "value": "0.00",
+    "status": "filled",
+    "coords": {
+      "x": 20.835,
+      "y": 689.737
+    },
+    "note": ""
+  },
+  {
+    "page": 8,
+    "section": "Part H \u2014 Farm Liability Schedules (BB\u2013DD) + Personal Liabilities (EE\u2013GG)",
+    "field_id": "4_Owed[0]",
+    "label": "Schedule CC \u2014 Annual Payments Int Notes Payable: Amount Owed",
+    "field_type": "currency",
+    "value": "0.00",
+    "status": "filled",
+    "coords": {
+      "x": 20.835,
+      "y": 689.737
+    },
+    "note": ""
+  },
+  {
+    "page": 9,
+    "section": "Part I \u2014 Cash Flow Projection: Production/Income",
+    "field_id": "PartIcheckbox[0]",
+    "label": "Part I \u2014 Check if submitting alternative documents",
+    "field_type": "checkbox",
+    "value": false,
+    "status": "filled",
+    "coords": {
+      "x": 20.835,
+      "y": 715.7
+    },
+    "note": ""
+  },
+  {
+    "page": 9,
+    "section": "Part I \u2014 Cash Flow Projection: Production/Income",
+    "field_id": "DateTimeField2[0]",
+    "label": "Part I \u2014 Production Cycle Start Date",
+    "field_type": "date",
+    "value": "03/15/2026",
+    "status": "filled",
+    "coords": {
+      "x": 20.835,
+      "y": 702.601
+    },
+    "note": ""
+  },
+  {
+    "page": 9,
+    "section": "Part I \u2014 Cash Flow Projection: Production/Income",
+    "field_id": "DateTimeField2[1]",
+    "label": "Part I \u2014 Production Cycle End Date",
+    "field_type": "date",
+    "value": "11/15/2026",
+    "status": "filled",
+    "coords": {
+      "x": 20.835,
+      "y": 702.601
+    },
+    "note": ""
+  },
+  {
+    "page": 9,
+    "section": "Part I \u2014 Cash Flow Projection: Production/Income",
+    "field_id": "1A_CROP_ROW_1.crop",
+    "label": "Part I, 1A. Crop Row 1 \u2014 Eggplant \u2014 crop",
+    "field_type": "text",
+    "value": "Eggplant (Solanum melongena)",
+    "status": "filled",
+    "coords": {},
+    "note": ""
+  },
+  {
+    "page": 9,
+    "section": "Part I \u2014 Cash Flow Projection: Production/Income",
+    "field_id": "1A_CROP_ROW_1.variety",
+    "label": "Part I, 1A. Crop Row 1 \u2014 Eggplant \u2014 variety",
+    "field_type": "text",
+    "value": "KDDRFI",
+    "status": "filled",
+    "coords": {},
+    "note": ""
+  },
+  {
+    "page": 9,
+    "section": "Part I \u2014 Cash Flow Projection: Production/Income",
+    "field_id": "1A_CROP_ROW_1.planting_method",
+    "label": "Part I, 1A. Crop Row 1 \u2014 Eggplant \u2014 planting_method",
+    "field_type": "text",
+    "value": "Transplant",
+    "status": "filled",
+    "coords": {},
+    "note": ""
+  },
+  {
+    "page": 9,
+    "section": "Part I \u2014 Cash Flow Projection: Production/Income",
+    "field_id": "1A_CROP_ROW_1.season",
+    "label": "Part I, 1A. Crop Row 1 \u2014 Eggplant \u2014 season",
+    "field_type": "text",
+    "value": "Spring / Summer",
+    "status": "filled",
+    "coords": {},
+    "note": ""
+  },
+  {
+    "page": 9,
+    "section": "Part I \u2014 Cash Flow Projection: Production/Income",
+    "field_id": "1A_CROP_ROW_1.est_acres",
+    "label": "Part I, 1A. Crop Row 1 \u2014 Eggplant \u2014 est_acres",
+    "field_type": "text",
+    "value": 0.25,
+    "status": "filled",
+    "coords": {},
+    "note": ""
+  },
+  {
+    "page": 9,
+    "section": "Part I \u2014 Cash Flow Projection: Production/Income",
+    "field_id": "1A_CROP_ROW_1.est_yield_lbs_acre",
+    "label": "Part I, 1A. Crop Row 1 \u2014 Eggplant \u2014 est_yield_lbs_acre",
+    "field_type": "text",
+    "value": 8000,
+    "status": "filled",
+    "coords": {},
+    "note": ""
+  },
+  {
+    "page": 9,
+    "section": "Part I \u2014 Cash Flow Projection: Production/Income",
+    "field_id": "1A_CROP_ROW_1.est_price_per_lb",
+    "label": "Part I, 1A. Crop Row 1 \u2014 Eggplant \u2014 est_price_per_lb",
+    "field_type": "text",
+    "value": 0.75,
+    "status": "filled",
+    "coords": {},
+    "note": ""
+  },
+  {
+    "page": 9,
+    "section": "Part I \u2014 Cash Flow Projection: Production/Income",
+    "field_id": "1A_CROP_ROW_1.est_revenue",
+    "label": "Part I, 1A. Crop Row 1 \u2014 Eggplant \u2014 est_revenue",
+    "field_type": "text",
+    "value": 1500.0,
+    "status": "filled",
+    "coords": {},
+    "note": ""
+  },
+  {
+    "page": 9,
+    "section": "Part I \u2014 Cash Flow Projection: Production/Income",
+    "field_id": "1A_CROP_ROW_1.notes",
+    "label": "Part I, 1A. Crop Row 1 \u2014 Eggplant \u2014 notes",
+    "field_type": "text",
+    "value": "Warm-season crop; well-suited to East Tennessee climate.",
+    "status": "filled",
+    "coords": {},
+    "note": ""
+  },
+  {
+    "page": 9,
+    "section": "Part I \u2014 Cash Flow Projection: Production/Income",
+    "field_id": "1A_CROP_ROW_2.crop",
+    "label": "Part I, 1A. Crop Row 2 \u2014 Sweet Corn \u2014 crop",
+    "field_type": "text",
+    "value": "Corn \u2014 Sweet (Zea mays var. saccharata)",
+    "status": "filled",
+    "coords": {},
+    "note": ""
+  },
+  {
+    "page": 9,
+    "section": "Part I \u2014 Cash Flow Projection: Production/Income",
+    "field_id": "1A_CROP_ROW_2.variety",
+    "label": "Part I, 1A. Crop Row 2 \u2014 Sweet Corn \u2014 variety",
+    "field_type": "text",
+    "value": "KDDRFI",
+    "status": "filled",
+    "coords": {},
+    "note": ""
+  },
+  {
+    "page": 9,
+    "section": "Part I \u2014 Cash Flow Projection: Production/Income",
+    "field_id": "1A_CROP_ROW_2.planting_method",
+    "label": "Part I, 1A. Crop Row 2 \u2014 Sweet Corn \u2014 planting_method",
+    "field_type": "text",
+    "value": "Direct seed",
+    "status": "filled",
+    "coords": {},
+    "note": ""
+  },
+  {
+    "page": 9,
+    "section": "Part I \u2014 Cash Flow Projection: Production/Income",
+    "field_id": "1A_CROP_ROW_2.season",
+    "label": "Part I, 1A. Crop Row 2 \u2014 Sweet Corn \u2014 season",
+    "field_type": "text",
+    "value": "Spring / Summer",
+    "status": "filled",
+    "coords": {},
+    "note": ""
+  },
+  {
+    "page": 9,
+    "section": "Part I \u2014 Cash Flow Projection: Production/Income",
+    "field_id": "1A_CROP_ROW_2.est_acres",
+    "label": "Part I, 1A. Crop Row 2 \u2014 Sweet Corn \u2014 est_acres",
+    "field_type": "text",
+    "value": 0.5,
+    "status": "filled",
+    "coords": {},
+    "note": ""
+  },
+  {
+    "page": 9,
+    "section": "Part I \u2014 Cash Flow Projection: Production/Income",
+    "field_id": "1A_CROP_ROW_2.est_yield_lbs_acre",
+    "label": "Part I, 1A. Crop Row 2 \u2014 Sweet Corn \u2014 est_yield_lbs_acre",
+    "field_type": "text",
+    "value": 7000,
+    "status": "filled",
+    "coords": {},
+    "note": ""
+  },
+  {
+    "page": 9,
+    "section": "Part I \u2014 Cash Flow Projection: Production/Income",
+    "field_id": "1A_CROP_ROW_2.est_price_per_lb",
+    "label": "Part I, 1A. Crop Row 2 \u2014 Sweet Corn \u2014 est_price_per_lb",
+    "field_type": "text",
+    "value": 0.35,
+    "status": "filled",
+    "coords": {},
+    "note": ""
+  },
+  {
+    "page": 9,
+    "section": "Part I \u2014 Cash Flow Projection: Production/Income",
+    "field_id": "1A_CROP_ROW_2.est_revenue",
+    "label": "Part I, 1A. Crop Row 2 \u2014 Sweet Corn \u2014 est_revenue",
+    "field_type": "text",
+    "value": 1225.0,
+    "status": "filled",
+    "coords": {},
+    "note": ""
+  },
+  {
+    "page": 9,
+    "section": "Part I \u2014 Cash Flow Projection: Production/Income",
+    "field_id": "1A_CROP_ROW_2.notes",
+    "label": "Part I, 1A. Crop Row 2 \u2014 Sweet Corn \u2014 notes",
+    "field_type": "text",
+    "value": "Primary row crop; may sell at local farmers market or direct to consumer.",
+    "status": "filled",
+    "coords": {},
+    "note": ""
+  },
+  {
+    "page": 9,
+    "section": "Part I \u2014 Cash Flow Projection: Production/Income",
+    "field_id": "1A_CROP_ROW_3.crop",
+    "label": "Part I, 1A. Crop Row 3 \u2014 Peppers \u2014 crop",
+    "field_type": "text",
+    "value": "Peppers (Capsicum annuum \u2014 Bell & Hot varieties)",
+    "status": "filled",
+    "coords": {},
+    "note": ""
+  },
+  {
+    "page": 9,
+    "section": "Part I \u2014 Cash Flow Projection: Production/Income",
+    "field_id": "1A_CROP_ROW_3.variety",
+    "label": "Part I, 1A. Crop Row 3 \u2014 Peppers \u2014 variety",
+    "field_type": "text",
+    "value": "KDDRFI",
+    "status": "filled",
+    "coords": {},
+    "note": ""
+  },
+  {
+    "page": 9,
+    "section": "Part I \u2014 Cash Flow Projection: Production/Income",
+    "field_id": "1A_CROP_ROW_3.planting_method",
+    "label": "Part I, 1A. Crop Row 3 \u2014 Peppers \u2014 planting_method",
+    "field_type": "text",
+    "value": "Transplant",
+    "status": "filled",
+    "coords": {},
+    "note": ""
+  },
+  {
+    "page": 9,
+    "section": "Part I \u2014 Cash Flow Projection: Production/Income",
+    "field_id": "1A_CROP_ROW_3.season",
+    "label": "Part I, 1A. Crop Row 3 \u2014 Peppers \u2014 season",
+    "field_type": "text",
+    "value": "Spring / Summer",
+    "status": "filled",
+    "coords": {},
+    "note": ""
+  },
+  {
+    "page": 9,
+    "section": "Part I \u2014 Cash Flow Projection: Production/Income",
+    "field_id": "1A_CROP_ROW_3.est_acres",
+    "label": "Part I, 1A. Crop Row 3 \u2014 Peppers \u2014 est_acres",
+    "field_type": "text",
+    "value": 0.25,
+    "status": "filled",
+    "coords": {},
+    "note": ""
+  },
+  {
+    "page": 9,
+    "section": "Part I \u2014 Cash Flow Projection: Production/Income",
+    "field_id": "1A_CROP_ROW_3.est_yield_lbs_acre",
+    "label": "Part I, 1A. Crop Row 3 \u2014 Peppers \u2014 est_yield_lbs_acre",
+    "field_type": "text",
+    "value": 10000,
+    "status": "filled",
+    "coords": {},
+    "note": ""
+  },
+  {
+    "page": 9,
+    "section": "Part I \u2014 Cash Flow Projection: Production/Income",
+    "field_id": "1A_CROP_ROW_3.est_price_per_lb",
+    "label": "Part I, 1A. Crop Row 3 \u2014 Peppers \u2014 est_price_per_lb",
+    "field_type": "text",
+    "value": 0.8,
+    "status": "filled",
+    "coords": {},
+    "note": ""
+  },
+  {
+    "page": 9,
+    "section": "Part I \u2014 Cash Flow Projection: Production/Income",
+    "field_id": "1A_CROP_ROW_3.est_revenue",
+    "label": "Part I, 1A. Crop Row 3 \u2014 Peppers \u2014 est_revenue",
+    "field_type": "text",
+    "value": 2000.0,
+    "status": "filled",
+    "coords": {},
+    "note": ""
+  },
+  {
+    "page": 9,
+    "section": "Part I \u2014 Cash Flow Projection: Production/Income",
+    "field_id": "1A_CROP_ROW_3.notes",
+    "label": "Part I, 1A. Crop Row 3 \u2014 Peppers \u2014 notes",
+    "field_type": "text",
+    "value": "High-value vegetable crop; mixed bell and hot pepper varieties.",
+    "status": "filled",
+    "coords": {},
+    "note": ""
+  },
+  {
+    "page": 9,
+    "section": "Part I \u2014 Cash Flow Projection: Production/Income",
+    "field_id": "1A_CROP_ROW_4.crop",
+    "label": "Part I, 1A. Crop Row 4 \u2014 Tomatoes \u2014 crop",
+    "field_type": "text",
+    "value": "Tomatoes (Solanum lycopersicum)",
+    "status": "filled",
+    "coords": {},
+    "note": ""
+  },
+  {
+    "page": 9,
+    "section": "Part I \u2014 Cash Flow Projection: Production/Income",
+    "field_id": "1A_CROP_ROW_4.variety",
+    "label": "Part I, 1A. Crop Row 4 \u2014 Tomatoes \u2014 variety",
+    "field_type": "text",
+    "value": "KDDRFI",
+    "status": "filled",
+    "coords": {},
+    "note": ""
+  },
+  {
+    "page": 9,
+    "section": "Part I \u2014 Cash Flow Projection: Production/Income",
+    "field_id": "1A_CROP_ROW_4.planting_method",
+    "label": "Part I, 1A. Crop Row 4 \u2014 Tomatoes \u2014 planting_method",
+    "field_type": "text",
+    "value": "Transplant / Stake",
+    "status": "filled",
+    "coords": {},
+    "note": ""
+  },
+  {
+    "page": 9,
+    "section": "Part I \u2014 Cash Flow Projection: Production/Income",
+    "field_id": "1A_CROP_ROW_4.season",
+    "label": "Part I, 1A. Crop Row 4 \u2014 Tomatoes \u2014 season",
+    "field_type": "text",
+    "value": "Spring / Summer",
+    "status": "filled",
+    "coords": {},
+    "note": ""
+  },
+  {
+    "page": 9,
+    "section": "Part I \u2014 Cash Flow Projection: Production/Income",
+    "field_id": "1A_CROP_ROW_4.est_acres",
+    "label": "Part I, 1A. Crop Row 4 \u2014 Tomatoes \u2014 est_acres",
+    "field_type": "text",
+    "value": 0.25,
+    "status": "filled",
+    "coords": {},
+    "note": ""
+  },
+  {
+    "page": 9,
+    "section": "Part I \u2014 Cash Flow Projection: Production/Income",
+    "field_id": "1A_CROP_ROW_4.est_yield_lbs_acre",
+    "label": "Part I, 1A. Crop Row 4 \u2014 Tomatoes \u2014 est_yield_lbs_acre",
+    "field_type": "text",
+    "value": 20000,
+    "status": "filled",
+    "coords": {},
+    "note": ""
+  },
+  {
+    "page": 9,
+    "section": "Part I \u2014 Cash Flow Projection: Production/Income",
+    "field_id": "1A_CROP_ROW_4.est_price_per_lb",
+    "label": "Part I, 1A. Crop Row 4 \u2014 Tomatoes \u2014 est_price_per_lb",
+    "field_type": "text",
+    "value": 0.6,
+    "status": "filled",
+    "coords": {},
+    "note": ""
+  },
+  {
+    "page": 9,
+    "section": "Part I \u2014 Cash Flow Projection: Production/Income",
+    "field_id": "1A_CROP_ROW_4.est_revenue",
+    "label": "Part I, 1A. Crop Row 4 \u2014 Tomatoes \u2014 est_revenue",
+    "field_type": "text",
+    "value": 3000.0,
+    "status": "filled",
+    "coords": {},
+    "note": ""
+  },
+  {
+    "page": 9,
+    "section": "Part I \u2014 Cash Flow Projection: Production/Income",
+    "field_id": "1A_CROP_ROW_4.notes",
+    "label": "Part I, 1A. Crop Row 4 \u2014 Tomatoes \u2014 notes",
+    "field_type": "text",
+    "value": "High-yield crop; ideal for direct market sales near Norris Lake area.",
+    "status": "filled",
+    "coords": {},
+    "note": ""
+  },
+  {
+    "page": 9,
+    "section": "Part I \u2014 Cash Flow Projection: Production/Income",
+    "field_id": "1A_CROP_ROW_5.crop",
+    "label": "Part I, 1A. Crop Row 5 \u2014 Asparagus \u2014 crop",
+    "field_type": "text",
+    "value": "Asparagus (Asparagus officinalis)",
+    "status": "filled",
+    "coords": {},
+    "note": ""
+  },
+  {
+    "page": 9,
+    "section": "Part I \u2014 Cash Flow Projection: Production/Income",
+    "field_id": "1A_CROP_ROW_5.variety",
+    "label": "Part I, 1A. Crop Row 5 \u2014 Asparagus \u2014 variety",
+    "field_type": "text",
+    "value": "KDDRFI",
+    "status": "filled",
+    "coords": {},
+    "note": ""
+  },
+  {
+    "page": 9,
+    "section": "Part I \u2014 Cash Flow Projection: Production/Income",
+    "field_id": "1A_CROP_ROW_5.planting_method",
+    "label": "Part I, 1A. Crop Row 5 \u2014 Asparagus \u2014 planting_method",
+    "field_type": "text",
+    "value": "Crown planting (perennial)",
+    "status": "filled",
+    "coords": {},
+    "note": ""
+  },
+  {
+    "page": 9,
+    "section": "Part I \u2014 Cash Flow Projection: Production/Income",
+    "field_id": "1A_CROP_ROW_5.season",
+    "label": "Part I, 1A. Crop Row 5 \u2014 Asparagus \u2014 season",
+    "field_type": "text",
+    "value": "Spring harvest (Year 3+ production)",
+    "status": "filled",
+    "coords": {},
+    "note": ""
+  },
+  {
+    "page": 9,
+    "section": "Part I \u2014 Cash Flow Projection: Production/Income",
+    "field_id": "1A_CROP_ROW_5.est_acres",
+    "label": "Part I, 1A. Crop Row 5 \u2014 Asparagus \u2014 est_acres",
+    "field_type": "text",
+    "value": 0.25,
+    "status": "filled",
+    "coords": {},
+    "note": ""
+  },
+  {
+    "page": 9,
+    "section": "Part I \u2014 Cash Flow Projection: Production/Income",
+    "field_id": "1A_CROP_ROW_5.est_yield_lbs_acre",
+    "label": "Part I, 1A. Crop Row 5 \u2014 Asparagus \u2014 est_yield_lbs_acre",
+    "field_type": "text",
+    "value": 2500,
+    "status": "filled",
+    "coords": {},
+    "note": ""
+  },
+  {
+    "page": 9,
+    "section": "Part I \u2014 Cash Flow Projection: Production/Income",
+    "field_id": "1A_CROP_ROW_5.est_price_per_lb",
+    "label": "Part I, 1A. Crop Row 5 \u2014 Asparagus \u2014 est_price_per_lb",
+    "field_type": "text",
+    "value": 2.0,
+    "status": "filled",
+    "coords": {},
+    "note": ""
+  },
+  {
+    "page": 9,
+    "section": "Part I \u2014 Cash Flow Projection: Production/Income",
+    "field_id": "1A_CROP_ROW_5.est_revenue",
+    "label": "Part I, 1A. Crop Row 5 \u2014 Asparagus \u2014 est_revenue",
+    "field_type": "text",
+    "value": 1250.0,
+    "status": "filled",
+    "coords": {},
+    "note": ""
+  },
+  {
+    "page": 9,
+    "section": "Part I \u2014 Cash Flow Projection: Production/Income",
+    "field_id": "1A_CROP_ROW_5.notes",
+    "label": "Part I, 1A. Crop Row 5 \u2014 Asparagus \u2014 notes",
+    "field_type": "text",
+    "value": "Long-term perennial investment; 2-3 year establishment period before full harvest. Revenue estimate reflects Year 3+ production.",
+    "status": "filled",
+    "coords": {},
+    "note": ""
+  },
+  {
+    "page": 9,
+    "section": "Part I \u2014 Cash Flow Projection: Production/Income",
+    "field_id": "1A_CROP_ROW_6.crop",
+    "label": "Part I, 1A. Crop Row 6 \u2014 Artichoke \u2014 crop",
+    "field_type": "text",
+    "value": "Artichoke (Cynara cardunculus var. scolymus)",
+    "status": "filled",
+    "coords": {},
+    "note": ""
+  },
+  {
+    "page": 9,
+    "section": "Part I \u2014 Cash Flow Projection: Production/Income",
+    "field_id": "1A_CROP_ROW_6.variety",
+    "label": "Part I, 1A. Crop Row 6 \u2014 Artichoke \u2014 variety",
+    "field_type": "text",
+    "value": "KDDRFI",
+    "status": "filled",
+    "coords": {},
+    "note": ""
+  },
+  {
+    "page": 9,
+    "section": "Part I \u2014 Cash Flow Projection: Production/Income",
+    "field_id": "1A_CROP_ROW_6.planting_method",
+    "label": "Part I, 1A. Crop Row 6 \u2014 Artichoke \u2014 planting_method",
+    "field_type": "text",
+    "value": "Transplant / Division",
+    "status": "filled",
+    "coords": {},
+    "note": ""
+  },
+  {
+    "page": 9,
+    "section": "Part I \u2014 Cash Flow Projection: Production/Income",
+    "field_id": "1A_CROP_ROW_6.season",
+    "label": "Part I, 1A. Crop Row 6 \u2014 Artichoke \u2014 season",
+    "field_type": "text",
+    "value": "Spring / Fall (perennial)",
+    "status": "filled",
+    "coords": {},
+    "note": ""
+  },
+  {
+    "page": 9,
+    "section": "Part I \u2014 Cash Flow Projection: Production/Income",
+    "field_id": "1A_CROP_ROW_6.est_acres",
+    "label": "Part I, 1A. Crop Row 6 \u2014 Artichoke \u2014 est_acres",
+    "field_type": "text",
+    "value": 0.25,
+    "status": "filled",
+    "coords": {},
+    "note": ""
+  },
+  {
+    "page": 9,
+    "section": "Part I \u2014 Cash Flow Projection: Production/Income",
+    "field_id": "1A_CROP_ROW_6.est_yield_lbs_acre",
+    "label": "Part I, 1A. Crop Row 6 \u2014 Artichoke \u2014 est_yield_lbs_acre",
+    "field_type": "text",
+    "value": 3000,
+    "status": "filled",
+    "coords": {},
+    "note": ""
+  },
+  {
+    "page": 9,
+    "section": "Part I \u2014 Cash Flow Projection: Production/Income",
+    "field_id": "1A_CROP_ROW_6.est_price_per_lb",
+    "label": "Part I, 1A. Crop Row 6 \u2014 Artichoke \u2014 est_price_per_lb",
+    "field_type": "text",
+    "value": 2.5,
+    "status": "filled",
+    "coords": {},
+    "note": ""
+  },
+  {
+    "page": 9,
+    "section": "Part I \u2014 Cash Flow Projection: Production/Income",
+    "field_id": "1A_CROP_ROW_6.est_revenue",
+    "label": "Part I, 1A. Crop Row 6 \u2014 Artichoke \u2014 est_revenue",
+    "field_type": "text",
+    "value": 1875.0,
+    "status": "filled",
+    "coords": {},
+    "note": ""
+  },
+  {
+    "page": 9,
+    "section": "Part I \u2014 Cash Flow Projection: Production/Income",
+    "field_id": "1A_CROP_ROW_6.notes",
+    "label": "Part I, 1A. Crop Row 6 \u2014 Artichoke \u2014 notes",
+    "field_type": "text",
+    "value": "Specialty/gourmet vegetable; strong local and farmers market demand. Perennial once established. Suitable for TN zone 6\u20137.",
+    "status": "filled",
+    "coords": {},
+    "note": ""
+  },
+  {
+    "page": 9,
+    "section": "Part I \u2014 Cash Flow Projection: Production/Income",
+    "field_id": "I-1I-GrandTotal[0]",
+    "label": "Part I, 1I. Grand Total Income",
+    "field_type": "currency",
+    "value": 10850.0,
+    "status": "filled",
+    "coords": {
+      "x": 20.835,
+      "y": 19.786
+    },
+    "note": ""
+  },
+  {
+    "page": 10,
+    "section": "Part I continued \u2014 Operating Plan Expenses (2A) + 2B Scheduled Items + 2C/2D/3",
+    "field_id": "Exp1[0]",
+    "label": "2A. Seeds & Plants",
+    "field_type": "currency",
+    "value": 800.0,
+    "status": "filled",
+    "coords": {
+      "x": 235.417,
+      "y": 691.415
+    },
+    "note": ""
+  },
+  {
+    "page": 10,
+    "section": "Part I continued \u2014 Operating Plan Expenses (2A) + 2B Scheduled Items + 2C/2D/3",
+    "field_id": "Exp2[0]",
+    "label": "2A. Fertilizer & Lime",
+    "field_type": "currency",
+    "value": 350.0,
+    "status": "filled",
+    "coords": {
+      "x": 235.417,
+      "y": 677.015
+    },
+    "note": ""
+  },
+  {
+    "page": 10,
+    "section": "Part I continued \u2014 Operating Plan Expenses (2A) + 2B Scheduled Items + 2C/2D/3",
+    "field_id": "Exp3[0]",
+    "label": "2A. Chemicals",
+    "field_type": "currency",
+    "value": 200.0,
+    "status": "filled",
+    "coords": {
+      "x": 235.417,
+      "y": 662.615
+    },
+    "note": ""
+  },
+  {
+    "page": 10,
+    "section": "Part I continued \u2014 Operating Plan Expenses (2A) + 2B Scheduled Items + 2C/2D/3",
+    "field_id": "Exp4[0]",
+    "label": "2A. Irrigation Supplies (Other Expenses \u2014 Irrigation)",
+    "field_type": "currency",
+    "value": 150.0,
+    "status": "filled",
+    "coords": {
+      "x": 235.417,
+      "y": 648.215
+    },
+    "note": ""
+  },
+  {
+    "page": 10,
+    "section": "Part I continued \u2014 Operating Plan Expenses (2A) + 2B Scheduled Items + 2C/2D/3",
+    "field_id": "Exp5[0]",
+    "label": "2A. Repairs & Maintenance",
+    "field_type": "currency",
+    "value": 300.0,
+    "status": "filled",
+    "coords": {
+      "x": 235.417,
+      "y": 633.815
+    },
+    "note": ""
+  },
+  {
+    "page": 10,
+    "section": "Part I continued \u2014 Operating Plan Expenses (2A) + 2B Scheduled Items + 2C/2D/3",
+    "field_id": "Exp6[0]",
+    "label": "2A. Gas / Fuel / Oil",
+    "field_type": "currency",
+    "value": 400.0,
+    "status": "filled",
+    "coords": {
+      "x": 235.417,
+      "y": 619.415
+    },
+    "note": ""
+  },
+  {
+    "page": 10,
+    "section": "Part I continued \u2014 Operating Plan Expenses (2A) + 2B Scheduled Items + 2C/2D/3",
+    "field_id": "Exp9[0]",
+    "label": "2A. Supplies",
+    "field_type": "currency",
+    "value": 200.0,
+    "status": "filled",
+    "coords": {
+      "x": 235.417,
+      "y": 576.215
+    },
+    "note": ""
+  },
+  {
+    "page": 10,
+    "section": "Part I continued \u2014 Operating Plan Expenses (2A) + 2B Scheduled Items + 2C/2D/3",
+    "field_id": "B1total[0]",
+    "label": "2C(1). Household Operating Expenses",
+    "field_type": "currency",
+    "value": null,
+    "status": "pending",
+    "coords": {
+      "x": 523.417,
+      "y": 691.415
+    },
+    "note": "Must be collected from applicant before submission"
+  },
+  {
+    "page": 10,
+    "section": "Part I continued \u2014 Operating Plan Expenses (2A) + 2B Scheduled Items + 2C/2D/3",
+    "field_id": "B1to2A[0]",
+    "label": "2D. Grand Total Expenses",
+    "field_type": "currency",
+    "value": null,
+    "status": "pending",
+    "coords": {
+      "x": 523.417,
+      "y": 431.705
+    },
+    "note": "Computed: farm expenses ($2400) + household (KDDRFI)"
+  },
+  {
+    "page": 10,
+    "section": "Part I continued \u2014 Operating Plan Expenses (2A) + 2B Scheduled Items + 2C/2D/3",
+    "field_id": "2_Total[0]",
+    "label": "3. Net Income/Loss (Prior to Debt Repayment)",
+    "field_type": "currency",
+    "value": null,
+    "status": "pending",
+    "coords": {
+      "x": 523.417,
+      "y": 53.626
+    },
+    "note": "Computed: $10,850 income - total expenses (KDDRFI)"
+  },
+  {
+    "page": 11,
+    "section": "Part J \u2014 Notifications, Disclosures (Initials page 9 of 12)",
+    "field_id": "p9-1_Initials[0]",
+    "label": "Part J \u2014 Initials",
+    "field_type": "text",
+    "value": "SW",
+    "status": "filled",
+    "coords": {
+      "x": 51.662,
+      "y": 20.863,
+      "w": 44.503,
+      "h": 15.139
+    },
+    "note": "Initials of Scott Weeden"
+  },
+  {
+    "page": 11,
+    "section": "Part J \u2014 Notifications, Disclosures (Initials page 9 of 12)",
+    "field_id": "p9-2_date[0]",
+    "label": "Part J \u2014 Date",
+    "field_type": "date",
+    "value": "2026-03-05",
+    "status": "filled",
+    "coords": {
+      "x": 141.662,
+      "y": 20.353,
+      "w": 71.503,
+      "h": 15.139
+    },
+    "note": ""
+  },
+  {
+    "page": 12,
+    "section": "Part J \u2014 Signature Block (Certification, page 10 of 12)",
+    "field_id": "p10-1_signature[0]",
+    "label": "Part J, 10A. Signature",
+    "field_type": "signature",
+    "value": null,
+    "status": "pending",
+    "coords": {
+      "x": 29.274,
+      "y": 259.362,
+      "w": 215.73,
+      "h": 34.977
+    },
+    "note": "Wet/digital signature required \u2014 cannot auto-fill"
+  },
+  {
+    "page": 12,
+    "section": "Part J \u2014 Signature Block (Certification, page 10 of 12)",
+    "field_id": "p10-2_printedName[0]",
+    "label": "Part J, 10B. Printed Name",
+    "field_type": "text",
+    "value": "Scott Weeden",
+    "status": "filled",
+    "coords": {
+      "x": 250.674,
+      "y": 259.362,
+      "w": 228.33,
+      "h": 34.674
+    },
+    "note": ""
+  },
+  {
+    "page": 12,
+    "section": "Part J \u2014 Signature Block (Certification, page 10 of 12)",
+    "field_id": "p10-3_date[0]",
+    "label": "Part J, 10C. Date (MM/DD/YYYY)",
+    "field_type": "date",
+    "value": "2026-03-05",
+    "status": "filled",
+    "coords": {
+      "x": 484.674,
+      "y": 259.362,
+      "w": 93.33,
+      "h": 34.353
+    },
+    "note": ""
+  },
+  {
+    "page": 12,
+    "section": "Part J \u2014 Signature Block (Certification, page 10 of 12)",
+    "field_id": "PartJItem9DSelf[0]",
+    "label": "Part J, 10D. Capacity \u2014 Self",
+    "field_type": "checkbox",
+    "value": true,
+    "status": "filled",
+    "coords": {
+      "x": 88.674,
+      "y": 242.1,
+      "w": 10.0,
+      "h": 10.0
+    },
+    "note": "capacity == Self"
+  },
+  {
+    "page": 12,
+    "section": "Part J \u2014 Signature Block (Certification, page 10 of 12)",
+    "field_id": "PatyJItem9DER[0]",
+    "label": "Part J, 10D. Capacity \u2014 Entity Representative",
+    "field_type": "checkbox",
+    "value": false,
+    "status": "filled",
+    "coords": {
+      "x": 124.674,
+      "y": 242.1,
+      "w": 10.0,
+      "h": 10.0
+    },
+    "note": ""
+  }
+]

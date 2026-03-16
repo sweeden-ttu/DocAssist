@@ -1,0 +1,931 @@
+{
+  "_schema_meta": {
+    "title": "FSA-2001 Field Mapping Schema",
+    "version": "1.0",
+    "description": "Maps OCR-analysed PDF form fields to applicant data values. Each entry drives a form-fill operation: text fields get a string value, checkbox/radio fields get a boolean, date fields get MM/DD/YYYY strings.",
+    "conventions": {
+      "SKIP": "Field exists in PDF but no data provided — leave blank",
+      "FSA_USE_ONLY": "Part K — FSA staff fill only, never touch",
+      "KDDRFI": "Applicant has not provided this value — must be collected before final submission",
+      "data_path": "Dot-notation path into fsa2001_weeden_data_1.json. Arrays use [n] notation.",
+      "fill_value": "Literal value to write when data_path is null or for checkboxes",
+      "field_type": "text | checkbox | radio | date | currency | signature"
+    }
+  },
+
+  "pages": {
+
+    "page_3": {
+      "form_section": "Part A — Primary Applicant / Part B — Primary Applicant Info / Part C — Entity Info",
+      "pdf_page": 3,
+      "fields": [
+
+        {
+          "field_id": "ExactFullLegalName1[0]",
+          "label_human": "Part A, 1. Exact Full Legal Name",
+          "field_type": "text",
+          "data_path": "part_a_applicant.full_legal_name",
+          "fill_value": "Scott Weeden",
+          "coords": {"x": 20.835, "y": 638.249, "w": 570.259, "h": 13.719}
+        },
+        {
+          "field_id": "StreetAddress2A[0]",
+          "label_human": "Part A, 2A. Address Line 1",
+          "field_type": "text",
+          "data_path": "mailing_address.street",
+          "fill_value": "600 W Hallmark Ave, Apt 442",
+          "coords": {"x": 20.835, "y": 609.265, "w": 328.129, "h": 12.274}
+        },
+        {
+          "field_id": "StreetAddress2A[1]",
+          "label_human": "Part A, 2B. Address Line 2",
+          "field_type": "text",
+          "data_path": null,
+          "fill_value": "",
+          "coords": {"x": 20.835, "y": 580.125, "w": 328.129, "h": 11.952}
+        },
+        {
+          "field_id": "City2B[0]",
+          "label_human": "Part A, 2C. City",
+          "field_type": "text",
+          "data_path": "mailing_address.city",
+          "fill_value": "Killeen",
+          "coords": {"x": 20.835, "y": 551.166, "w": 185.394, "h": 11.325}
+        },
+        {
+          "field_id": "State2C[0]",
+          "label_human": "Part A, 2D. State",
+          "field_type": "text",
+          "data_path": "mailing_address.state",
+          "fill_value": "TX",
+          "coords": {"x": 211.899, "y": 551.166, "w": 58.073, "h": 11.660}
+        },
+        {
+          "field_id": "Zio2D[0]",
+          "label_human": "Part A, 2E. Zip",
+          "field_type": "text",
+          "data_path": "mailing_address.zip",
+          "fill_value": "76541",
+          "coords": {"x": 275.962, "y": 551.166, "w": 73.0, "h": 12.039}
+        },
+        {
+          "field_id": "PhoneNumber3[0]",
+          "label_human": "Part A, 3A. Primary Phone Number",
+          "field_type": "text",
+          "data_path": "part_a_applicant.primary_phone",
+          "fill_value": "971-444-2625",
+          "coords": {"x": 354.938, "y": 609.265, "w": 236.227, "h": 10.980}
+        },
+        {
+          "field_id": "Home[0]",
+          "label_human": "Part A, 3A. Primary Phone — Home checkbox",
+          "field_type": "checkbox",
+          "data_path": null,
+          "fill_value": false,
+          "note": "Primary phone is a cell, not home",
+          "coords": {"x": 483.957, "y": 622.58, "w": 10.0, "h": 10.0}
+        },
+        {
+          "field_id": "Cell[0]",
+          "label_human": "Part A, 3A. Primary Phone — Cell checkbox",
+          "field_type": "checkbox",
+          "data_path": null,
+          "fill_value": true,
+          "coords": {"x": 528.786, "y": 622.582, "w": 10.0, "h": 10.0}
+        },
+        {
+          "field_id": "PhoneNumber3[1]",
+          "label_human": "Part A, 3B. Alternative Phone Number",
+          "field_type": "text",
+          "data_path": null,
+          "fill_value": "",
+          "note": "KDDRFI — not provided",
+          "coords": {"x": 354.938, "y": 579.938, "w": 236.227, "h": 10.980}
+        },
+        {
+          "field_id": "Home[1]",
+          "label_human": "Part A, 3B. Alt Phone — Home checkbox",
+          "field_type": "checkbox",
+          "data_path": null,
+          "fill_value": false,
+          "coords": {"x": 483.954, "y": 593.439, "w": 10.0, "h": 10.0}
+        },
+        {
+          "field_id": "Cell[1]",
+          "label_human": "Part A, 3B. Alt Phone — Cell checkbox",
+          "field_type": "checkbox",
+          "data_path": null,
+          "fill_value": false,
+          "coords": {"x": 528.789, "y": 593.442, "w": 10.0, "h": 10.0}
+        },
+        {
+          "field_id": "Email4[0]",
+          "label_human": "Part A, 4. Email Address",
+          "field_type": "text",
+          "data_path": "part_a_applicant.email",
+          "fill_value": "scott.weeden@gmail.com",
+          "coords": {"x": 354.938, "y": 551.169, "w": 236.227, "h": 12.578}
+        },
+        {
+          "field_id": "Individual5[0]",
+          "label_human": "Part A, 5. Applicant Type — Individual",
+          "field_type": "checkbox",
+          "data_path": null,
+          "fill_value": true,
+          "note": "applicant_type == Individual",
+          "coords": {"x": 20.812, "y": 506.535, "w": 10.0, "h": 10.0}
+        },
+        {
+          "field_id": "InformalEntity5[0]",
+          "label_human": "Part A, 5. Applicant Type — Informal Entity",
+          "field_type": "checkbox",
+          "data_path": null,
+          "fill_value": false,
+          "coords": {"x": 20.93, "y": 489.975, "w": 10.0, "h": 10.0}
+        },
+        {
+          "field_id": "LegalEntity5[0]",
+          "label_human": "Part A, 5. Applicant Type — Legal Entity",
+          "field_type": "checkbox",
+          "data_path": null,
+          "fill_value": false,
+          "coords": {"x": 21.333, "y": 473.415, "w": 10.0, "h": 10.0}
+        },
+        {
+          "field_id": "Page1PartAItem6Checkbox[0]",
+          "label_human": "Part A, 6. Existing Customer (no change)",
+          "field_type": "checkbox",
+          "data_path": null,
+          "fill_value": false,
+          "note": "existing_customer == No",
+          "coords": {"x": 506.83, "y": 456.412, "w": 10.0, "h": 10.0}
+        },
+
+        {
+          "field_id": "SSN1[0]",
+          "label_human": "Part B, 1. Social Security Number (9 Digits)",
+          "field_type": "text",
+          "data_path": "part_a_applicant.ssn",
+          "fill_value": "***-**-3197",
+          "note": "Show masked value; actual SSN entered on paper or via secure channel",
+          "coords": {"x": 20.835, "y": 410.769, "w": 214.987, "h": 15.732}
+        },
+        {
+          "field_id": "Birthday2[0]",
+          "label_human": "Part B, 2. Birth Date (MM/DD/YYYY)",
+          "field_type": "date",
+          "data_path": "part_a_applicant.dob",
+          "fill_value": "10/17/1981",
+          "coords": {"x": 241.172, "y": 410.769, "w": 132.131, "h": 16.087}
+        },
+        {
+          "field_id": "County3[0]",
+          "label_human": "Part B, 3. County of Operation Headquarters",
+          "field_type": "text",
+          "data_path": "farm_address.county",
+          "fill_value": "Campbell",
+          "coords": {"x": 378.842, "y": 410.769, "w": 212.323, "h": 16.393}
+        },
+
+        {
+          "field_id": "MilitaryYes[0]",
+          "label_human": "Part B, 4. Military Veteran — Yes",
+          "field_type": "checkbox",
+          "data_path": null,
+          "fill_value": false,
+          "coords": {"x": 29.668, "y": 504.715, "w": 10.0, "h": 10.0}
+        },
+        {
+          "field_id": "MilitaryNo[0]",
+          "label_human": "Part B, 4. Military Veteran — No",
+          "field_type": "checkbox",
+          "data_path": null,
+          "fill_value": true,
+          "note": "military_veteran == No",
+          "coords": {"x": 29.668, "y": 483.994, "w": 10.0, "h": 10.0}
+        },
+
+        {
+          "field_id": "DateField1[0]",
+          "label_human": "Page 3 — Initials Date (bottom of page)",
+          "field_type": "date",
+          "data_path": "application_date",
+          "fill_value": "03/05/2026",
+          "coords": {"x": 141.6, "y": 20.416, "w": 71.503, "h": 15.139}
+        },
+
+        {"field_id": "Cooperative[0]", "label_human": "Part C — SKIP (Individual applicant)", "field_type": "checkbox", "fill_value": false, "data_path": null, "coords": {"x": 29.671, "y": 205.323}},
+        {"field_id": "RevocableTrust[0]", "fill_value": false, "data_path": null, "coords": {"x": 156.391, "y": 205.325}},
+        {"field_id": "LLC[0]", "fill_value": false, "data_path": null, "coords": {"x": 29.668, "y": 188.649}},
+        {"field_id": "FormalPartnership[0]", "fill_value": false, "data_path": null, "coords": {"x": 156.388, "y": 188.346}},
+        {"field_id": "SCorp[0]", "fill_value": false, "data_path": null, "coords": {"x": 29.668, "y": 172.018}},
+        {"field_id": "CCorp[0]", "fill_value": false, "data_path": null, "coords": {"x": 156.388, "y": 172.016}},
+        {"field_id": "LifeEstate[0]", "fill_value": false, "data_path": null, "coords": {"x": 29.668, "y": 154.537}},
+        {"field_id": "IrrevocableTrust[0]", "fill_value": false, "data_path": null, "coords": {"x": 156.388, "y": 154.537}},
+        {"field_id": "Other[0]", "fill_value": false, "data_path": null, "coords": {"x": 29.668, "y": 138.113}},
+        {"field_id": "Yes6[0]", "label_human": "Part C, 6. Embedded Entity — Yes", "fill_value": false, "data_path": null, "coords": {"x": 29.668, "y": 106.263}},
+        {"field_id": "No6[0]", "label_human": "Part C, 6. Embedded Entity — No", "fill_value": true, "data_path": null, "coords": {"x": 373.57, "y": 106.266}}
+      ]
+    },
+
+    "page_4": {
+      "form_section": "Part B continued (marital, race/sex) + Part D (entity members — N/A for individual)",
+      "pdf_page": 4,
+      "fields": [
+        {
+          "field_id": "MaritalMarried[0]",
+          "label_human": "Part B, 5. Marital Status — Married",
+          "field_type": "checkbox",
+          "data_path": null,
+          "fill_value": "KDDRFI",
+          "note": "marital_status is KDDRFI — must confirm with applicant"
+        },
+        {
+          "field_id": "MaritalSeparated[0]", "fill_value": "KDDRFI", "data_path": null,
+          "coords": {"x": 235.863, "y": 505.458}
+        },
+        {
+          "field_id": "MaritalDivorced[0]", "fill_value": "KDDRFI", "data_path": null,
+          "coords": {"x": 170.099, "y": 485.803}
+        },
+        {
+          "field_id": "MaritalUnmarried[0]", "fill_value": "KDDRFI", "data_path": null,
+          "coords": {"x": 235.863, "y": 485.803}
+        },
+        {
+          "field_id": "MaritalIndividual[0]", "fill_value": "KDDRFI", "data_path": null,
+          "coords": {"x": 170.099, "y": 466.437}
+        },
+
+        {
+          "field_id": "Citizen[0]",
+          "label_human": "Part B, 6. U.S. Citizen",
+          "field_type": "checkbox",
+          "data_path": null,
+          "fill_value": true,
+          "note": "citizen_status == U.S. Citizen",
+          "coords": {"x": 318.671, "y": 505.458}
+        },
+        {"field_id": "NonCitizenNational[0]", "fill_value": false, "data_path": null, "coords": {"x": 427.842, "y": 505.458}},
+        {"field_id": "ResidentAlien[0]", "fill_value": false, "data_path": null, "coords": {"x": 318.155, "y": 485.838}},
+        {"field_id": "Refugee[0]", "fill_value": false, "data_path": null, "coords": {"x": 427.335, "y": 485.806}},
+
+        {
+          "field_id": "AmericanIndianAlaska[0]",
+          "label_human": "Part B, 7. Race — American Indian/Alaskan Native",
+          "field_type": "checkbox",
+          "data_path": null,
+          "fill_value": "",
+          "note": "race_ethnicity is KDDRFI",
+          "coords": {"x": 29.937, "y": 434.003}
+        },
+        {"field_id": "Asian[0]", "fill_value": null, "data_path": null, "coords": {"x": 29.693, "y": 417.247}},
+        {"field_id": "BlackAfricanAmerican[0]", "fill_value": null, "data_path": null, "coords": {"x": 29.934, "y": 400.664}},
+        {"field_id": "White[0]", "fill_value": true, "data_path": null, "coords": {"x": 322.875, "y": 434.272}},
+        {"field_id": "PreferNotShare[0]", "fill_value": null, "data_path": null, "coords": {"x": 183.912, "y": 416.932}},
+        {"field_id": "HispanicLatino[0]", "fill_value": null, "data_path": null, "coords": {"x": 183.912, "y": 434.272}},
+        {"field_id": "HawaiianPacificIsland[0]", "fill_value": null, "data_path": null, "coords": {"x": 183.626, "y": 398.688}},
+
+        {
+          "field_id": "Male[0]",
+          "label_human": "Part B, 8. Sex — Male",
+          "field_type": "checkbox",
+          "data_path": null,
+          "fill_value": true,
+          "note": "sex is M",
+          "coords": {"x": 427.845, "y": 437.09}
+        },
+        {"field_id": "Female[0]", "fill_value": null, "data_path": null, "coords": {"x": 501.512, "y": 437.09}},
+
+        {
+          "field_id": "ExactFullLegalName1D[0]",
+          "label_human": "Part D, Member 1 — Full Legal Name",
+          "field_type": "text",
+          "data_path": null,
+          "fill_value": "N/A — Individual Applicant",
+          "note": "Individual applicant; Part D not applicable",
+          "coords": {"x": 20.835, "y": 628.717}
+        }
+      ]
+    },
+
+    "page_5": {
+      "form_section": "Part E — Loan Request + Part F — Training + Part G — Eligibility",
+      "pdf_page": 5,
+      "fields": [
+        {
+          "field_id": "PartEItem1NewLoanRequest[0]",
+          "label_human": "Part E, 1. New Loan Request",
+          "field_type": "checkbox",
+          "data_path": null,
+          "fill_value": true,
+          "note": "request_type == New Loan Request",
+          "coords": {"x": 20.835, "y": 724.313}
+        },
+        {"field_id": "PartEItem1LoanServicingRequest[0]", "fill_value": false, "data_path": null},
+        {"field_id": "PartEItem1TransferandAssumptions[0]", "fill_value": false, "data_path": null},
+
+        {
+          "field_id": "Number1AE[0]",
+          "label_human": "Part E, 1A. Request 1 of (count)",
+          "field_type": "text",
+          "data_path": null,
+          "fill_value": "3",
+          "coords": {"x": 20.835, "y": 696.155}
+        },
+        {
+          "field_id": "TextField19[0]",
+          "label_human": "Part E, 1B. Use of Loan Proceeds — Request 1",
+          "field_type": "text",
+          "data_path": "part_e_loan_request.use_of_proceeds_1",
+          "fill_value": "Purchase farm land adjacent to 1301 Powell Valley Shores Circle, Speedwell, TN 37870",
+          "coords": {"x": 20.835, "y": 694.737}
+        },
+        {
+          "field_id": "AmountRequestedE1BE[0]",
+          "label_human": "Part E, 1C. $ Amount Requested — Request 1",
+          "field_type": "currency",
+          "data_path": "part_e_loan_request.amount_1",
+          "fill_value": "45000.00",
+          "coords": {"x": 20.835, "y": 696.155}
+        },
+
+        {
+          "field_id": "Number1AE[1]",
+          "label_human": "Part E, 2A. Request 2 of",
+          "field_type": "text",
+          "data_path": null,
+          "fill_value": "3",
+          "coords": {"x": 20.835, "y": 667.012}
+        },
+        {
+          "field_id": "TextField19[1]",
+          "label_human": "Part E, 2B. Use of Loan Proceeds — Request 2",
+          "field_type": "text",
+          "data_path": "part_e_loan_request.use_of_proceeds_2",
+          "fill_value": "Initial equipment: small tractor/tiller, irrigation equipment, hand tools, raised-bed lumber, fencing",
+          "coords": {"x": 20.835, "y": 665.537}
+        },
+        {
+          "field_id": "AmountRequested2BE[0]",
+          "label_human": "Part E, 2C. $ Amount Requested — Request 2",
+          "field_type": "currency",
+          "data_path": "part_e_loan_request.amount_2",
+          "fill_value": "8500.00",
+          "coords": {"x": 20.835, "y": 667.012}
+        },
+
+        {
+          "field_id": "Number1AE[2]",
+          "label_human": "Part E, 3A. Request 3 of",
+          "field_type": "text",
+          "data_path": null,
+          "fill_value": "3",
+          "coords": {"x": 20.835, "y": 638.303}
+        },
+        {
+          "field_id": "TextField19[2]",
+          "label_human": "Part E, 3B. Use of Loan Proceeds — Request 3",
+          "field_type": "text",
+          "data_path": "part_e_loan_request.use_of_proceeds_3",
+          "fill_value": "Soil preparation, seeds/transplants, fertilizer, and first-year operating inputs for vegetable crops",
+          "coords": {"x": 20.835, "y": 636.888}
+        },
+        {
+          "field_id": "AmountRequested2BE[1]",
+          "label_human": "Part E, 3C. $ Amount Requested — Request 3",
+          "field_type": "currency",
+          "data_path": "part_e_loan_request.amount_3",
+          "fill_value": "3500.00",
+          "coords": {"x": 20.835, "y": 638.303}
+        },
+
+        {
+          "field_id": "CheckBox2[0]",
+          "label_human": "Part F, 1. Operator of farm/ranch + year started",
+          "field_type": "checkbox",
+          "data_path": null,
+          "fill_value": false,
+          "note": "Not in experience_items list",
+          "coords": {"x": 20.835, "y": 594.62}
+        },
+        {"field_id": "CheckBox2[1]", "label_human": "Part F — FSA Youth Loan participant", "fill_value": false, "data_path": null, "coords": {"x": 20.835, "y": 577.77}},
+        {"field_id": "CheckBox2[2]", "label_human": "Part F — 4-H or FFA", "fill_value": false, "data_path": null, "coords": {"x": 20.835, "y": 560.819}},
+        {"field_id": "CheckBox2[3]", "label_human": "Part F — Grew up on farm/ranch", "fill_value": false, "data_path": null, "coords": {"x": 20.835, "y": 543.993}},
+        {"field_id": "CheckBox2[4]", "label_human": "Part F — 4-year ag degree", "fill_value": false, "data_path": null, "coords": {"x": 20.835, "y": 526.94}},
+        {"field_id": "CheckBox2[5]", "label_human": "Part F — 2-year ag degree", "fill_value": false, "data_path": null, "coords": {"x": 20.835, "y": 509.966}},
+        {"field_id": "CheckBox2[6]", "label_human": "Part F — Beginning Farmers & Ranchers Dev Program", "fill_value": false, "data_path": null, "coords": {"x": 20.835, "y": 494.035}},
+        {"field_id": "CheckBox2[7]", "label_human": "Part F — Ag-related Community Based Org", "fill_value": false, "data_path": null, "coords": {"x": 20.835, "y": 476.415}},
+        {"field_id": "CheckBox2[8]", "label_human": "Part F — Ag-related Tribal Youth Org", "fill_value": false, "data_path": null, "coords": {"x": 20.835, "y": 459.543}},
+        {"field_id": "CheckBox2[9]", "label_human": "Part F — Farm manager", "fill_value": false, "data_path": null, "coords": {"x": 20.835, "y": 442.875}},
+        {"field_id": "CheckBox2[10]", "label_human": "Part F — Farm mgmt consultant", "fill_value": false, "data_path": null, "coords": {"x": 20.835, "y": 426.276}},
+        {"field_id": "CheckBox2[11]", "label_human": "Part F — Other ag-related field", "fill_value": false, "data_path": null, "coords": {"x": 20.835, "y": 409.472}},
+        {"field_id": "CheckBox2[12]", "label_human": "Part F — Cooperative Extension / land-grant completion", "fill_value": false, "data_path": null, "coords": {"x": 20.835, "y": 383.807}},
+        {
+          "field_id": "CheckBox2[13]",
+          "label_human": "Part F — Non-farm business or management experience",
+          "field_type": "checkbox",
+          "data_path": null,
+          "fill_value": true,
+          "note": "In experience_items",
+          "coords": {"x": 20.835, "y": 595.232}
+        },
+        {"field_id": "CheckBox2[14]", "label_human": "Part F — Community/nationally based farm workshop", "fill_value": false, "data_path": null, "coords": {"x": 20.835, "y": 568.915}},
+        {
+          "field_id": "CheckBox2[15]",
+          "label_human": "Part F — Raised on farm w/ significant day-to-day responsibility",
+          "field_type": "checkbox",
+          "data_path": null,
+          "fill_value": true,
+          "note": "In experience_items",
+          "coords": {"x": 20.835, "y": 534.174}
+        },
+        {"field_id": "CheckBox2[16]", "label_human": "Part F — Ag apprenticeship", "fill_value": false, "data_path": null, "coords": {"x": 20.835, "y": 517.2}},
+        {"field_id": "CheckBox2[17]", "label_human": "Part F — Ag mentorship", "fill_value": false, "data_path": null, "coords": {"x": 20.835, "y": 500.532}},
+        {"field_id": "CheckBox2[18]", "label_human": "Part F — Honorably discharged veteran", "fill_value": false, "data_path": null, "coords": {"x": 20.835, "y": 482.294}},
+        {"field_id": "CheckBox2[19]", "label_human": "Part F — SCORE program", "fill_value": false, "data_path": null, "coords": {"x": 20.835, "y": 455.344}},
+        {"field_id": "CheckBox2[20]", "label_human": "Part F — Other (describe)", "fill_value": false, "data_path": null, "coords": {"x": 20.835, "y": 430.72}},
+
+        {
+          "field_id": "Explanation2F[0]",
+          "label_human": "Part F, 2. Explanation",
+          "field_type": "text",
+          "data_path": "part_f_experience.explanation",
+          "fill_value": "Applicant Scott Weeden brings non-farm business and management experience from prior professional roles. Applicant is relocating from Killeen, TX to establish a first-time vegetable farming operation in Campbell County, TN. Current mailing address (600 W Hallmark Ave, Apt 442, Killeen, TX 76541) is an apartment unit and is wholly unsuitable for the space, soil, and infrastructure requirements of the proposed farming operation. Property acquisition and relocation are contingent on loan approval.",
+          "coords": {"x": 20.835, "y": 299.736}
+        },
+
+        {"field_id": "CheckYes1G[0]", "label_human": "Part G, 1. Other business names — Yes", "fill_value": false, "data_path": null, "coords": {"x": 20.835, "y": 254.334}},
+        {"field_id": "CheckNo1G[0]", "label_human": "Part G, 1. Other business names — No", "fill_value": true, "data_path": null, "coords": {"x": 20.835, "y": 254.334}},
+        {"field_id": "CheckYes2G[0]", "label_human": "Part G, 2. Prior FSA loan — Yes", "fill_value": false, "data_path": null, "coords": {"x": 20.835, "y": 231.546}},
+        {"field_id": "CheckNo2G[0]", "label_human": "Part G, 2. Prior FSA loan — No", "fill_value": true, "data_path": null, "coords": {"x": 20.835, "y": 231.549}},
+        {"field_id": "CheckYes3G[0]", "label_human": "Part G, 3. Debt forgiveness — Yes", "fill_value": false, "data_path": null, "coords": {"x": 20.835, "y": 208.412}},
+        {"field_id": "CheckNo3G[0]", "label_human": "Part G, 3. Debt forgiveness — No", "fill_value": true, "data_path": null, "coords": {"x": 20.835, "y": 208.412}},
+        {"field_id": "CheckYes4G[0]", "label_human": "Part G, 4. Delinquent federal debt — Yes", "fill_value": false, "data_path": null, "coords": {"x": 20.835, "y": 184.729}},
+        {"field_id": "CheckNo4G[0]", "label_human": "Part G, 4. Delinquent federal debt — No", "fill_value": true, "data_path": null, "coords": {"x": 20.835, "y": 184.726}},
+        {"field_id": "CheckYes5G[0]", "label_human": "Part G, 5. Pending litigation — Yes", "fill_value": false, "data_path": null, "coords": {"x": 20.835, "y": 160.479}},
+        {"field_id": "CheckNo5G[0]", "label_human": "Part G, 5. Pending litigation — No", "fill_value": true, "data_path": null, "coords": {"x": 20.835, "y": 160.479}},
+        {"field_id": "CheckYes6G[0]", "label_human": "Part G, 6. Bankruptcy — Yes", "fill_value": false, "data_path": null, "coords": {"x": 20.835, "y": 136.602}},
+        {"field_id": "CheckNo6G[0]", "label_human": "Part G, 6. Bankruptcy — No", "fill_value": true, "data_path": null, "coords": {"x": 20.835, "y": 136.602}},
+        {"field_id": "CheckYes7G[0]", "label_human": "Part G, 7. FSA employee relation — Yes", "fill_value": false, "data_path": null, "coords": {"x": 20.835, "y": 113.27}},
+        {"field_id": "CheckNo7G[0]", "label_human": "Part G, 7. FSA employee relation — No", "fill_value": true, "data_path": null, "coords": {"x": 20.835, "y": 113.268}},
+
+        {
+          "field_id": "AddtlInfo8G[0]",
+          "label_human": "Part G, 8. Additional Information",
+          "field_type": "text",
+          "data_path": null,
+          "fill_value": "",
+          "note": "All G answers are No; no additional info required",
+          "coords": {"x": 20.835, "y": 41.996}
+        },
+        {
+          "field_id": "DateField3[0]",
+          "label_human": "Part G — Initials Date",
+          "field_type": "date",
+          "data_path": "application_date",
+          "fill_value": "03/05/2026",
+          "coords": {"x": 20.835, "y": 19.332}
+        }
+      ]
+    },
+
+    "page_6": {
+      "form_section": "Part H — Balance Sheet Header",
+      "pdf_page": 6,
+      "fields": [
+        {
+          "field_id": "PartHCheckBox[0]",
+          "label_human": "Part H — Check if submitting alternative documents",
+          "field_type": "checkbox",
+          "data_path": null,
+          "fill_value": false,
+          "note": "Applicant is completing the form directly",
+          "coords": {"x": 20.835, "y": 713.231}
+        },
+        {
+          "field_id": "TextField18[0]",
+          "label_human": "Part H — Balance Sheet of (Applicant Name)",
+          "field_type": "text",
+          "data_path": "part_a_applicant.full_legal_name",
+          "fill_value": "Scott Weeden",
+          "coords": {"x": 20.835, "y": 700.664}
+        },
+        {
+          "field_id": "DateTimeField1[0]",
+          "label_human": "Part H — As of Date",
+          "field_type": "date",
+          "data_path": "part_h_balance_sheet.as_of_date",
+          "fill_value": "03/05/2026",
+          "coords": {"x": 20.835, "y": 700.585}
+        }
+      ]
+    },
+
+    "page_7": {
+      "form_section": "Part H — Farm Asset Schedules (Schedules A–M) + Personal Assets (N–Q)",
+      "pdf_page": 7,
+      "note": "Most schedules are zero/blank — applicant has no existing farm assets except post-loan machinery and land. All KDDRFI personal fields need collection.",
+      "fields": [
+        {
+          "field_id": "5_MarketValue[0]",
+          "label_human": "Schedule A — Cash & Equivalents (checking/savings)",
+          "field_type": "currency",
+          "data_path": "part_h_balance_sheet.farm_assets.current.cash_and_equivalents",
+          "fill_value": "KDDRFI",
+          "coords": {"x": 20.835, "y": 30.217}
+        },
+        {
+          "field_id": "4_MarketValue[0]",
+          "label_human": "Schedule M — Farm Real Estate Land: $/Acre",
+          "field_type": "currency",
+          "data_path": null,
+          "fill_value": "",
+          "note": "45000 total / ~1 acre est. — enter on paper",
+          "coords": {"x": 20.835, "y": 30.217}
+        },
+        {
+          "field_id": "2_Owned[0]",
+          "label_human": "Schedule M — Farm Real Estate: % Owned",
+          "field_type": "text",
+          "data_path": null,
+          "fill_value": "100",
+          "coords": {"x": 20.835, "y": 261.909}
+        },
+        {
+          "field_id": "3_MarketValue[0]",
+          "label_human": "Schedule L — Buildings & Improvements: Market Value",
+          "field_type": "currency",
+          "data_path": "part_h_balance_sheet.farm_assets.long_term.buildings_improvements",
+          "fill_value": "0.00",
+          "coords": {"x": 20.835, "y": 116.617}
+        },
+        {
+          "field_id": "2_MarketValue[0]",
+          "label_human": "Schedule P — Retirement Accounts: Market Value",
+          "field_type": "currency",
+          "data_path": "part_h_balance_sheet.personal_assets.long_term.retirement_accounts",
+          "fill_value": "KDDRFI",
+          "coords": {"x": 20.835, "y": 131.017}
+        }
+      ]
+    },
+
+    "page_8": {
+      "form_section": "Part H — Farm Liability Schedules (BB–DD) + Personal Liabilities (EE–GG)",
+      "pdf_page": 8,
+      "note": "All farm liabilities are $0 — no existing debt. Personal liabilities are KDDRFI.",
+      "fields": [
+        {
+          "field_id": "2_Owed[0]",
+          "label_human": "Schedule BB — Notes Payable (12 mo or less): Amount Owed",
+          "field_type": "currency",
+          "data_path": null,
+          "fill_value": "0.00",
+          "coords": {"x": 20.835, "y": 689.737}
+        },
+        {
+          "field_id": "4_Owed[0]",
+          "label_human": "Schedule CC — Annual Payments Int Notes Payable: Amount Owed",
+          "field_type": "currency",
+          "data_path": null,
+          "fill_value": "0.00",
+          "coords": {"x": 20.835, "y": 689.737}
+        }
+      ]
+    },
+
+    "page_9": {
+      "form_section": "Part I — Cash Flow Projection: Production/Income",
+      "pdf_page": 9,
+      "fields": [
+        {
+          "field_id": "PartIcheckbox[0]",
+          "label_human": "Part I — Check if submitting alternative documents",
+          "field_type": "checkbox",
+          "data_path": null,
+          "fill_value": false,
+          "coords": {"x": 20.835, "y": 715.7}
+        },
+        {
+          "field_id": "DateTimeField2[0]",
+          "label_human": "Part I — Production Cycle Start Date",
+          "field_type": "date",
+          "data_path": "part_i_cash_flow.production_cycle_start",
+          "fill_value": "03/15/2026",
+          "coords": {"x": 20.835, "y": 702.601}
+        },
+        {
+          "field_id": "DateTimeField2[1]",
+          "label_human": "Part I — Production Cycle End Date",
+          "field_type": "date",
+          "data_path": "part_i_cash_flow.production_cycle_end",
+          "fill_value": "11/15/2026",
+          "coords": {"x": 20.835, "y": 702.601}
+        },
+
+        {
+          "field_id": "1A_CROP_ROW_1",
+          "label_human": "Part I, 1A. Crop Row 1 — Eggplant",
+          "field_type": "table_row",
+          "data_path": "crop_plan[0]",
+          "fill_value": {
+            "type_description": "Eggplant (Solanum melongena)",
+            "unit_measure": "lbs",
+            "acres": "0.25",
+            "yield": "8000",
+            "farm_use": "",
+            "pct_share": "100",
+            "per_unit": "0.75",
+            "total": "1500.00"
+          },
+          "coords_field_ids": ["1_Description[0]","1_Type[0]","3_Acres[0]","4_Yield[0]","5_FarmUse[0]","6_Share[0]","7_PerUnit[0]","8_Total[0]"]
+        },
+        {
+          "field_id": "1A_CROP_ROW_2",
+          "label_human": "Part I, 1A. Crop Row 2 — Sweet Corn",
+          "field_type": "table_row",
+          "data_path": "crop_plan[1]",
+          "fill_value": {
+            "type_description": "Corn — Sweet (Zea mays var. saccharata)",
+            "unit_measure": "lbs",
+            "acres": "0.50",
+            "yield": "7000",
+            "farm_use": "",
+            "pct_share": "100",
+            "per_unit": "0.35",
+            "total": "1225.00"
+          }
+        },
+        {
+          "field_id": "1A_CROP_ROW_3",
+          "label_human": "Part I, 1A. Crop Row 3 — Peppers",
+          "field_type": "table_row",
+          "data_path": "crop_plan[2]",
+          "fill_value": {
+            "type_description": "Peppers (Capsicum annuum — Bell & Hot)",
+            "unit_measure": "lbs",
+            "acres": "0.25",
+            "yield": "10000",
+            "farm_use": "",
+            "pct_share": "100",
+            "per_unit": "0.80",
+            "total": "2000.00"
+          }
+        },
+        {
+          "field_id": "1A_CROP_ROW_4",
+          "label_human": "Part I, 1A. Crop Row 4 — Tomatoes",
+          "field_type": "table_row",
+          "data_path": "crop_plan[3]",
+          "fill_value": {
+            "type_description": "Tomatoes (Solanum lycopersicum)",
+            "unit_measure": "lbs",
+            "acres": "0.25",
+            "yield": "20000",
+            "farm_use": "",
+            "pct_share": "100",
+            "per_unit": "0.60",
+            "total": "3000.00"
+          }
+        },
+        {
+          "field_id": "1A_CROP_ROW_5",
+          "label_human": "Part I, 1A. Crop Row 5 — Asparagus",
+          "field_type": "table_row",
+          "data_path": "crop_plan[4]",
+          "fill_value": {
+            "type_description": "Asparagus (Asparagus officinalis)",
+            "unit_measure": "lbs",
+            "acres": "0.25",
+            "yield": "2500",
+            "farm_use": "",
+            "pct_share": "100",
+            "per_unit": "2.00",
+            "total": "1250.00"
+          }
+        },
+        {
+          "field_id": "1A_CROP_ROW_6",
+          "label_human": "Part I, 1A. Crop Row 6 — Artichoke",
+          "field_type": "table_row",
+          "data_path": "crop_plan[5]",
+          "fill_value": {
+            "type_description": "Artichoke (Cynara cardunculus var. scolymus)",
+            "unit_measure": "lbs",
+            "acres": "0.25",
+            "yield": "3000",
+            "farm_use": "",
+            "pct_share": "100",
+            "per_unit": "2.50",
+            "total": "1875.00"
+          }
+        },
+
+        {
+          "field_id": "I-1I-GrandTotal[0]",
+          "label_human": "Part I, 1I. Grand Total Income",
+          "field_type": "currency",
+          "data_path": "part_i_cash_flow.income.crop_sales_estimated",
+          "fill_value": "10850.00",
+          "coords": {"x": 20.835, "y": 19.786}
+        }
+      ]
+    },
+
+    "page_10": {
+      "form_section": "Part I continued — Operating Plan Expenses (2A) + 2B Scheduled Items + 2C/2D/3",
+      "pdf_page": 10,
+      "fields": [
+        {
+          "field_id": "Exp1[0]",
+          "label_human": "2A. Seeds & Plants",
+          "field_type": "currency",
+          "data_path": "part_i_cash_flow.expenses.seeds_transplants",
+          "fill_value": "800.00",
+          "coords": {"x": 235.417, "y": 691.415}
+        },
+        {
+          "field_id": "Exp2[0]",
+          "label_human": "2A. Fertilizer & Lime",
+          "field_type": "currency",
+          "data_path": "part_i_cash_flow.expenses.fertilizer_lime",
+          "fill_value": "350.00",
+          "coords": {"x": 235.417, "y": 677.015}
+        },
+        {
+          "field_id": "Exp3[0]",
+          "label_human": "2A. Chemicals",
+          "field_type": "currency",
+          "data_path": "part_i_cash_flow.expenses.chemicals_pesticides",
+          "fill_value": "200.00",
+          "coords": {"x": 235.417, "y": 662.615}
+        },
+        {
+          "field_id": "Exp4[0]",
+          "label_human": "2A. Irrigation Supplies (Other Expenses — Irrigation)",
+          "field_type": "currency",
+          "data_path": "part_i_cash_flow.expenses.irrigation_supplies",
+          "fill_value": "150.00",
+          "coords": {"x": 235.417, "y": 648.215}
+        },
+        {
+          "field_id": "Exp5[0]",
+          "label_human": "2A. Repairs & Maintenance",
+          "field_type": "currency",
+          "data_path": "part_i_cash_flow.expenses.repairs_maintenance",
+          "fill_value": "300.00",
+          "coords": {"x": 235.417, "y": 633.815}
+        },
+        {
+          "field_id": "Exp6[0]",
+          "label_human": "2A. Gas / Fuel / Oil",
+          "field_type": "currency",
+          "data_path": "part_i_cash_flow.expenses.gas_fuel_oil",
+          "fill_value": "400.00",
+          "coords": {"x": 235.417, "y": 619.415}
+        },
+        {
+          "field_id": "Exp9[0]",
+          "label_human": "2A. Supplies",
+          "field_type": "currency",
+          "data_path": "part_i_cash_flow.expenses.other_supplies",
+          "fill_value": "200.00",
+          "coords": {"x": 235.417, "y": 576.215}
+        },
+        {
+          "field_id": "B1total[0]",
+          "label_human": "2C(1). Household Operating Expenses",
+          "field_type": "currency",
+          "data_path": "part_i_cash_flow.expenses.household_living_exp",
+          "fill_value": "KDDRFI",
+          "note": "Must be collected from applicant before submission",
+          "coords": {"x": 523.417, "y": 691.415}
+        },
+        {
+          "field_id": "B1to2A[0]",
+          "label_human": "2D. Grand Total Expenses",
+          "field_type": "currency",
+          "data_path": "part_i_cash_flow.expenses.total_expenses",
+          "fill_value": "KDDRFI",
+          "note": "Computed: farm expenses ($2400) + household (KDDRFI)",
+          "coords": {"x": 523.417, "y": 431.705}
+        },
+        {
+          "field_id": "2_Total[0]",
+          "label_human": "3. Net Income/Loss (Prior to Debt Repayment)",
+          "field_type": "currency",
+          "data_path": "part_i_cash_flow.net_income_before_debt_repayment",
+          "fill_value": "KDDRFI",
+          "note": "Computed: $10,850 income - total expenses (KDDRFI)",
+          "coords": {"x": 523.417, "y": 53.626}
+        }
+      ]
+    },
+
+    "page_11": {
+      "form_section": "Part J — Notifications, Disclosures (Initials page 9 of 12)",
+      "pdf_page": 11,
+      "fields": [
+        {
+          "field_id": "p9-1_Initials[0]",
+          "label_human": "Part J — Initials",
+          "field_type": "text",
+          "data_path": null,
+          "fill_value": "SW",
+          "note": "Initials of Scott Weeden",
+          "coords": {"x": 51.662, "y": 20.863, "w": 44.503, "h": 15.139}
+        },
+        {
+          "field_id": "p9-2_date[0]",
+          "label_human": "Part J — Date",
+          "field_type": "date",
+          "data_path": "application_date",
+          "fill_value": "03/05/2026",
+          "coords": {"x": 141.662, "y": 20.353, "w": 71.503, "h": 15.139}
+        }
+      ]
+    },
+
+    "page_12": {
+      "form_section": "Part J — Signature Block (Certification, page 10 of 12)",
+      "pdf_page": 12,
+      "fields": [
+        {
+          "field_id": "p10-1_signature[0]",
+          "label_human": "Part J, 10A. Signature",
+          "field_type": "signature",
+          "data_path": "part_j_signature.signature",
+          "fill_value": "KDDRFI_SIG",
+          "note": "Wet/digital signature required — cannot auto-fill",
+          "coords": {"x": 29.274, "y": 259.362, "w": 215.73, "h": 34.977}
+        },
+        {
+          "field_id": "p10-2_printedName[0]",
+          "label_human": "Part J, 10B. Printed Name",
+          "field_type": "text",
+          "data_path": "part_j_signature.printed_name",
+          "fill_value": "Scott Weeden",
+          "coords": {"x": 250.674, "y": 259.362, "w": 228.33, "h": 34.674}
+        },
+        {
+          "field_id": "p10-3_date[0]",
+          "label_human": "Part J, 10C. Date (MM/DD/YYYY)",
+          "field_type": "date",
+          "data_path": "application_date",
+          "fill_value": "03/05/2026",
+          "coords": {"x": 484.674, "y": 259.362, "w": 93.33, "h": 34.353}
+        },
+        {
+          "field_id": "PartJItem9DSelf[0]",
+          "label_human": "Part J, 10D. Capacity — Self",
+          "field_type": "checkbox",
+          "data_path": null,
+          "fill_value": true,
+          "note": "capacity == Self",
+          "coords": {"x": 88.674, "y": 242.1, "w": 10.0, "h": 10.0}
+        },
+        {
+          "field_id": "PatyJItem9DER[0]",
+          "label_human": "Part J, 10D. Capacity — Entity Representative",
+          "field_type": "checkbox",
+          "data_path": null,
+          "fill_value": false,
+          "coords": {"x": 124.674, "y": 242.1, "w": 10.0, "h": 10.0}
+        }
+      ]
+    },
+
+    "page_13": {
+      "form_section": "Part K — FSA USE ONLY",
+      "pdf_page": 13,
+      "note": "ALL FIELDS — FSA staff only. Do not fill.",
+      "fields": []
+    }
+  },
+
+  "kddrfi_fields_requiring_collection": {
+    "description": "These fields have KDDRFI (unknown) values and MUST be collected from the applicant before the form can be submitted.",
+    "fields": [
+      {"field": "part_a_applicant.marital_status", "form_ref": "Part B, 5", "field_ids": ["MaritalMarried[0]","MaritalSeparated[0]","MaritalDivorced[0]","MaritalUnmarried[0]","MaritalIndividual[0]"]},
+      {"field": "part_a_applicant.race_ethnicity", "form_ref": "Part B, 7", "field_ids": ["AmericanIndianAlaska[0]","Asian[0]","BlackAfricanAmerican[0]","White[0]","HispanicLatino[0]","HawaiianPacificIsland[0]","PreferNotShare[0]"]},
+      {"field": "part_a_applicant.sex", "form_ref": "Part B, 8", "field_ids": ["Male[0]","Female[0]"]},
+      {"field": "part_h_balance_sheet.farm_assets.current.cash_and_equivalents", "form_ref": "Schedule A", "field_ids": ["5_MarketValue[0]"]},
+      {"field": "part_h_balance_sheet.personal_assets.current.cash_equivalents", "form_ref": "Schedule N", "field_ids": []},
+      {"field": "part_h_balance_sheet.personal_assets.long_term.retirement_accounts", "form_ref": "Schedule P", "field_ids": ["2_MarketValue[0]"]},
+      {"field": "part_i_cash_flow.expenses.household_living_exp", "form_ref": "2C(1)", "field_ids": ["B1total[0]"]},
+      {"field": "part_j_signature.date", "form_ref": "Part J, 10C", "note": "Resolved — use application_date 03/05/2026"}
+    ]
+  },
+
+  "fill_summary": {
+    "total_fields_in_ocr": 254,
+    "fields_with_data": 68,
+    "fields_forced_false_checkbox": 42,
+    "fields_forced_true_checkbox": 18,
+    "fields_skip_fsa_only": 25,
+    "fields_kddrfi_pending": 8,
+    "pages_covered": [3,4,5,6,7,8,9,10,11,12],
+    "pages_fsa_only": [13,14]
+  }
+}

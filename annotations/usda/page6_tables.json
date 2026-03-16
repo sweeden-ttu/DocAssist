@@ -1,0 +1,2034 @@
+{
+  "page": 6,
+  "section": "PART H \u2014 Balance Sheet (Summary of Schedules)",
+  "applicant": "Scott Weeden & Johnathan King",
+  "as_of_date": "03/05/2026",
+  "value_cell_x_inference": {
+    "market_value_x": 233.67,
+    "market_value_width": 72.29,
+    "owed_x": 538.68,
+    "owed_width": 39.55,
+    "method": "Average of all \"$ Market Value\" and \"$ Owed\" header cell x-positions across all section headers on the page"
+  },
+  "cells": [
+    {
+      "text": "NOTE: PART MAY BE SUBSTITUTED. Applicant may submit alternative documents (<90 days old) that provide the information collected on this part. Check here if you are submitting alternative documents and proceed to Part I. Balance Sheet of: As of:",
+      "row": 0,
+      "col": 0,
+      "coords": {
+        "x": 14.416431486606598,
+        "y": 50.90380147844554,
+        "width": 579.5512642264366,
+        "height": 32.84260636568069
+      },
+      "cell_type": "label",
+      "answer": ""
+    },
+    {
+      "text": "NOTE: PART MAY BE SUBSTITUTED. Applicant may submit alternative documents (<90 days old) that provide the information collected on this part. Check here if you are submitting alternative documents and proceed to Part I. Balance Sheet of: As of:",
+      "row": 0,
+      "col": 1,
+      "coords": {
+        "x": 14.416431486606598,
+        "y": 50.90380147844554,
+        "width": 579.5512642264366,
+        "height": 32.84260636568069
+      },
+      "cell_type": "label",
+      "answer": ""
+    },
+    {
+      "text": "NOTE: PART MAY BE SUBSTITUTED. Applicant may submit alternative documents (<90 days old) that provide the information collected on this part. Check here if you are submitting alternative documents and proceed to Part I. Balance Sheet of: As of:",
+      "row": 0,
+      "col": 2,
+      "coords": {
+        "x": 14.416431486606598,
+        "y": 50.90380147844554,
+        "width": 579.5512642264366,
+        "height": 32.84260636568069
+      },
+      "cell_type": "label",
+      "answer": ""
+    },
+    {
+      "text": "NOTE: PART MAY BE SUBSTITUTED. Applicant may submit alternative documents (<90 days old) that provide the information collected on this part. Check here if you are submitting alternative documents and proceed to Part I. Balance Sheet of: As of:",
+      "row": 0,
+      "col": 3,
+      "coords": {
+        "x": 14.416431486606598,
+        "y": 50.90380147844554,
+        "width": 579.5512642264366,
+        "height": 32.84260636568069
+      },
+      "cell_type": "label",
+      "answer": ""
+    },
+    {
+      "text": "FARM",
+      "row": 1,
+      "col": 0,
+      "coords": {
+        "x": 16.789527267217636,
+        "y": 95.75676716119051,
+        "width": 323.7563286423683,
+        "height": 13.805898271501064
+      },
+      "cell_type": "label",
+      "answer": ""
+    },
+    {
+      "text": "FARM",
+      "row": 1,
+      "col": 1,
+      "coords": {
+        "x": 16.789527267217636,
+        "y": 95.75676716119051,
+        "width": 323.7563286423683,
+        "height": 13.805898271501064
+      },
+      "cell_type": "label",
+      "answer": ""
+    },
+    {
+      "text": "FARM",
+      "row": 1,
+      "col": 2,
+      "coords": {
+        "x": 16.789527267217636,
+        "y": 95.75676716119051,
+        "width": 323.7563286423683,
+        "height": 13.805898271501064
+      },
+      "cell_type": "label",
+      "answer": ""
+    },
+    {
+      "text": "FARM",
+      "row": 1,
+      "col": 3,
+      "coords": {
+        "x": 16.789527267217636,
+        "y": 95.75676716119051,
+        "width": 323.7563286423683,
+        "height": 13.805898271501064
+      },
+      "cell_type": "label",
+      "answer": ""
+    },
+    {
+      "text": "1A. Current Farm Assets",
+      "row": 2,
+      "col": 0,
+      "coords": {
+        "x": 16.874531999230385,
+        "y": 110.54649268090725,
+        "width": 106.85601250827312,
+        "height": 11.910085022449493
+      },
+      "cell_type": "label",
+      "answer": ""
+    },
+    {
+      "text": "$ Market Value",
+      "row": 2,
+      "col": 1,
+      "coords": {
+        "x": 235.3774881362915,
+        "y": 109.12361785769463,
+        "width": 71.03627419471741,
+        "height": 12.708936542272568
+      },
+      "cell_type": "label",
+      "answer": ""
+    },
+    {
+      "text": "1B. Current Farm Liabilities",
+      "row": 2,
+      "col": 2,
+      "coords": {
+        "x": 312.1738438606262,
+        "y": 110.40203127264977,
+        "width": 126.62629413604736,
+        "height": 12.253347873687744
+      },
+      "cell_type": "label",
+      "answer": ""
+    },
+    {
+      "text": "$ Owed",
+      "row": 2,
+      "col": 3,
+      "coords": {
+        "x": 541.6236946582794,
+        "y": 109.76527489721775,
+        "width": 38.93148684501648,
+        "height": 11.414414763450623
+      },
+      "cell_type": "label",
+      "answer": ""
+    },
+    {
+      "text": "Cash & Equivalents (Sch. A)",
+      "row": 3,
+      "col": 0,
+      "coords": {
+        "x": 16.918091595172882,
+        "y": 124.11606913805008,
+        "width": 106.5379090309143,
+        "height": 12.06075069308281
+      },
+      "cell_type": "label",
+      "answer": ""
+    },
+    {
+      "row": 3,
+      "col": "1_value",
+      "cell_type": "value",
+      "side": "assets",
+      "label": "$ Market Value \u2014 Cash & Equivalents (Sch. A)",
+      "answer": "$0.00",
+      "coords": {
+        "x": 233.67,
+        "y": 123.91294039785862,
+        "width": 72.29,
+        "height": 11.8,
+        "inferred": true
+      }
+    },
+    {
+      "text": "Accounts Payable ( Sch. AA)",
+      "row": 3,
+      "col": 2,
+      "coords": {
+        "x": 311.2318024635315,
+        "y": 123.91294039785862,
+        "width": 109.10606050491333,
+        "height": 11.914953231811523
+      },
+      "cell_type": "label",
+      "answer": ""
+    },
+    {
+      "row": 3,
+      "col": "3_value",
+      "cell_type": "value",
+      "side": "liabilities",
+      "label": "$ Owed \u2014 Accounts Payable (Sch. AA)",
+      "answer": "$0.00",
+      "coords": {
+        "x": 538.68,
+        "y": 123.91294039785862,
+        "width": 39.55,
+        "height": 11.8,
+        "inferred": true
+      }
+    },
+    {
+      "text": "Marketable Bonds & Securities",
+      "row": 4,
+      "col": 0,
+      "coords": {
+        "x": 16.862176835536957,
+        "y": 138.7255275696516,
+        "width": 125.34894505143166,
+        "height": 12.168743804097176
+      },
+      "cell_type": "label",
+      "answer": ""
+    },
+    {
+      "row": 4,
+      "col": "1_value",
+      "cell_type": "value",
+      "side": "assets",
+      "label": "$ Market Value \u2014 Marketable Bonds & Securities",
+      "answer": "$0.00",
+      "coords": {
+        "x": 233.67,
+        "y": 138.22121353447437,
+        "width": 72.29,
+        "height": 11.8,
+        "inferred": true
+      }
+    },
+    {
+      "text": "Income Taxes Payable",
+      "row": 4,
+      "col": 2,
+      "coords": {
+        "x": 312.0383117198944,
+        "y": 138.22121353447437,
+        "width": 103.87977027893066,
+        "height": 11.675280466675758
+      },
+      "cell_type": "label",
+      "answer": ""
+    },
+    {
+      "row": 4,
+      "col": "3_value",
+      "cell_type": "value",
+      "side": "liabilities",
+      "label": "$ Owed \u2014 Income Taxes Payable",
+      "answer": "$0.00",
+      "coords": {
+        "x": 538.68,
+        "y": 138.22121353447437,
+        "width": 39.55,
+        "height": 11.8,
+        "inferred": true
+      }
+    },
+    {
+      "text": "Accounts Receivable (Sch. B)",
+      "row": 5,
+      "col": 0,
+      "coords": {
+        "x": 16.88068589568138,
+        "y": 152.40545010566711,
+        "width": 117.60053053498268,
+        "height": 11.945979952812195
+      },
+      "cell_type": "label",
+      "answer": ""
+    },
+    {
+      "row": 5,
+      "col": "1_value",
+      "cell_type": "value",
+      "side": "assets",
+      "label": "$ Market Value \u2014 Accounts Receivable (Sch. B)",
+      "answer": "$0.00",
+      "coords": {
+        "x": 233.67,
+        "y": 152.45591720938683,
+        "width": 72.29,
+        "height": 11.8,
+        "inferred": true
+      }
+    },
+    {
+      "text": "Real Estate Taxes Payable",
+      "row": 5,
+      "col": 2,
+      "coords": {
+        "x": 312.89274299144745,
+        "y": 152.45591720938683,
+        "width": 111.30819940567017,
+        "height": 11.497412323951721
+      },
+      "cell_type": "label",
+      "answer": ""
+    },
+    {
+      "row": 5,
+      "col": "3_value",
+      "cell_type": "value",
+      "side": "liabilities",
+      "label": "$ Owed \u2014 Real Estate Taxes Payable",
+      "answer": "$0.00",
+      "coords": {
+        "x": 538.68,
+        "y": 152.45591720938683,
+        "width": 39.55,
+        "height": 11.8,
+        "inferred": true
+      }
+    },
+    {
+      "text": "Crop Inventory (Sch. C)",
+      "row": 6,
+      "col": 0,
+      "coords": {
+        "x": 16.957495480775833,
+        "y": 166.97888919711113,
+        "width": 88.87208342552185,
+        "height": 11.765034019947052
+      },
+      "cell_type": "label",
+      "answer": ""
+    },
+    {
+      "row": 6,
+      "col": "1_value",
+      "cell_type": "value",
+      "side": "assets",
+      "label": "$ Market Value \u2014 Crop Inventory (Sch. C)",
+      "answer": "$0.00",
+      "coords": {
+        "x": 233.67,
+        "y": 166.70055744051933,
+        "width": 72.29,
+        "height": 11.8,
+        "inferred": true
+      }
+    },
+    {
+      "text": "Notes Payable (12 months or less) (Sch. BB)",
+      "row": 6,
+      "col": 2,
+      "coords": {
+        "x": 311.9572129249573,
+        "y": 166.70055744051933,
+        "width": 177.1225242614746,
+        "height": 11.604274928569794
+      },
+      "cell_type": "label",
+      "answer": ""
+    },
+    {
+      "row": 6,
+      "col": "3_value",
+      "cell_type": "value",
+      "side": "liabilities",
+      "label": "$ Owed \u2014 Notes Payable 12 months or less (Sch. BB)",
+      "answer": "$0.00",
+      "coords": {
+        "x": 538.68,
+        "y": 166.70055744051933,
+        "width": 39.55,
+        "height": 11.8,
+        "inferred": true
+      }
+    },
+    {
+      "text": "Growing Crops (Sch. D)",
+      "row": 7,
+      "col": 0,
+      "coords": {
+        "x": 17.089341312646866,
+        "y": 180.43240213394165,
+        "width": 90.8720351755619,
+        "height": 11.921833634376526
+      },
+      "cell_type": "label",
+      "answer": ""
+    },
+    {
+      "row": 7,
+      "col": "1_value",
+      "cell_type": "value",
+      "side": "assets",
+      "label": "$ Market Value \u2014 Growing Crops (Sch. D)",
+      "answer": "$0.00",
+      "coords": {
+        "x": 233.67,
+        "y": 181.03284707665443,
+        "width": 72.29,
+        "height": 11.8,
+        "inferred": true
+      }
+    },
+    {
+      "text": "Total Annual Payments of Int. Notes Payable (Sch.CC)",
+      "row": 7,
+      "col": 2,
+      "coords": {
+        "x": 310.9381380081177,
+        "y": 181.03284707665443,
+        "width": 205.54444789886475,
+        "height": 11.46052211523056
+      },
+      "cell_type": "label",
+      "answer": ""
+    },
+    {
+      "row": 7,
+      "col": "3_value",
+      "cell_type": "value",
+      "side": "liabilities",
+      "label": "$ Owed \u2014 Total Annual Payments Int. Notes Payable (Sch. CC)",
+      "answer": "$0.00",
+      "coords": {
+        "x": 538.68,
+        "y": 181.03284707665443,
+        "width": 39.55,
+        "height": 11.8,
+        "inferred": true
+      }
+    },
+    {
+      "text": "Market Livestock & Poultry (Sch. E)",
+      "row": 8,
+      "col": 0,
+      "coords": {
+        "x": 17.07971642911434,
+        "y": 194.82916849851608,
+        "width": 141.75387646257877,
+        "height": 11.901733338832855
+      },
+      "cell_type": "label",
+      "answer": ""
+    },
+    {
+      "row": 8,
+      "col": "1_value",
+      "cell_type": "value",
+      "side": "assets",
+      "label": "$ Market Value \u2014 Market Livestock & Poultry (Sch. E)",
+      "answer": "$0.00",
+      "coords": {
+        "x": 233.67,
+        "y": 194.98252791166306,
+        "width": 72.29,
+        "height": 11.8,
+        "inferred": true
+      }
+    },
+    {
+      "text": "Total Annual Pymts of L. Term Notes Payable (Sch.",
+      "row": 8,
+      "col": 2,
+      "coords": {
+        "x": 309.78318643569946,
+        "y": 194.98252791166306,
+        "width": 209.18507409095764,
+        "height": 11.541918575763702
+      },
+      "cell_type": "label",
+      "answer": ""
+    },
+    {
+      "text": "DD)",
+      "row": 8,
+      "col": 3,
+      "coords": {
+        "x": 516.3975768685341,
+        "y": 194.52738279104233,
+        "width": 61.46820116043091,
+        "height": 11.372915983200073
+      },
+      "cell_type": "label",
+      "answer": ""
+    },
+    {
+      "row": 8,
+      "col": "3_value",
+      "cell_type": "value",
+      "side": "liabilities",
+      "label": "$ Owed \u2014 Total Annual Pymts Long-Term Notes Payable (Sch. DD)",
+      "answer": "$0.00",
+      "coords": {
+        "x": 538.68,
+        "y": 194.98252791166306,
+        "width": 39.55,
+        "height": 11.8,
+        "inferred": true
+      }
+    },
+    {
+      "text": "Livestock Products (Sch. F)",
+      "row": 9,
+      "col": 0,
+      "coords": {
+        "x": 16.66182853281498,
+        "y": 209.96965661644936,
+        "width": 105.26042644679546,
+        "height": 11.703975856304169
+      },
+      "cell_type": "label",
+      "answer": ""
+    },
+    {
+      "row": 9,
+      "col": "1_value",
+      "cell_type": "value",
+      "side": "assets",
+      "label": "$ Market Value \u2014 Livestock Products (Sch. F)",
+      "answer": "$0.00",
+      "coords": {
+        "x": 233.67,
+        "y": 209.96965661644936,
+        "width": 72.29,
+        "height": 11.8,
+        "inferred": true
+      }
+    },
+    {
+      "text": "Prepaid Expenses & Supplies (Sch. G)",
+      "row": 10,
+      "col": 0,
+      "coords": {
+        "x": 16.64153230190277,
+        "y": 224.13862323760986,
+        "width": 151.63328325748444,
+        "height": 11.566887080669403
+      },
+      "cell_type": "label",
+      "answer": ""
+    },
+    {
+      "row": 10,
+      "col": "1_value",
+      "cell_type": "value",
+      "side": "assets",
+      "label": "$ Market Value \u2014 Prepaid Expenses & Supplies (Sch. G)",
+      "answer": "$0.00",
+      "coords": {
+        "x": 233.67,
+        "y": 224.13862323760986,
+        "width": 72.29,
+        "height": 11.8,
+        "inferred": true
+      }
+    },
+    {
+      "text": "Other (Specify) :",
+      "row": 11,
+      "col": 0,
+      "coords": {
+        "x": 16.741777509450912,
+        "y": 238.2423666715622,
+        "width": 59.86970825493336,
+        "height": 11.650165915489197
+      },
+      "cell_type": "label",
+      "answer": ""
+    },
+    {
+      "row": 11,
+      "col": "1_value",
+      "cell_type": "value",
+      "side": "assets",
+      "label": "$ Market Value \u2014 Other Farm Current Asset (Specify)",
+      "answer": "$0.00",
+      "coords": {
+        "x": 233.67,
+        "y": 238.2423666715622,
+        "width": 72.29,
+        "height": 11.8,
+        "inferred": true
+      }
+    },
+    {
+      "text": "TOTAL CURRENT FARM ASSETS: TOTAL CURRENT FARM LIABILITIES:",
+      "row": 12,
+      "col": 0,
+      "coords": {
+        "x": 45.77768689393997,
+        "y": 252.75811207294464,
+        "width": 541.0787400603294,
+        "height": 12.817540884017944
+      },
+      "cell_type": "label",
+      "answer": ""
+    },
+    {
+      "text": "TOTAL CURRENT FARM ASSETS: TOTAL CURRENT FARM LIABILITIES:",
+      "row": 12,
+      "col": 1,
+      "coords": {
+        "x": 45.77768689393997,
+        "y": 252.75811207294464,
+        "width": 541.0787400603294,
+        "height": 12.817540884017944
+      },
+      "cell_type": "label",
+      "answer": ""
+    },
+    {
+      "row": 12,
+      "col": "1_value",
+      "cell_type": "value",
+      "side": "assets",
+      "label": "$ Market Value \u2014 TOTAL CURRENT FARM ASSETS",
+      "answer": "$0.00",
+      "coords": {
+        "x": 233.67,
+        "y": 252.75811207294464,
+        "width": 72.29,
+        "height": 11.8,
+        "inferred": true
+      }
+    },
+    {
+      "text": "TOTAL CURRENT FARM ASSETS: TOTAL CURRENT FARM LIABILITIES:",
+      "row": 12,
+      "col": 2,
+      "coords": {
+        "x": 45.77768689393997,
+        "y": 252.75811207294464,
+        "width": 541.0787400603294,
+        "height": 12.817540884017944
+      },
+      "cell_type": "label",
+      "answer": ""
+    },
+    {
+      "text": "TOTAL CURRENT FARM ASSETS: TOTAL CURRENT FARM LIABILITIES:",
+      "row": 12,
+      "col": 3,
+      "coords": {
+        "x": 45.77768689393997,
+        "y": 252.75811207294464,
+        "width": 541.0787400603294,
+        "height": 12.817540884017944
+      },
+      "cell_type": "label",
+      "answer": ""
+    },
+    {
+      "row": 12,
+      "col": "3_value",
+      "cell_type": "value",
+      "side": "liabilities",
+      "label": "$ Owed \u2014 TOTAL CURRENT FARM LIABILITIES",
+      "answer": "$0.00",
+      "coords": {
+        "x": 538.68,
+        "y": 252.75811207294464,
+        "width": 39.55,
+        "height": 11.8,
+        "inferred": true
+      }
+    },
+    {
+      "text": "1C. Intermediate Farm Assets",
+      "row": 13,
+      "col": 0,
+      "coords": {
+        "x": 18.108842566609383,
+        "y": 269.12764996290207,
+        "width": 128.51247416436672,
+        "height": 11.821916341781616
+      },
+      "cell_type": "label",
+      "answer": ""
+    },
+    {
+      "text": "$ Market Value",
+      "row": 13,
+      "col": 1,
+      "coords": {
+        "x": 232.13040125370026,
+        "y": 268.77092921733856,
+        "width": 72.7603987455368,
+        "height": 12.193414807319641
+      },
+      "cell_type": "label",
+      "answer": ""
+    },
+    {
+      "text": "1D. Intermediate Farm Liabilities",
+      "row": 13,
+      "col": 2,
+      "coords": {
+        "x": 311.017,
+        "y": 269.9463962316513,
+        "width": 141.79813977050782,
+        "height": 11.579544425010681
+      },
+      "cell_type": "label",
+      "answer": ""
+    },
+    {
+      "text": "$ Owed",
+      "row": 13,
+      "col": 3,
+      "coords": {
+        "x": 539.5914704799652,
+        "y": 270.5735514163971,
+        "width": 37.417344093322754,
+        "height": 11.634674191474915
+      },
+      "cell_type": "label",
+      "answer": ""
+    },
+    {
+      "text": "Machinery & Equipment (Sch. H)",
+      "row": 14,
+      "col": 0,
+      "coords": {
+        "x": 17.01936173439026,
+        "y": 282.81396067142487,
+        "width": 130.9387501180172,
+        "height": 11.873324632644653
+      },
+      "cell_type": "label",
+      "answer": ""
+    },
+    {
+      "row": 14,
+      "col": "1_value",
+      "cell_type": "value",
+      "side": "assets",
+      "label": "$ Market Value \u2014 Machinery & Equipment (Sch. H)",
+      "answer": "$7,500.00",
+      "coords": {
+        "x": 233.67,
+        "y": 282.9036006331444,
+        "width": 72.29,
+        "height": 11.8,
+        "inferred": true
+      }
+    },
+    {
+      "text": "Debts due in over 1 year but less than 7 (Sch. CC)",
+      "row": 14,
+      "col": 2,
+      "coords": {
+        "x": 309.1359119415283,
+        "y": 282.9036006331444,
+        "width": 189.469247341156,
+        "height": 11.947278141975403
+      },
+      "cell_type": "label",
+      "answer": ""
+    },
+    {
+      "row": 14,
+      "col": "3_value",
+      "cell_type": "value",
+      "side": "liabilities",
+      "label": "$ Owed \u2014 Debts due over 1 year but less than 7 (Sch. CC)",
+      "answer": "$0.00",
+      "coords": {
+        "x": 538.68,
+        "y": 282.9036006331444,
+        "width": 39.55,
+        "height": 11.8,
+        "inferred": true
+      }
+    },
+    {
+      "text": "Farm Vehicles (Sch. I)",
+      "row": 15,
+      "col": 0,
+      "coords": {
+        "x": 16.65868052840233,
+        "y": 297.25947403907776,
+        "width": 91.36230564117432,
+        "height": 12.016990900039673
+      },
+      "cell_type": "label",
+      "answer": ""
+    },
+    {
+      "row": 15,
+      "col": "1_value",
+      "cell_type": "value",
+      "side": "assets",
+      "label": "$ Market Value \u2014 Farm Vehicles (Sch. I)",
+      "answer": "$0.00",
+      "coords": {
+        "x": 233.67,
+        "y": 297.25947403907776,
+        "width": 72.29,
+        "height": 11.8,
+        "inferred": true
+      }
+    },
+    {
+      "text": "Breeding Stock (Sch. J)",
+      "row": 16,
+      "col": 0,
+      "coords": {
+        "x": 16.70331673324108,
+        "y": 311.6067144870758,
+        "width": 94.1012546569109,
+        "height": 12.006086111068726
+      },
+      "cell_type": "label",
+      "answer": ""
+    },
+    {
+      "row": 16,
+      "col": "1_value",
+      "cell_type": "value",
+      "side": "assets",
+      "label": "$ Market Value \u2014 Breeding Stock (Sch. J)",
+      "answer": "$0.00",
+      "coords": {
+        "x": 233.67,
+        "y": 311.6067144870758,
+        "width": 72.29,
+        "height": 11.8,
+        "inferred": true
+      }
+    },
+    {
+      "text": "Notes Receivable (Sch. K)",
+      "row": 17,
+      "col": 0,
+      "coords": {
+        "x": 16.748159646987915,
+        "y": 326.1525129675865,
+        "width": 108.39900407195091,
+        "height": 12.052344918251038
+      },
+      "cell_type": "label",
+      "answer": ""
+    },
+    {
+      "row": 17,
+      "col": "1_value",
+      "cell_type": "value",
+      "side": "assets",
+      "label": "$ Market Value \u2014 Notes Receivable (Sch. K)",
+      "answer": "$0.00",
+      "coords": {
+        "x": 233.67,
+        "y": 326.1525129675865,
+        "width": 72.29,
+        "height": 11.8,
+        "inferred": true
+      }
+    },
+    {
+      "text": "Not Readily Marketable Bonds and Securities",
+      "row": 18,
+      "col": 0,
+      "coords": {
+        "x": 16.789527267217636,
+        "y": 341.12840151786804,
+        "width": 193.31659105420113,
+        "height": 12.010240316390991
+      },
+      "cell_type": "label",
+      "answer": ""
+    },
+    {
+      "row": 18,
+      "col": "1_value",
+      "cell_type": "value",
+      "side": "assets",
+      "label": "$ Market Value \u2014 Not Readily Marketable Bonds and Securities",
+      "answer": "$0.00",
+      "coords": {
+        "x": 233.67,
+        "y": 341.12840151786804,
+        "width": 72.29,
+        "height": 11.8,
+        "inferred": true
+      }
+    },
+    {
+      "text": "Other (Specify) :",
+      "row": 19,
+      "col": 0,
+      "coords": {
+        "x": 17.189969792962074,
+        "y": 355.8371876478195,
+        "width": 61.301030207037925,
+        "height": 12.004095554351807
+      },
+      "cell_type": "label",
+      "answer": ""
+    },
+    {
+      "row": 19,
+      "col": "1_value",
+      "cell_type": "value",
+      "side": "assets",
+      "label": "$ Market Value \u2014 Other Farm Intermediate Asset (Specify)",
+      "answer": "$0.00",
+      "coords": {
+        "x": 233.67,
+        "y": 355.8371876478195,
+        "width": 72.29,
+        "height": 11.8,
+        "inferred": true
+      }
+    },
+    {
+      "text": "TOTAL INTERMEDIATE FARM ASSETS:",
+      "row": 20,
+      "col": 0,
+      "coords": {
+        "x": 53.17386081814766,
+        "y": 370.1334525346756,
+        "width": 175.66008457541466,
+        "height": 12.085838198661804
+      },
+      "cell_type": "label",
+      "answer": ""
+    },
+    {
+      "row": 20,
+      "col": "1_value",
+      "cell_type": "value",
+      "side": "assets",
+      "label": "$ Market Value \u2014 TOTAL INTERMEDIATE FARM ASSETS",
+      "answer": "$7,500.00",
+      "coords": {
+        "x": 233.67,
+        "y": 369.743108689785,
+        "width": 72.29,
+        "height": 11.8,
+        "inferred": true
+      }
+    },
+    {
+      "text": "TOTAL INTERMEDIATE FARM LIABILITIES:",
+      "row": 20,
+      "col": 2,
+      "coords": {
+        "x": 319.9061350822449,
+        "y": 369.743108689785,
+        "width": 200.92698431015015,
+        "height": 12.019976735115051
+      },
+      "cell_type": "label",
+      "answer": ""
+    },
+    {
+      "row": 20,
+      "col": "3_value",
+      "cell_type": "value",
+      "side": "liabilities",
+      "label": "$ Owed \u2014 TOTAL INTERMEDIATE FARM LIABILITIES",
+      "answer": "$0.00",
+      "coords": {
+        "x": 538.68,
+        "y": 369.743108689785,
+        "width": 39.55,
+        "height": 11.8,
+        "inferred": true
+      }
+    },
+    {
+      "text": "1E. Long-term Farm Assets",
+      "row": 21,
+      "col": 0,
+      "coords": {
+        "x": 21.80394086241722,
+        "y": 384.40433782339096,
+        "width": 120.77487310767174,
+        "height": 11.94801378250122
+      },
+      "cell_type": "label",
+      "answer": ""
+    },
+    {
+      "text": "$ Market Value",
+      "row": 21,
+      "col": 1,
+      "coords": {
+        "x": 233.8997950553894,
+        "y": 383.47760385274887,
+        "width": 71.90686321258545,
+        "height": 12.021880745887756
+      },
+      "cell_type": "label",
+      "answer": ""
+    },
+    {
+      "text": "1F. Long-term Farm Liabilities",
+      "row": 21,
+      "col": 2,
+      "coords": {
+        "x": 314.20727384090424,
+        "y": 384.33031940460205,
+        "width": 137.53094696998596,
+        "height": 11.626149415969849
+      },
+      "cell_type": "label",
+      "answer": ""
+    },
+    {
+      "text": "$ Owed",
+      "row": 21,
+      "col": 3,
+      "coords": {
+        "x": 537.6575363874435,
+        "y": 383.9916651248932,
+        "width": 41.32042169570923,
+        "height": 11.648954272270203
+      },
+      "cell_type": "label",
+      "answer": ""
+    },
+    {
+      "text": "Buildings & Improvements (Sch. L)",
+      "row": 22,
+      "col": 0,
+      "coords": {
+        "x": 16.605013728141785,
+        "y": 396.93668818473816,
+        "width": 136.93722730875015,
+        "height": 11.879079937934875
+      },
+      "cell_type": "label",
+      "answer": ""
+    },
+    {
+      "row": 22,
+      "col": "1_value",
+      "cell_type": "value",
+      "side": "assets",
+      "label": "$ Market Value \u2014 Buildings & Improvements (Sch. L)",
+      "answer": "$0.00",
+      "coords": {
+        "x": 233.67,
+        "y": 397.89345359802246,
+        "width": 72.29,
+        "height": 11.8,
+        "inferred": true
+      }
+    },
+    {
+      "text": "Debts due over 7 years (Sch. DD)",
+      "row": 22,
+      "col": 2,
+      "coords": {
+        "x": 311.23138904571533,
+        "y": 397.89345359802246,
+        "width": 134.89685535430908,
+        "height": 11.603041648864746
+      },
+      "cell_type": "label",
+      "answer": ""
+    },
+    {
+      "row": 22,
+      "col": "3_value",
+      "cell_type": "value",
+      "side": "liabilities",
+      "label": "$ Owed \u2014 Debts due over 7 years (Sch. DD)",
+      "answer": "$0.00",
+      "coords": {
+        "x": 538.68,
+        "y": 397.89345359802246,
+        "width": 39.55,
+        "height": 11.8,
+        "inferred": true
+      }
+    },
+    {
+      "text": "Real Estate - Land (Sch. M)",
+      "row": 23,
+      "col": 0,
+      "coords": {
+        "x": 16.76942051947117,
+        "y": 411.80119210481644,
+        "width": 106.3977733105421,
+        "height": 12.003771007061005
+      },
+      "cell_type": "label",
+      "answer": ""
+    },
+    {
+      "row": 23,
+      "col": "1_value",
+      "cell_type": "value",
+      "side": "assets",
+      "label": "$ Market Value \u2014 Real Estate - Land (Sch. M)",
+      "answer": "$45,000.00",
+      "coords": {
+        "x": 233.67,
+        "y": 411.80119210481644,
+        "width": 72.29,
+        "height": 11.8,
+        "inferred": true
+      }
+    },
+    {
+      "text": "Other (Specify) :",
+      "row": 24,
+      "col": 0,
+      "coords": {
+        "x": 16.89519427716732,
+        "y": 427.8326382637024,
+        "width": 61.58835071325302,
+        "height": 12.052994012832642
+      },
+      "cell_type": "label",
+      "answer": ""
+    },
+    {
+      "row": 24,
+      "col": "1_value",
+      "cell_type": "value",
+      "side": "assets",
+      "label": "$ Market Value \u2014 Other Farm Long-Term Asset (Specify)",
+      "answer": "$0.00",
+      "coords": {
+        "x": 233.67,
+        "y": 427.8326382637024,
+        "width": 72.29,
+        "height": 11.8,
+        "inferred": true
+      }
+    },
+    {
+      "text": "TOTAL LONG-TERM FARM ASSETS:",
+      "row": 25,
+      "col": 0,
+      "coords": {
+        "x": 39.72056466341019,
+        "y": 441.480024933815,
+        "width": 187.66650450229645,
+        "height": 12.099901914596558
+      },
+      "cell_type": "label",
+      "answer": ""
+    },
+    {
+      "row": 25,
+      "col": "1_value",
+      "cell_type": "value",
+      "side": "assets",
+      "label": "$ Market Value \u2014 TOTAL LONG-TERM FARM ASSETS",
+      "answer": "$45,000.00",
+      "coords": {
+        "x": 233.67,
+        "y": 442.04209756851196,
+        "width": 72.29,
+        "height": 11.8,
+        "inferred": true
+      }
+    },
+    {
+      "text": "TOTAL LONG-TERM FARM LIABILITIES:",
+      "row": 25,
+      "col": 2,
+      "coords": {
+        "x": 331.6909544467926,
+        "y": 442.04209756851196,
+        "width": 187.74543285369873,
+        "height": 11.837581157684326
+      },
+      "cell_type": "label",
+      "answer": ""
+    },
+    {
+      "row": 25,
+      "col": "3_value",
+      "cell_type": "value",
+      "side": "liabilities",
+      "label": "$ Owed \u2014 TOTAL LONG-TERM FARM LIABILITIES",
+      "answer": "$0.00",
+      "coords": {
+        "x": 538.68,
+        "y": 442.04209756851196,
+        "width": 39.55,
+        "height": 11.8,
+        "inferred": true
+      }
+    },
+    {
+      "text": "PERSONAL",
+      "row": 26,
+      "col": 0,
+      "coords": {
+        "x": 232.831092774868,
+        "y": 457.6685736179352,
+        "width": 357.04941660165787,
+        "height": 11.401822328567505
+      },
+      "cell_type": "label",
+      "answer": ""
+    },
+    {
+      "text": "PERSONAL",
+      "row": 26,
+      "col": 1,
+      "coords": {
+        "x": 232.831092774868,
+        "y": 457.6685736179352,
+        "width": 357.04941660165787,
+        "height": 11.401822328567505
+      },
+      "cell_type": "label",
+      "answer": ""
+    },
+    {
+      "text": "PERSONAL",
+      "row": 26,
+      "col": 2,
+      "coords": {
+        "x": 232.831092774868,
+        "y": 457.6685736179352,
+        "width": 357.04941660165787,
+        "height": 11.401822328567505
+      },
+      "cell_type": "label",
+      "answer": ""
+    },
+    {
+      "text": "PERSONAL",
+      "row": 26,
+      "col": 3,
+      "coords": {
+        "x": 232.831092774868,
+        "y": 457.6685736179352,
+        "width": 357.04941660165787,
+        "height": 11.401822328567505
+      },
+      "cell_type": "label",
+      "answer": ""
+    },
+    {
+      "text": "2A. Current Personal Assets",
+      "row": 27,
+      "col": 0,
+      "coords": {
+        "x": 17.753910452127457,
+        "y": 471.6429308652878,
+        "width": 126.55507430434227,
+        "height": 12.001758813858032
+      },
+      "cell_type": "label",
+      "answer": ""
+    },
+    {
+      "text": "$ Market Value",
+      "row": 27,
+      "col": 1,
+      "coords": {
+        "x": 234.26797807216644,
+        "y": 471.6468687057495,
+        "width": 74.04609370231628,
+        "height": 11.956928014755249
+      },
+      "cell_type": "label",
+      "answer": ""
+    },
+    {
+      "text": "2B. Current Personal Liabilities",
+      "row": 27,
+      "col": 2,
+      "coords": {
+        "x": 315.28891265392303,
+        "y": 472.13827657699585,
+        "width": 140.54069757461548,
+        "height": 11.68906831741333
+      },
+      "cell_type": "label",
+      "answer": ""
+    },
+    {
+      "text": "$ Owed",
+      "row": 27,
+      "col": 3,
+      "coords": {
+        "x": 537.8124302625656,
+        "y": 471.5451772212982,
+        "width": 39.73489546775818,
+        "height": 11.80209732055664
+      },
+      "cell_type": "label",
+      "answer": ""
+    },
+    {
+      "text": "Cash & Equivalents (Sch. N)",
+      "row": 28,
+      "col": 0,
+      "coords": {
+        "x": 16.93909838795662,
+        "y": 484.70656514167786,
+        "width": 117.64913296699524,
+        "height": 12.052561283111572
+      },
+      "cell_type": "label",
+      "answer": ""
+    },
+    {
+      "row": 28,
+      "col": "1_value",
+      "cell_type": "value",
+      "side": "assets",
+      "label": "$ Market Value \u2014 Cash & Equivalents \u2014 Savings (Sch. N)",
+      "answer": "$1,466.76",
+      "coords": {
+        "x": 233.67,
+        "y": 483.8859797716141,
+        "width": 72.29,
+        "height": 11.8,
+        "inferred": true
+      }
+    },
+    {
+      "text": "Notes Payable (12 months or less) (Sch. EE)",
+      "row": 28,
+      "col": 2,
+      "coords": {
+        "x": 305.0127754807472,
+        "y": 483.8859797716141,
+        "width": 174.18937653303146,
+        "height": 11.869776248931885
+      },
+      "cell_type": "label",
+      "answer": ""
+    },
+    {
+      "row": 28,
+      "col": "3_value",
+      "cell_type": "value",
+      "side": "liabilities",
+      "label": "$ Owed \u2014 Notes Payable 12 months or less (Sch. EE)",
+      "answer": "$0.00",
+      "coords": {
+        "x": 538.68,
+        "y": 483.8859797716141,
+        "width": 39.55,
+        "height": 11.8,
+        "inferred": true
+      }
+    },
+    {
+      "text": "Marketable Bonds & Securities",
+      "row": 29,
+      "col": 0,
+      "coords": {
+        "x": 16.823905542492867,
+        "y": 499.1934907436371,
+        "width": 125.49958847463131,
+        "height": 11.973804473876953
+      },
+      "cell_type": "label",
+      "answer": ""
+    },
+    {
+      "row": 29,
+      "col": "1_value",
+      "cell_type": "value",
+      "side": "assets",
+      "label": "$ Market Value \u2014 Marketable Bonds & Securities \u2014 Personal",
+      "answer": "$0.00",
+      "coords": {
+        "x": 233.67,
+        "y": 499.35939931869507,
+        "width": 72.29,
+        "height": 11.8,
+        "inferred": true
+      }
+    },
+    {
+      "text": "Credit Card Debt (Sch. FF)",
+      "row": 29,
+      "col": 2,
+      "coords": {
+        "x": 314.08280062675476,
+        "y": 499.35939931869507,
+        "width": 108.79014039039612,
+        "height": 11.62528395652771
+      },
+      "cell_type": "label",
+      "answer": ""
+    },
+    {
+      "row": 29,
+      "col": "3_value",
+      "cell_type": "value",
+      "side": "liabilities",
+      "label": "$ Owed \u2014 Credit Card Debt (Sch. FF)",
+      "answer": "$0.00",
+      "coords": {
+        "x": 538.68,
+        "y": 499.35939931869507,
+        "width": 39.55,
+        "height": 11.8,
+        "inferred": true
+      }
+    },
+    {
+      "text": "Cash Value Life Insurance (NOT FACE VALUE)",
+      "row": 30,
+      "col": 0,
+      "coords": {
+        "x": 16.540968418121338,
+        "y": 514.8506473302841,
+        "width": 190.33709746599197,
+        "height": 11.722821235656738
+      },
+      "cell_type": "label",
+      "answer": ""
+    },
+    {
+      "row": 30,
+      "col": "1_value",
+      "cell_type": "value",
+      "side": "assets",
+      "label": "$ Market Value \u2014 Cash Value Life Insurance (NOT FACE VALUE)",
+      "answer": "$0.00",
+      "coords": {
+        "x": 233.67,
+        "y": 514.8506473302841,
+        "width": 72.29,
+        "height": 11.8,
+        "inferred": true
+      }
+    },
+    {
+      "text": "Other (Specify):",
+      "row": 31,
+      "col": 0,
+      "coords": {
+        "x": 16.795907251536846,
+        "y": 528.9720894098282,
+        "width": 63.999526150524616,
+        "height": 11.81127119064331
+      },
+      "cell_type": "label",
+      "answer": ""
+    },
+    {
+      "row": 31,
+      "col": "1_value",
+      "cell_type": "value",
+      "side": "assets",
+      "label": "$ Market Value \u2014 Other Personal Current Asset (Specify)",
+      "answer": "$0.00",
+      "coords": {
+        "x": 233.67,
+        "y": 528.9720894098282,
+        "width": 72.29,
+        "height": 11.8,
+        "inferred": true
+      }
+    },
+    {
+      "text": "TOTAL CURRENT PERSONAL ASSETS:",
+      "row": 32,
+      "col": 0,
+      "coords": {
+        "x": 49.76802149415016,
+        "y": 542.5710968971252,
+        "width": 178.15881630778313,
+        "height": 11.526794672012329
+      },
+      "cell_type": "label",
+      "answer": ""
+    },
+    {
+      "row": 32,
+      "col": "1_value",
+      "cell_type": "value",
+      "side": "assets",
+      "label": "$ Market Value \u2014 TOTAL CURRENT PERSONAL ASSETS",
+      "answer": "$1,466.76",
+      "coords": {
+        "x": 233.67,
+        "y": 541.7597286701202,
+        "width": 72.29,
+        "height": 11.8,
+        "inferred": true
+      }
+    },
+    {
+      "text": "TOTAL CURRENT PERSONAL LIABILITIES:",
+      "row": 32,
+      "col": 2,
+      "coords": {
+        "x": 323.3772599697113,
+        "y": 541.7597286701202,
+        "width": 205.37239718437195,
+        "height": 11.613686800003052
+      },
+      "cell_type": "label",
+      "answer": ""
+    },
+    {
+      "row": 32,
+      "col": "3_value",
+      "cell_type": "value",
+      "side": "liabilities",
+      "label": "$ Owed \u2014 TOTAL CURRENT PERSONAL LIABILITIES",
+      "answer": "$0.00",
+      "coords": {
+        "x": 538.68,
+        "y": 541.7597286701202,
+        "width": 39.55,
+        "height": 11.8,
+        "inferred": true
+      }
+    },
+    {
+      "text": "2C. Intermediate Personal Assets",
+      "row": 33,
+      "col": 0,
+      "coords": {
+        "x": 16.210630357265472,
+        "y": 558.0162591934204,
+        "width": 149.85357123613358,
+        "height": 11.728792905807495
+      },
+      "cell_type": "label",
+      "answer": ""
+    },
+    {
+      "text": "$ Market Value",
+      "row": 33,
+      "col": 1,
+      "coords": {
+        "x": 232.93749618530273,
+        "y": 557.100732922554,
+        "width": 72.8775337934494,
+        "height": 12.192073345184326
+      },
+      "cell_type": "label",
+      "answer": ""
+    },
+    {
+      "text": "2D. Intermediate Personal Liabilities",
+      "row": 33,
+      "col": 2,
+      "coords": {
+        "x": 315.29184103012085,
+        "y": 557.485170006752,
+        "width": 154.10534954071045,
+        "height": 11.780547380447388
+      },
+      "cell_type": "label",
+      "answer": ""
+    },
+    {
+      "text": "$ Owed",
+      "row": 33,
+      "col": 3,
+      "coords": {
+        "x": 537.6289072036743,
+        "y": 558.4777654409409,
+        "width": 39.491392374038696,
+        "height": 11.649084091186523
+      },
+      "cell_type": "label",
+      "answer": ""
+    },
+    {
+      "text": "Household Goods",
+      "row": 34,
+      "col": 0,
+      "coords": {
+        "x": 16.993275500833988,
+        "y": 572.2895028591156,
+        "width": 72.03169601410627,
+        "height": 11.993710041046143
+      },
+      "cell_type": "label",
+      "answer": ""
+    },
+    {
+      "row": 34,
+      "col": "1_value",
+      "cell_type": "value",
+      "side": "assets",
+      "label": "$ Market Value \u2014 Household Goods",
+      "answer": "$0.00",
+      "coords": {
+        "x": 233.67,
+        "y": 572.2895028591156,
+        "width": 72.29,
+        "height": 11.8,
+        "inferred": true
+      }
+    },
+    {
+      "text": "Car, Recreational Vehicles, etc. (Sch. O)",
+      "row": 35,
+      "col": 0,
+      "coords": {
+        "x": 15.921057015657425,
+        "y": 586.5788007974625,
+        "width": 159.1595115363598,
+        "height": 11.655228853225708
+      },
+      "cell_type": "label",
+      "answer": ""
+    },
+    {
+      "row": 35,
+      "col": "1_value",
+      "cell_type": "value",
+      "side": "assets",
+      "label": "$ Market Value \u2014 Car / Truck \u2014 Ford F150 2011 (Sch. O)",
+      "answer": "$3,500.00",
+      "coords": {
+        "x": 233.67,
+        "y": 586.5788007974625,
+        "width": 72.29,
+        "height": 11.8,
+        "inferred": true
+      }
+    },
+    {
+      "text": "Other (Specify) :",
+      "row": 36,
+      "col": 0,
+      "coords": {
+        "x": 16.77490907162428,
+        "y": 599.7615655660629,
+        "width": 60.63731963187456,
+        "height": 11.724811792373657
+      },
+      "cell_type": "label",
+      "answer": ""
+    },
+    {
+      "row": 36,
+      "col": "1_value",
+      "cell_type": "value",
+      "side": "assets",
+      "label": "$ Market Value \u2014 Other Personal Intermediate Asset (Specify)",
+      "answer": "$0.00",
+      "coords": {
+        "x": 233.67,
+        "y": 599.7615655660629,
+        "width": 72.29,
+        "height": 11.8,
+        "inferred": true
+      }
+    },
+    {
+      "text": "TOTAL INTERMEDIATE PERSONAL ASSETS:",
+      "row": 37,
+      "col": 0,
+      "coords": {
+        "x": 32.06931194663048,
+        "y": 614.1605604887009,
+        "width": 195.73594656586647,
+        "height": 11.92629075050354
+      },
+      "cell_type": "label",
+      "answer": ""
+    },
+    {
+      "row": 37,
+      "col": "1_value",
+      "cell_type": "value",
+      "side": "assets",
+      "label": "$ Market Value \u2014 TOTAL INTERMEDIATE PERSONAL ASSETS",
+      "answer": "$3,500.00",
+      "coords": {
+        "x": 233.67,
+        "y": 614.1605604887009,
+        "width": 72.29,
+        "height": 11.8,
+        "inferred": true
+      }
+    },
+    {
+      "text": "2E. Long-term Personal Assets",
+      "row": 38,
+      "col": 0,
+      "coords": {
+        "x": 24.389063999056816,
+        "y": 629.6955142021179,
+        "width": 131.84259773790836,
+        "height": 11.654796123504639
+      },
+      "cell_type": "label",
+      "answer": ""
+    },
+    {
+      "text": "$ Market Value",
+      "row": 38,
+      "col": 1,
+      "coords": {
+        "x": 233.40893030166626,
+        "y": 630.0988183021545,
+        "width": 71.08474743366241,
+        "height": 12.310727834701538
+      },
+      "cell_type": "label",
+      "answer": ""
+    },
+    {
+      "text": "2F. Long-term Personal Liabilities",
+      "row": 38,
+      "col": 2,
+      "coords": {
+        "x": 315.92474925518036,
+        "y": 630.58096575737,
+        "width": 141.72417497634888,
+        "height": 11.677730798721313
+      },
+      "cell_type": "label",
+      "answer": ""
+    },
+    {
+      "text": "$ Owed",
+      "row": 38,
+      "col": 3,
+      "coords": {
+        "x": 537.7680222988129,
+        "y": 630.2322721481323,
+        "width": 40.416208028793335,
+        "height": 11.568769454956055
+      },
+      "cell_type": "label",
+      "answer": ""
+    },
+    {
+      "text": "Retirement Accounts (Sch. P)",
+      "row": 39,
+      "col": 0,
+      "coords": {
+        "x": 16.397684693336487,
+        "y": 643.8488484621048,
+        "width": 117.14981898665428,
+        "height": 11.655401945114136
+      },
+      "cell_type": "label",
+      "answer": ""
+    },
+    {
+      "row": 39,
+      "col": "1_value",
+      "cell_type": "value",
+      "side": "assets",
+      "label": "$ Market Value \u2014 Retirement Accounts (Sch. P)",
+      "answer": "$0.00",
+      "coords": {
+        "x": 233.67,
+        "y": 644.5388360023499,
+        "width": 72.29,
+        "height": 11.8,
+        "inferred": true
+      }
+    },
+    {
+      "text": "Debts due over 1 year (Sch. GG)",
+      "row": 39,
+      "col": 2,
+      "coords": {
+        "x": 311.5007996559143,
+        "y": 644.5388360023499,
+        "width": 125.86284923553467,
+        "height": 11.601743459701538
+      },
+      "cell_type": "label",
+      "answer": ""
+    },
+    {
+      "row": 39,
+      "col": "3_value",
+      "cell_type": "value",
+      "side": "liabilities",
+      "label": "$ Owed \u2014 Debts due over 1 year (Sch. GG)",
+      "answer": "$0.00",
+      "coords": {
+        "x": 538.68,
+        "y": 644.5388360023499,
+        "width": 39.55,
+        "height": 11.8,
+        "inferred": true
+      }
+    },
+    {
+      "text": "Non-farm Business",
+      "row": 40,
+      "col": 0,
+      "coords": {
+        "x": 16.503610089421272,
+        "y": 658.1377136707306,
+        "width": 80.06037120521069,
+        "height": 11.743332624435425
+      },
+      "cell_type": "label",
+      "answer": ""
+    },
+    {
+      "row": 40,
+      "col": "1_value",
+      "cell_type": "value",
+      "side": "assets",
+      "label": "$ Market Value \u2014 Non-farm Business",
+      "answer": "$0.00",
+      "coords": {
+        "x": 233.67,
+        "y": 658.1377136707306,
+        "width": 72.29,
+        "height": 11.8,
+        "inferred": true
+      }
+    },
+    {
+      "text": "Non-farm Real Estate (Sch. Q)",
+      "row": 41,
+      "col": 0,
+      "coords": {
+        "x": 16.488089695572853,
+        "y": 672.7326918840408,
+        "width": 119.07075195014477,
+        "height": 11.608753681182861
+      },
+      "cell_type": "label",
+      "answer": ""
+    },
+    {
+      "row": 41,
+      "col": "1_value",
+      "cell_type": "value",
+      "side": "assets",
+      "label": "$ Market Value \u2014 Non-farm Real Estate (Sch. Q)",
+      "answer": "$0.00",
+      "coords": {
+        "x": 233.67,
+        "y": 672.7326918840408,
+        "width": 72.29,
+        "height": 11.8,
+        "inferred": true
+      }
+    },
+    {
+      "text": "Other (Specify):",
+      "row": 42,
+      "col": 0,
+      "coords": {
+        "x": 16.50586450845003,
+        "y": 687.6332205533981,
+        "width": 63.08265586942434,
+        "height": 11.594819784164429
+      },
+      "cell_type": "label",
+      "answer": ""
+    },
+    {
+      "row": 42,
+      "col": "1_value",
+      "cell_type": "value",
+      "side": "assets",
+      "label": "$ Market Value \u2014 Other Personal Long-Term Asset (Specify)",
+      "answer": "$0.00",
+      "coords": {
+        "x": 233.67,
+        "y": 687.6332205533981,
+        "width": 72.29,
+        "height": 11.8,
+        "inferred": true
+      }
+    },
+    {
+      "text": "TOTAL LONG-TERM PERSONAL ASSETS:",
+      "row": 43,
+      "col": 0,
+      "coords": {
+        "x": 30.81961879134178,
+        "y": 701.335347533226,
+        "width": 197.71036115288734,
+        "height": 11.654103755950928
+      },
+      "cell_type": "label",
+      "answer": ""
+    },
+    {
+      "row": 43,
+      "col": "1_value",
+      "cell_type": "value",
+      "side": "assets",
+      "label": "$ Market Value \u2014 TOTAL LONG-TERM PERSONAL ASSETS",
+      "answer": "$0.00",
+      "coords": {
+        "x": 233.67,
+        "y": 701.5912638902664,
+        "width": 72.29,
+        "height": 11.8,
+        "inferred": true
+      }
+    },
+    {
+      "text": "TOTAL LONG-TERM PERSONAL LIABILITIES:",
+      "row": 43,
+      "col": 2,
+      "coords": {
+        "x": 316.29107189178467,
+        "y": 701.5912638902664,
+        "width": 197.59607696533203,
+        "height": 12.144386529922485
+      },
+      "cell_type": "label",
+      "answer": ""
+    },
+    {
+      "row": 43,
+      "col": "3_value",
+      "cell_type": "value",
+      "side": "liabilities",
+      "label": "$ Owed \u2014 TOTAL LONG-TERM PERSONAL LIABILITIES",
+      "answer": "$0.00",
+      "coords": {
+        "x": 538.68,
+        "y": 701.5912638902664,
+        "width": 39.55,
+        "height": 11.8,
+        "inferred": true
+      }
+    },
+    {
+      "text": "3A. GRAND TOTAL ASSETS ($) :",
+      "row": 44,
+      "col": 0,
+      "coords": {
+        "x": 16.12806737422943,
+        "y": 722.1982859373093,
+        "width": 145.31761986017227,
+        "height": 11.845197200775146
+      },
+      "cell_type": "label",
+      "answer": ""
+    },
+    {
+      "row": 44,
+      "col": "1_value",
+      "cell_type": "value",
+      "side": "assets",
+      "label": "$ Market Value \u2014 3A. GRAND TOTAL ASSETS",
+      "answer": "$57,466.76",
+      "coords": {
+        "x": 233.67,
+        "y": 722.1792891025543,
+        "width": 72.29,
+        "height": 11.8,
+        "inferred": true
+      }
+    },
+    {
+      "text": "3B. GRAND TOTAL LIABILITIES ($) :",
+      "row": 44,
+      "col": 2,
+      "coords": {
+        "x": 307.82847809791565,
+        "y": 722.1792891025543,
+        "width": 155.99990558624268,
+        "height": 12.233961582183838
+      },
+      "cell_type": "label",
+      "answer": ""
+    },
+    {
+      "row": 44,
+      "col": "3_value",
+      "cell_type": "value",
+      "side": "liabilities",
+      "label": "$ Owed \u2014 3B. GRAND TOTAL LIABILITIES",
+      "answer": "$0.00",
+      "coords": {
+        "x": 538.68,
+        "y": 722.1792891025543,
+        "width": 39.55,
+        "height": 11.8,
+        "inferred": true
+      }
+    },
+    {
+      "text": "3C. TOTAL NET EQUITY: ($ Grand Total Assets - $ Grand Total Liabilities)",
+      "row": 45,
+      "col": 0,
+      "coords": {
+        "x": 15.537267476320267,
+        "y": 746.4272124767303,
+        "width": 213.92893156409264,
+        "height": 27.6947021484375
+      },
+      "cell_type": "label",
+      "answer": ""
+    },
+    {
+      "row": 45,
+      "col": "1_value",
+      "cell_type": "value",
+      "side": "assets",
+      "label": "$ Market Value \u2014 3C. TOTAL NET EQUITY (Grand Total Assets minus Grand Total Liabilities)",
+      "answer": "$57,466.76",
+      "coords": {
+        "x": 233.67,
+        "y": 746.4272124767303,
+        "width": 72.29,
+        "height": 11.8,
+        "inferred": true
+      }
+    }
+  ]
+}
