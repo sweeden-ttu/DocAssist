@@ -616,12 +616,51 @@ def generate_multi_analysis_overlays(
             print(f"  Overlay   -> {overlay_path}")
             print(f"  Annotated -> {annotated_path}")
 
+    # Pages 8, 9, 10: same logic as page 7 — PNG base + pageN_tables.json, only cell_type "value", draw "answer" at (x,y).
+    for page_num in (8, 9, 10):
+        page_base = annotations_dir / f"page_{page_num}.png"
+        page_tables_path = annotations_dir / f"page{page_num}_tables.json"
+        if not page_tables_path.exists() or not page_base.exists():
+            continue
+        base_img = Image.open(page_base).convert("RGBA")
+        w, h = base_img.size
+        # Table coords are in same space as PNG (e.g. Docling export), so use image size as logical page size.
+        page_height_pt = float(h)
+        page_width_pt = float(w)
+        value_cells = get_page7_value_cells(page_tables_path, page_height_pt)
+        if not value_cells:
+            continue
+        scale_x = w / page_width_pt
+        scale_y = h / page_height_pt
+        overlay = Image.new("RGBA", (w, h), (255, 255, 255, 0))
+        draw = ImageDraw.Draw(overlay)
+        font = _get_bold_dark_blue_font(size=20)
+        for (x0, y0, x1, y1), answer in value_cells:
+            left = x0 * scale_x
+            right = x1 * scale_x
+            top = (page_height_pt - y1) * scale_y
+            bottom = (page_height_pt - y0) * scale_y
+            _draw_answer_in_box(draw, left, top, right, bottom, answer, font)
+        overlay_path = overlays_dir / f"page_{page_num}_multi_overlay.png"
+        overlay.save(overlay_path, "PNG")
+        combined = Image.alpha_composite(base_img, overlay)
+        annotated_path = annotated_dir / f"page_{page_num}_multi_annotated.png"
+        combined.save(annotated_path, "PNG")
+        print(f"Page {page_num} (from page_{page_num}.png + value cells only):")
+        print(f"  Overlay   -> {overlay_path}")
+        print(f"  Annotated -> {annotated_path}")
+
     for page_index in range(num_pages):
         page_num = page_index + 1
         if page_num == 6 and page6_tables_path and page_6_base.exists():
             continue
         if page_num == 7 and page7_tables_path.exists() and page_7_base.exists():
             continue
+        if page_num in (8, 9, 10):
+            page_base = annotations_dir / f"page_{page_num}.png"
+            page_tables_path = annotations_dir / f"page{page_num}_tables.json"
+            if page_tables_path.exists() and page_base.exists():
+                continue
         page = pdf.get_page(page_index)
 
         ocr_fields_for_page = ocr_fields_by_page.get(page_num)

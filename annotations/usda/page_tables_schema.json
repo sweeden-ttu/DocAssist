@@ -1,0 +1,116 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://example.com/page_tables_schema.json",
+  "title": "FSA Page Tables Extraction",
+  "description": "Structured output for OCR extraction of FSA form pages (e.g. FSA-2001). Supports both schedule-based (page 7+) and balance-sheet grid (page 6) formats. Each fill-in or data cell with no value must use \"cell_type\": \"value\", \"answer\": \"\".",
+  "type": "object",
+  "required": ["page", "section", "cells"],
+  "properties": {
+    "page": {
+      "type": "integer",
+      "description": "Page number (1-based)."
+    },
+    "section": {
+      "type": "string",
+      "description": "Human-readable section title, e.g. Farm Liabilities Schedules 5A-5D + Personal Liabilities Schedules 6A-6C, or PART H — Balance Sheet (Summary of Schedules)."
+    },
+    "cells": {
+      "type": "array",
+      "description": "Ordered list of table cells (labels and values).",
+      "items": { "$ref": "#/definitions/cell" }
+    },
+    "version": {
+      "type": "integer",
+      "description": "Optional version number for annotations."
+    },
+    "changes": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Optional list of change notes."
+    },
+    "section_totals": {
+      "type": "object",
+      "additionalProperties": { "type": "string" },
+      "description": "Optional page-specific totals keyed by section id."
+    },
+    "applicant": {
+      "type": "string",
+      "description": "Optional applicant name (e.g. page 6 balance sheet)."
+    },
+    "as_of_date": {
+      "type": "string",
+      "description": "Optional as-of date (e.g. page 6 balance sheet)."
+    },
+    "value_cell_x_inference": {
+      "type": "object",
+      "description": "Optional metadata for inferred value-cell coordinates (page 6 style).",
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true,
+  "definitions": {
+    "cell": {
+      "type": "object",
+      "description": "A single table cell. Use cell_type \"label\" for headers/column titles and \"value\" for data cells. For empty fill-in cells use \"cell_type\": \"value\", \"answer\": \"\". Coords may include \"inferred\": true when the bounding box was inferred (e.g. from grid or header position).",
+      "required": ["cell_type", "answer", "coords"],
+      "properties": {
+        "schedule": {
+          "type": "string",
+          "description": "Schedule or section id (page 7+ style), e.g. header, 4F, 5A, 5B, 6A."
+        },
+        "label": {
+          "type": "string",
+          "description": "Human-readable description of the cell (e.g. column name, row/col description, or \"$ Market Value — …\" for value cells)."
+        },
+        "text": {
+          "type": "string",
+          "description": "Alternative to label (page 6 style); raw text content for label cells."
+        },
+        "answer": {
+          "type": "string",
+          "description": "Extracted value. Use empty string \"\" for empty or unfilled cells."
+        },
+        "cell_type": {
+          "type": "string",
+          "enum": ["label", "value"],
+          "description": "label = header/column title; value = data/fill-in cell. Empty data cells must be \"value\" with \"answer\": \"\"."
+        },
+        "row": {
+          "type": "integer",
+          "description": "Optional row index (page 6 balance-sheet grid format)."
+        },
+        "col": {
+          "oneOf": [
+            { "type": "integer" },
+            { "type": "string" }
+          ],
+          "description": "Optional column index: integer (e.g. 0, 1, 2) or string (e.g. \"1_value\", \"3_value\") for value columns in page 6 format."
+        },
+        "side": {
+          "type": "string",
+          "enum": ["assets", "liabilities"],
+          "description": "Optional side of balance sheet (page 6 format); only for value cells in two-column layout."
+        },
+        "coords": {
+          "$ref": "#/definitions/coords"
+        }
+      },
+      "additionalProperties": false
+    },
+    "coords": {
+      "type": "object",
+      "required": ["x", "y", "width", "height"],
+      "properties": {
+        "x": { "type": "number", "description": "Left edge (x) in page units." },
+        "y": { "type": "number", "description": "Top edge (y) in page units." },
+        "width": { "type": "number", "description": "Cell width." },
+        "height": { "type": "number", "description": "Cell height." },
+        "inferred": {
+          "type": "boolean",
+          "description": "True when bounding box was inferred rather than from OCR (e.g. from table grid or header position)."
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}
