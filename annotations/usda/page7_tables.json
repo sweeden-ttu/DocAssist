@@ -2189,6 +2189,19 @@
       }
     },
     {
+      "schedule": "4L",
+      "label": "TOTAL BUILDINGS & IMPROVEMENTS",
+      "answer": "$69,301.66",
+      "cell_type": "total",
+      "coords": {
+        "x": 537.8,
+        "y": 491.79999999999995,
+        "width": 53.8,
+        "height": 7.5,
+        "inferred": true
+      }
+    },
+    {
       "schedule": "4F",
       "label": "Sch F row 2: Type",
       "answer": "",

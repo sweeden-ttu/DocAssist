@@ -295,6 +295,7 @@ def get_ocr_fields_by_page(ocr_analysis_data: dict) -> Dict[int, List[dict]]:
             by_page.setdefault(page_num, []).append({
                 "field_coords": coords,
                 "answer": field.get("answer"),
+                "label": field.get("label", ""),
             })
     return by_page
 
@@ -335,6 +336,14 @@ def build_all_boxes(
 ANSWER_TEXT_COLOR = (0, 51, 139, 255)  # dark blue
 
 
+def _is_1b_2b_3b_label(label: str) -> bool:
+    """True if label is for section 1B, 2B, or 3B (for two-line wrap on page 5)."""
+    if not label:
+        return False
+    s = label.strip()
+    return s.startswith("1B.") or s.startswith("1B ") or s.startswith("2B.") or s.startswith("2B ") or s.startswith("3B.") or s.startswith("3B ")
+
+
 def _split_text_two_lines(text: str, max_chars_per_line: int) -> Tuple[str, str]:
     """Split text into two lines at a word boundary near the middle."""
     text = text.strip()
@@ -359,10 +368,9 @@ def _draw_answer_in_box(
     bottom: float,
     answer: str,
     font: ImageFont.FreeTypeFont,
-    page_num: Optional[int] = None,
-    page_5_font: Optional[ImageFont.FreeTypeFont] = None,
+    wrap_in_two_lines: bool = False,
 ) -> None:
-    """Draw answer inside a bounding box in bold dark blue. For Yes/checkbox use centered X. On page 5 use smaller font and wrap in two lines."""
+    """Draw answer inside a bounding box in bold dark blue. For Yes/checkbox use centered X. When wrap_in_two_lines is True (e.g. 1B, 2B, 3B on page 5), draw text on two lines."""
     if answer is None:
         return
     if isinstance(answer, bool):
@@ -373,12 +381,7 @@ def _draw_answer_in_box(
         return
     box_w = max(1, right - left)
     box_h = max(1, bottom - top)
-    # Use smaller font for page 5
     use_font = font
-    wrap_two_lines = False
-    if page_num == 5 and page_5_font is not None:
-        use_font = page_5_font
-        wrap_two_lines = True
     # Checkbox/control: "Yes", "yes", True → draw single "X" centered on control
     if (
         isinstance(answer, bool) and answer
@@ -398,9 +401,9 @@ def _draw_answer_in_box(
             except Exception:
                 pass
         return
-    # Text field: on page 5 wrap in two lines; else truncate to fit
+    # Text field: when wrap_in_two_lines (e.g. 1B, 2B, 3B) draw on two lines; else truncate to fit
     max_chars = max(1, int(box_w / 5))
-    if wrap_two_lines and len(mark) > max_chars:
+    if wrap_in_two_lines and len(mark) > max_chars:
         line1, line2 = _split_text_two_lines(mark, max_chars)
         try:
             try:
@@ -435,10 +438,9 @@ def create_overlay_for_page(
     scale: float = 2.0,
     ocr_fields_for_page: Optional[List[dict]] = None,
     answer_font: Optional[ImageFont.FreeTypeFont] = None,
-    page_5_font: Optional[ImageFont.FreeTypeFont] = None,
     table_cells_for_page: Optional[List[Tuple[Tuple[float, float, float, float], str]]] = None,
 ) -> Image.Image:
-    """Create a transparent overlay image for a given page. Optionally draw answer text inside OCR boxes and inside docling_tables (page6_tables) cells. Page 5 uses page_5_font and wraps long answers in two lines."""
+    """Create a transparent overlay image for a given page. Optionally draw answer text inside OCR boxes and inside docling_tables (page6_tables) cells. On page 5, fields 1B/2B/3B wrap text in two lines."""
     width = int(page.get_width() * scale)
     height = int(page.get_height() * scale)
 
@@ -479,10 +481,12 @@ def create_overlay_for_page(
                 )
 
             if use_answers:
-                answer = ocr_fields_for_page[idx].get("answer")
+                field = ocr_fields_for_page[idx]
+                answer = field.get("answer")
+                wrap = page_num == 5 and _is_1b_2b_3b_label(field.get("label") or "")
                 _draw_answer_in_box(
                     draw, x0_s, top, x1_s, bottom, answer or "",
-                    answer_font, page_num=page_num, page_5_font=page_5_font,
+                    answer_font, wrap_in_two_lines=wrap,
                 )
 
             # Draw answer text inside docling_tables (page6_tables) cells
@@ -496,7 +500,7 @@ def create_overlay_for_page(
                 if cell_answer:
                     _draw_answer_in_box(
                         draw, x0_s, top, x1_s, bottom, cell_answer,
-                        answer_font, page_num=page_num, page_5_font=page_5_font,
+                        answer_font, wrap_in_two_lines=False,
                     )
 
     return overlay
@@ -535,7 +539,6 @@ def generate_multi_analysis_overlays(
         ocr_data = load_json(ocr_path)
         ocr_fields_by_page = get_ocr_fields_by_page(ocr_data)
     answer_font = _get_bold_dark_blue_font(size=20)
-    page_5_font = _get_bold_dark_blue_font(size=10)  # smaller on page 5 with wrap
 
     # Assume all analyses share the same page height as the PDF.
     first_page = pdf.get_page(0)
@@ -678,7 +681,6 @@ def generate_multi_analysis_overlays(
             scale=scale,
             ocr_fields_for_page=ocr_fields_for_page,
             answer_font=answer_font,
-            page_5_font=page_5_font,
             table_cells_for_page=table_cells_for_page,
         )
 
@@ -818,7 +820,6 @@ def run_overlays_with_fill_data(
         ocr_data = load_json(ocr_analysis_path)
         ocr_fields_by_page = get_ocr_fields_by_page(ocr_data)
     answer_font = _get_bold_dark_blue_font(size=20)
-    page_5_font = _get_bold_dark_blue_font(size=10)
 
     fill_instructions: Optional[List[dict]] = None
     if fill_instructions_path and fill_instructions_path.exists():
@@ -867,9 +868,11 @@ def run_overlays_with_fill_data(
             top, bottom = min(y0_img, y1_img), max(y0_img, y1_img)
             # No magenta bounding box; only draw answer text
             if idx < len(ocr_fields) and ocr_fields[idx].get("answer") is not None:
+                field = ocr_fields[idx]
+                wrap = page_num == 5 and _is_1b_2b_3b_label(field.get("label") or "")
                 _draw_answer_in_box(
-                    draw, x0_s, top, x1_s, bottom, ocr_fields[idx].get("answer", ""),
-                    answer_font, page_num=page_num, page_5_font=page_5_font,
+                    draw, x0_s, top, x1_s, bottom, field.get("answer", ""),
+                    answer_font, wrap_in_two_lines=wrap,
                 )
 
         # Fill instructions / field mapping boxes + text

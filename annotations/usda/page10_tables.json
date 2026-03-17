@@ -427,6 +427,19 @@
       }
     },
     {
+      "schedule": "2A",
+      "label": "2A Farm Operating Expenses Subtotal",
+      "answer": "$2,400.00",
+      "cell_type": "value",
+      "coords": {
+        "x": 496.9,
+        "y": 492.0,
+        "width": 120.0,
+        "height": 18.0,
+        "inferred": true
+      }
+    },
+    {
       "cell_type": "label",
       "answer": "",
       "coords": {
@@ -505,19 +518,6 @@
       "label": "TOTAL RENT - MACHINE / EQUIPMENT / VEHICLE (Enter this amount in 2A):"
     },
     {
-      "schedule": "2B1",
-      "label": "2B(1) Total Rent Machine/Equipment",
-      "answer": "$0.00",
-      "cell_type": "value",
-      "coords": {
-        "x": 1072.2,
-        "y": 697.6,
-        "width": 120.0,
-        "height": 22.0,
-        "inferred": true
-      }
-    },
-    {
       "cell_type": "label",
       "answer": "",
       "coords": {
@@ -540,19 +540,6 @@
       "label": "TOTAL RENT - LAND / ANIMALS (Enter this amount in 2A):"
     },
     {
-      "schedule": "2B2",
-      "label": "2B(2) Total Rent Land/Animals",
-      "answer": "$0.00",
-      "cell_type": "value",
-      "coords": {
-        "x": 1072.2,
-        "y": 1160.4,
-        "width": 120.0,
-        "height": 22.0,
-        "inferred": true
-      }
-    },
-    {
       "cell_type": "label",
       "answer": "",
       "coords": {
@@ -566,18 +553,18 @@
     },
     {
       "cell_type": "label",
-      "answer": "",
+      "answer": "$14,400.00",
       "coords": {
         "x": 36.81,
         "y": 1217.86,
         "width": 683.32,
         "height": 20.82
       },
-      "label": "2C(1). Total Household Operating Expenses (Ex. Utilities, phone, entertainment, groceries, etc):"
+      "label": "2C(1) Total Household Operating Expenses ($1,200/mo x 12)"
     },
     {
       "schedule": "2C",
-      "label": "2C(1) Household Operating Expenses (monthly $1,200 x 12)",
+      "label": "2C(1) Total Household Operating Expenses ($1,200/mo x 12)",
       "answer": "$14,400.00",
       "cell_type": "value",
       "coords": {
