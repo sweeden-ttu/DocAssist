@@ -1,0 +1,31 @@
+lmstudio_url: "http://localhost:1234"
+model_name: "lmstudio-community/Qwen2.5-VL-7B-Instruct-GGUF"
+
+detection:
+  confidence_threshold: 0.7
+  iou_threshold: 0.5
+  max_detections: 100
+
+preprocessing:
+  dpi: 200
+  deskew: true
+  binarize: false
+  normalize: true
+
+output:
+  format: "standard"
+  save_images: false
+  visualize: true
+  output_dir: "output"
+
+field_types:
+  - text_input
+  - checkbox
+  - radio_button
+  - signature
+  - date
+  - currency
+  - ssn
+  - phone
+  - address
+  - name

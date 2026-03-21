@@ -1,18 +1,103 @@
-# Xcode
-DerivedData/
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# C extensions
+*.c
+*.o
+*.so
+
+# Distribution / packaging
+.Python
 build/
-*.xcworkspace/xcuserdata/
-*.xcodeproj/xcuserdata/
-*.xcuserstate
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Conda
+*.msg
+*.pycfg
+conda-meta/
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Translations
+*.mo
+*.pot
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# Environments
+*.log
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
 .DS_Store
+Thumbs.db
 
-
-# Added by cargo
-
-/target
-Cargo.lock
-annotations/usda/FSA2001_250321V05LC (14)_ocr_analysis.json
-annotations/usda/page_*.png
-annotations/usda/annotated/page_*_multi_annotated.png
-annotations/usda/overlays/page_*_multi_overlay.png
-__pycache__
+# Project specific
+output/
+models/
+*.png
+*.jpg
+*.jpeg
+*.gif
+!.gitkeep
+output_*/
+temp/
+tmp/
