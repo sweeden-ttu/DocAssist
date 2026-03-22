@@ -15,6 +15,7 @@ Outputs:
   (PDF page with overlay composited)
 """
 
+import argparse
 import json
 from dataclasses import dataclass
 from pathlib import Path
@@ -298,6 +299,95 @@ def get_ocr_fields_by_page(ocr_analysis_data: dict) -> Dict[int, List[dict]]:
                 "label": field.get("label", ""),
             })
     return by_page
+
+
+def generate_debug_ocr_bbox_overlays(
+    ocr_analysis_path: Path,
+    output_dir: Path,
+    base_pages_dir: Optional[Path] = None,
+    scale: float = 2.0,
+    draw_labels: bool = True,
+) -> None:
+    """
+    Debug mode: render page-by-page transparent overlays with OCR field
+    bounding boxes from an OCR analysis JSON.
+
+    If `base_pages_dir/page_{n}.png` exists, the overlay size is matched to the
+    page PNG and a debug annotated composite is also written.
+    """
+    data = load_json(ocr_analysis_path)
+    output_dir.mkdir(parents=True, exist_ok=True)
+    if base_pages_dir is None:
+        base_pages_dir = ocr_analysis_path.parent
+
+    font = _get_bold_dark_blue_font(size=12)
+    box_color = (255, 0, 0, 220)
+    label_color = (255, 64, 64, 255)
+
+    page_entries: List[Tuple[int, dict]] = []
+    for key, page_info in data.items():
+        if key.startswith("page_"):
+            try:
+                page_entries.append((int(key.split("_")[1]), page_info))
+            except (IndexError, ValueError):
+                continue
+    page_entries.sort(key=lambda x: x[0])
+
+    for page_num, page_info in page_entries:
+        page_size = page_info.get("page_size", {})
+        page_width_pt = float(page_size.get("width", 612.0))
+        page_height_pt = float(page_size.get("height", 792.0))
+        fields = page_info.get("fields", [])
+
+        base_page_png = base_pages_dir / f"page_{page_num}.png"
+        base_img: Optional[Image.Image] = None
+        if base_page_png.exists():
+            base_img = Image.open(base_page_png).convert("RGBA")
+            canvas_w, canvas_h = base_img.size
+            scale_x = canvas_w / page_width_pt if page_width_pt else scale
+            scale_y = canvas_h / page_height_pt if page_height_pt else scale
+        else:
+            canvas_w = max(1, int(page_width_pt * scale))
+            canvas_h = max(1, int(page_height_pt * scale))
+            scale_x = scale
+            scale_y = scale
+
+        overlay = Image.new("RGBA", (canvas_w, canvas_h), (255, 255, 255, 0))
+        draw = ImageDraw.Draw(overlay)
+
+        drawn = 0
+        for idx, field in enumerate(fields):
+            coords = field.get("field_coords") or {}
+            x = coords.get("x")
+            y = coords.get("y")
+            w = coords.get("width")
+            h = coords.get("height")
+            if not all(isinstance(v, (int, float)) for v in (x, y, w, h)):
+                continue
+
+            x0 = float(x) * scale_x
+            x1 = (float(x) + float(w)) * scale_x
+            top = (page_height_pt - (float(y) + float(h))) * scale_y
+            bottom = (page_height_pt - float(y)) * scale_y
+            draw.rectangle([x0, top, x1, bottom], outline=box_color, width=2)
+            drawn += 1
+
+            if draw_labels:
+                label = str(field.get("field") or field.get("label") or f"field_{idx + 1}")
+                if len(label) > 42:
+                    label = label[:39] + "..."
+                draw.text((x0 + 1, max(0, top - 12)), label, fill=label_color, font=font)
+
+        overlay_path = output_dir / f"page_{page_num}_debug_bbox_overlay.png"
+        overlay.save(overlay_path, "PNG")
+        print(f"Page {page_num}: drew {drawn} OCR bbox(es)")
+        print(f"  Overlay   -> {overlay_path}")
+
+        if base_img is not None:
+            combined = Image.alpha_composite(base_img, overlay)
+            annotated_path = output_dir / f"page_{page_num}_debug_bbox_annotated.png"
+            combined.save(annotated_path, "PNG")
+            print(f"  Annotated -> {annotated_path}")
 
 
 def _get_bold_dark_blue_font(size: int = 10) -> ImageFont.FreeTypeFont:
@@ -924,42 +1014,106 @@ def run_overlays_with_fill_data(
 
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Generate multi-analysis overlays.")
+    parser.add_argument(
+        "--debug-ocr-bboxes",
+        action="store_true",
+        help="Debug mode: create transparent OCR bbox overlays page-by-page from OCR analysis JSON.",
+    )
+    parser.add_argument(
+        "--ocr-analysis",
+        type=str,
+        default=None,
+        help="Path to OCR analysis JSON used in debug mode.",
+    )
+    parser.add_argument(
+        "--debug-out-dir",
+        type=str,
+        default=None,
+        help="Output directory for debug overlays (default: <ocr-dir>/overlays/debug).",
+    )
+    parser.add_argument(
+        "--base-pages-dir",
+        type=str,
+        default=None,
+        help="Directory containing page_N.png base images for debug compositing.",
+    )
+    parser.add_argument(
+        "--no-labels",
+        action="store_true",
+        help="Do not draw field labels in debug bbox overlays.",
+    )
+    parser.add_argument(
+        "--scale",
+        type=float,
+        default=2.0,
+        help="Overlay scale when page PNG bases are unavailable (default: 2.0).",
+    )
+    args = parser.parse_args()
+
     project_root = Path(__file__).resolve().parent
 
-    annotations_dir = project_root / "annotations" / "usda"
+    if args.debug_ocr_bboxes:
+        ocr_path = (
+            Path(args.ocr_analysis).expanduser().resolve()
+            if args.ocr_analysis
+            else project_root / "annotations" / "irs" / "f1040_ocr_analysis.json"
+        )
+        if not ocr_path.exists():
+            raise SystemExit(f"OCR analysis JSON not found: {ocr_path}")
 
-    pdf_path = (
-        project_root
-        / "templates"
-        / "usda"
-        / "FSA2001_250321V05LC (14).pdf"
-    )
+        debug_out_dir = (
+            Path(args.debug_out_dir).expanduser().resolve()
+            if args.debug_out_dir
+            else ocr_path.parent / "overlays" / "debug"
+        )
+        base_pages_dir = (
+            Path(args.base_pages_dir).expanduser().resolve()
+            if args.base_pages_dir
+            else ocr_path.parent
+        )
+        generate_debug_ocr_bbox_overlays(
+            ocr_analysis_path=ocr_path,
+            output_dir=debug_out_dir,
+            base_pages_dir=base_pages_dir,
+            scale=args.scale,
+            draw_labels=not args.no_labels,
+        )
+    else:
+        annotations_dir = project_root / "annotations" / "usda"
 
-    analyses: List[AnalysisConfig] = [
-        AnalysisConfig(
-            name="ocr",
-            path=annotations_dir / "FSA2001_250321V05LC (14)_ocr_analysis.json",
-            color=(255, 0, 255, 160),  # magenta
-        ),
-    ]
-    page6_tables_path = annotations_dir / "page6_tables.json"
-    if page6_tables_path.exists():
-        analyses.append(
-            AnalysisConfig(
-                name="docling_tables",
-                path=page6_tables_path,
-                color=(255, 0, 255, 255),  # magenta border for Docling table cell bboxes (page 6)
-            )
+        pdf_path = (
+            project_root
+            / "templates"
+            / "usda"
+            / "FSA2001_250321V05LC (14).pdf"
         )
 
-    overlays_dir = annotations_dir / "overlays"
-    annotated_dir = annotations_dir / "annotated"
+        analyses: List[AnalysisConfig] = [
+            AnalysisConfig(
+                name="ocr",
+                path=annotations_dir / "FSA2001_250321V05LC (14)_ocr_analysis.json",
+                color=(255, 0, 255, 160),  # magenta
+            ),
+        ]
+        page6_tables_path = annotations_dir / "page6_tables.json"
+        if page6_tables_path.exists():
+            analyses.append(
+                AnalysisConfig(
+                    name="docling_tables",
+                    path=page6_tables_path,
+                    color=(255, 0, 255, 255),  # magenta border for Docling table cell bboxes (page 6)
+                )
+            )
 
-    generate_multi_analysis_overlays(
-        pdf_path=pdf_path,
-        analyses=analyses,
-        overlays_dir=overlays_dir,
-        annotated_dir=annotated_dir,
-        scale=2.0,
-    )
+        overlays_dir = annotations_dir / "overlays"
+        annotated_dir = annotations_dir / "annotated"
+
+        generate_multi_analysis_overlays(
+            pdf_path=pdf_path,
+            analyses=analyses,
+            overlays_dir=overlays_dir,
+            annotated_dir=annotated_dir,
+            scale=2.0,
+        )
 

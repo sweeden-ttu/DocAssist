@@ -341,7 +341,7 @@
       "cell_type": "value",
       "side": "assets",
       "label": "$ Market Value \u2014 Crop Inventory (Sch. C)",
-      "answer": "$0.00",
+      "answer": "$272.00",
       "coords": {
         "x": 233.67,
         "y": 166.70055744051933,
@@ -658,7 +658,7 @@
       "cell_type": "value",
       "side": "assets",
       "label": "$ Market Value \u2014 TOTAL CURRENT FARM ASSETS",
-      "answer": "$0.00",
+      "answer": "$272.00",
       "coords": {
         "x": 233.67,
         "y": 252.75811207294464,
@@ -753,7 +753,7 @@
       "cell_type": "value",
       "side": "assets",
       "label": "$ Market Value \u2014 Machinery & Equipment (Sch. H)",
-      "answer": "$7,500.00",
+      "answer": "$3,000.00",
       "coords": {
         "x": 233.67,
         "y": 282.9036006331444,
@@ -809,7 +809,7 @@
       "cell_type": "value",
       "side": "assets",
       "label": "$ Market Value \u2014 Farm Vehicles (Sch. I)",
-      "answer": "$0.00",
+      "answer": "$4,500.00",
       "coords": {
         "x": 233.67,
         "y": 297.25947403907776,
@@ -1067,7 +1067,7 @@
     {
       "schedule": "inferred",
       "label": "H_GrandTotalAssets",
-      "answer": "$126,768.42",
+      "answer": "$127,040.42",
       "cell_type": "value",
       "coords": {
         "x": 233.67,
@@ -1080,7 +1080,7 @@
     {
       "schedule": "inferred",
       "label": "H_GrandTotalLiabilities",
-      "answer": "$20,000.00",
+      "answer": "$36,656.00",
       "cell_type": "value",
       "coords": {
         "x": 233.67,
@@ -1093,7 +1093,7 @@
     {
       "schedule": "inferred",
       "label": "H_NetEquity",
-      "answer": "$106,768.42",
+      "answer": "$90,384.42",
       "cell_type": "value",
       "coords": {
         "x": 233.67,
@@ -1818,7 +1818,7 @@
     {
       "schedule": "inferred",
       "label": "$ Owed \u2014 Long-Term Personal Liabilities (Sch. GG \u2014 Federal Student Loan)",
-      "answer": "$20,000.00",
+      "answer": "$36,656.00",
       "cell_type": "value",
       "coords": {
         "x": 538.68,
@@ -2002,7 +2002,7 @@
       "cell_type": "value",
       "side": "liabilities",
       "label": "$ Owed \u2014 TOTAL LONG-TERM PERSONAL LIABILITIES",
-      "answer": "$0.00",
+      "answer": "$36,656.00",
       "coords": {
         "x": 538.68,
         "y": 701.5912638902664,
@@ -2017,7 +2017,7 @@
       "cell_type": "value",
       "side": "assets",
       "label": "$ Market Value \u2014 3A. GRAND TOTAL ASSETS",
-      "answer": "$126,768.42",
+      "answer": "$127,040.42",
       "coords": {
         "x": 233.67,
         "y": 722.1792891025543,
@@ -2045,7 +2045,7 @@
       "cell_type": "value",
       "side": "liabilities",
       "label": "$ Owed \u2014 3B. GRAND TOTAL LIABILITIES",
-      "answer": "$20,000.00",
+      "answer": "$36,656.00",
       "coords": {
         "x": 538.68,
         "y": 722.1792891025543,
@@ -2086,7 +2086,7 @@
       "cell_type": "value",
       "side": "assets",
       "label": "$ Market Value \u2014 3C. TOTAL NET EQUITY (Grand Total Assets minus Grand Total Liabilities)",
-      "answer": "$106,768.42",
+      "answer": "$90,384.42",
       "coords": {
         "x": 233.67,
         "y": 746.4272124767303,
@@ -2095,5 +2095,35 @@
         "inferred": true
       }
     }
-  ]
+  ],
+  "student_loans": {
+    "lender": "ED FINANCIAL / ESA",
+    "type": "Federal Student Loans \u2014 Deferred Payment",
+    "accounts": [
+      {
+        "masked_account": "xxxxxx0815",
+        "remaining_balance": 21063.0,
+        "age_months": 7,
+        "late_payments": 0,
+        "status": "Deferred"
+      },
+      {
+        "masked_account": "xxxxxx0520",
+        "remaining_balance": 6854.0,
+        "age_months": 9,
+        "late_payments": 0,
+        "status": "Deferred"
+      },
+      {
+        "masked_account": "xxxxxx0530",
+        "remaining_balance": 8739.0,
+        "age_months": 9,
+        "late_payments": 0,
+        "status": "Deferred"
+      }
+    ],
+    "total_balance": 36656.0,
+    "schedule": "GG \u2014 Personal Term Debts Payable (Over 12 months)",
+    "note": "All three accounts are in deferment; no current monthly payment due."
+  }
 }

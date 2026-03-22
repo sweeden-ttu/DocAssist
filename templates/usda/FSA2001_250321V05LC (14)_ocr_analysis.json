@@ -1,0 +1,773 @@
+{
+  "page_size": {
+    "width": 612.0,
+    "height": 792.0
+  },
+  "field_count": 53,
+  "fields": [
+    {
+      "field": "TextField1[0]",
+      "label": "Part A, 1. Name of borrower",
+      "answer": "",
+      "field_coords": {
+        "page": 5,
+        "x": 52.124,
+        "y": 20.863,
+        "width": 44.50299999999999,
+        "height": 15.139000000000003,
+        "type": "/Tx"
+      },
+      "confidence": "high"
+    },
+    {
+      "field": "PartEItem1NewLoanRequest[0]",
+      "label": "Part A, 1. Name of borrower",
+      "answer": "Yes",
+      "field_coords": {
+        "page": 5,
+        "x": 219.289,
+        "y": 724.313,
+        "width": 8.0,
+        "height": 8.0,
+        "type": "/Btn"
+      },
+      "confidence": "high"
+    },
+    {
+      "field": "PartEItem1LoanServicingRequest[0]",
+      "label": "Part A, 2. Name of borrower",
+      "answer": "",
+      "field_coords": {
+        "page": 5,
+        "x": 333.828,
+        "y": 724.313,
+        "width": 8.0,
+        "height": 8.0,
+        "type": "/Btn"
+      },
+      "confidence": "high"
+    },
+    {
+      "field": "PartEItem1TransferandAssumptions[0]",
+      "label": "Part A, 1. Name of borrower",
+      "answer": "",
+      "field_coords": {
+        "page": 5,
+        "x": 468.411,
+        "y": 724.31,
+        "width": 8.0,
+        "height": 8.0,
+        "type": "/Btn"
+      },
+      "confidence": "high"
+    },
+    {
+      "field": "Number1AE[0]",
+      "label": "Part A, 2. Type of request you are requesting assistance with",
+      "answer": "3",
+      "field_coords": {
+        "page": 5,
+        "x": 92.092,
+        "y": 696.155,
+        "width": 30.272999999999996,
+        "height": 23.129999999999995,
+        "type": "/Tx"
+      },
+      "confidence": "high"
+    },
+    {
+      "field": "TextField19[0]",
+      "label": "1B. Use of Loan Proceeds",
+      "answer": "Purchase farm real estate \u2014 Lots PV66 & PV67, Powell Valley Farms",
+      "field_coords": {
+        "page": 5,
+        "x": 126.209,
+        "y": 694.737,
+        "width": 322.382,
+        "height": 13.62600000000009,
+        "type": "/Tx"
+      },
+      "confidence": "high"
+    },
+    {
+      "field": "AmountRequestedE1BE[0]",
+      "label": "1C. $ Amount Requested",
+      "answer": "$45,000.00",
+      "field_coords": {
+        "page": 5,
+        "x": 452.826,
+        "y": 696.155,
+        "width": 138.32999999999993,
+        "height": 13.454000000000065,
+        "type": "/Tx"
+      },
+      "confidence": "high"
+    },
+    {
+      "field": "Number1AE[1]",
+      "label": "Part A, 2. Type of request you are requesting assistance with",
+      "answer": "3",
+      "field_coords": {
+        "page": 5,
+        "x": 91.914,
+        "y": 667.012,
+        "width": 30.272999999999996,
+        "height": 23.13000000000011,
+        "type": "/Tx"
+      },
+      "confidence": "high"
+    },
+    {
+      "field": "TextField19[1]",
+      "label": "2B. Use of Loan Proceeds",
+      "answer": "Purchase & install manufactured home (farm dwelling)",
+      "field_coords": {
+        "page": 5,
+        "x": 126.031,
+        "y": 665.537,
+        "width": 322.382,
+        "height": 14.02299999999991,
+        "type": "/Tx"
+      },
+      "confidence": "high"
+    },
+    {
+      "field": "AmountRequested2BE[0]",
+      "label": "2C. $ Amount Requested",
+      "answer": "$68,000.00",
+      "field_coords": {
+        "page": 5,
+        "x": 452.826,
+        "y": 667.012,
+        "width": 138.32999999999993,
+        "height": 12.944000000000074,
+        "type": "/Tx"
+      },
+      "confidence": "high"
+    },
+    {
+      "field": "Number1AE[2]",
+      "label": "Part A, 2B. Use of funds",
+      "answer": "3",
+      "field_coords": {
+        "page": 5,
+        "x": 92.092,
+        "y": 638.303,
+        "width": 30.272999999999996,
+        "height": 23.129999999999995,
+        "type": "/Tx"
+      },
+      "confidence": "high"
+    },
+    {
+      "field": "TextField19[2]",
+      "label": "3B. Use of Loan Proceeds",
+      "answer": "Greenhouse 10'x12' construction & closing costs (3%)",
+      "field_coords": {
+        "page": 5,
+        "x": 126.209,
+        "y": 636.888,
+        "width": 322.382,
+        "height": 13.966000000000008,
+        "type": "/Tx"
+      },
+      "confidence": "high"
+    },
+    {
+      "field": "AmountRequested2BE[1]",
+      "label": "3C. $ Amount Requested",
+      "answer": "$4,730.71",
+      "field_coords": {
+        "page": 5,
+        "x": 452.826,
+        "y": 638.303,
+        "width": 138.32999999999993,
+        "height": 12.654999999999973,
+        "type": "/Tx"
+      },
+      "confidence": "high"
+    },
+    {
+      "field": "CheckBox2[0]",
+      "label": "PART F",
+      "answer": "",
+      "field_coords": {
+        "page": 5,
+        "x": 20.835,
+        "y": 594.62,
+        "width": 9.0,
+        "height": 9.0,
+        "type": "/Btn"
+      },
+      "confidence": "high"
+    },
+    {
+      "field": "yearstarted[0]",
+      "label": "Part A, 2. Name of applicant or borrower",
+      "answer": "",
+      "field_coords": {
+        "page": 5,
+        "x": 224.028,
+        "y": 593.587,
+        "width": 71.93100000000001,
+        "height": 11.610000000000014,
+        "type": "/Tx"
+      },
+      "confidence": "high"
+    },
+    {
+      "field": "CheckBox2[1]",
+      "label": "PART F, 1. I have this loan?",
+      "answer": "",
+      "field_coords": {
+        "page": 5,
+        "x": 20.835,
+        "y": 577.77,
+        "width": 9.0,
+        "height": 9.0,
+        "type": "/Btn"
+      },
+      "confidence": "high"
+    },
+    {
+      "field": "CheckBox2[2]",
+      "label": "Part A, 1. Name of borrower",
+      "answer": "",
+      "field_coords": {
+        "page": 5,
+        "x": 20.835,
+        "y": 560.819,
+        "width": 9.0,
+        "height": 9.0,
+        "type": "/Btn"
+      },
+      "confidence": "high"
+    },
+    {
+      "field": "CheckBox2[3]",
+      "label": "Part A, 2. Name of borrower or applicant for direct loan assistance",
+      "answer": "",
+      "field_coords": {
+        "page": 5,
+        "x": 20.835,
+        "y": 543.993,
+        "width": 9.0,
+        "height": 9.0,
+        "type": "/Btn"
+      },
+      "confidence": "high"
+    },
+    {
+      "field": "CheckBox2[4]",
+      "label": "Part A, 1. Name of borrower or applicant",
+      "answer": "",
+      "field_coords": {
+        "page": 5,
+        "x": 20.835,
+        "y": 526.94,
+        "width": 9.0,
+        "height": 9.0,
+        "type": "/Btn"
+      },
+      "confidence": "high"
+    },
+    {
+      "field": "CheckBox2[5]",
+      "label": "Part A, 2. Name of borrower(s) and/or applicant(s).",
+      "answer": "",
+      "field_coords": {
+        "page": 5,
+        "x": 20.835,
+        "y": 509.966,
+        "width": 9.0,
+        "height": 9.0,
+        "type": "/Btn"
+      },
+      "confidence": "high"
+    },
+    {
+      "field": "CheckBox2[6]",
+      "label": "Part A, 2. Type of loan assistance requested",
+      "answer": "",
+      "field_coords": {
+        "page": 5,
+        "x": 20.835,
+        "y": 494.035,
+        "width": 9.0,
+        "height": 9.0,
+        "type": "/Btn"
+      },
+      "confidence": "high"
+    },
+    {
+      "field": "CheckBox2[7]",
+      "label": "Part A, 2. Name of borrower",
+      "answer": "",
+      "field_coords": {
+        "page": 5,
+        "x": 20.835,
+        "y": 476.415,
+        "width": 9.0,
+        "height": 9.0,
+        "type": "/Btn"
+      },
+      "confidence": "high"
+    },
+    {
+      "field": "CheckBox2[8]",
+      "label": "Part A, 2. Name of borrower(s) and/or applicant(s).",
+      "answer": "",
+      "field_coords": {
+        "page": 5,
+        "x": 20.835,
+        "y": 459.543,
+        "width": 9.0,
+        "height": 9.0,
+        "type": "/Btn"
+      },
+      "confidence": "high"
+    },
+    {
+      "field": "CheckBox2[9]",
+      "label": "Part A, 1. Name of borrower",
+      "answer": "",
+      "field_coords": {
+        "page": 5,
+        "x": 20.835,
+        "y": 442.875,
+        "width": 9.0,
+        "height": 9.0,
+        "type": "/Btn"
+      },
+      "confidence": "high"
+    },
+    {
+      "field": "CheckBox2[10]",
+      "label": "Part A, 2. Name of borrower or applicant",
+      "answer": "",
+      "field_coords": {
+        "page": 5,
+        "x": 20.835,
+        "y": 426.276,
+        "width": 9.0,
+        "height": 9.0,
+        "type": "/Btn"
+      },
+      "confidence": "high"
+    },
+    {
+      "field": "CheckBox2[11]",
+      "label": "Part A, 2. Name of borrower",
+      "answer": "",
+      "field_coords": {
+        "page": 5,
+        "x": 20.835,
+        "y": 409.472,
+        "width": 9.0,
+        "height": 9.0,
+        "type": "/Btn"
+      },
+      "confidence": "high"
+    },
+    {
+      "field": "CheckBox2[12]",
+      "label": "Part A, 2. Name of borrower",
+      "answer": "",
+      "field_coords": {
+        "page": 5,
+        "x": 20.835,
+        "y": 383.807,
+        "width": 9.0,
+        "height": 9.0,
+        "type": "/Btn"
+      },
+      "confidence": "high"
+    },
+    {
+      "field": "CheckBox2[13]",
+      "label": "Part A, 1. Name of borrower",
+      "answer": "Yes",
+      "field_coords": {
+        "page": 5,
+        "x": 308.906,
+        "y": 595.232,
+        "width": 9.0,
+        "height": 9.0,
+        "type": "/Btn"
+      },
+      "confidence": "high"
+    },
+    {
+      "field": "CheckBox2[14]",
+      "label": "Part A, 2. Type of loan assistance requested",
+      "answer": "",
+      "field_coords": {
+        "page": 5,
+        "x": 308.906,
+        "y": 568.915,
+        "width": 9.0,
+        "height": 9.0,
+        "type": "/Btn"
+      },
+      "confidence": "high"
+    },
+    {
+      "field": "CheckBox2[15]",
+      "label": "Part A, 2. Name of borrower or manager",
+      "answer": "Yes",
+      "field_coords": {
+        "page": 5,
+        "x": 308.906,
+        "y": 534.174,
+        "width": 9.0,
+        "height": 9.0,
+        "type": "/Btn"
+      },
+      "confidence": "high"
+    },
+    {
+      "field": "CheckBox2[16]",
+      "label": "Part A, 2. Name of borrower(s) and manager(s).",
+      "answer": "",
+      "field_coords": {
+        "page": 5,
+        "x": 308.906,
+        "y": 517.2,
+        "width": 9.0,
+        "height": 9.0,
+        "type": "/Btn"
+      },
+      "confidence": "high"
+    },
+    {
+      "field": "CheckBox2[17]",
+      "label": "Part A, 2. Name of borrower or manager (up to 40 characters)",
+      "answer": "",
+      "field_coords": {
+        "page": 5,
+        "x": 308.906,
+        "y": 500.532,
+        "width": 9.0,
+        "height": 9.0,
+        "type": "/Btn"
+      },
+      "confidence": "high"
+    },
+    {
+      "field": "CheckBox2[18]",
+      "label": "Part A, 2. Type of loan assistance requested: Agriculture, non-farm business, or other (check one box)",
+      "answer": "",
+      "field_coords": {
+        "page": 5,
+        "x": 308.906,
+        "y": 482.294,
+        "width": 9.0,
+        "height": 9.0,
+        "type": "/Btn"
+      },
+      "confidence": "high"
+    },
+    {
+      "field": "CheckBox2[19]",
+      "label": "Part A, 2. Name of borrower or applicant for direct loan assistance program",
+      "answer": "",
+      "field_coords": {
+        "page": 5,
+        "x": 308.906,
+        "y": 455.344,
+        "width": 9.0,
+        "height": 9.0,
+        "type": "/Btn"
+      },
+      "confidence": "high"
+    },
+    {
+      "field": "CheckBox2[20]",
+      "label": "Part A, 2. State or province of residence",
+      "answer": "",
+      "field_coords": {
+        "page": 5,
+        "x": 308.906,
+        "y": 430.72,
+        "width": 9.0,
+        "height": 9.0,
+        "type": "/Btn"
+      },
+      "confidence": "high"
+    },
+    {
+      "field": "OtherLine1[0]",
+      "label": "States",
+      "answer": "",
+      "field_coords": {
+        "page": 5,
+        "x": 322.756,
+        "y": 374.741,
+        "width": 265.413,
+        "height": 51.93000000000001,
+        "type": "/Tx"
+      },
+      "confidence": "high"
+    },
+    {
+      "field": "Explanation2F[0]",
+      "label": "Part F, 2. Explanation",
+      "answer": "Applicant is currently growing these listed varieties indoors in apartment and is seeking land and equipment to plant, and greenhouse space to grow market variety vegetables and USDA organic food.",
+      "field_coords": {
+        "page": 5,
+        "x": 20.835,
+        "y": 299.736,
+        "width": 570.259,
+        "height": 51.261000000000024,
+        "type": "/Tx"
+      },
+      "confidence": "high"
+    },
+    {
+      "field": "CheckYes1G[0]",
+      "label": "Part A, 2. Name of borrower",
+      "answer": "",
+      "field_coords": {
+        "page": 5,
+        "x": 510.173,
+        "y": 254.334,
+        "width": 9.0,
+        "height": 9.0,
+        "type": "/Btn"
+      },
+      "confidence": "high"
+    },
+    {
+      "field": "CheckNo1G[0]",
+      "label": "Part A, 2. Name of borrower",
+      "answer": "Yes",
+      "field_coords": {
+        "page": 5,
+        "x": 561.84,
+        "y": 254.334,
+        "width": 9.0,
+        "height": 9.0,
+        "type": "/Btn"
+      },
+      "confidence": "high"
+    },
+    {
+      "field": "CheckYes2G[0]",
+      "label": "Part A, 2. Are you applying for direct loan assistance?",
+      "answer": "",
+      "field_coords": {
+        "page": 5,
+        "x": 510.173,
+        "y": 231.546,
+        "width": 9.0,
+        "height": 9.0,
+        "type": "/Btn"
+      },
+      "confidence": "high"
+    },
+    {
+      "field": "CheckNo2G[0]",
+      "label": "Part A, 2. Is this an application for direct loan assistance?",
+      "answer": "Yes",
+      "field_coords": {
+        "page": 5,
+        "x": 561.84,
+        "y": 231.549,
+        "width": 9.0,
+        "height": 9.0,
+        "type": "/Btn"
+      },
+      "confidence": "high"
+    },
+    {
+      "field": "CheckYes3G[0]",
+      "label": "Part A, 2. Name of applicant for whom you are applying for a loan.",
+      "answer": "",
+      "field_coords": {
+        "page": 5,
+        "x": 510.173,
+        "y": 208.412,
+        "width": 9.0,
+        "height": 9.0,
+        "type": "/Btn"
+      },
+      "confidence": "high"
+    },
+    {
+      "field": "CheckNo3G[0]",
+      "label": "Part A, 2. Name of borrower",
+      "answer": "Yes",
+      "field_coords": {
+        "page": 5,
+        "x": 561.84,
+        "y": 208.412,
+        "width": 9.0,
+        "height": 9.0,
+        "type": "/Btn"
+      },
+      "confidence": "high"
+    },
+    {
+      "field": "CheckYes4G[0]",
+      "label": "Part A, 2. Name of borrower",
+      "answer": "",
+      "field_coords": {
+        "page": 5,
+        "x": 510.173,
+        "y": 184.729,
+        "width": 9.0,
+        "height": 9.0,
+        "type": "/Btn"
+      },
+      "confidence": "high"
+    },
+    {
+      "field": "CheckNo4G[0]",
+      "label": "Part A, 2. Name of borrower",
+      "answer": "Yes",
+      "field_coords": {
+        "page": 5,
+        "x": 561.84,
+        "y": 184.726,
+        "width": 9.0,
+        "height": 9.0,
+        "type": "/Btn"
+      },
+      "confidence": "high"
+    },
+    {
+      "field": "CheckYes5G[0]",
+      "label": "Part A, 2. Name of borrower",
+      "answer": "",
+      "field_coords": {
+        "page": 5,
+        "x": 510.173,
+        "y": 160.479,
+        "width": 9.0,
+        "height": 9.0,
+        "type": "/Btn"
+      },
+      "confidence": "high"
+    },
+    {
+      "field": "CheckNo5G[0]",
+      "label": "Part A, 2. Name of borrower",
+      "answer": "Yes",
+      "field_coords": {
+        "page": 5,
+        "x": 561.84,
+        "y": 160.479,
+        "width": 9.0,
+        "height": 9.0,
+        "type": "/Btn"
+      },
+      "confidence": "high"
+    },
+    {
+      "field": "CheckYes6G[0]",
+      "label": "Part A, 2. Name of borrower",
+      "answer": "",
+      "field_coords": {
+        "page": 5,
+        "x": 510.173,
+        "y": 136.602,
+        "width": 9.0,
+        "height": 9.0,
+        "type": "/Btn"
+      },
+      "confidence": "high"
+    },
+    {
+      "field": "CheckNo6G[0]",
+      "label": "Part A, 2. Name of applicant for whom you are applying.",
+      "answer": "Yes",
+      "field_coords": {
+        "page": 5,
+        "x": 561.84,
+        "y": 136.602,
+        "width": 9.0,
+        "height": 9.0,
+        "type": "/Btn"
+      },
+      "confidence": "high"
+    },
+    {
+      "field": "CheckYes7G[0]",
+      "label": "Part H, 2. Name of borrower",
+      "answer": "",
+      "field_coords": {
+        "page": 5,
+        "x": 510.173,
+        "y": 113.27,
+        "width": 9.0,
+        "height": 9.0,
+        "type": "/Btn"
+      },
+      "confidence": "high"
+    },
+    {
+      "field": "CheckNo7G[0]",
+      "label": "Part A, 2. Name of borrower",
+      "answer": "Yes",
+      "field_coords": {
+        "page": 5,
+        "x": 561.84,
+        "y": 113.268,
+        "width": 9.0,
+        "height": 9.0,
+        "type": "/Btn"
+      },
+      "confidence": "high"
+    },
+    {
+      "field": "AddtlInfo8G[0]",
+      "label": "7. Are you, or in the case of an entity any member of the entity, an FSA employee or related to or closely associated with an FSA employee? If \"YES\", provide details in Item 8.",
+      "answer": "",
+      "field_coords": {
+        "page": 5,
+        "x": 20.835,
+        "y": 41.996,
+        "width": 569.9979999999999,
+        "height": 37.716,
+        "type": "/Tx"
+      },
+      "confidence": "high"
+    },
+    {
+      "field": "DateField3[0]",
+      "label": "Part A, 2. Name of applicant",
+      "answer": "03/05/2026",
+      "field_coords": {
+        "page": 5,
+        "x": 142.124,
+        "y": 19.332,
+        "width": 71.50300000000001,
+        "height": 15.138999999999996,
+        "type": "/Tx"
+      },
+      "confidence": "high"
+    }
+  ],
+  "part_E_loan_request_summary": {
+    "loan_type": "Direct Farm Ownership (FO-Reg)",
+    "request_1": {
+      "use": "Purchase farm real estate \u2014 Lots PV66 & PV67, Powell Valley Farms",
+      "amount": "$45,000.00"
+    },
+    "request_2": {
+      "use": "Purchase & install manufactured home (farm dwelling)",
+      "amount": "$68,000.00"
+    },
+    "request_3": {
+      "use": "Greenhouse 10'x12' + closing costs (3% of $114,301.66)",
+      "amount": "$4,730.71",
+      "breakdown": {
+        "greenhouse": "$1,301.66",
+        "closing_costs_3pct": "$3,429.05"
+      }
+    },
+    "total_requested": "$117,730.71",
+    "FO_limit": "$600,000.00",
+    "within_limit": true
+  }
+}

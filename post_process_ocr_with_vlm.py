@@ -68,7 +68,27 @@ if not _USE_LIGHTWEIGHT_MODE:
 # uv run python docs/examples/post_process_ocr_with_vlm.py
 
 LM_STUDIO_URL = "http://localhost:1234/v1/chat/completions"
-LM_STUDIO_MODEL = "nanonets-ocr2-3b"
+
+
+_DEFAULT_LM_STUDIO_MODEL = "nanonets-ocr2-3b"
+
+
+def resolve_lm_studio_model(explicit: Optional[str] = None) -> str:
+    """Model id for OpenAI-compatible chat/completions. No network I/O.
+
+    Order: explicit CLI arg > LM_STUDIO_MODEL env > OPENAI_MODEL env > default.
+    Avoids GET /v1/models on import (many local servers log errors for that route).
+    """
+    if explicit and str(explicit).strip():
+        return str(explicit).strip()
+    for key in ("LM_STUDIO_MODEL", "OPENAI_MODEL"):
+        v = os.environ.get(key, "").strip()
+        if v:
+            return v
+    return _DEFAULT_LM_STUDIO_MODEL
+
+
+LM_STUDIO_MODEL = resolve_lm_studio_model()
 
 DEFAULT_PROMPT = "Extract the text from the above document as if you were reading it naturally. Output pure text, no html and no markdown. Pay attention on line breaks and don't miss text after line break. Put all text in one line."
 VERBOSE = True
@@ -214,7 +234,7 @@ def no_long_repeats(s: str, threshold: int) -> bool:
 
 
 # Prompt for extracting the form label from a crop of the region above a field bbox
-LABEL_EXTRACTION_PROMPT = (
+USDA_LABEL_EXTRACTION_PROMPT = (
     "This image shows the label or title of a form field (the text directly above an input box) "
     "on the FSA-2001 Request for Direct Loan Assistance form. "
     "Output the most descriptive field label possible in this exact format: Part <letter>, # <description of field label>. "
@@ -225,31 +245,64 @@ LABEL_EXTRACTION_PROMPT = (
     "Give the full, descriptive label text (e.g. 'Part B, 1. Social Security Number (9 Digits)' not just 'SSN')."
 )
 
+IRS1040_LABEL_EXTRACTION_PROMPT = (
+    "You are performing step 2 of a prompt chain for IRS Form 1040. "
+    "Image 1 is a crop focused on the field label: usually the text strip directly above the widget; "
+    "if that strip was too small, it may show a wider context window centered on the field. "
+    "Additional images are reference context (full page and page_1.png). "
+    "Use Image 1 as primary, use references only to disambiguate, and return the full descriptive label text for that field. "
+    "Include line number/letter when visible (for example: '11b. Amount from line 11a, adjusted gross income'). "
+    "Output exactly one plain-text line only. No markdown. No JSON. No explanation."
+)
+
+LABEL_PROMPTS_BY_PROFILE = {
+    "usda": USDA_LABEL_EXTRACTION_PROMPT,
+    "irs1040": IRS1040_LABEL_EXTRACTION_PROMPT,
+}
+
+
+def _resolve_label_prompt(form_profile: str) -> str:
+    return LABEL_PROMPTS_BY_PROFILE.get(form_profile, USDA_LABEL_EXTRACTION_PROMPT)
+
 
 def _lm_studio_image_request(
     image: Image.Image,
     prompt: str,
     url: str,
     model: str,
+    reference_images: Optional[list[Image.Image]] = None,
     timeout: int = 30,
     max_tokens: int = 256,
 ) -> str:
-    """Call LM Studio chat completions API with one image (no docling dependency)."""
+    """Call LM Studio chat completions API with a primary image and optional references."""
     buf = io.BytesIO()
-    image.save(buf, format="PNG")
+    image.convert("RGB").save(buf, format="PNG")
     b64 = base64.standard_b64encode(buf.getvalue()).decode("ascii")
+    content: list[dict[str, Any]] = [
+        {"type": "text", "text": prompt},
+        {
+            "type": "image_url",
+            "image_url": {"url": f"data:image/png;base64,{b64}"},
+        },
+    ]
+
+    for ref_img in reference_images or []:
+        ref_buf = io.BytesIO()
+        ref_img.convert("RGB").save(ref_buf, format="PNG")
+        ref_b64 = base64.standard_b64encode(ref_buf.getvalue()).decode("ascii")
+        content.append(
+            {
+                "type": "image_url",
+                "image_url": {"url": f"data:image/png;base64,{ref_b64}"},
+            }
+        )
+
     body = {
         "model": model,
         "messages": [
             {
                 "role": "user",
-                "content": [
-                    {"type": "text", "text": prompt},
-                    {
-                        "type": "image_url",
-                        "image_url": {"url": f"data:image/png;base64,{b64}"},
-                    },
-                ],
+                "content": content,
             }
         ],
         "max_tokens": max_tokens,
@@ -274,10 +327,21 @@ def _lm_studio_image_request(
         if body.strip():
             msg += f" — {body.strip()[:500]}"
         raise RuntimeError(msg) from e
+    except (urllib.error.URLError, TimeoutError) as e:
+        raise RuntimeError(f"LM Studio request failed: {e}") from e
     choices = data.get("choices", [])
     if not choices:
         return ""
     return (choices[0].get("message") or {}).get("content", "").strip()
+
+
+def _resize_image_for_reference(image: Image.Image, max_side: int = 768) -> Image.Image:
+    """Return a copy resized to keep the largest side <= max_side."""
+    if image.width <= max_side and image.height <= max_side:
+        return image.copy()
+    out = image.copy()
+    out.thumbnail((max_side, max_side), Image.Resampling.LANCZOS)
+    return out
 
 
 def _crop_label_region_above_field(
@@ -313,6 +377,52 @@ def _crop_label_region_above_field(
     im_left = int(left_pt * scale)
     im_right = int(right_pt * scale)
     # image y: top of label strip = page_height_pt - top_pt (PDF), then * scale
+    im_top = int((page_height_pt - top_pt) * scale)
+    im_bottom = int((page_height_pt - bottom_pt) * scale)
+
+    im_left = max(0, min(im_left, img_w))
+    im_right = max(0, min(im_right, img_w))
+    im_top = max(0, min(im_top, img_h))
+    im_bottom = max(0, min(im_bottom, img_h))
+
+    if im_left >= im_right or im_top >= im_bottom:
+        return None
+    return page_img.crop((im_left, im_top, im_right, im_bottom))
+
+
+def _crop_centered_region_at_point(
+    page_img: Image.Image,
+    page_width_pt: float,
+    page_height_pt: float,
+    center_x_pt: float,
+    center_y_pt: float,
+    scale: float,
+    crop_width_pt: float = 144.0,  # 2 inches
+    crop_height_pt: float = 72.0,  # 1 inch
+) -> Optional[Image.Image]:
+    """
+    Step 1 of prompt-chaining for IRS labels:
+    Given a PDF-space point (x, y), return a centered crop of fixed physical size.
+    """
+    left_pt = center_x_pt - (crop_width_pt / 2.0)
+    right_pt = center_x_pt + (crop_width_pt / 2.0)
+    bottom_pt = center_y_pt - (crop_height_pt / 2.0)
+    top_pt = center_y_pt + (crop_height_pt / 2.0)
+
+    # Clamp to page bounds
+    left_pt = max(0.0, left_pt)
+    right_pt = min(page_width_pt, right_pt)
+    bottom_pt = max(0.0, bottom_pt)
+    top_pt = min(page_height_pt, top_pt)
+
+    if left_pt >= right_pt or bottom_pt >= top_pt:
+        return None
+
+    # Convert PDF coords (origin bottom-left) to image coords (origin top-left)
+    img_w = page_img.width
+    img_h = page_img.height
+    im_left = int(left_pt * scale)
+    im_right = int(right_pt * scale)
     im_top = int((page_height_pt - top_pt) * scale)
     im_bottom = int((page_height_pt - bottom_pt) * scale)
 
@@ -554,6 +664,7 @@ def run_annotate_pages_with_vlm_iterative(
     ocr_analysis_path: Path,
     pdf_path: Path,
     pages: list[int],
+    form_profile: str = "usda",
     max_iterations: int = 3,
     url: str = LM_STUDIO_URL,
     model: str = LM_STUDIO_MODEL,
@@ -604,12 +715,22 @@ def run_annotate_pages_with_vlm_iterative(
             continue
 
         # Only fill Parts B,E,F,G,H,I,J,L; on page 6 only Part H 2A,2B,2C,2E,2F
-        in_scope_indices = [
-            i for i, f in enumerate(fields)
-            if _field_is_in_scope(page_num, f.get("label") or "")
-        ]
+        if form_profile == "usda":
+            in_scope_indices = [
+                i
+                for i, f in enumerate(fields)
+                if _field_is_in_scope(page_num, f.get("label") or "")
+            ]
+        else:
+            # IRS and other form profiles: annotate all fields on requested pages.
+            in_scope_indices = list(range(len(fields)))
         if not in_scope_indices:
-            print(f"  Skip {page_key}: no in-scope fields (Parts B,E,F,G,H,I,J,L; page 6 only Part H 2A–2F).")
+            if form_profile == "usda":
+                print(
+                    f"  Skip {page_key}: no in-scope fields (Parts B,E,F,G,H,I,J,L; page 6 only Part H 2A–2F)."
+                )
+            else:
+                print(f"  Skip {page_key}: no fields to annotate.")
             continue
 
         img = get_page_image(page_num)
@@ -749,7 +870,9 @@ def fix_ocr_analysis_labels(
     ocr_analysis_path: Path,
     out_path: Optional[Path] = None,
     url: str = LM_STUDIO_URL,
-    prompt: str = LABEL_EXTRACTION_PROMPT,
+    model: Optional[str] = None,
+    prompt: Optional[str] = None,
+    form_profile: str = "usda",
     scale: float = 2.0,
     label_height_pt: float = 55.0,
     concurrency: int = 2,
@@ -760,6 +883,10 @@ def fix_ocr_analysis_labels(
     below: crop the region above each field, run VLM OCR on that crop, and set
     field["label"] to the result. Saves the updated JSON to out_path (default:
     overwrite ocr_analysis_path).
+
+    For IRS 1040, ``field_coords`` are PDF lower-left (x, y) plus width/height; the
+    label strip is taken above the field top, with a centered fallback at the bbox
+    center. Pass ``model`` or set LM_STUDIO_MODEL to avoid relying on server discovery.
     """
     try:
         import pypdfium2 as pdfium
@@ -769,6 +896,8 @@ def fix_ocr_analysis_labels(
         )
 
     out_path = out_path or ocr_analysis_path
+    prompt = prompt or _resolve_label_prompt(form_profile)
+    lm_model = resolve_lm_studio_model(model)
     with open(ocr_analysis_path, encoding="utf-8") as f:
         data = json.load(f)
 
@@ -783,6 +912,15 @@ def fix_ocr_analysis_labels(
             bitmap = page.render(scale=scale)
             page_images[page_num] = bitmap.to_pil()
         return page_images[page_num]
+
+    annotations_dir = ocr_analysis_path.resolve().parent
+    page_1_reference_path = annotations_dir / "page_1.png"
+    page_1_reference: Optional[Image.Image] = None
+    if page_1_reference_path.exists():
+        try:
+            page_1_reference = Image.open(page_1_reference_path).convert("RGB")
+        except Exception:
+            page_1_reference = None
 
     total_updated = 0
     for page_key, page_data in data.items():
@@ -812,17 +950,45 @@ def fix_ocr_analysis_labels(
             h = coords.get("height")
             if None in (x, y, w, h):
                 continue
-            crop = _crop_label_region_above_field(
-                img,
-                page_width_pt,
-                page_height_pt,
-                float(x),
-                float(y),
-                float(w),
-                float(h),
-                scale=scale,
-                label_height_pt=label_height_pt,
-            )
+            if form_profile == "irs1040":
+                # field_coords are PDF rect lower-left (x,y) + width/height (see ocr_field_analysis).
+                # Prefer the label strip above the widget; fallback to a crop centered on the bbox center.
+                cx = float(x) + float(w) / 2.0
+                cy = float(y) + float(h) / 2.0
+                crop = _crop_label_region_above_field(
+                    img,
+                    page_width_pt,
+                    page_height_pt,
+                    float(x),
+                    float(y),
+                    float(w),
+                    float(h),
+                    scale=scale,
+                    label_height_pt=label_height_pt,
+                )
+                if crop is None or crop.width <= 2 or crop.height <= 2:
+                    crop = _crop_centered_region_at_point(
+                        img,
+                        page_width_pt,
+                        page_height_pt,
+                        center_x_pt=cx,
+                        center_y_pt=cy,
+                        scale=scale,
+                        crop_width_pt=144.0,
+                        crop_height_pt=72.0,
+                    )
+            else:
+                crop = _crop_label_region_above_field(
+                    img,
+                    page_width_pt,
+                    page_height_pt,
+                    float(x),
+                    float(y),
+                    float(w),
+                    float(h),
+                    scale=scale,
+                    label_height_pt=label_height_pt,
+                )
             if crop is not None and crop.width > 2 and crop.height > 2:
                 crops_and_indices.append((i, crop))
 
@@ -833,14 +999,38 @@ def fix_ocr_analysis_labels(
         indices = [idx for idx, _ in crops_and_indices]
         crops = [c for _, c in crops_and_indices]
 
+        page_reference_img = _resize_image_for_reference(img.convert("RGB"))
+        static_references: list[Image.Image] = [page_reference_img]
+        if page_1_reference is not None and page_num != 1:
+            static_references.append(_resize_image_for_reference(page_1_reference))
+
         def _request_one(crop_img: Image.Image) -> str:
-            return _lm_studio_image_request(
-                image=crop_img,
-                prompt=prompt,
-                url=url,
-                model=LM_STUDIO_MODEL,
-                timeout=30,
-            )
+            # Keep the batch resilient: timeouts on one field should not abort all fields.
+            try:
+                return _lm_studio_image_request(
+                    image=crop_img,
+                    prompt=prompt,
+                    url=url,
+                    model=lm_model,
+                    reference_images=static_references,
+                    timeout=120,
+                )
+            except RuntimeError as e:
+                if VERBOSE:
+                    print(f"  request with references failed, retrying crop-only: {e}")
+                try:
+                    return _lm_studio_image_request(
+                        image=crop_img,
+                        prompt=prompt,
+                        url=url,
+                        model=lm_model,
+                        reference_images=None,
+                        timeout=120,
+                    )
+                except RuntimeError as e2:
+                    if VERBOSE:
+                        print(f"  crop-only retry failed: {e2}")
+                    return ""
 
         with ThreadPoolExecutor(max_workers=concurrency) as executor:
             new_labels = list(executor.map(_request_one, crops))
@@ -1439,6 +1629,20 @@ def main():
         default=3,
         help="Max VLM rounds per page for --annotate-with-vlm (default: 3).",
     )
+    p.add_argument(
+        "--form-profile",
+        dest="form_profile",
+        choices=["usda", "irs1040"],
+        default="usda",
+        help="Form profile used for prompts/scoping in --fix-labels and --annotate-with-vlm.",
+    )
+    p.add_argument(
+        "--lm-model",
+        dest="lm_model",
+        type=str,
+        default=None,
+        help="OpenAI-compatible model id for LM Studio (overrides LM_STUDIO_MODEL / OPENAI_MODEL env).",
+    )
     args = p.parse_args()
 
     # Annotate-with-VLM mode: iterative LM Studio calls with data + form pages until fields filled
@@ -1469,6 +1673,7 @@ def main():
             ocr_analysis_path=ocr_analysis_path,
             pdf_path=pdf_path,
             pages=pages,
+            form_profile=args.form_profile,
             max_iterations=args.max_iterations,
         )
         return
@@ -1522,7 +1727,12 @@ def main():
             raise SystemExit(f"PDF not found: {pdf_path}")
         if not ocr_analysis_path.exists():
             raise SystemExit(f"OCR analysis JSON not found: {ocr_analysis_path}")
-        fix_ocr_analysis_labels(pdf_path, ocr_analysis_path)
+        fix_ocr_analysis_labels(
+            pdf_path,
+            ocr_analysis_path,
+            form_profile=args.form_profile,
+            model=args.lm_model,
+        )
         return
 
     in_path = Path(args.in_path).expanduser().resolve()

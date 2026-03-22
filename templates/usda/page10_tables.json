@@ -1,0 +1,785 @@
+{
+  "page": 10,
+  "section": "Farm Liabilities Schedules 5A-5D + Personal Liabilities Schedules 6A-6C",
+  "cells": [
+    {
+      "cell_type": "label",
+      "answer": "",
+      "coords": {
+        "x": 36.81,
+        "y": 59.86,
+        "width": 188.66,
+        "height": 23.02
+      },
+      "schedule": "header",
+      "label": "FSA-2001(03-21-25)"
+    },
+    {
+      "cell_type": "label",
+      "answer": "",
+      "coords": {
+        "x": 1078.99,
+        "y": 61.87,
+        "width": 110.56,
+        "height": 23.6
+      },
+      "schedule": "header",
+      "label": "Page 8 of 12"
+    },
+    {
+      "cell_type": "label",
+      "answer": "",
+      "coords": {
+        "x": 471.65,
+        "y": 89.79,
+        "width": 278.39,
+        "height": 20.72
+      },
+      "label": "OPERATING PLAN - EXPENSES"
+    },
+    {
+      "cell_type": "label",
+      "answer": "",
+      "coords": {
+        "x": 32.21,
+        "y": 119.72,
+        "width": 138.05,
+        "height": 20.72
+      },
+      "schedule": "2A",
+      "label": "2A. EXPENSES"
+    },
+    {
+      "cell_type": "label",
+      "answer": "",
+      "coords": {
+        "x": 761.52,
+        "y": 144.91,
+        "width": 131.2,
+        "height": 27.9
+      },
+      "label": "Expense Type"
+    },
+    {
+      "cell_type": "label",
+      "answer": "",
+      "coords": {
+        "x": 1072.15,
+        "y": 144.96,
+        "width": 87.43,
+        "height": 25.54
+      },
+      "label": "$ Amount"
+    },
+    {
+      "cell_type": "label",
+      "answer": "",
+      "coords": {
+        "x": 496.86,
+        "y": 149.23,
+        "width": 85.33,
+        "height": 21.57
+      },
+      "label": "$ Amount"
+    },
+    {
+      "cell_type": "label",
+      "answer": "",
+      "coords": {
+        "x": 190.96,
+        "y": 149.65,
+        "width": 119.64,
+        "height": 20.85
+      },
+      "label": "Expense Type"
+    },
+    {
+      "cell_type": "label",
+      "answer": "",
+      "coords": {
+        "x": 612.0,
+        "y": 172.67,
+        "width": 414.14,
+        "height": 30.04
+      },
+      "label": "Rent - Machine / Equip. / Vehicle (Total from 2B(1))"
+    },
+    {
+      "cell_type": "label",
+      "answer": "",
+      "coords": {
+        "x": 34.3,
+        "y": 178.46,
+        "width": 103.96,
+        "height": 22.96
+      },
+      "label": "Car & Truck"
+    },
+    {
+      "cell_type": "label",
+      "answer": "",
+      "coords": {
+        "x": 612.0,
+        "y": 204.91,
+        "width": 326.71,
+        "height": 25.33
+      },
+      "label": "Rent - Land / Animals (Total from 2B(2))"
+    },
+    {
+      "schedule": "2A",
+      "label": "2A \u2014 Chemicals",
+      "answer": "$200.00",
+      "cell_type": "value",
+      "coords": {
+        "x": 496.9,
+        "y": 206.8,
+        "width": 120.0,
+        "height": 22.0,
+        "inferred": true
+      }
+    },
+    {
+      "cell_type": "label",
+      "answer": "",
+      "coords": {
+        "x": 36.72,
+        "y": 206.85,
+        "width": 92.21,
+        "height": 23.74
+      },
+      "label": "Chemicals"
+    },
+    {
+      "schedule": "2A",
+      "label": "2A \u2014 Repairs & Maintenance",
+      "answer": "$300.00",
+      "cell_type": "value",
+      "coords": {
+        "x": 1072.2,
+        "y": 230.2,
+        "width": 120.0,
+        "height": 22.0,
+        "inferred": true
+      }
+    },
+    {
+      "cell_type": "label",
+      "answer": "",
+      "coords": {
+        "x": 609.7,
+        "y": 230.21,
+        "width": 195.56,
+        "height": 29.95
+      },
+      "label": "Repairs & Maintenance"
+    },
+    {
+      "cell_type": "label",
+      "answer": "",
+      "coords": {
+        "x": 36.7,
+        "y": 232.02,
+        "width": 112.97,
+        "height": 26.36
+      },
+      "label": "Conservation"
+    },
+    {
+      "schedule": "2A",
+      "label": "2A \u2014 Seeds & Plants",
+      "answer": "$800.00",
+      "cell_type": "value",
+      "coords": {
+        "x": 1072.2,
+        "y": 259.0,
+        "width": 120.0,
+        "height": 22.0,
+        "inferred": true
+      }
+    },
+    {
+      "cell_type": "label",
+      "answer": "",
+      "coords": {
+        "x": 611.77,
+        "y": 259.02,
+        "width": 131.61,
+        "height": 29.91
+      },
+      "label": "Seeds & Plants"
+    },
+    {
+      "cell_type": "label",
+      "answer": "",
+      "coords": {
+        "x": 34.51,
+        "y": 260.07,
+        "width": 110.44,
+        "height": 27.89
+      },
+      "label": "Custom Hire"
+    },
+    {
+      "cell_type": "label",
+      "answer": "",
+      "coords": {
+        "x": 609.7,
+        "y": 289.93,
+        "width": 200.17,
+        "height": 27.89
+      },
+      "label": "Storage & Warehousing"
+    },
+    {
+      "cell_type": "label",
+      "answer": "",
+      "coords": {
+        "x": 32.21,
+        "y": 292.29,
+        "width": 165.65,
+        "height": 25.54
+      },
+      "label": "Feed - Supplement"
+    },
+    {
+      "cell_type": "label",
+      "answer": "",
+      "coords": {
+        "x": 32.21,
+        "y": 317.72,
+        "width": 216.27,
+        "height": 27.63
+      },
+      "label": "Feed - Grain & Roughage"
+    },
+    {
+      "cell_type": "label",
+      "answer": "",
+      "coords": {
+        "x": 611.8,
+        "y": 319.47,
+        "width": 76.32,
+        "height": 28.73
+      },
+      "label": "Supplies"
+    },
+    {
+      "schedule": "2A",
+      "label": "2A \u2014 Supplies",
+      "answer": "$200.00",
+      "cell_type": "value",
+      "coords": {
+        "x": 1072.2,
+        "y": 319.5,
+        "width": 120.0,
+        "height": 22.0,
+        "inferred": true
+      }
+    },
+    {
+      "cell_type": "label",
+      "answer": "",
+      "coords": {
+        "x": 609.7,
+        "y": 345.32,
+        "width": 167.95,
+        "height": 29.96
+      },
+      "label": "Taxes - Real Estate"
+    },
+    {
+      "schedule": "2A",
+      "label": "2A \u2014 Fertilizer & Lime",
+      "answer": "$350.00",
+      "cell_type": "value",
+      "coords": {
+        "x": 496.9,
+        "y": 347.2,
+        "width": 120.0,
+        "height": 22.0,
+        "inferred": true
+      }
+    },
+    {
+      "cell_type": "label",
+      "answer": "",
+      "coords": {
+        "x": 34.43,
+        "y": 347.23,
+        "width": 135.91,
+        "height": 28.47
+      },
+      "label": "Fertilizer & Lime"
+    },
+    {
+      "cell_type": "label",
+      "answer": "",
+      "coords": {
+        "x": 611.81,
+        "y": 370.27,
+        "width": 64.79,
+        "height": 30.74
+      },
+      "label": "Utilities"
+    },
+    {
+      "cell_type": "label",
+      "answer": "",
+      "coords": {
+        "x": 34.48,
+        "y": 375.1,
+        "width": 154.22,
+        "height": 30.28
+      },
+      "label": "Freight & Trucking"
+    },
+    {
+      "cell_type": "label",
+      "answer": "",
+      "coords": {
+        "x": 612.0,
+        "y": 402.91,
+        "width": 207.07,
+        "height": 30.02
+      },
+      "label": "Vet / Breeding / Medicine"
+    },
+    {
+      "cell_type": "label",
+      "answer": "",
+      "coords": {
+        "x": 36.73,
+        "y": 407.05,
+        "width": 124.41,
+        "height": 23.94
+      },
+      "label": "Gas / Fuel / Oil"
+    },
+    {
+      "schedule": "2A",
+      "label": "2A \u2014 Gas / Fuel / Oil",
+      "answer": "$400.00",
+      "cell_type": "value",
+      "coords": {
+        "x": 496.9,
+        "y": 407.1,
+        "width": 120.0,
+        "height": 22.0,
+        "inferred": true
+      }
+    },
+    {
+      "cell_type": "label",
+      "answer": "",
+      "coords": {
+        "x": 32.12,
+        "y": 432.55,
+        "width": 89.9,
+        "height": 28.2
+      },
+      "label": "Insurance"
+    },
+    {
+      "cell_type": "label",
+      "answer": "",
+      "coords": {
+        "x": 611.94,
+        "y": 434.81,
+        "width": 135.87,
+        "height": 25.98
+      },
+      "label": "Other Expenses"
+    },
+    {
+      "cell_type": "label",
+      "answer": "",
+      "coords": {
+        "x": 29.74,
+        "y": 461.97,
+        "width": 103.88,
+        "height": 24.63
+      },
+      "label": "Labor Hired"
+    },
+    {
+      "cell_type": "label",
+      "answer": "",
+      "coords": {
+        "x": 612.0,
+        "y": 462.77,
+        "width": 220.87,
+        "height": 27.63
+      },
+      "label": "Other Expenses - Irrigation"
+    },
+    {
+      "schedule": "2A",
+      "label": "2A \u2014 Other Expenses - Irrigation",
+      "answer": "$150.00",
+      "cell_type": "value",
+      "coords": {
+        "x": 1072.2,
+        "y": 462.8,
+        "width": 120.0,
+        "height": 22.0,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "2A",
+      "label": "2A Farm Operating Expenses Subtotal",
+      "answer": "$2,400.00",
+      "cell_type": "value",
+      "coords": {
+        "x": 496.9,
+        "y": 492.0,
+        "width": 120.0,
+        "height": 18.0,
+        "inferred": true
+      }
+    },
+    {
+      "cell_type": "label",
+      "answer": "",
+      "coords": {
+        "x": 29.91,
+        "y": 495.0,
+        "width": 216.27,
+        "height": 20.82
+      },
+      "schedule": "2B",
+      "label": "2B. SCHEDULED ITEMS"
+    },
+    {
+      "cell_type": "label",
+      "answer": "",
+      "coords": {
+        "x": 32.21,
+        "y": 518.02,
+        "width": 361.22,
+        "height": 30.01
+      },
+      "label": "2B(1). Rent - Machine / Equipment / Vehicle"
+    },
+    {
+      "cell_type": "label",
+      "answer": "",
+      "coords": {
+        "x": 641.79,
+        "y": 554.33,
+        "width": 83.06,
+        "height": 19.48
+      },
+      "label": "Description"
+    },
+    {
+      "cell_type": "label",
+      "answer": "",
+      "coords": {
+        "x": 943.31,
+        "y": 557.07,
+        "width": 55.22,
+        "height": 18.51
+      },
+      "label": "# Units"
+    },
+    {
+      "cell_type": "label",
+      "answer": "",
+      "coords": {
+        "x": 1058.35,
+        "y": 557.07,
+        "width": 110.44,
+        "height": 18.51
+      },
+      "label": "$ Amount Paid"
+    },
+    {
+      "cell_type": "label",
+      "answer": "",
+      "coords": {
+        "x": 200.17,
+        "y": 557.16,
+        "width": 105.83,
+        "height": 18.42
+      },
+      "label": "Owner/Dealer"
+    },
+    {
+      "cell_type": "label",
+      "answer": "",
+      "coords": {
+        "x": 425.64,
+        "y": 697.6,
+        "width": 618.9,
+        "height": 23.02
+      },
+      "label": "TOTAL RENT - MACHINE / EQUIPMENT / VEHICLE (Enter this amount in 2A):"
+    },
+    {
+      "cell_type": "label",
+      "answer": "",
+      "coords": {
+        "x": 34.51,
+        "y": 727.53,
+        "width": 559.08,
+        "height": 23.22
+      },
+      "label": "2B(2). Rent - Land / Animals (Or attach FSA Producer Farm Data Reports)"
+    },
+    {
+      "cell_type": "label",
+      "answer": "",
+      "coords": {
+        "x": 582.09,
+        "y": 1160.37,
+        "width": 460.15,
+        "height": 20.72
+      },
+      "label": "TOTAL RENT - LAND / ANIMALS (Enter this amount in 2A):"
+    },
+    {
+      "cell_type": "label",
+      "answer": "",
+      "coords": {
+        "x": 36.81,
+        "y": 1190.3,
+        "width": 200.17,
+        "height": 20.88
+      },
+      "schedule": "2C",
+      "label": "2C. OTHER EXPENSES"
+    },
+    {
+      "cell_type": "label",
+      "answer": "$14,400.00",
+      "coords": {
+        "x": 36.81,
+        "y": 1217.86,
+        "width": 683.32,
+        "height": 20.82
+      },
+      "label": "2C(1) Total Household Operating Expenses ($1,200/mo x 12)"
+    },
+    {
+      "schedule": "2C",
+      "label": "2C(1) Total Household Operating Expenses ($1,200/mo x 12)",
+      "answer": "$14,400.00",
+      "cell_type": "value",
+      "coords": {
+        "x": 1072.2,
+        "y": 1217.9,
+        "width": 120.0,
+        "height": 22.0,
+        "inferred": true
+      }
+    },
+    {
+      "cell_type": "label",
+      "answer": "",
+      "coords": {
+        "x": 1037.64,
+        "y": 1217.93,
+        "width": 11.5,
+        "height": 18.42
+      },
+      "label": "-"
+    },
+    {
+      "cell_type": "label",
+      "answer": "",
+      "coords": {
+        "x": 36.81,
+        "y": 1247.71,
+        "width": 444.05,
+        "height": 18.56
+      },
+      "label": "2C(2). List any planned Capital Purchases this operating year:"
+    },
+    {
+      "cell_type": "label",
+      "answer": "",
+      "coords": {
+        "x": 1081.3,
+        "y": 1277.51,
+        "width": 71.43,
+        "height": 14.37
+      },
+      "label": "$ Amount"
+    },
+    {
+      "cell_type": "label",
+      "answer": "",
+      "coords": {
+        "x": 448.65,
+        "y": 1277.79,
+        "width": 181.76,
+        "height": 16.28
+      },
+      "label": "Type of Capital Purchase"
+    },
+    {
+      "schedule": "2C2",
+      "label": "2C(2) Capital Purchase: Manufactured Home (2BR)",
+      "answer": "Manufactured Home (2BR)",
+      "cell_type": "value",
+      "coords": {
+        "x": 448.6,
+        "y": 1310.0,
+        "width": 580.0,
+        "height": 22.0,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "2C2",
+      "label": "2C(2) Capital Purchase Amount: Manufactured Home (2BR)",
+      "answer": "$68,000.00",
+      "cell_type": "value",
+      "coords": {
+        "x": 1081.3,
+        "y": 1310.0,
+        "width": 100.0,
+        "height": 22.0,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "2C2",
+      "label": "2C(2) Capital Purchase: Greenhouse 10x12",
+      "answer": "Greenhouse 10x12",
+      "cell_type": "value",
+      "coords": {
+        "x": 448.6,
+        "y": 1340.0,
+        "width": 580.0,
+        "height": 22.0,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "2C2",
+      "label": "2C(2) Capital Purchase Amount: Greenhouse 10x12",
+      "answer": "$1,301.66",
+      "cell_type": "value",
+      "coords": {
+        "x": 1081.3,
+        "y": 1340.0,
+        "width": 100.0,
+        "height": 22.0,
+        "inferred": true
+      }
+    },
+    {
+      "cell_type": "label",
+      "answer": "",
+      "coords": {
+        "x": 36.81,
+        "y": 1438.95,
+        "width": 301.4,
+        "height": 18.55
+      },
+      "schedule": "2D",
+      "label": "2D. GRAND TOTAL EXPENSES ($):"
+    },
+    {
+      "schedule": "2D",
+      "label": "2D Grand Total Expenses",
+      "answer": "$16,800.00",
+      "cell_type": "value",
+      "coords": {
+        "x": 900.0,
+        "y": 1439.0,
+        "width": 250.0,
+        "height": 22.0,
+        "inferred": true
+      }
+    },
+    {
+      "cell_type": "label",
+      "answer": "",
+      "coords": {
+        "x": 39.11,
+        "y": 1496.39,
+        "width": 453.25,
+        "height": 18.54
+      },
+      "label": "NET INCOME/LOSS ($ PRIOR TO DEBT REPAYMENT):"
+    },
+    {
+      "schedule": "3",
+      "label": "3 Net Income/Loss Prior to Debt Repayment",
+      "answer": "($9,450.00)",
+      "cell_type": "value",
+      "coords": {
+        "x": 900.0,
+        "y": 1496.4,
+        "width": 250.0,
+        "height": 22.0,
+        "inferred": true
+      }
+    },
+    {
+      "cell_type": "label",
+      "answer": "",
+      "coords": {
+        "x": 55.22,
+        "y": 1517.21,
+        "width": 257.68,
+        "height": 18.46
+      },
+      "label": "($ Total Income - $ Total Expenses)"
+    }
+  ],
+  "answers_version": 1,
+  "schedule_GG_personal_term_debts": {
+    "schedule": "6C. SCHEDULE GG \u2014 PERSONAL TERM DEBTS PAYABLE (Over 12 months)",
+    "note": "All accounts in deferment \u2014 no current payment amount due. Zero late payments on all accounts.",
+    "rows": [
+      {
+        "creditor": "ED FINANCIAL / ESA",
+        "masked_account": "xxxxxx0815",
+        "purpose": "Federal Student Loan",
+        "interest_rate_pct": null,
+        "accrued_interest": null,
+        "next_due_date": "Deferred",
+        "payments_per_year": 0,
+        "payment_amount": "$0.00",
+        "principal_balance": "$21,063.00",
+        "age_months": 7,
+        "late_payments": 0,
+        "status": "Deferred"
+      },
+      {
+        "creditor": "ED FINANCIAL / ESA",
+        "masked_account": "xxxxxx0520",
+        "purpose": "Federal Student Loan",
+        "interest_rate_pct": null,
+        "accrued_interest": null,
+        "next_due_date": "Deferred",
+        "payments_per_year": 0,
+        "payment_amount": "$0.00",
+        "principal_balance": "$6,854.00",
+        "age_months": 9,
+        "late_payments": 0,
+        "status": "Deferred"
+      },
+      {
+        "creditor": "ED FINANCIAL / ESA",
+        "masked_account": "xxxxxx0530",
+        "purpose": "Federal Student Loan",
+        "interest_rate_pct": null,
+        "accrued_interest": null,
+        "next_due_date": "Deferred",
+        "payments_per_year": 0,
+        "payment_amount": "$0.00",
+        "principal_balance": "$8,739.00",
+        "age_months": 9,
+        "late_payments": 0,
+        "status": "Deferred"
+      }
+    ],
+    "TOTAL_PERSONAL_TERM_DEBTS_PAYABLE": "$36,656.00"
+  }
+}

@@ -1936,315 +1936,356 @@
     },
     {
       "schedule": "6C",
-      "label": "Sch 6C row 1 col 1",
+      "label": "Sch 6C row 1 col 1 \u2014 Creditor",
       "answer": "",
       "cell_type": "value",
       "coords": {
-        "x": 338.21,
+        "x": 78.23,
         "y": 1337.05,
-        "width": 105.83,
+        "width": 138.33,
         "height": 44.04,
         "inferred": true
       }
     },
     {
       "schedule": "6C",
-      "label": "Sch 6C row 1 col 2",
-      "answer": "",
+      "label": "Sch 6C row 1 col 2 \u2014 Purpose",
+      "answer": "Fed Student Loan",
       "cell_type": "value",
       "coords": {
-        "x": 444.04,
+        "x": 76.56,
         "y": 1337.05,
-        "width": 105.84,
+        "width": 138.33,
         "height": 44.04,
         "inferred": true
       }
     },
     {
       "schedule": "6C",
-      "label": "Sch 6C row 1 col 3",
-      "answer": "",
+      "label": "Sch 6C row 1 col 3 \u2014 % Interest Rate",
+      "answer": "0.08",
       "cell_type": "value",
       "coords": {
-        "x": 549.88,
+        "x": 354.9,
         "y": 1337.05,
-        "width": 105.83,
+        "width": 138.33,
         "height": 44.04,
         "inferred": true
       }
     },
     {
       "schedule": "6C",
-      "label": "Sch 6C row 1 col 4",
-      "answer": "",
+      "label": "Sch 6C row 1 col 4 \u2014 $ Accrued Interest",
+      "answer": "$0.00",
       "cell_type": "value",
       "coords": {
-        "x": 655.71,
+        "x": 493.23,
         "y": 1337.05,
-        "width": 105.84,
+        "width": 138.33,
         "height": 44.04,
         "inferred": true
       }
     },
     {
       "schedule": "6C",
-      "label": "Sch 6C row 1 col 5",
-      "answer": "",
+      "label": "Sch 6C row 1 col 5 \u2014 Next Due Date",
+      "answer": "Deferred",
       "cell_type": "value",
       "coords": {
-        "x": 761.55,
+        "x": 631.56,
         "y": 1337.05,
-        "width": 105.84,
+        "width": 138.33,
         "height": 44.04,
         "inferred": true
       }
     },
     {
       "schedule": "6C",
-      "label": "Sch 6C row 1 col 6",
-      "answer": "",
+      "label": "Sch 6C row 1 col 6 \u2014 # Pmts/Year",
+      "answer": "0",
       "cell_type": "value",
       "coords": {
-        "x": 867.38,
+        "x": 769.89,
         "y": 1337.05,
-        "width": 105.84,
+        "width": 138.33,
         "height": 44.04,
         "inferred": true
       }
     },
     {
       "schedule": "6C",
-      "label": "Sch 6C row 1 col 7",
-      "answer": "",
+      "label": "Sch 6C row 1 col 7 \u2014 $ Payment Amount",
+      "answer": "$0.00",
       "cell_type": "value",
       "coords": {
-        "x": 973.22,
+        "x": 908.23,
         "y": 1337.05,
-        "width": 105.84,
+        "width": 138.33,
         "height": 44.04,
         "inferred": true
       }
     },
     {
       "schedule": "6C",
-      "label": "Sch 6C row 1 col 8",
-      "answer": "",
+      "label": "Sch 6C row 1 col 8 \u2014 $ Principal Balance",
+      "answer": "$21,063.00",
       "cell_type": "value",
       "coords": {
-        "x": 1079.06,
+        "x": 1046.56,
         "y": 1337.05,
-        "width": 105.84,
+        "width": 138.33,
         "height": 44.04,
         "inferred": true
       }
     },
     {
       "schedule": "6C",
-      "label": "Sch 6C row 2 col 1",
+      "label": "Sch 6C row 2 col 1 \u2014 Creditor",
       "answer": "",
       "cell_type": "value",
       "coords": {
-        "x": 338.21,
+        "x": 78.23,
         "y": 1383.09,
-        "width": 105.83,
+        "width": 138.33,
         "height": 44.04,
         "inferred": true
       }
     },
     {
       "schedule": "6C",
-      "label": "Sch 6C row 2 col 2",
-      "answer": "",
+      "label": "Sch 6C row 2 col 2 \u2014 Purpose",
+      "answer": "Fed Student Loan",
       "cell_type": "value",
       "coords": {
-        "x": 444.04,
+        "x": 76.05,
         "y": 1383.09,
-        "width": 105.84,
+        "width": 138.33,
         "height": 44.04,
         "inferred": true
       }
     },
     {
       "schedule": "6C",
-      "label": "Sch 6C row 2 col 3",
-      "answer": "",
+      "label": "Sch 6C row 2 col 3 \u2014 % Interest Rate",
+      "answer": "0.08",
       "cell_type": "value",
       "coords": {
-        "x": 549.88,
+        "x": 354.9,
         "y": 1383.09,
-        "width": 105.83,
+        "width": 138.33,
         "height": 44.04,
         "inferred": true
       }
     },
     {
       "schedule": "6C",
-      "label": "Sch 6C row 2 col 4",
-      "answer": "",
+      "label": "Sch 6C row 2 col 4 \u2014 $ Accrued Interest",
+      "answer": "$0.00",
       "cell_type": "value",
       "coords": {
-        "x": 655.71,
+        "x": 493.23,
         "y": 1383.09,
-        "width": 105.84,
+        "width": 138.33,
         "height": 44.04,
         "inferred": true
       }
     },
     {
       "schedule": "6C",
-      "label": "Sch 6C row 2 col 5",
-      "answer": "",
+      "label": "Sch 6C row 2 col 5 \u2014 Next Due Date",
+      "answer": "Deferred",
       "cell_type": "value",
       "coords": {
-        "x": 761.55,
+        "x": 631.56,
         "y": 1383.09,
-        "width": 105.84,
+        "width": 138.33,
         "height": 44.04,
         "inferred": true
       }
     },
     {
       "schedule": "6C",
-      "label": "Sch 6C row 2 col 6",
-      "answer": "",
+      "label": "Sch 6C row 2 col 6 \u2014 # Pmts/Year",
+      "answer": "0",
       "cell_type": "value",
       "coords": {
-        "x": 867.38,
+        "x": 769.89,
         "y": 1383.09,
-        "width": 105.84,
+        "width": 138.33,
         "height": 44.04,
         "inferred": true
       }
     },
     {
       "schedule": "6C",
-      "label": "Sch 6C row 2 col 7",
-      "answer": "",
+      "label": "Sch 6C row 2 col 7 \u2014 $ Payment Amount",
+      "answer": "$0.00",
       "cell_type": "value",
       "coords": {
-        "x": 973.22,
+        "x": 908.23,
         "y": 1383.09,
-        "width": 105.84,
+        "width": 138.33,
         "height": 44.04,
         "inferred": true
       }
     },
     {
       "schedule": "6C",
-      "label": "Sch 6C row 2 col 8",
-      "answer": "",
+      "label": "Sch 6C row 2 col 8 \u2014 $ Principal Balance",
+      "answer": "$6,854.00",
       "cell_type": "value",
       "coords": {
-        "x": 1079.06,
+        "x": 1046.56,
         "y": 1383.09,
-        "width": 105.84,
+        "width": 138.33,
         "height": 44.04,
         "inferred": true
       }
     },
     {
       "schedule": "6C",
-      "label": "Sch 6C row 3 col 1",
+      "label": "Sch 6C row 3 col 1 \u2014 Creditor",
       "answer": "",
       "cell_type": "value",
       "coords": {
-        "x": 338.21,
+        "x": 78.23,
         "y": 1429.13,
-        "width": 105.83,
+        "width": 138.33,
         "height": 44.04,
         "inferred": true
       }
     },
     {
       "schedule": "6C",
-      "label": "Sch 6C row 3 col 2",
-      "answer": "",
+      "label": "Sch 6C row 3 col 2 \u2014 Purpose",
+      "answer": "Fed Student Loan",
       "cell_type": "value",
       "coords": {
-        "x": 444.04,
+        "x": 76.56,
         "y": 1429.13,
-        "width": 105.84,
+        "width": 138.33,
         "height": 44.04,
         "inferred": true
       }
     },
     {
       "schedule": "6C",
-      "label": "Sch 6C row 3 col 3",
-      "answer": "",
+      "label": "Sch 6C row 3 col 3 \u2014 % Interest Rate",
+      "answer": "0.08",
       "cell_type": "value",
       "coords": {
-        "x": 549.88,
+        "x": 354.9,
         "y": 1429.13,
-        "width": 105.83,
+        "width": 138.33,
         "height": 44.04,
         "inferred": true
       }
     },
     {
       "schedule": "6C",
-      "label": "Sch 6C row 3 col 4",
-      "answer": "",
+      "label": "Sch 6C row 3 col 4 \u2014 $ Accrued Interest",
+      "answer": "$0.00",
       "cell_type": "value",
       "coords": {
-        "x": 655.71,
+        "x": 493.23,
         "y": 1429.13,
-        "width": 105.84,
+        "width": 138.33,
         "height": 44.04,
         "inferred": true
       }
     },
     {
       "schedule": "6C",
-      "label": "Sch 6C row 3 col 5",
-      "answer": "",
+      "label": "Sch 6C row 3 col 5 \u2014 Next Due Date",
+      "answer": "Deferred",
       "cell_type": "value",
       "coords": {
-        "x": 761.55,
+        "x": 631.56,
         "y": 1429.13,
-        "width": 105.84,
+        "width": 138.33,
         "height": 44.04,
         "inferred": true
       }
     },
     {
       "schedule": "6C",
-      "label": "Sch 6C row 3 col 6",
-      "answer": "",
+      "label": "Sch 6C row 3 col 6 \u2014 # Pmts/Year",
+      "answer": "0",
       "cell_type": "value",
       "coords": {
-        "x": 867.38,
+        "x": 769.89,
         "y": 1429.13,
-        "width": 105.84,
+        "width": 138.33,
         "height": 44.04,
         "inferred": true
       }
     },
     {
       "schedule": "6C",
-      "label": "Sch 6C row 3 col 7",
-      "answer": "",
+      "label": "Sch 6C row 3 col 7 \u2014 $ Payment Amount",
+      "answer": "$0.00",
       "cell_type": "value",
       "coords": {
-        "x": 973.22,
+        "x": 908.23,
         "y": 1429.13,
-        "width": 105.84,
+        "width": 138.33,
         "height": 44.04,
         "inferred": true
       }
     },
     {
       "schedule": "6C",
-      "label": "Sch 6C row 3 col 8",
-      "answer": "",
+      "label": "Sch 6C row 3 col 8 \u2014 $ Principal Balance",
+      "answer": "$8,739.00",
       "cell_type": "value",
       "coords": {
-        "x": 1079.06,
+        "x": 1046.56,
         "y": 1429.13,
-        "width": 105.84,
+        "width": 138.33,
         "height": 44.04,
+        "inferred": true
+      }
+    },
+    {
+      "schedule": "6C",
+      "label": "TOTAL PERSONAL TERM DEBTS PAYABLE",
+      "answer": "$36,656.00",
+      "cell_type": "value",
+      "coords": {
+        "x": 1046.56,
+        "y": 1517.21,
+        "width": 138.33,
+        "height": 27.65,
         "inferred": true
       }
     }
-  ]
+  ],
+  "schedule_6C_account_detail": [
+    {
+      "row": 1,
+      "masked_account": "xxxxxx0815",
+      "balance": "$21,063.00",
+      "age_months": 7,
+      "late_payments": 0,
+      "status": "Deferred"
+    },
+    {
+      "row": 2,
+      "masked_account": "xxxxxx0520",
+      "balance": "$6,854.00",
+      "age_months": 9,
+      "late_payments": 0,
+      "status": "Deferred"
+    },
+    {
+      "row": 3,
+      "masked_account": "xxxxxx0530",
+      "balance": "$8,739.00",
+      "age_months": 9,
+      "late_payments": 0,
+      "status": "Deferred"
+    }
+  ],
+  "schedule_6C_total": "$36,656.00",
+  "corrections_applied": "2026-03-16"
 }

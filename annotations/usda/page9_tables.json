@@ -248,7 +248,7 @@
     },
     {
       "schedule": "1A",
-      "label": "1A \u2014 Eggplant: Yield",
+      "label": "1A \u2014 Eggplant: Yield (lbs/acre)",
       "answer": "8000",
       "cell_type": "value",
       "coords": {
@@ -257,7 +257,8 @@
         "width": 73.0,
         "height": 22.0,
         "inferred": true
-      }
+      },
+      "yield_unit": "lbs/acre"
     },
     {
       "schedule": "1A",
@@ -352,7 +353,7 @@
     },
     {
       "schedule": "1A",
-      "label": "1A \u2014 Peppers: Yield",
+      "label": "1A \u2014 Peppers: Yield (lbs/acre)",
       "answer": "10000",
       "cell_type": "value",
       "coords": {
@@ -361,7 +362,8 @@
         "width": 73.0,
         "height": 22.0,
         "inferred": true
-      }
+      },
+      "yield_unit": "lbs/acre"
     },
     {
       "schedule": "1A",
@@ -456,7 +458,7 @@
     },
     {
       "schedule": "1A",
-      "label": "1A \u2014 Tomatoes: Yield",
+      "label": "1A \u2014 Tomatoes: Yield (lbs/acre)",
       "answer": "20000",
       "cell_type": "value",
       "coords": {
@@ -465,7 +467,8 @@
         "width": 73.0,
         "height": 22.0,
         "inferred": true
-      }
+      },
+      "yield_unit": "lbs/acre"
     },
     {
       "schedule": "1A",
@@ -560,7 +563,7 @@
     },
     {
       "schedule": "1A",
-      "label": "1A \u2014 Asparagus: Yield",
+      "label": "1A \u2014 Asparagus: Yield (lbs/acre)",
       "answer": "2500",
       "cell_type": "value",
       "coords": {
@@ -569,7 +572,8 @@
         "width": 73.0,
         "height": 22.0,
         "inferred": true
-      }
+      },
+      "yield_unit": "lbs/acre"
     },
     {
       "schedule": "1A",
@@ -664,7 +668,7 @@
     },
     {
       "schedule": "1A",
-      "label": "1A \u2014 Artichoke: Yield",
+      "label": "1A \u2014 Artichoke: Yield (lbs/acre)",
       "answer": "3000",
       "cell_type": "value",
       "coords": {
@@ -673,7 +677,8 @@
         "width": 73.0,
         "height": 22.0,
         "inferred": true
-      }
+      },
+      "yield_unit": "lbs/acre"
     },
     {
       "schedule": "1A",
@@ -1418,5 +1423,10 @@
       }
     }
   ],
-  "answers_version": 1
+  "answers_version": 1,
+  "yield_unit_correction": {
+    "field": "Yield",
+    "correct_unit": "lbs/acre",
+    "note": "All yield figures represent pounds per acre, not total pounds harvested. Total = Acres \u00d7 Yield(lbs/ac) \u00d7 Price($/lb)"
+  }
 }

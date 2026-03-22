@@ -175,4 +175,3 @@ let response = try client.renderPage(request)
 
 1. **Security**: Server binds to localhost only. For production, add TLS and authentication.
 2. **PDFium License**: BSD-style, compatible with App Store distribution.
-3. **App Store**: Enable Hardened Runtime and code signing.

@@ -1,0 +1,3204 @@
+{
+  "page_1": {
+    "page_size": {
+      "width": 612.0,
+      "height": 792.0
+    },
+    "field_count": 128,
+    "fields": [
+      {
+        "field": "topmostSubform[0].Page1[0].f1_01[0]",
+        "label": "For the year Jan. 1\u2014Dec. 31, 2025, or other tax year beginning",
+        "field_coords": {
+          "page": 1,
+          "x": 228.8,
+          "y": 732.502,
+          "width": 88.0,
+          "height": 10.999000000000024,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.9836,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].f1_02[0]",
+        "label": "For the year Jan. 1\u2014Dec. 31, 2025, or other tax year beginning 2025, ending",
+        "field_coords": {
+          "page": 1,
+          "x": 365.6,
+          "y": 732.502,
+          "width": 88.0,
+          "height": 10.999000000000024,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.9815,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].f1_03[0]",
+        "label": "For the year Jan. 1\u2014Dec. 31, 2025, or other tax year beginning 2025, ending 20",
+        "field_coords": {
+          "page": 1,
+          "x": 468.6,
+          "y": 732.502,
+          "width": 17.0,
+          "height": 10.999000000000024,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.9904,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].c1_1[0]",
+        "label": "[",
+        "field_coords": {
+          "page": 1,
+          "x": 36,
+          "y": 722,
+          "width": 8,
+          "height": 8,
+          "type": "/Btn"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 1.0,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].c1_2[0]",
+        "label": "[ | Filed pursuant to section 301.9100-2",
+        "field_coords": {
+          "page": 1,
+          "x": 155.2,
+          "y": 722,
+          "width": 8.0,
+          "height": 8,
+          "type": "/Btn"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.9735,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].f1_04[0]",
+        "label": "[ | Filed pursuant to section 301.9100-2 [| Combat zone",
+        "field_coords": {
+          "page": 1,
+          "x": 209.8,
+          "y": 720.5,
+          "width": 161.0,
+          "height": 10.999000000000024,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.9866,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].c1_3[0]",
+        "label": "[ | Filed pursuant to section 301.9100-2 [| Combat zone",
+        "field_coords": {
+          "page": 1,
+          "x": 374.8,
+          "y": 722,
+          "width": 8.0,
+          "height": 8,
+          "type": "/Btn"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.7538,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].f1_05[0]",
+        "label": "[ | Filed pursuant to section 301.9100-2 [| Combat zone [| Deceased",
+        "field_coords": {
+          "page": 1,
+          "x": 417.6,
+          "y": 720.5,
+          "width": 14.399999999999977,
+          "height": 10.999000000000024,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.9869,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].f1_06[0]",
+        "label": "[ | Filed pursuant to section 301.9100-2 [| Combat zone [| Deceased /",
+        "field_coords": {
+          "page": 1,
+          "x": 439.2,
+          "y": 720.5,
+          "width": 14.400000000000034,
+          "height": 10.999000000000024,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.9833,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].f1_07[0]",
+        "label": "[ | Filed pursuant to section 301.9100-2 [| Combat zone [| Deceased / /",
+        "field_coords": {
+          "page": 1,
+          "x": 460.8,
+          "y": 720.5,
+          "width": 21.599999999999966,
+          "height": 10.999000000000024,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.9833,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].f1_08[0]",
+        "label": "[ | Filed pursuant to section 301.9100-2 [| Combat zone [| Deceased / / Spouse",
+        "field_coords": {
+          "page": 1,
+          "x": 511.2,
+          "y": 720.5,
+          "width": 14.400000000000034,
+          "height": 10.999000000000024,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.9904,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].f1_09[0]",
+        "label": "[ | Filed pursuant to section 301.9100-2 [| Combat zone [| Deceased / / Spouse /",
+        "field_coords": {
+          "page": 1,
+          "x": 532.8,
+          "y": 720.5,
+          "width": 14.400000000000091,
+          "height": 10.999000000000024,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.9833,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].f1_10[0]",
+        "label": "[ | Filed pursuant to section 301.9100-2 [| Combat zone [| Deceased / / Spouse / /",
+        "field_coords": {
+          "page": 1,
+          "x": 554.4,
+          "y": 720.5,
+          "width": 21.600000000000023,
+          "height": 10.999000000000024,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.9833,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].c1_4[0]",
+        "label": "[ ir For = | 7 Filed the 0 year pursuant 40 Jan. to 1\u2014Dec. section Department U.S. 31, 301.9100-2 Individual 2025, of the or Treasury other [|",
+        "field_coords": {
+          "page": 1,
+          "x": 36,
+          "y": 710.001,
+          "width": 8,
+          "height": 8.0,
+          "type": "/Btn"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.8,
+        "label_method": "above_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].f1_11[0]",
+        "label": "[_] Other",
+        "field_coords": {
+          "page": 1,
+          "x": 68.4,
+          "y": 708.501,
+          "width": 168.2,
+          "height": 10.999000000000024,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.9737,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].f1_12[0]",
+        "label": "[_] Other 3",
+        "field_coords": {
+          "page": 1,
+          "x": 238.6,
+          "y": 708.501,
+          "width": 170.79999999999998,
+          "height": 10.999000000000024,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.9946,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].f1_13[0]",
+        "label": "[_] Other 3 :",
+        "field_coords": {
+          "page": 1,
+          "x": 411.4,
+          "y": 708.501,
+          "width": 164.60000000000002,
+          "height": 10.999000000000024,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.9946,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].f1_14[0]",
+        "label": "[ [_] Your ir For = | 7 Other Filed the first 0 year pursuant 40 name Jan. and to 1\u2014Dec. section Department U.S. middle 31, 301.9100-2 initial Individual 2025, of the or Treasury other [| Combat tax \u2014Internal Income year zone beginning Revenue Tax Service 3 Return 2 Q25 , 2025, ending OMB",
+        "field_coords": {
+          "page": 1,
+          "x": 36,
+          "y": 684,
+          "width": 215.25,
+          "height": 14.000999999999976,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.8,
+        "label_method": "above_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].f1_15[0]",
+        "label": "301.9100-2 initial Individual 2025, of the or Treasury other [| Combat tax \u2014Internal Income year zone beginning Revenue Tax Service 3 Return 2 Q25 , 2025, ending OMB [| No. Deceased 1545-0074 : | IRS / Use / Only\u2014Do , 20 Your not Spouse social write See separate or security staple / in instructions. this number / space.",
+        "field_coords": {
+          "page": 1,
+          "x": 253,
+          "y": 684,
+          "width": 214.25,
+          "height": 14.000999999999976,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.8,
+        "label_method": "above_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].f1_16[0]",
+        "label": "ending OMB [| No. Deceased 1545-0074 : | IRS / Use / Only\u2014Do , 20 Your not Spouse social write See separate or security staple / in instructions. this number / space.",
+        "field_coords": {
+          "page": 1,
+          "x": 469,
+          "y": 684,
+          "width": 107,
+          "height": 14.000999999999976,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.8,
+        "label_method": "above_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].f1_17[0]",
+        "label": "[ [_] Your For If | joint Other Filed the first return, year pursuant name Jan. spouse\u2019s and to 1\u2014Dec. section middle first 31, 301.9100-2 initial name 2025, and or other [| middle Combat tax initial year zone beginning 3 , 2025, ending",
+        "field_coords": {
+          "page": 1,
+          "x": 36,
+          "y": 659.999,
+          "width": 215.25,
+          "height": 14.000999999999976,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.8,
+        "label_method": "above_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].f1_18[0]",
+        "label": "301.9100-2 initial name 2025, and or other [| middle Combat tax initial year zone beginning 3 , 2025, ending [| Deceased : / / , 20 Your Spouse\u2019s Spouse social See social separate security security / instructions. number / number",
+        "field_coords": {
+          "page": 1,
+          "x": 253,
+          "y": 659.999,
+          "width": 214.25,
+          "height": 14.000999999999976,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.8,
+        "label_method": "above_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].f1_19[0]",
+        "label": "ending [| Deceased : / / , 20 Your Spouse\u2019s Spouse social See social separate security security / instructions. number / number",
+        "field_coords": {
+          "page": 1,
+          "x": 469,
+          "y": 659.999,
+          "width": 107,
+          "height": 14.000999999999976,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.8,
+        "label_method": "above_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].Address_ReadOrder[0].f1_20[0]",
+        "label": "[_] Your If Home joint Other first address return, name spouse\u2019s (number and middle first and initial name street). and If you middle have initial a P.O. box, see instructions. 3 : Apt. no. Check Your Spouse\u2019s here social if social your security main security home,",
+        "field_coords": {
+          "page": 1,
+          "x": 36,
+          "y": 635.998,
+          "width": 380.85,
+          "height": 14.000999999999976,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.8,
+        "label_method": "above_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].Address_ReadOrder[0].f1_21[0]",
+        "label": ": Apt. no. Check Your Spouse\u2019s here social if social your security main security home, number number and your",
+        "field_coords": {
+          "page": 1,
+          "x": 418.6,
+          "y": 635.998,
+          "width": 48.64999999999998,
+          "height": 14.000999999999976,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.8,
+        "label_method": "above_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].Address_ReadOrder[0].f1_22[0]",
+        "label": "City, If Home joint town, address return, or spouse\u2019s post (number office. first and If you name street). have and If a you middle foreign have initial address, a P.O. box, also see complete instructions. spaces below. State ZIP code Apt. no.",
+        "field_coords": {
+          "page": 1,
+          "x": 36,
+          "y": 612,
+          "width": 294.45,
+          "height": 14.000999999999976,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.8,
+        "label_method": "above_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].Address_ReadOrder[0].f1_23[0]",
+        "label": "box, also see complete instructions. spaces below. State ZIP code Apt. no. the spouse\u2019s Check Spouse\u2019s Presidential U.S. here for if filing more if social your Election a",
+        "field_coords": {
+          "page": 1,
+          "x": 332.2,
+          "y": 612,
+          "width": 63.05000000000001,
+          "height": 14.000999999999976,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.8,
+        "label_method": "above_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].Address_ReadOrder[0].f1_24[0]",
+        "label": "spaces below. State ZIP code Apt. no. the spouse\u2019s Check Spouse\u2019s Presidential U.S. here for if filing more if social your Election a than joint main security half return, home, Campaign of 2025. was number and your in [ |",
+        "field_coords": {
+          "page": 1,
+          "x": 397,
+          "y": 612,
+          "width": 70.25,
+          "height": 14.000999999999976,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.8,
+        "label_method": "above_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].Address_ReadOrder[0].f1_25[0]",
+        "label": "City, Home Foreign town, address country or post (number name office. and If you street). have If a you foreign have address, a P.O. box, also see complete Foreign instructions. province/state/county spaces below. State",
+        "field_coords": {
+          "page": 1,
+          "x": 36,
+          "y": 587.999,
+          "width": 186.45,
+          "height": 14.000999999999976,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.8,
+        "label_method": "above_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].Address_ReadOrder[0].f1_26[0]",
+        "label": "(number name office. and If you street). have If a you foreign have address, a P.O. box, also see complete Foreign instructions. province/state/county spaces below. State ZIP Foreign code Apt. postal no. code the this spouse\u2019s Check Check if Presidential filing U.S. fund. here for jointly, here if filing more Checking if your if Election you, a want",
+        "field_coords": {
+          "page": 1,
+          "x": 224.2,
+          "y": 587.999,
+          "width": 171.05,
+          "height": 14.000999999999976,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.8,
+        "label_method": "above_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].Address_ReadOrder[0].f1_27[0]",
+        "label": "province/state/county spaces below. State ZIP Foreign code Apt. postal no. code the this spouse\u2019s Check Check if Presidential filing U.S. fund. here for jointly, here if filing more Checking if your if Election you, a want than joint main or half $3 return, a home, your box Campaign of to 2025. go was and below spouse to your in [ |",
+        "field_coords": {
+          "page": 1,
+          "x": 397,
+          "y": 587.999,
+          "width": 70.25,
+          "height": 14.000999999999976,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.8,
+        "label_method": "above_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].c1_5[0]",
+        "label": "the U.S. for more than half of 2025. [",
+        "field_coords": {
+          "page": 1,
+          "x": 568,
+          "y": 637.251,
+          "width": 8,
+          "height": 8.0,
+          "type": "/Btn"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.9618,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].c1_6[0]",
+        "label": "[",
+        "field_coords": {
+          "page": 1,
+          "x": 482.4,
+          "y": 589.502,
+          "width": 8.0,
+          "height": 8.0,
+          "type": "/Btn"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 1.0,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].c1_7[0]",
+        "label": "[ ] You |",
+        "field_coords": {
+          "page": 1,
+          "x": 525.6,
+          "y": 589.502,
+          "width": 8.0,
+          "height": 8.0,
+          "type": "/Btn"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.9029,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].Checkbox_ReadOrder[0].c1_8[0]",
+        "label": "Filing Status",
+        "field_coords": {
+          "page": 1,
+          "x": 97.599,
+          "y": 578,
+          "width": 8.0,
+          "height": 8,
+          "type": "/Btn"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.9339,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].Checkbox_ReadOrder[0].c1_8[1]",
+        "label": "Check",
+        "field_coords": {
+          "page": 1,
+          "x": 97.599,
+          "y": 566.001,
+          "width": 8.0,
+          "height": 8.0,
+          "type": "/Btn"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.5424,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].Checkbox_ReadOrder[0].c1_8[2]",
+        "label": "one box.",
+        "field_coords": {
+          "page": 1,
+          "x": 97.599,
+          "y": 554.002,
+          "width": 8.0,
+          "height": 8.0,
+          "type": "/Btn"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.8546,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].Checkbox_ReadOrder[0].f1_28[0]",
+        "label": "and full name here:",
+        "field_coords": {
+          "page": 1,
+          "x": 180,
+          "y": 540,
+          "width": 144,
+          "height": 11.999000000000024,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.9854,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].c1_8[0]",
+        "label": "Filing Status \u2018J Single",
+        "field_coords": {
+          "page": 1,
+          "x": 349.599,
+          "y": 578,
+          "width": 8.0,
+          "height": 8,
+          "type": "/Btn"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.7511,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].c1_8[1]",
+        "label": "Check L_] Married filing jointly (even if only one had income)",
+        "field_coords": {
+          "page": 1,
+          "x": 349.599,
+          "y": 566.001,
+          "width": 8.0,
+          "height": 8.0,
+          "type": "/Btn"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.8005,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].f1_29[0]",
+        "label": "and full name here:",
+        "field_coords": {
+          "page": 1,
+          "x": 362,
+          "y": 534.002,
+          "width": 214,
+          "height": 11.999000000000024,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.7367,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].c1_9[0]",
+        "label": "Check one Filing box. only Status name \u2018J L_] |_| Single and Married Married full name filing filing jointly separately here: (even (MFS). if only Enter",
+        "field_coords": {
+          "page": 1,
+          "x": 97.599,
+          "y": 525.875,
+          "width": 8.0,
+          "height": 8.0,
+          "type": "/Btn"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.8,
+        "label_method": "above_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].f1_30[0]",
+        "label": "name (see instructions and attach statement if required):",
+        "field_coords": {
+          "page": 1,
+          "x": 313.2,
+          "y": 513.5,
+          "width": 262.8,
+          "height": 11.499000000000024,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.9711,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].c1_10[0]",
+        "label": "Digital Assets exchange, or otherwise dispose of a digital asset (or a financial interest in a digital asset)? (See instructions.)",
+        "field_coords": {
+          "page": 1,
+          "x": 518.4,
+          "y": 497,
+          "width": 8.0,
+          "height": 8,
+          "type": "/Btn"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.8529,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].c1_10[1]",
+        "label": "Digital Assets exchange, or otherwise dispose of a digital asset (or a financial interest in a digital asset)? (See instructions.) L]Yes",
+        "field_coords": {
+          "page": 1,
+          "x": 554.4,
+          "y": 497,
+          "width": 8.0,
+          "height": 8,
+          "type": "/Btn"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.9391,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].Dependents_ReadOrder[0].c1_11[0]",
+        "label": "here",
+        "field_coords": {
+          "page": 1,
+          "x": 79.699,
+          "y": 415.5,
+          "width": 8.0,
+          "height": 8.0,
+          "type": "/Btn"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.7315,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].Table_Dependents[0].Row1[0].f1_31[0]",
+        "label": "Digital Assets L_] At exchange, any and name if treating time full (see or name during a otherwise instructions nonresident here: 2025, dispose did and alien you: attach of or (a) a dual-status digital statement receive asset (as alien if a (or required): reward, a spouse financial award, as interest a U.S. or payment resident in a if digital the",
+        "field_coords": {
+          "page": 1,
+          "x": 145,
+          "y": 471.002,
+          "width": 106.25,
+          "height": 11.998999999999967,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.8,
+        "label_method": "above_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].Table_Dependents[0].Row1[0].f1_32[0]",
+        "label": "exchange, treating time full (see or name during a otherwise instructions nonresident here: 2025, dispose did and alien you: attach of or (a) a dual-status digital statement receive asset (as alien if a (or required): reward, a spouse financial award, as interest a U.S. or payment resident in a if digital the for for qualifying the asset)? property entire person (See or tax services); instructions.) year, is a child check or",
+        "field_coords": {
+          "page": 1,
+          "x": 253,
+          "y": 471.002,
+          "width": 106.25,
+          "height": 11.998999999999967,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.8,
+        "label_method": "above_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].Table_Dependents[0].Row1[0].f1_33[0]",
+        "label": "dual-status digital statement receive asset (as alien if a (or required): reward, a spouse financial award, as interest a U.S. or payment resident in a if digital the for for qualifying the asset)? property entire person (See or tax services); instructions.) year, is a child check or but (b) the .. sell, not box your and L]Yes dependent: enter their []No",
+        "field_coords": {
+          "page": 1,
+          "x": 361,
+          "y": 471.002,
+          "width": 106.25,
+          "height": 11.998999999999967,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.8,
+        "label_method": "above_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].Table_Dependents[0].Row1[0].f1_34[0]",
+        "label": "interest payment resident in a if digital the for for qualifying the asset)? property entire person (See or tax services); instructions.) year, is a child check or but (b) the .. sell, not box your and L]Yes dependent: enter their []No",
+        "field_coords": {
+          "page": 1,
+          "x": 469,
+          "y": 471.002,
+          "width": 107,
+          "height": 11.998999999999967,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.8,
+        "label_method": "above_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].Table_Dependents[0].Row2[0].f1_35[0]",
+        "label": "If",
+        "field_coords": {
+          "page": 1,
+          "x": 145,
+          "y": 459.003,
+          "width": 106.25,
+          "height": 11.999000000000024,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.4681,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].Table_Dependents[0].Row2[0].f1_36[0]",
+        "label": "If",
+        "field_coords": {
+          "page": 1,
+          "x": 253,
+          "y": 459.003,
+          "width": 106.25,
+          "height": 11.999000000000024,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.4511,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].Table_Dependents[0].Row2[0].f1_37[0]",
+        "label": "If",
+        "field_coords": {
+          "page": 1,
+          "x": 361,
+          "y": 459.003,
+          "width": 106.25,
+          "height": 11.999000000000024,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "medium",
+        "label_score": 0.45,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].Table_Dependents[0].Row2[0].f1_38[0]",
+        "label": "If",
+        "field_coords": {
+          "page": 1,
+          "x": 469,
+          "y": 459.003,
+          "width": 107,
+          "height": 11.999000000000024,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "medium",
+        "label_score": 0.4499,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].Table_Dependents[0].Row3[0].f1_39[0]",
+        "label": "thanfour If more =",
+        "field_coords": {
+          "page": 1,
+          "x": 145,
+          "y": 447.004,
+          "width": 106.25,
+          "height": 11.998999999999967,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.809,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].Table_Dependents[0].Row3[0].f1_40[0]",
+        "label": "thanfour If more =",
+        "field_coords": {
+          "page": 1,
+          "x": 253,
+          "y": 447.004,
+          "width": 106.25,
+          "height": 11.998999999999967,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.754,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].Table_Dependents[0].Row3[0].f1_41[0]",
+        "label": "thanfour If more =",
+        "field_coords": {
+          "page": 1,
+          "x": 361,
+          "y": 447.004,
+          "width": 106.25,
+          "height": 11.998999999999967,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.7503,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].Table_Dependents[0].Row3[0].f1_42[0]",
+        "label": "thanfour If more = SSN",
+        "field_coords": {
+          "page": 1,
+          "x": 469,
+          "y": 447.004,
+          "width": 107,
+          "height": 11.998999999999967,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.9916,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].Table_Dependents[0].Row4[0].f1_43[0]",
+        "label": "instructions =",
+        "field_coords": {
+          "page": 1,
+          "x": 145,
+          "y": 435.005,
+          "width": 106.25,
+          "height": 11.999000000000024,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.5937,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].Table_Dependents[0].Row4[0].f1_44[0]",
+        "label": "instructions =",
+        "field_coords": {
+          "page": 1,
+          "x": 253,
+          "y": 435.005,
+          "width": 106.25,
+          "height": 11.999000000000024,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.538,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].Table_Dependents[0].Row4[0].f1_45[0]",
+        "label": "instructions =",
+        "field_coords": {
+          "page": 1,
+          "x": 361,
+          "y": 435.005,
+          "width": 106.25,
+          "height": 11.999000000000024,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.5343,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].Table_Dependents[0].Row4[0].f1_46[0]",
+        "label": "instructions =",
+        "field_coords": {
+          "page": 1,
+          "x": 469,
+          "y": 435.005,
+          "width": 107,
+          "height": 11.999000000000024,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.534,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].Table_Dependents[0].Row5[0].Dependent1[0].c1_12[0]",
+        "label": "and check Peers (a)",
+        "field_coords": {
+          "page": 1,
+          "x": 169.6,
+          "y": 424.999,
+          "width": 8.0,
+          "height": 8.0,
+          "type": "/Btn"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.963,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].Table_Dependents[0].Row5[0].Dependent1[0].c1_13[0]",
+        "label": "here LI than halfof 2025] (b)",
+        "field_coords": {
+          "page": 1,
+          "x": 169.6,
+          "y": 413,
+          "width": 8.0,
+          "height": 8,
+          "type": "/Btn"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.963,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].Table_Dependents[0].Row5[0].Dependent2[0].c1_14[0]",
+        "label": "and check Peers (a) [_] Yes (a)",
+        "field_coords": {
+          "page": 1,
+          "x": 277.6,
+          "y": 424.999,
+          "width": 8.0,
+          "height": 8.0,
+          "type": "/Btn"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.963,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].Table_Dependents[0].Row5[0].Dependent2[0].c1_15[0]",
+        "label": "here LI than halfof 2025] (b) [J Andin the U.S. (b)",
+        "field_coords": {
+          "page": 1,
+          "x": 277.6,
+          "y": 413,
+          "width": 8.0,
+          "height": 8,
+          "type": "/Btn"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.963,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].Table_Dependents[0].Row5[0].Dependent3[0].c1_16[0]",
+        "label": "and check Peers (a) [_] Yes (a) [_] Yes (a)",
+        "field_coords": {
+          "page": 1,
+          "x": 385.6,
+          "y": 424.999,
+          "width": 8.0,
+          "height": 8.0,
+          "type": "/Btn"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.963,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].Table_Dependents[0].Row5[0].Dependent3[0].c1_17[0]",
+        "label": "here LI than halfof 2025] (b) [J Andin the U.S. (b) [_] And in the U.S. (b)",
+        "field_coords": {
+          "page": 1,
+          "x": 385.6,
+          "y": 413,
+          "width": 8.0,
+          "height": 8,
+          "type": "/Btn"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.963,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].Table_Dependents[0].Row5[0].Dependent4[0].c1_18[0]",
+        "label": "and check Peers (a) [_] Yes (a) [_] Yes (a) [_] Yes (a)",
+        "field_coords": {
+          "page": 1,
+          "x": 493.6,
+          "y": 424.999,
+          "width": 8.0,
+          "height": 8.0,
+          "type": "/Btn"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.963,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].Table_Dependents[0].Row5[0].Dependent4[0].c1_19[0]",
+        "label": "here LI than halfof 2025] (b) [J Andin the U.S. (b) [_] And in the U.S. (b) [_] And in the U.S. (b)",
+        "field_coords": {
+          "page": 1,
+          "x": 493.6,
+          "y": 413,
+          "width": 8.0,
+          "height": 8,
+          "type": "/Btn"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.963,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].Table_Dependents[0].Row6[0].Dependent1[0].c1_20[0]",
+        "label": "(6) Check if",
+        "field_coords": {
+          "page": 1,
+          "x": 148,
+          "y": 401.001,
+          "width": 8,
+          "height": 8.0,
+          "type": "/Btn"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.9064,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].Table_Dependents[0].Row6[0].Dependent1[0].c1_21[0]",
+        "label": "(6) Check if LI Full-time",
+        "field_coords": {
+          "page": 1,
+          "x": 198.4,
+          "y": 401.001,
+          "width": 8.0,
+          "height": 8.0,
+          "type": "/Btn"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.9367,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].Table_Dependents[0].Row6[0].Dependent2[0].c1_22[0]",
+        "label": "(6) Check if LI Full-time LI Permanent",
+        "field_coords": {
+          "page": 1,
+          "x": 256,
+          "y": 401.001,
+          "width": 8,
+          "height": 8.0,
+          "type": "/Btn"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.9407,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].Table_Dependents[0].Row6[0].Dependent2[0].c1_23[0]",
+        "label": "(6) Check if LI Full-time LI Permanent yy Full-time",
+        "field_coords": {
+          "page": 1,
+          "x": 306.4,
+          "y": 401.001,
+          "width": 8.0,
+          "height": 8.0,
+          "type": "/Btn"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.9367,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].Table_Dependents[0].Row6[0].Dependent3[0].c1_24[0]",
+        "label": "(6) Check if LI Full-time LI Permanent yy Full-time LI Permanent",
+        "field_coords": {
+          "page": 1,
+          "x": 364,
+          "y": 401.001,
+          "width": 8,
+          "height": 8.0,
+          "type": "/Btn"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.9407,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].Table_Dependents[0].Row6[0].Dependent3[0].c1_25[0]",
+        "label": "(6) Check if LI Full-time LI Permanent yy Full-time LI Permanent yy Full-time",
+        "field_coords": {
+          "page": 1,
+          "x": 414.4,
+          "y": 401.001,
+          "width": 8.0,
+          "height": 8.0,
+          "type": "/Btn"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.9367,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].Table_Dependents[0].Row6[0].Dependent4[0].c1_26[0]",
+        "label": "(6) Check if LI Full-time LI Permanent yy Full-time LI Permanent yy Full-time LI Permanent",
+        "field_coords": {
+          "page": 1,
+          "x": 472,
+          "y": 401.001,
+          "width": 8,
+          "height": 8.0,
+          "type": "/Btn"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.9407,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].Table_Dependents[0].Row6[0].Dependent4[0].c1_27[0]",
+        "label": "(6) Check if LI Full-time LI Permanent yy Full-time LI Permanent yy Full-time LI Permanent yy Full-time",
+        "field_coords": {
+          "page": 1,
+          "x": 522.4,
+          "y": 401.001,
+          "width": 8.0,
+          "height": 8.0,
+          "type": "/Btn"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.9367,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].Table_Dependents[0].Row7[0].Dependent1[0].c1_28[0]",
+        "label": "thanfour see and here If more instructions check . . = LI than Peers (6) SSN Check halfof = if 2025] LI (b) (a) student Full-time [_] [J Andin Yes LI the and disabled Permanent U.S. totally yy (b) (a) student Full-time",
+        "field_coords": {
+          "page": 1,
+          "x": 148,
+          "y": 380.002,
+          "width": 8,
+          "height": 8.0,
+          "type": "/Btn"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.8,
+        "label_method": "above_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].Table_Dependents[0].Row7[0].Dependent1[0].c1_28[1]",
+        "label": "Child tax",
+        "field_coords": {
+          "page": 1,
+          "x": 198.4,
+          "y": 380.002,
+          "width": 8.0,
+          "height": 8.0,
+          "type": "/Btn"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.9389,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].Table_Dependents[0].Row7[0].Dependent2[0].c1_29[0]",
+        "label": "Child tax Credit for",
+        "field_coords": {
+          "page": 1,
+          "x": 256,
+          "y": 380.002,
+          "width": 8,
+          "height": 8.0,
+          "type": "/Btn"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.9151,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].Table_Dependents[0].Row7[0].Dependent2[0].c1_29[1]",
+        "label": "Child tax Credit for Child tax",
+        "field_coords": {
+          "page": 1,
+          "x": 306.4,
+          "y": 380.002,
+          "width": 8.0,
+          "height": 8.0,
+          "type": "/Btn"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.9389,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].Table_Dependents[0].Row7[0].Dependent3[0].c1_30[0]",
+        "label": "Child tax Credit for Child tax Credit for",
+        "field_coords": {
+          "page": 1,
+          "x": 364,
+          "y": 380.002,
+          "width": 8,
+          "height": 8.0,
+          "type": "/Btn"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.9151,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].Table_Dependents[0].Row7[0].Dependent3[0].c1_30[1]",
+        "label": "Child tax Credit for Child tax Credit for Child tax",
+        "field_coords": {
+          "page": 1,
+          "x": 414.4,
+          "y": 380.002,
+          "width": 8.0,
+          "height": 8.0,
+          "type": "/Btn"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.9389,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].Table_Dependents[0].Row7[0].Dependent4[0].c1_31[0]",
+        "label": "Child tax Credit for Child tax Credit for Child tax Credit for",
+        "field_coords": {
+          "page": 1,
+          "x": 472,
+          "y": 380.002,
+          "width": 8,
+          "height": 8.0,
+          "type": "/Btn"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.9151,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].Table_Dependents[0].Row7[0].Dependent4[0].c1_31[1]",
+        "label": "Child tax Credit for Child tax Credit for Child tax Credit for Child tax",
+        "field_coords": {
+          "page": 1,
+          "x": 522.4,
+          "y": 380.002,
+          "width": 8.0,
+          "height": 8.0,
+          "type": "/Btn"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.9389,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].c1_32[0]",
+        "label": "|",
+        "field_coords": {
+          "page": 1,
+          "x": 95.599,
+          "y": 359.501,
+          "width": 8.0,
+          "height": 8.0,
+          "type": "/Btn"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 1.0,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].f1_47[0]",
+        "label": "Income 1a Total amount from Form(s) W-2, box 1 (See instructions) da-",
+        "field_coords": {
+          "page": 1,
+          "x": 504,
+          "y": 330.001,
+          "width": 72,
+          "height": 11.999000000000024,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.9978,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].f1_48[0]",
+        "label": "Attach Form(s) b Household employee wages not reported on Form(s) W-2. | 4b |",
+        "field_coords": {
+          "page": 1,
+          "x": 504,
+          "y": 318.002,
+          "width": 72,
+          "height": 11.998999999999967,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.9993,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].f1_49[0]",
+        "label": "W-2 here. Form(s) Also c_ Tip income not reported online 1a (see instructions) te |",
+        "field_coords": {
+          "page": 1,
+          "x": 504,
+          "y": 306,
+          "width": 72,
+          "height": 11.999000000000024,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 1.0,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].f1_50[0]",
+        "label": "W-2G attach and Forms d Medicaid waiver payments not reported on Form(s) W-2 (See instructions) td |",
+        "field_coords": {
+          "page": 1,
+          "x": 504,
+          "y": 294.001,
+          "width": 72,
+          "height": 11.999000000000024,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.9993,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].f1_51[0]",
+        "label": "1099-R if tax e Taxable dependent care benefits from Form 2441, line26 | te |",
+        "field_coords": {
+          "page": 1,
+          "x": 504,
+          "y": 282.002,
+          "width": 72,
+          "height": 11.998999999999967,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 1.0,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].f1_52[0]",
+        "label": "was If you withheld. did not f Employer-provided adoption benefits from Form 8889, line31 | af |",
+        "field_coords": {
+          "page": 1,
+          "x": 504,
+          "y": 270,
+          "width": 72,
+          "height": 11.999000000000024,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 1.0,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].f1_53[0]",
+        "label": "get you a Form g Wages from Form 8919, line6 4g-",
+        "field_coords": {
+          "page": 1,
+          "x": 504,
+          "y": 258.001,
+          "width": 72,
+          "height": 11.999000000000024,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.9963,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].f1_54[0]",
+        "label": "We, instructions. See h Oth er earned di income (See instructions). instructions). Enter Entertype t and d amount: t",
+        "field_coords": {
+          "page": 1,
+          "x": 344.2,
+          "y": 247.002,
+          "width": 131.0,
+          "height": 10.998999999999967,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.9803,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].f1_55[0]",
+        "label": "We, instructions. See h Oth er earned di income (See instructions). instructions). Enter Entertype t and d amount: t | th.",
+        "field_coords": {
+          "page": 1,
+          "x": 504,
+          "y": 246.002,
+          "width": 72,
+          "height": 11.998999999999967,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.9985,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].f1_56[0]",
+        "label": "i Nontaxable combat pay election (See instructions) 1i",
+        "field_coords": {
+          "page": 1,
+          "x": 410.4,
+          "y": 234,
+          "width": 71.25,
+          "height": 11.998999999999995,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.9545,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].f1_57[0]",
+        "label": "z Add lines 1a through 1h",
+        "field_coords": {
+          "page": 1,
+          "x": 504,
+          "y": 222.001,
+          "width": 72,
+          "height": 11.998999999999995,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.7501,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].f1_58[0]",
+        "label": "Attach Sch. B 2a _Tax-exemptinterest. 2a",
+        "field_coords": {
+          "page": 1,
+          "x": 252,
+          "y": 210.002,
+          "width": 71.25,
+          "height": 11.998999999999995,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.9613,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].f1_59[0]",
+        "label": "Attach Sch. B 2a _Tax-exemptinterest. 2a b Taxable interest | 2b |",
+        "field_coords": {
+          "page": 1,
+          "x": 504,
+          "y": 210.002,
+          "width": 72,
+          "height": 11.998999999999995,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.9594,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].f1_60[0]",
+        "label": "if required. 3a Qualified dividends 3a",
+        "field_coords": {
+          "page": 1,
+          "x": 252,
+          "y": 198,
+          "width": 71.25,
+          "height": 11.998999999999995,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.9764,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].f1_61[0]",
+        "label": "if required. 3a Qualified dividends 3a fo b Ordinary dividends. | 3b |",
+        "field_coords": {
+          "page": 1,
+          "x": 504,
+          "y": 198,
+          "width": 72,
+          "height": 11.998999999999995,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.9594,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].c1_33[0]",
+        "label": "c Check if your child\u2019s dividends are included in 1",
+        "field_coords": {
+          "page": 1,
+          "x": 283.8,
+          "y": 187.501,
+          "width": 8.0,
+          "height": 8.0,
+          "type": "/Btn"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.9594,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].c1_34[0]",
+        "label": "c Check if your child\u2019s dividends are included in 1 [_] Line 3a 2",
+        "field_coords": {
+          "page": 1,
+          "x": 363,
+          "y": 187.501,
+          "width": 8,
+          "height": 8.0,
+          "type": "/Btn"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.9658,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].f1_62[0]",
+        "label": "4a |RAdistributions | 4a |",
+        "field_coords": {
+          "page": 1,
+          "x": 252,
+          "y": 174.002,
+          "width": 71.25,
+          "height": 11.998999999999995,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.962,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].f1_63[0]",
+        "label": "4a |RAdistributions | 4a | | b Taxable amount.",
+        "field_coords": {
+          "page": 1,
+          "x": 504,
+          "y": 174.002,
+          "width": 72,
+          "height": 11.998999999999995,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.7736,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].c1_35[0]",
+        "label": "c Checkif(seeinstructions) 1",
+        "field_coords": {
+          "page": 1,
+          "x": 283.8,
+          "y": 163.5,
+          "width": 8.0,
+          "height": 8.0,
+          "type": "/Btn"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.9594,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].c1_36[0]",
+        "label": "c Checkif(seeinstructions) 1 L] Rollover 2",
+        "field_coords": {
+          "page": 1,
+          "x": 363,
+          "y": 163.5,
+          "width": 8,
+          "height": 8.0,
+          "type": "/Btn"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.9658,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].c1_37[0]",
+        "label": "c Checkif(seeinstructions) 1 L] Rollover 2 L] acD 3",
+        "field_coords": {
+          "page": 1,
+          "x": 427.799,
+          "y": 163.5,
+          "width": 8.0,
+          "height": 8.0,
+          "type": "/Btn"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.9658,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].f1_64[0]",
+        "label": "c Checkif(seeinstructions) 1 L] Rollover 2 L] acD 3 L]",
+        "field_coords": {
+          "page": 1,
+          "x": 439.2,
+          "y": 162,
+          "width": 36.0,
+          "height": 11.998999999999995,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.9812,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].f1_65[0]",
+        "label": "5a Pensions and annuities | 5a |",
+        "field_coords": {
+          "page": 1,
+          "x": 252,
+          "y": 150.001,
+          "width": 71.25,
+          "height": 11.998999999999995,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.962,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].f1_66[0]",
+        "label": "5a Pensions and annuities | 5a | | b Taxableamount.",
+        "field_coords": {
+          "page": 1,
+          "x": 504,
+          "y": 150.001,
+          "width": 72,
+          "height": 11.998999999999995,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.7736,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].c1_38[0]",
+        "label": "c Checkif (see instructions) 1",
+        "field_coords": {
+          "page": 1,
+          "x": 283.8,
+          "y": 139.502,
+          "width": 8.0,
+          "height": 8.0,
+          "type": "/Btn"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.9594,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].c1_39[0]",
+        "label": "c Checkif (see instructions) 1 L] Rollover 2",
+        "field_coords": {
+          "page": 1,
+          "x": 363,
+          "y": 139.502,
+          "width": 8,
+          "height": 8.0,
+          "type": "/Btn"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.9658,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].c1_40[0]",
+        "label": "c Checkif (see instructions) 1 L] Rollover 2 [|_| PSO 3",
+        "field_coords": {
+          "page": 1,
+          "x": 427.799,
+          "y": 139.502,
+          "width": 8.0,
+          "height": 8.0,
+          "type": "/Btn"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.9658,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].f1_67[0]",
+        "label": "c Checkif (see instructions) 1 L] Rollover 2 [|_| PSO 3 [|",
+        "field_coords": {
+          "page": 1,
+          "x": 439.2,
+          "y": 138.002,
+          "width": 36.0,
+          "height": 11.998999999999995,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.9812,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].f1_68[0]",
+        "label": "6a Social security benefits | 6a |",
+        "field_coords": {
+          "page": 1,
+          "x": 252,
+          "y": 126,
+          "width": 71.25,
+          "height": 11.998999999999995,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.962,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].f1_69[0]",
+        "label": "6a Social security benefits | 6a | | b Taxable amount.",
+        "field_coords": {
+          "page": 1,
+          "x": 504,
+          "y": 126,
+          "width": 72,
+          "height": 11.998999999999995,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.7736,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].c1_41[0]",
+        "label": "c_ If you elect to use the lump-sum election method, check here (See instructions)",
+        "field_coords": {
+          "page": 1,
+          "x": 467.2,
+          "y": 116.001,
+          "width": 8.0,
+          "height": 8.0,
+          "type": "/Btn"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.7928,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].c1_42[0]",
+        "label": "d_ If you are married filing separately and lived apart from your spouse the entire year (See inst.), check here [",
+        "field_coords": {
+          "page": 1,
+          "x": 467.2,
+          "y": 104.002,
+          "width": 8.0,
+          "height": 8.0,
+          "type": "/Btn"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.9728,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].f1_70[0]",
+        "label": "7a _ Capital gain or (loss). Attach Schedule D if required 7a",
+        "field_coords": {
+          "page": 1,
+          "x": 504,
+          "y": 90,
+          "width": 72,
+          "height": 11.998999999999995,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.962,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].c1_43[0]",
+        "label": "b Check if:",
+        "field_coords": {
+          "page": 1,
+          "x": 153.2,
+          "y": 79.501,
+          "width": 8.0,
+          "height": 8.0,
+          "type": "/Btn"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.959,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].c1_44[0]",
+        "label": "b Check if: |] Schedule D not required",
+        "field_coords": {
+          "page": 1,
+          "x": 261.2,
+          "y": 79.501,
+          "width": 8.0,
+          "height": 8.0,
+          "type": "/Btn"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.9451,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].f1_71[0]",
+        "label": "b Check if: |] Schedule D not required [_] Includes child\u2019s capital gain or (loss)",
+        "field_coords": {
+          "page": 1,
+          "x": 403.2,
+          "y": 78.001,
+          "width": 72.0,
+          "height": 11.998999999999995,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.9869,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].f1_72[0]",
+        "label": "8 Additional income from Schedule 1,line10",
+        "field_coords": {
+          "page": 1,
+          "x": 504,
+          "y": 66.002,
+          "width": 72,
+          "height": 11.99900000000001,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.7507,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].f1_73[0]",
+        "label": "9 Add lines 1z, 2b, 3b, 4b, 5b, 6b, 7a, and 8. Thisis yourtotalincome | 9.",
+        "field_coords": {
+          "page": 1,
+          "x": 504,
+          "y": 54,
+          "width": 72,
+          "height": 11.998999999999995,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.9985,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].f1_74[0]",
+        "label": "10 Adjustments to income from Schedule 1,line26 10 |",
+        "field_coords": {
+          "page": 1,
+          "x": 504,
+          "y": 42.001,
+          "width": 72,
+          "height": 11.999000000000002,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 1.0,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page1[0].f1_75[0]",
+        "label": "11a Subtract line 10 from line 9. This is your adjusted gross income... 4a |",
+        "field_coords": {
+          "page": 1,
+          "x": 504,
+          "y": 30.002,
+          "width": 72,
+          "height": 11.998999999999999,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.9993,
+        "label_method": "left_strip"
+      }
+    ]
+  },
+  "page_2": {
+    "page_size": {
+      "width": 612.0,
+      "height": 792.0
+    },
+    "field_count": 71,
+    "fields": [
+      {
+        "field": "topmostSubform[0].Page2[0].f2_01[0]",
+        "label": "Tax and 11b Amount from line 11a (adjusted grossincome) /41b>",
+        "field_coords": {
+          "page": 2,
+          "x": 504,
+          "y": 744.001,
+          "width": 72,
+          "height": 11.999000000000024,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.9978,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page2[0].c2_1[0]",
+        "label": "Credits 12a Someone can claim",
+        "field_coords": {
+          "page": 2,
+          "x": 203.6,
+          "y": 734.002,
+          "width": 8.0,
+          "height": 8.0,
+          "type": "/Btn"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.9086,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page2[0].c2_2[0]",
+        "label": "Credits 12a Someone can claim L_] You asa dependent",
+        "field_coords": {
+          "page": 2,
+          "x": 304.4,
+          "y": 734.002,
+          "width": 8.0,
+          "height": 8.0,
+          "type": "/Btn"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.9149,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page2[0].c2_3[0]",
+        "label": "b",
+        "field_coords": {
+          "page": 2,
+          "x": 115.2,
+          "y": 722,
+          "width": 8.0,
+          "height": 8,
+          "type": "/Btn"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.8395,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page2[0].c2_4[0]",
+        "label": "b LI Spouse itemizes on a separate return c",
+        "field_coords": {
+          "page": 2,
+          "x": 304.4,
+          "y": 722,
+          "width": 8.0,
+          "height": 8,
+          "type": "/Btn"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.959,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page2[0].c2_5[0]",
+        "label": "d You:",
+        "field_coords": {
+          "page": 2,
+          "x": 153.2,
+          "y": 710.001,
+          "width": 8.0,
+          "height": 8.0,
+          "type": "/Btn"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.8967,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page2[0].c2_6[0]",
+        "label": "d You: L_] Were born before January 2, 1961",
+        "field_coords": {
+          "page": 2,
+          "x": 311.6,
+          "y": 710.001,
+          "width": 8.0,
+          "height": 8.0,
+          "type": "/Btn"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.8817,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page2[0].c2_7[0]",
+        "label": "Spouse:",
+        "field_coords": {
+          "page": 2,
+          "x": 153.2,
+          "y": 698.002,
+          "width": 8.0,
+          "height": 8.0,
+          "type": "/Btn"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.8884,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page2[0].c2_8[0]",
+        "label": "Spouse: [|] Was born before January 2, 1961",
+        "field_coords": {
+          "page": 2,
+          "x": 311.6,
+          "y": 698.002,
+          "width": 8.0,
+          "height": 8.0,
+          "type": "/Btn"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.8722,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page2[0].f2_02[0]",
+        "label": "Standard deduction for\u2014 e Standard deduction or itemized deductions (from Schedule A).",
+        "field_coords": {
+          "page": 2,
+          "x": 504,
+          "y": 684,
+          "width": 72,
+          "height": 11.999000000000024,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.7553,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page2[0].f2_03[0]",
+        "label": "\u00b0 snare filing 13a Qualified business income deduction from Form 8995 orForm8995-A. | 18a)",
+        "field_coords": {
+          "page": 2,
+          "x": 504,
+          "y": 672.001,
+          "width": 72,
+          "height": 11.999000000000024,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.9985,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page2[0].f2_04[0]",
+        "label": "separately, snare filing b Additional deductions from Schedule 1-A, line38 | 18 |",
+        "field_coords": {
+          "page": 2,
+          "x": 504,
+          "y": 660.002,
+          "width": 72,
+          "height": 11.999000000000024,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 1.0,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page2[0].f2_05[0]",
+        "label": "ae \u00a3750, | 14 Addlines 12\u00a2, 18a, and 136 0 | 14 |",
+        "field_coords": {
+          "page": 2,
+          "x": 504,
+          "y": 648,
+          "width": 72,
+          "height": 11.999000000000024,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 1.0,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page2[0].f2_06[0]",
+        "label": "ae jointly \u00a3750, or | 15 Subtract line 14 from line 11b. 0 If zero or less, enter -O-. This is yourtaxable income | 45 |",
+        "field_coords": {
+          "page": 2,
+          "x": 504,
+          "y": 636.001,
+          "width": 72,
+          "height": 11.999000000000024,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 1.0,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page2[0].c2_9[0]",
+        "label": "curivee 16\u2018 Tax (see instructions). Check if any from Form(s): 1",
+        "field_coords": {
+          "page": 2,
+          "x": 312.6,
+          "y": 626.002,
+          "width": 8.0,
+          "height": 8.0,
+          "type": "/Btn"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.9594,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page2[0].c2_10[0]",
+        "label": "curivee 16\u2018 Tax (see instructions). Check if any from Form(s): 1 [|] 8814 2",
+        "field_coords": {
+          "page": 2,
+          "x": 370.2,
+          "y": 626.002,
+          "width": 8.0,
+          "height": 8.0,
+          "type": "/Btn"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.9658,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page2[0].c2_11[0]",
+        "label": "curivee 16\u2018 Tax (see instructions). Check if any from Form(s): 1 [|] 8814 2 |_|] 4972 3",
+        "field_coords": {
+          "page": 2,
+          "x": 427.799,
+          "y": 626.002,
+          "width": 8.0,
+          "height": 8.0,
+          "type": "/Btn"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.9658,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page2[0].f2_07[0]",
+        "label": "curivee 16\u2018 Tax (see instructions). Check if any from Form(s): 1 [|] 8814 2 |_|] 4972 3 L]",
+        "field_coords": {
+          "page": 2,
+          "x": 439.2,
+          "y": 624.002,
+          "width": 36.0,
+          "height": 11.999000000000024,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.9812,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page2[0].f2_08[0]",
+        "label": "curivee 16\u2018 Tax (see instructions). Check if any from Form(s): 1 [|] 8814 2 |_|] 4972 3 L] | 16 |",
+        "field_coords": {
+          "page": 2,
+          "x": 504,
+          "y": 624.002,
+          "width": 72,
+          "height": 11.999000000000024,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 1.0,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page2[0].f2_09[0]",
+        "label": "curivee spouse, 17 Amount from Schedule 2,lineS3",
+        "field_coords": {
+          "page": 2,
+          "x": 504,
+          "y": 612,
+          "width": 72,
+          "height": 11.999000000000024,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.7502,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page2[0].f2_10[0]",
+        "label": "p80 18 Addlinest6and17.. 18S",
+        "field_coords": {
+          "page": 2,
+          "x": 504,
+          "y": 600.001,
+          "width": 72,
+          "height": 11.999000000000024,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.9985,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page2[0].f2_11[0]",
+        "label": "p80 household, 19 Child tax credit or credit for other dependents from Schedule 8812 | 19 |",
+        "field_coords": {
+          "page": 2,
+          "x": 504,
+          "y": 588.002,
+          "width": 72,
+          "height": 11.999000000000024,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 1.0,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page2[0].f2_12[0]",
+        "label": "$23,625 20 AmountfromSchedule3,line8 | 20 |",
+        "field_coords": {
+          "page": 2,
+          "x": 504,
+          "y": 576,
+          "width": 72,
+          "height": 11.999000000000024,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 1.0,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page2[0].f2_13[0]",
+        "label": "aboxonline If you checked | 21 Addlines19and20.... 2d",
+        "field_coords": {
+          "page": 2,
+          "x": 504,
+          "y": 564.001,
+          "width": 72,
+          "height": 11.999000000000024,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.9594,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page2[0].f2_14[0]",
+        "label": "La reeneen 22 Subtract line 21 from line 18. If zeroorless,enter-O0- | 29 |",
+        "field_coords": {
+          "page": 2,
+          "x": 504,
+          "y": 552.002,
+          "width": 72,
+          "height": 11.999000000000024,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.9539,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page2[0].f2_15[0]",
+        "label": "La reeneen 23 Other taxes, including self-employment tax, from Schedule 2, line21 | 93 |",
+        "field_coords": {
+          "page": 2,
+          "x": 504,
+          "y": 540,
+          "width": 72,
+          "height": 11.999000000000024,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 1.0,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page2[0].f2_16[0]",
+        "label": "24 = Addilines 22 and 23. Thisis yourtotaltax | 24 |",
+        "field_coords": {
+          "page": 2,
+          "x": 504,
+          "y": 528.001,
+          "width": 72,
+          "height": 11.999000000000024,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.9993,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page2[0].f2_17[0]",
+        "label": "and a Form(s)W-2 25a",
+        "field_coords": {
+          "page": 2,
+          "x": 410.4,
+          "y": 504,
+          "width": 71.25,
+          "height": 11.999000000000024,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.9737,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page2[0].f2_18[0]",
+        "label": "Credits Refundable 4 fForm(s)1099.... [",
+        "field_coords": {
+          "page": 2,
+          "x": 410.4,
+          "y": 492.001,
+          "width": 71.25,
+          "height": 11.999000000000024,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.9052,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page2[0].f2_19[0]",
+        "label": "Credits c Otherforms(Seeinstructions) 5c}",
+        "field_coords": {
+          "page": 2,
+          "x": 410.4,
+          "y": 480.002,
+          "width": 71.25,
+          "height": 11.998999999999967,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.7522,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page2[0].f2_20[0]",
+        "label": "d Addlines25athrough25c",
+        "field_coords": {
+          "page": 2,
+          "x": 504,
+          "y": 468,
+          "width": 72,
+          "height": 11.999000000000024,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.7502,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page2[0].f2_21[0]",
+        "label": "26 2025 estimated tax payments and amount applied from 2024 return. | 26 |",
+        "field_coords": {
+          "page": 2,
+          "x": 504,
+          "y": 456.001,
+          "width": 72,
+          "height": 11.999000000000024,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.9993,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page2[0].SSN_ReadOrder[0].f2_22[0]",
+        "label": "If you have a enter their SSN (see instructions):",
+        "field_coords": {
+          "page": 2,
+          "x": 237.6,
+          "y": 432,
+          "width": 86.4,
+          "height": 11.999000000000024,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.9785,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page2[0].f2_23[0]",
+        "label": "you Tay eed to 27a_ Earnedincomecredit(EIC). 27a",
+        "field_coords": {
+          "page": 2,
+          "x": 410.4,
+          "y": 420.001,
+          "width": 71.25,
+          "height": 11.999000000000024,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.9737,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page2[0].c2_12[0]",
+        "label": "attach Sch. EIC. b Clergy filing Schedule SE (see instructions)",
+        "field_coords": {
+          "page": 2,
+          "x": 467.2,
+          "y": 410.002,
+          "width": 8.0,
+          "height": 8.0,
+          "type": "/Btn"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.7517,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page2[0].c2_13[0]",
+        "label": "c If youdonot wanttoclaimthe EIC, checkhere.",
+        "field_coords": {
+          "page": 2,
+          "x": 467.2,
+          "y": 398,
+          "width": 8.0,
+          "height": 8,
+          "type": "/Btn"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.7529,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page2[0].Line28_ReadOrder[0].c2_14[0]",
+        "label": "toclaimthe ACTC,checkhere.",
+        "field_coords": {
+          "page": 2,
+          "x": 373.6,
+          "y": 374.002,
+          "width": 8.0,
+          "height": 8.0,
+          "type": "/Btn"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.7568,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page2[0].f2_24[0]",
+        "label": "toclaimthe ACTC,checkhere. [J] ] 28",
+        "field_coords": {
+          "page": 2,
+          "x": 410.4,
+          "y": 372.002,
+          "width": 71.25,
+          "height": 11.998999999999967,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.9626,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page2[0].f2_25[0]",
+        "label": "29 American opportunity credit from Form 8863, line8. fo9",
+        "field_coords": {
+          "page": 2,
+          "x": 410.4,
+          "y": 360,
+          "width": 71.25,
+          "height": 11.999000000000024,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.9744,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page2[0].f2_26[0]",
+        "label": "30 ~=Refundable adoption credit from Form 8839, line 13",
+        "field_coords": {
+          "page": 2,
+          "x": 410.4,
+          "y": 348.001,
+          "width": 71.25,
+          "height": 11.999000000000024,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.7657,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page2[0].f2_27[0]",
+        "label": "31 Amount from Schedule 3, line 15",
+        "field_coords": {
+          "page": 2,
+          "x": 410.4,
+          "y": 336.002,
+          "width": 71.25,
+          "height": 11.998999999999967,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.7529,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page2[0].f2_28[0]",
+        "label": "32 Add lines 27a, 28, 29, 30, and 31. These are your total other payments and refundable credits.",
+        "field_coords": {
+          "page": 2,
+          "x": 504,
+          "y": 324,
+          "width": 72,
+          "height": 11.999000000000024,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.8557,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page2[0].f2_29[0]",
+        "label": "33 Add lines 25d, 26, and 32. These are yourtotalpayments | 33",
+        "field_coords": {
+          "page": 2,
+          "x": 504,
+          "y": 312.001,
+          "width": 72,
+          "height": 11.999000000000024,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.9978,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page2[0].f2_30[0]",
+        "label": "Refund 34 If line 33 is more than line 24, subtract line 24 from line 33. This is the amount you overpaid | 34",
+        "field_coords": {
+          "page": 2,
+          "x": 504,
+          "y": 300.002,
+          "width": 72,
+          "height": 11.998999999999967,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.9978,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page2[0].c2_15[0]",
+        "label": "35a Amount of line 34 you want refunded to you. If Form 8888 is attached, checkhere",
+        "field_coords": {
+          "page": 2,
+          "x": 467.2,
+          "y": 290,
+          "width": 8.0,
+          "height": 8,
+          "type": "/Btn"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.8104,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page2[0].f2_31[0]",
+        "label": "35a Amount of line 34 you want refunded to you. If Form 8888 is attached, checkhere LJ | 35a |",
+        "field_coords": {
+          "page": 2,
+          "x": 504,
+          "y": 288,
+          "width": 72,
+          "height": 11.999000000000024,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.9594,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page2[0].RoutingNo[0].f2_32[0]",
+        "label": "Direct deposit? b Routingnumber >",
+        "field_coords": {
+          "page": 2,
+          "x": 180,
+          "y": 276.999,
+          "width": 129.60000000000002,
+          "height": 11.000999999999976,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.9582,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page2[0].c2_16[0]",
+        "label": "Direct deposit? b Routingnumber > | | | ft c Type:",
+        "field_coords": {
+          "page": 2,
+          "x": 377.4,
+          "y": 278.001,
+          "width": 8.0,
+          "height": 8.0,
+          "type": "/Btn"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.9408,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page2[0].c2_16[1]",
+        "label": "Direct deposit? b Routingnumber > | | | ft c Type: [|] Checking [",
+        "field_coords": {
+          "page": 2,
+          "x": 435,
+          "y": 278.001,
+          "width": 8,
+          "height": 8.0,
+          "type": "/Btn"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.9308,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page2[0].AccountNo[0].f2_33[0]",
+        "label": "See instructions. 4 ~ Account number Ae",
+        "field_coords": {
+          "page": 2,
+          "x": 180,
+          "y": 265,
+          "width": 244.8,
+          "height": 11.000999999999976,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.9684,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page2[0].f2_34[0]",
+        "label": "36 Amount of line 34 you want applied to your 2026 estimated tax. 36",
+        "field_coords": {
+          "page": 2,
+          "x": 410.4,
+          "y": 252,
+          "width": 71.25,
+          "height": 11.999000000000024,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.9626,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page2[0].f2_35[0]",
+        "label": "You Owe For details on how to pay, go to www.irs.gov/Payments or see instructions. a 37",
+        "field_coords": {
+          "page": 2,
+          "x": 504,
+          "y": 227.999,
+          "width": 72,
+          "height": 12.001000000000005,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.9985,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page2[0].f2_36[0]",
+        "label": "38 Estimated tax penalty (See instructions) 38",
+        "field_coords": {
+          "page": 2,
+          "x": 410.4,
+          "y": 216,
+          "width": 71.25,
+          "height": 11.998999999999995,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.9626,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page2[0].c2_17[0]",
+        "label": "Third Party 20 you want to allow another person to discuss this return with the IRS? See instructions.",
+        "field_coords": {
+          "page": 2,
+          "x": 432,
+          "y": 206.251,
+          "width": 8,
+          "height": 8.0,
+          "type": "/Btn"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.907,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page2[0].c2_17[1]",
+        "label": "Third Party 20 you want to allow another person to discuss this return with the IRS? See instructions. [_] Yes. Complete below.",
+        "field_coords": {
+          "page": 2,
+          "x": 540,
+          "y": 206.251,
+          "width": 8,
+          "height": 8.0,
+          "type": "/Btn"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.908,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page2[0].f2_37[0]",
+        "label": "Designee Designee\u2019s name",
+        "field_coords": {
+          "page": 2,
+          "x": 129.6,
+          "y": 180,
+          "width": 165.6,
+          "height": 18,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.9318,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page2[0].f2_38[0]",
+        "label": "Designee Designee\u2019s name Phone no.",
+        "field_coords": {
+          "page": 2,
+          "x": 324,
+          "y": 180,
+          "width": 100.80000000000001,
+          "height": 18,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.9897,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page2[0].f2_39[0]",
+        "label": "Designee\u2019s name Phone no. Ree numbper",
+        "field_coords": {
+          "page": 2,
+          "x": 504,
+          "y": 180.5,
+          "width": 72,
+          "height": 11.498999999999995,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.848,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page2[0].f2_40[0]",
+        "label": "complete. person that | have to Declaration discuss examined . of this this preparer . Date return return . . (other Phone no. with and . accompanying the than . Your IRS? . taxpayer) occupation . See . schedules is instructions. . based on and all statements, information [_] Ree numbper Yes. of and which Complete to If the the preparer IRS best sent below. of has my you knowledge any an knowledge. Identity [_]No and",
+        "field_coords": {
+          "page": 2,
+          "x": 325,
+          "y": 126,
+          "width": 135.05,
+          "height": 19.998999999999995,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.8,
+        "label_method": "above_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page2[0].f2_41[0]",
+        "label": "(see inst.)",
+        "field_coords": {
+          "page": 2,
+          "x": 504,
+          "y": 126,
+          "width": 72,
+          "height": 11.998999999999995,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.9455,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page2[0].f2_42[0]",
+        "label": "your See Keep instructions. records. a copy for a",
+        "field_coords": {
+          "page": 2,
+          "x": 325,
+          "y": 96.001,
+          "width": 135.05,
+          "height": 19.998999999999995,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.9073,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page2[0].f2_43[0]",
+        "label": "your Keep records. a copy for a (see inst.)",
+        "field_coords": {
+          "page": 2,
+          "x": 504,
+          "y": 96.001,
+          "width": 72,
+          "height": 11.998999999999995,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.9443,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page2[0].f2_44[0]",
+        "label": "Phone no.",
+        "field_coords": {
+          "page": 2,
+          "x": 127.599,
+          "y": 84.002,
+          "width": 145.25100000000003,
+          "height": 11.99900000000001,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.8729,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page2[0].f2_45[0]",
+        "label": "Phone no. Email address",
+        "field_coords": {
+          "page": 2,
+          "x": 324,
+          "y": 84.002,
+          "width": 252,
+          "height": 11.99900000000001,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.9751,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page2[0].f2_46[0]",
+        "label": "Joint your See Paid Keep instructions. records. return? a copy for Spouse\u2019s Phone Preparer\u2019s no. signature. name If a joint return, both must Preparer\u2019s sign. signature a Date Email address Spouse\u2019s",
+        "field_coords": {
+          "page": 2,
+          "x": 91.599,
+          "y": 59.998,
+          "width": 130.851,
+          "height": 14.000999999999998,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.8,
+        "label_method": "above_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page2[0].f2_47[0]",
+        "label": "Spouse\u2019s occupation Date PTIN (see (see Protection If Identity the inst.) inst.) IRS Protection sent PIN, your enter Check PIN, spouse it if: here enter an it here",
+        "field_coords": {
+          "page": 2,
+          "x": 454.6,
+          "y": 59.998,
+          "width": 55.849999999999966,
+          "height": 14.000999999999998,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.8,
+        "label_method": "above_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page2[0].c2_18[0]",
+        "label": "Date PTIN (see (see Protection If Identity the inst.) inst.) IRS Protection sent PIN, your enter Check PIN, spouse it if: here enter an it here",
+        "field_coords": {
+          "page": 2,
+          "x": 518.4,
+          "y": 63.501,
+          "width": 8.0,
+          "height": 8.000000000000007,
+          "type": "/Btn"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.8,
+        "label_method": "above_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page2[0].f2_48[0]",
+        "label": "Use Only Firm\u2019s name",
+        "field_coords": {
+          "page": 2,
+          "x": 134.599,
+          "y": 48.002,
+          "width": 318.25100000000003,
+          "height": 11.998999999999995,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.9733,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page2[0].f2_49[0]",
+        "label": "Use Only Firm\u2019s name Phone no.",
+        "field_coords": {
+          "page": 2,
+          "x": 494.6,
+          "y": 48.002,
+          "width": 81.39999999999998,
+          "height": 11.998999999999995,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.9673,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page2[0].f2_50[0]",
+        "label": "Firm\u2019s address",
+        "field_coords": {
+          "page": 2,
+          "x": 142.599,
+          "y": 36,
+          "width": 310.25100000000003,
+          "height": 11.999000000000002,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.9155,
+        "label_method": "left_strip"
+      },
+      {
+        "field": "topmostSubform[0].Page2[0].f2_51[0]",
+        "label": "Firm\u2019s address Firm\u2019s EIN",
+        "field_coords": {
+          "page": 2,
+          "x": 494.6,
+          "y": 36,
+          "width": 81.39999999999998,
+          "height": 11.999000000000002,
+          "type": "/Tx"
+        },
+        "confidence": "high",
+        "label_confidence": "high",
+        "label_score": 0.97,
+        "label_method": "left_strip"
+      }
+    ]
+  }
+}

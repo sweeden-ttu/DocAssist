@@ -732,5 +732,54 @@
       "label": "($ Total Income - $ Total Expenses)"
     }
   ],
-  "answers_version": 1
+  "answers_version": 1,
+  "schedule_GG_personal_term_debts": {
+    "schedule": "6C. SCHEDULE GG \u2014 PERSONAL TERM DEBTS PAYABLE (Over 12 months)",
+    "note": "All accounts in deferment \u2014 no current payment amount due. Zero late payments on all accounts.",
+    "rows": [
+      {
+        "creditor": "ED FINANCIAL / ESA",
+        "masked_account": "xxxxxx0815",
+        "purpose": "Federal Student Loan",
+        "interest_rate_pct": null,
+        "accrued_interest": null,
+        "next_due_date": "Deferred",
+        "payments_per_year": 0,
+        "payment_amount": "$0.00",
+        "principal_balance": "$21,063.00",
+        "age_months": 7,
+        "late_payments": 0,
+        "status": "Deferred"
+      },
+      {
+        "creditor": "ED FINANCIAL / ESA",
+        "masked_account": "xxxxxx0520",
+        "purpose": "Federal Student Loan",
+        "interest_rate_pct": null,
+        "accrued_interest": null,
+        "next_due_date": "Deferred",
+        "payments_per_year": 0,
+        "payment_amount": "$0.00",
+        "principal_balance": "$6,854.00",
+        "age_months": 9,
+        "late_payments": 0,
+        "status": "Deferred"
+      },
+      {
+        "creditor": "ED FINANCIAL / ESA",
+        "masked_account": "xxxxxx0530",
+        "purpose": "Federal Student Loan",
+        "interest_rate_pct": null,
+        "accrued_interest": null,
+        "next_due_date": "Deferred",
+        "payments_per_year": 0,
+        "payment_amount": "$0.00",
+        "principal_balance": "$8,739.00",
+        "age_months": 9,
+        "late_payments": 0,
+        "status": "Deferred"
+      }
+    ],
+    "TOTAL_PERSONAL_TERM_DEBTS_PAYABLE": "$36,656.00"
+  }
 }

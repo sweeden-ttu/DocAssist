@@ -1,6 +1,6 @@
 validator:
   name: "Local CPU Validator"
-  endpoint: "http://localhost:1234"
+  endpoint: "http://192.168.0.15:1234"
   model: "Qwen/Qwen2.5-VL-7B-Instruct-GGUF"
   platform: "linux-cpu"
   description: "Ground truth model - all outputs trusted"

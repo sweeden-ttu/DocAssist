@@ -3527,5 +3527,110 @@
         "inferred": true
       }
     }
-  ]
+  ],
+  "corrections_applied": "2026-03-16",
+  "new_farm_application_notes": {
+    "Sch_C": "REAL ASSET \u2014 seedling starts currently growing in apartment, ready to transplant",
+    "Sch_D": "NOT COUNTED on balance sheet \u2014 field not yet planted (new farm application)",
+    "Sch_G": "NOT COUNTED on balance sheet \u2014 prepaid supplies are not balance sheet assets",
+    "Sch_H_total": "$3,000.00 \u2014 Machinery & Equipment only (corrected from $7,500 error)",
+    "Sch_I_total": "$4,500.00 \u2014 Farm Vehicles / Compact Tractor (corrected from $0 error)",
+    "yield_unit_note": "All 1A yield figures are lbs/acre, not total lbs"
+  },
+  "schedule_totals": {
+    "Sch_H_Machinery_Equipment": {
+      "items": [
+        {
+          "item": "Rear-tine Tiller",
+          "value": "$650.00"
+        },
+        {
+          "item": "Drip Irrigation Kit",
+          "value": "$850.00"
+        },
+        {
+          "item": "Hand Tools",
+          "value": "$250.00"
+        },
+        {
+          "item": "Raised Bed Lumber",
+          "value": "$400.00"
+        },
+        {
+          "item": "Deer/Pest Fencing (100 ln ft)",
+          "value": "$350.00"
+        },
+        {
+          "item": "Harvest Crates / Storage Bins",
+          "value": "$150.00"
+        },
+        {
+          "item": "Soil Amendments (Lime/Compost)",
+          "value": "$350.00"
+        }
+      ],
+      "TOTAL": "$3,000.00",
+      "balance_sheet_line": "Machinery & Equipment (Sch. H)"
+    },
+    "Sch_I_Farm_Vehicles": {
+      "items": [
+        {
+          "item": "Compact Tractor (used ~25HP)",
+          "value": "$4,500.00"
+        }
+      ],
+      "TOTAL": "$4,500.00",
+      "balance_sheet_line": "Farm Vehicles (Sch. I)"
+    },
+    "Sch_C_Crop_Inventory_REAL_ASSET": {
+      "note": "Seedling starts currently growing in applicant apartment \u2014 ready to transplant",
+      "items": [
+        {
+          "crop": "Eggplant",
+          "flats": 4,
+          "per_flat": "$18.00",
+          "total": "$72.00"
+        },
+        {
+          "crop": "Peppers",
+          "flats": 3,
+          "per_flat": "$18.00",
+          "total": "$54.00"
+        },
+        {
+          "crop": "Tomatoes",
+          "flats": 4,
+          "per_flat": "$20.00",
+          "total": "$80.00"
+        },
+        {
+          "crop": "Asparagus",
+          "flats": 2,
+          "per_flat": "$22.00",
+          "total": "$44.00"
+        },
+        {
+          "crop": "Artichoke",
+          "flats": 1,
+          "per_flat": "$22.00",
+          "total": "$22.00"
+        }
+      ],
+      "TOTAL": "$272.00",
+      "balance_sheet_line": "Crop Inventory (Sch. C)"
+    },
+    "Sch_D_Growing_Crops_EXCLUDED": {
+      "note": "New farm application \u2014 field not yet planted. DO NOT include on balance sheet.",
+      "TOTAL_on_balance_sheet": "$0.00"
+    },
+    "Sch_G_Prepaid_Expenses_EXCLUDED": {
+      "note": "Prepaid supplies are not balance sheet assets. DO NOT include on balance sheet.",
+      "TOTAL_on_balance_sheet": "$0.00"
+    }
+  },
+  "part_I_yield_unit_clarification": {
+    "yield_column_label": "lbs/acre  (NOT total lbs)",
+    "calculation": "Total $ = Acres \u00d7 (lbs/acre) \u00d7 ($/lb)",
+    "example": "Tomatoes: 0.25 ac \u00d7 20,000 lbs/ac \u00d7 $0.60/lb = $3,000.00"
+  }
 }

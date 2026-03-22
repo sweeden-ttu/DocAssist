@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DocAssist - IRS Form Field Extraction</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .status-indicator {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            display: inline-block;
+        }
+        .status-online { background-color: #28a745; }
+        .status-offline { background-color: #dc3545; }
+        .drop-zone {
+            border: 2px dashed #6c757d;
+            border-radius: 8px;
+            padding: 40px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .drop-zone:hover, .drop-zone.dragover {
+            border-color: #0d6efd;
+            background-color: #f8f9fa;
+        }
+        .field-card {
+            border-left: 4px solid #0d6efd;
+            margin-bottom: 10px;
+        }
+        .bbox-overlay {
+            position: relative;
+            display: inline-block;
+        }
+        .bbox-box {
+            position: absolute;
+            border: 2px solid #ff0000;
+            background-color: rgba(255, 0, 0, 0.1);
+            pointer-events: none;
+        }
+        .metric-card {
+            text-align: center;
+            padding: 20px;
+            border-radius: 8px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        .metric-value { font-size: 2rem; font-weight: bold; }
+        .metric-label { font-size: 0.9rem; opacity: 0.9; }
+        .pipeline-step {
+            border-left: 4px solid #dee2e6;
+            padding-left: 10px;
+            margin-bottom: 10px;
+        }
+        .pipeline-step.completed {
+            border-left-color: #198754;
+        }
+        .overlay-stage {
+            position: relative;
+            display: inline-block;
+            max-width: 100%;
+            border: 1px solid #dee2e6;
+            border-radius: 6px;
+            overflow: hidden;
+            background: #fff;
+        }
+        .overlay-stage img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+        .overlay-layer {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+        .form-item-btn {
+            width: 100%;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">DocAssist</a>
+            <span class="navbar-text text-light">IRS Form Field Extraction</span>
+            <div class="ms-auto d-flex align-items-center">
+                <span class="me-3 text-light">
+                    Validator: <span id="validator-status" class="status-indicator status-offline"></span>
+                    <small id="validator-model"></small>
+                </span>
+                <span class="text-light">
+                    Trainer: <span id="trainer-status" class="status-indicator status-offline"></span>
+                    <small id="trainer-model"></small>
+                </span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid mt-4">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="mb-0">Upload Form</h5>
+                    </div>
+                    <div class="card-body">
+                        <div id="drop-zone" class="drop-zone mb-3">
+                            <p class="mb-0">Drop PDF or image here</p>
+                            <small class="text-muted">or click to browse</small>
+                        </div>
+                        <input type="file" id="file-input" class="d-none" accept=".pdf,.png,.jpg,.jpeg">
+                        
+                        <div class="mb-3">
+                            <label class="form-label">Extraction Options</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="use-validator" checked>
+                                <label class="form-check-label" for="use-validator">Use Validator (localhost)</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="use-trainer">
+                                <label class="form-check-label" for="use-trainer">Use Trainer (Mac MLX)</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="use-ensemble">
+                                <label class="form-check-label" for="use-ensemble">Ensemble Voting</label>
+                            </div>
+                        </div>
+                        
+                        <button id="extract-btn" class="btn btn-primary w-100" disabled>
+                            Extract Fields
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card mt-3">
+                    <div class="card-header">
+                        <h5 class="mb-0">Extracted Forms</h5>
+                    </div>
+                    <div class="card-body" id="forms-list">
+                        <p class="text-muted">Loading...</p>
+                    </div>
+                </div>
+
+                <div class="card mt-3">
+                    <div class="card-header">
+                        <h5 class="mb-0">3-Step Pipeline</h5>
+                    </div>
+                    <div class="card-body" id="pipeline-steps">
+                        {% if pipeline_steps %}
+                            {% for step in pipeline_steps %}
+                                <div class="pipeline-step {% if step.completed %}completed{% endif %}">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <strong>{{ step.title }}</strong>
+                                        {% if step.completed %}
+                                            <span class="badge bg-success">Done</span>
+                                        {% else %}
+                                            <span class="badge bg-secondary">Pending</span>
+                                        {% endif %}
+                                    </div>
+                                    <small class="text-muted d-block">{{ step.description }}</small>
+                                    <small class="d-block">{{ step.details }}</small>
+                                </div>
+                            {% endfor %}
+                        {% else %}
+                            <p class="text-muted mb-0">No step data available.</p>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <h5 class="mb-0">Document Preview</h5>
+                        <div>
+                            <button class="btn btn-sm btn-outline-secondary" id="zoom-in">+</button>
+                            <button class="btn btn-sm btn-outline-secondary" id="zoom-out">-</button>
+                        </div>
+                    </div>
+                    <div class="card-body text-center" id="preview-area">
+                        <p class="text-muted">No document uploaded</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="row mb-3">
+                    <div class="col-6">
+                        <div class="metric-card">
+                            <div class="metric-value" id="field-count">0</div>
+                            <div class="metric-label">Fields</div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="metric-card" style="background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);">
+                            <div class="metric-value" id="inference-time">0s</div>
+                            <div class="metric-label">Inference</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="mb-0">Detected Fields</h5>
+                    </div>
+                    <div class="card-body" id="fields-list" style="max-height: 500px; overflow-y: auto;">
+                        <p class="text-muted">Fields will appear here</p>
+                    </div>
+                </div>
+
+                <div class="card mt-3">
+                    <div class="card-header">
+                        <h5 class="mb-0">Raw Response</h5>
+                    </div>
+                    <div class="card-body">
+                        <pre id="raw-response" style="max-height: 200px; overflow-y: auto; font-size: 0.75rem;"></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        let uploadedFile = null;
+        let currentResults = null;
+        let zoomLevel = 1;
+
+        async function checkHealth() {
+            try {
+                const response = await fetch('/api/health');
+                const data = await response.json();
+                
+                const vStatus = document.getElementById('validator-status');
+                const tStatus = document.getElementById('trainer-status');
+                
+                if (data.validator.available) {
+                    vStatus.className = 'status-indicator status-online';
+                    document.getElementById('validator-model').textContent = 
+                        data.validator.models.length > 0 ? data.validator.models[0] : '';
+                } else {
+                    vStatus.className = 'status-indicator status-offline';
+                }
+                
+                if (data.trainer.available) {
+                    tStatus.className = 'status-indicator status-online';
+                    document.getElementById('trainer-model').textContent = 
+                        data.trainer.models.length > 0 ? data.trainer.models[0] : '';
+                } else {
+                    tStatus.className = 'status-indicator status-offline';
+                }
+            } catch (error) {
+                console.error('Health check failed:', error);
+            }
+        }
+
+        async function loadFormsList() {
+            try {
+                const response = await fetch('/api/forms');
+                const data = await response.json();
+                
+                const listEl = document.getElementById('forms-list');
+                if (data.forms.length === 0) {
+                    listEl.innerHTML = '<p class="text-muted">No forms found</p>';
+                    return;
+                }
+                
+                listEl.innerHTML = data.forms.map(form => `
+                    <div class="mb-2">
+                        <button class="btn btn-outline-primary btn-sm form-item-btn" data-form-name="${form.name}">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small>${form.name}</small>
+                                <span class="badge bg-secondary">${(form.size / 1024).toFixed(1)}KB</span>
+                            </div>
+                        </button>
+                    </div>
+                `).join('');
+
+                listEl.querySelectorAll('.form-item-btn').forEach(btn => {
+                    btn.addEventListener('click', () => loadFormOverlayPreview(btn.dataset.formName));
+                });
+            } catch (error) {
+                console.error('Failed to load forms:', error);
+            }
+        }
+
+        async function loadFormOverlayPreview(formName) {
+            const previewArea = document.getElementById('preview-area');
+            previewArea.innerHTML = `<p class="text-muted">Loading overlays for ${formName}...</p>`;
+            try {
+                const response = await fetch(`/api/forms/${encodeURIComponent(formName)}/overlay-pages`);
+                const data = await response.json();
+                const pages = data.pages || [];
+                if (pages.length === 0) {
+                    previewArea.innerHTML = `<p class="text-muted mb-0">No overlay pages found for ${formName}.</p>`;
+                    return;
+                }
+
+                previewArea.innerHTML = pages.map(p => `
+                    <div class="mb-4 text-start">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <strong>Page ${p.page}</strong>
+                            <small class="text-muted">Transparent overlay preview</small>
+                        </div>
+                        <div class="overlay-stage">
+                            <img src="${p.page_image_url}" alt="Page ${p.page}">
+                            <img class="overlay-layer" src="${p.overlay_image_url}" alt="Overlay ${p.page}">
+                        </div>
+                    </div>
+                `).join('');
+                zoomLevel = 1;
+                updateZoom();
+            } catch (error) {
+                previewArea.innerHTML = `<p class="text-danger mb-0">Failed to load overlay preview: ${error.message}</p>`;
+            }
+        }
+
+        async function refreshPipelineSteps() {
+            try {
+                const response = await fetch('/api/pipeline/steps');
+                const data = await response.json();
+                const container = document.getElementById('pipeline-steps');
+                const steps = data.steps || [];
+                if (steps.length === 0) {
+                    container.innerHTML = '<p class="text-muted mb-0">No step data available.</p>';
+                    return;
+                }
+                container.innerHTML = steps.map(step => `
+                    <div class="pipeline-step ${step.completed ? 'completed' : ''}">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <strong>${step.title}</strong>
+                            <span class="badge ${step.completed ? 'bg-success' : 'bg-secondary'}">${step.completed ? 'Done' : 'Pending'}</span>
+                        </div>
+                        <small class="text-muted d-block">${step.description}</small>
+                        <small class="d-block">${step.details || ''}</small>
+                    </div>
+                `).join('');
+            } catch (error) {
+                console.error('Failed to refresh pipeline steps:', error);
+            }
+        }
+
+        const dropZone = document.getElementById('drop-zone');
+        const fileInput = document.getElementById('file-input');
+        const extractBtn = document.getElementById('extract-btn');
+
+        dropZone.addEventListener('click', () => fileInput.click());
+        dropZone.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            dropZone.classList.add('dragover');
+        });
+        dropZone.addEventListener('dragleave', () => dropZone.classList.remove('dragover'));
+        dropZone.addEventListener('drop', (e) => {
+            e.preventDefault();
+            dropZone.classList.remove('dragover');
+            if (e.dataTransfer.files.length > 0) {
+                handleFile(e.dataTransfer.files[0]);
+            }
+        });
+        fileInput.addEventListener('change', (e) => {
+            if (e.target.files.length > 0) {
+                handleFile(e.target.files[0]);
+            }
+        });
+
+        function handleFile(file) {
+            uploadedFile = file;
+            extractBtn.disabled = false;
+            
+            const previewArea = document.getElementById('preview-area');
+            if (file.type.startsWith('image/')) {
+                const reader = new FileReader();
+                reader.onload = (e) => {
+                    previewArea.innerHTML = `<img src="${e.target.result}" style="max-width: 100%; transform: scale(${zoomLevel})">`;
+                };
+                reader.readAsDataURL(file);
+            } else {
+                previewArea.innerHTML = `
+                    <div class="text-center">
+                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                        </svg>
+                        <p class="mt-2">${file.name}</p>
+                        <small class="text-muted">PDF uploaded - will be converted to images</small>
+                    </div>
+                `;
+            }
+        }
+
+        extractBtn.addEventListener('click', async () => {
+            if (!uploadedFile) return;
+            
+            extractBtn.disabled = true;
+            extractBtn.innerHTML = '<span class="spinner-border spinner-border-sm me-2"></span>Extracting...';
+            
+            const formData = new FormData();
+            formData.append('file', uploadedFile);
+            formData.append('ensemble', document.getElementById('use-ensemble').checked.toString());
+            
+            try {
+                const response = await fetch('/api/extract-form', {
+                    method: 'POST',
+                    body: formData
+                });
+                const data = await response.json();
+                
+                if (data.success) {
+                    currentResults = data.results;
+                    displayResults(data.results);
+                } else {
+                    alert('Error: ' + data.error);
+                }
+            } catch (error) {
+                alert('Extraction failed: ' + error.message);
+            } finally {
+                extractBtn.disabled = false;
+                extractBtn.innerHTML = 'Extract Fields';
+            }
+        });
+
+        function displayResults(results) {
+            const fieldsList = document.getElementById('fields-list');
+            const rawResponse = document.getElementById('raw-response');
+            const fieldCount = document.getElementById('field-count');
+            const inferenceTime = document.getElementById('inference-time');
+            
+            let fields = [];
+            let time = 0;
+            
+            if (results.validator && results.validator.success) {
+                fields = results.validator.data.fields || [];
+                time = results.validator.inference_time || 0;
+                rawResponse.textContent = JSON.stringify(results.validator.data, null, 2);
+            }
+            
+            fieldCount.textContent = fields.length;
+            inferenceTime.textContent = time.toFixed(1) + 's';
+            
+            if (fields.length === 0) {
+                fieldsList.innerHTML = '<p class="text-muted">No fields detected</p>';
+                return;
+            }
+            
+            fieldsList.innerHTML = fields.map((field, i) => `
+                <div class="card field-card">
+                    <div class="card-body py-2">
+                        <div class="d-flex justify-content-between">
+                            <strong>${field.label || 'Field ' + (i+1)}</strong>
+                            <span class="badge bg-primary">${field.type || 'text'}</span>
+                        </div>
+                        <small class="text-muted">
+                            Page ${field.page || 1} | 
+                            BBox: [${(field.bbox_2d || []).map(x => Math.round(x)).join(', ')}]
+                        </small>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        document.getElementById('zoom-in').addEventListener('click', () => {
+            zoomLevel = Math.min(zoomLevel + 0.25, 3);
+            updateZoom();
+        });
+        document.getElementById('zoom-out').addEventListener('click', () => {
+            zoomLevel = Math.max(zoomLevel - 0.25, 0.5);
+            updateZoom();
+        });
+
+        function updateZoom() {
+            const overlays = document.querySelectorAll('#preview-area .overlay-stage');
+            overlays.forEach(el => {
+                el.style.transform = `scale(${zoomLevel})`;
+                el.style.transformOrigin = 'top center';
+            });
+
+            // Fallback for simple preview image mode.
+            const img = document.querySelector('#preview-area img');
+            if (img && overlays.length === 0) img.style.transform = `scale(${zoomLevel})`;
+        }
+
+        checkHealth();
+        loadFormsList();
+        refreshPipelineSteps();
+        setInterval(checkHealth, 30000);
+        setInterval(refreshPipelineSteps, 30000);
+    </script>
+</body>
+</html>

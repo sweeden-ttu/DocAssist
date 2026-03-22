@@ -4,8 +4,11 @@ OCR-based field analysis for USDA PDF forms using docling.
 Renders each page as image, extracts text with OCR, and maps form fields to labels.
 """
 
+import argparse
 import json
 from pathlib import Path
+from typing import Optional
+
 from PIL import Image
 import pypdfium2 as pdfium
 import pypdf
@@ -122,7 +125,9 @@ def find_label_above_field(
     return best_label if best_label else ""
 
 
-def analyze_pdf_with_ocr(pdf_path: str, output_dir: str):
+def analyze_pdf_with_ocr(
+    pdf_path: str, output_dir: str, pages: Optional[set[int]] = None
+):
     """Analyze PDF pages with OCR and map fields to labels."""
     pdf_path = Path(pdf_path)
     output_dir = Path(output_dir)
@@ -141,6 +146,8 @@ def analyze_pdf_with_ocr(pdf_path: str, output_dir: str):
     print("Extracting form fields...")
     fields = get_field_coordinates(str(pdf_path))
     print(f"Found {len(fields)} form fields")
+    if not fields:
+        print("No fillable fields found in PDF annotations.")
 
     # Group fields by page
     fields_by_page = {}
@@ -154,6 +161,8 @@ def analyze_pdf_with_ocr(pdf_path: str, output_dir: str):
     all_results = {}
 
     for page_num in sorted(fields_by_page.keys()):
+        if pages and page_num not in pages:
+            continue
         print(f"\n--- Page {page_num} ---")
 
         page_width, page_height = page_sizes.get(page_num, (612, 792))
@@ -167,7 +176,12 @@ def analyze_pdf_with_ocr(pdf_path: str, output_dir: str):
 
         # Use OCR via pytesseract
         print(f"  Running OCR...")
-        import pytesseract
+        try:
+            import pytesseract
+        except ImportError as exc:
+            raise SystemExit(
+                "pytesseract is required for OCR. Install it with: pip install pytesseract"
+            ) from exc
 
         custom_config = r"--oem 3 --psm 6"
         ocr_result = pytesseract.image_to_data(
@@ -260,7 +274,12 @@ def print_page_fields(pdf_path: str, page_num: int):
     image = render_page_to_image(str(pdf_path), page_num)
 
     # OCR
-    import pytesseract
+    try:
+        import pytesseract
+    except ImportError as exc:
+        raise SystemExit(
+            "pytesseract is required for OCR. Install it with: pip install pytesseract"
+        ) from exc
 
     custom_config = r"--oem 3 --psm 6"
     ocr_result = pytesseract.image_to_data(
@@ -302,15 +321,60 @@ def print_page_fields(pdf_path: str, page_num: int):
         print()
 
 
+def _parse_page_list(raw: Optional[str]) -> Optional[set[int]]:
+    if not raw:
+        return None
+    pages = set()
+    for chunk in raw.split(","):
+        value = chunk.strip()
+        if not value:
+            continue
+        try:
+            page_num = int(value)
+        except ValueError as exc:
+            raise SystemExit(
+                f"Invalid page number '{value}'. Use comma-separated integers, e.g. 1,2,3"
+            ) from exc
+        if page_num < 1:
+            raise SystemExit("Page numbers must be >= 1.")
+        pages.add(page_num)
+    return pages or None
+
+
 if __name__ == "__main__":
-    pdf_path = (
-        "/Users/sweeden/projects/DocAssist/templates/usda/FSA2001_250321V05LC (14).pdf"
+    parser = argparse.ArgumentParser(
+        description="Extract fillable PDF fields and OCR labels into *_ocr_analysis.json."
     )
-    output_dir = "/Users/sweeden/projects/DocAssist/annotations/usda"
+    parser.add_argument(
+        "--pdf",
+        required=True,
+        help="Path to input PDF (for example: templates/irs/f1040.pdf)",
+    )
+    parser.add_argument(
+        "--output-dir",
+        required=True,
+        help="Directory to write rendered pages and *_ocr_analysis.json",
+    )
+    parser.add_argument(
+        "--pages",
+        default=None,
+        help="Optional comma-separated pages to process (1-based), e.g. 1,2",
+    )
+    parser.add_argument(
+        "--print-pages",
+        default=None,
+        help="Optional comma-separated pages to print a field/label preview for debugging",
+    )
+    args = parser.parse_args()
 
-    # Full analysis
-    analyze_pdf_with_ocr(pdf_path, output_dir)
+    pdf_path = Path(args.pdf).expanduser().resolve()
+    if not pdf_path.exists():
+        raise SystemExit(f"PDF not found: {pdf_path}")
 
-    # Print first few pages
-    for page in [3, 4, 5]:
-        print_page_fields(pdf_path, page)
+    pages = _parse_page_list(args.pages)
+    print_pages = _parse_page_list(args.print_pages)
+
+    analyze_pdf_with_ocr(str(pdf_path), args.output_dir, pages=pages)
+    if print_pages:
+        for page in sorted(print_pages):
+            print_page_fields(str(pdf_path), page)

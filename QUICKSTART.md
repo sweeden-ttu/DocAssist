@@ -16,12 +16,12 @@ pip install -r requirements.txt
 
 ### 1. Extract fields from a form image
 ```bash
-python run.py extract --input path/to/form.png --output output/fields.json
+python ocr_field_analysis.py extract --input my_form.pdf --output annotations/fields.json
 ```
 
 ### 2. Process an entire PDF
 ```bash
-python run.py extract --input path/to/form.pdf --form-type "IRS Form 1040"
+python post_process_ocr_with_vlm.py expand --input annotations/fields.json --output 
 ```
 
 ### 3. Convert to different formats
