@@ -1,103 +1,224 @@
 # IRS Form Documentation
 
-## Supported Forms
+## Overview
+
+DocAssist supports extraction of IRS tax forms using Docling for document parsing and Vision-Language Models for field detection.
+
+## Extracted Forms
 
 ### Form 1040 - U.S. Individual Income Tax Return
-**Status**: In Development
+**Status**: ✅ Extracted with Docling
 
-### Field Types
-| Field Type | Description | BBox Color |
-|------------|-------------|------------|
-| Text Input | Personal info, income fields | Blue |
-| Checkbox | Filing status, credits | Green |
-| Currency | Money amounts | Yellow |
-| SSN | Social Security numbers | Red |
-| Date | Date fields | Orange |
-| Signature | Signature areas | Purple |
+| Property | Value |
+|----------|-------|
+| Pages | 2 |
+| Text Elements | 1,726 |
+| Tables | 0 |
+| Form Items | 0 |
+| Size | 1.0 MB |
+| Output | `f1040_docling.json` |
 
-### Common Fields on Form 1040
-- Filing status checkboxes (Single, Married, etc.)
-- Name and address fields
-- SSN fields
-- Income fields ( wages, dividends, etc.)
-- Deduction fields
-- Signature block
-- Date field
-- Occupation field
+**Sections:**
+- Filing Status
+- Personal Information
+- Income (Wages, Interest, Dividends, etc.)
+- Adjusted Gross Income
+- Standard Deduction
+- Taxable Income
+- Tax and Credits
+- Payments
+- Refund/Amount Owed
 
-## Output Format
+### Form W-4 - Employee's Withholding Certificate
+**Status**: ✅ Extracted with Docling
+
+| Property | Value |
+|----------|-------|
+| Pages | 5 |
+| Text Elements | 343 |
+| Tables | 3 |
+| Form Items | 0 |
+| Size | 1.0 MB |
+
+**Steps:**
+1. Personal Information
+2. Multiple Jobs or Spouse Works
+3. Claim Dependents
+4. Other Adjustments (optional)
+5. Signature
+
+### Form W-9 - Request for Taxpayer ID
+**Status**: ✅ Extracted with Docling
+
+| Property | Value |
+|----------|-------|
+| Pages | 6 |
+| Text Elements | 237 |
+| Tables | 4 |
+| Size | 302 KB |
+
+**Fields:**
+- Name
+- Business Name
+- Federal Tax Classification
+- Exemptions
+- Address
+- SSN or EIN
+
+### Form 1065 - Partnership Return
+**Status**: ✅ Extracted with Docling
+
+| Property | Value |
+|----------|-------|
+| Pages | 6 |
+| Text Elements | ~1,800 |
+| Tables | 1 |
+| Size | 1.3 MB |
+
+**Components:**
+- Partnership Information
+- Total Income
+- Total Deductions
+- Schedule K Items
+- Partner Capital Accounts
+
+## Form Schemas
+
+### Form 1040 Field Schema
 
 ```json
 {
   "form_type": "IRS Form 1040",
-  "form_version": "2024",
-  "page": 1,
-  "image_size": [816, 1008],
+  "version": "2025",
   "fields": [
     {
-      "id": "f1040_field_001",
+      "id": "f1040_1a",
       "type": "text_input",
-      "label": "First name",
-      "bbox_2d": [145, 52, 340, 72],
-      "bbox_normalized": [0.177, 0.052, 0.417, 0.071],
-      "confidence": 0.95,
+      "label": "First name and middle initial",
+      "section": "Step 1: Personal Information",
       "fillable": true
     },
     {
-      "id": "f1040_field_002",
+      "id": "f1040_1b", 
+      "type": "text_input",
+      "label": "Last name",
+      "section": "Step 1: Personal Information",
+      "fillable": true
+    },
+    {
+      "id": "f1040_1c",
+      "type": "ssn",
+      "label": "Your SSN",
+      "section": "Step 1: Personal Information",
+      "fillable": true
+    },
+    {
+      "id": "f1040_2a",
       "type": "checkbox",
-      "label": "Single filing status",
-      "bbox_2d": [120, 95, 135, 110],
-      "bbox_normalized": [0.147, 0.094, 0.165, 0.109],
-      "confidence": 0.92,
+      "label": "Single",
+      "section": "Filing Status",
+      "fillable": true
+    },
+    {
+      "id": "f1040_2b",
+      "type": "checkbox",
+      "label": "Married filing jointly",
+      "section": "Filing Status",
       "fillable": true
     }
-  ],
-  "metadata": {
-    "extracted_at": "2024-01-15T10:30:00Z",
-    "model_version": "qwen2.5-vl-7b-v1",
-    "preprocessing": "deskew=True, binarize=True"
-  }
+  ]
 }
 ```
 
-## Processing Pipeline
+## Installation
 
-```
-1. PDF Input
-   └─▶ PyMuPDF/RGBA conversion
-        └─▶ Image preprocessing (optional)
-             └─▶ VLM inference
-                  └─▶ JSON output with bounding boxes
+```bash
+conda activate taxenv
+pip install docling docling-ibm-models
 ```
 
-## Bounding Box Format
+## Usage
 
-All coordinates are in pixels unless specified as normalized.
-
-### COCO Format (Normalized)
-```
-[x_center, y_center, width, height] - normalized to [0, 1]
+### Extract Form with Docling
+```bash
+python docling_cli.py parse form1040.pdf --format json --output f1040.json
 ```
 
-### Pascal VOC Format (Pixels)
-```
-[x_min, y_min, x_max, y_max]
-```
-
-### Qwen2.5-VL Format
-```
-bbox_2d: [x1, y1, x2, y2] - pixel coordinates
+### Extract with GUI
+```bash
+python src/gui_viewer.py --image form1040.png --json f1040.json
 ```
 
-## Quality Metrics
+## Common IRS Forms
 
-- **Precision**: % of detected fields that are correct
-- **Recall**: % of actual fields that are detected
-- **mAP**: Mean Average Precision for bounding boxes
-- **IoU**: Intersection over Union for localization
+| Form | Name | Used For |
+|------|------|----------|
+| 1040 | U.S. Individual Income Tax Return | Main personal tax form |
+| 1040-SR | U.S. Tax Return for Seniors | Seniors version of 1040 |
+| W-4 | Employee's Withholding Certificate | Tax withholding |
+| W-9 | Request for Taxpayer ID | Tax ID requests |
+| 1065 | U.S. Return of Partnership Income | Partnership taxes |
+| 1120 | U.S. Corporation Income Tax Return | Corporate taxes |
+| 941 | Employer's Quarterly Federal Tax Return | Payroll taxes |
 
-## Target Accuracy
-- Field Detection: >95% recall
-- Classification: >90% accuracy
-- Localization (IoU): >0.8 average
+## Schedules for Form 1040
+
+| Schedule | Name | When Required |
+|----------|------|---------------|
+| 1 | Additional Income and Adjustments | If you have other income |
+| 2 | Additional Taxes | If you owe AMT or other taxes |
+| 3 | Additional Credits and Payments | If you have foreign tax, etc. |
+| A | Itemized Deductions | If you itemize instead of standard deduction |
+| B | Interest and Ordinary Dividends | If you have >$1,500 in interest/dividends |
+| C | Profit or Loss From Business | If you have business income |
+| D | Capital Gains and Losses | If you sold assets |
+| E | Supplemental Income and Loss | If you have rental/partnership income |
+| F | Profit or Loss From Farming | If you have farm income |
+| SE | Self-Employment Tax | If you're self-employed |
+
+## Output Formats
+
+### JSON with Bounding Boxes
+```json
+{
+  "form_type": "IRS Form 1040",
+  "page": 1,
+  "fields": [
+    {
+      "id": "field_001",
+      "type": "text_input",
+      "label": "First name",
+      "bbox_2d": [x1, y1, x2, y2],
+      "confidence": 0.95
+    }
+  ]
+}
+```
+
+### COCO Format
+For object detection training:
+```json
+{
+  "images": [...],
+  "annotations": [...],
+  "categories": [...]
+}
+```
+
+## Data Location
+
+Extracted forms are stored at:
+```
+/home/sweeden/projects/docling_data/tax_packet/docling_extracted/
+├── f1040_docling.json
+├── fw4_docling.json
+├── fw9_docling.json
+└── form1065_docling.json
+```
+
+## Next Steps
+
+- [ ] Add Form 1040 Schedules (A, B, C, D, E, F, SE)
+- [ ] Create ground truth annotations
+- [ ] Train VLM on IRS forms
+- [ ] Validate field detection accuracy
